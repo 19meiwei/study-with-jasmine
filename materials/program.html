@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Chinese Program | Study with Jasmine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/materials/program.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <a href="/" class="brand">
+
+            <div class="brand-icon">
+                学
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    Study with Jasmine
+                </strong>
+
+                <small>
+                    和 Jasmine 一起学习吧！
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/#classes">
+                Classes
+            </a>
+
+            <a href="/#schedule">
+                Schedule
+            </a>
+
+            <a
+                href="/materials/"
+                class="active"
+            >
+                Materials
+            </a>
+
+            <a href="/#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="/materials/auth.html"
+                class="login-button"
+            >
+                Log In
+            </a>
+
+            <a
+                href="/#contact"
+                class="book-button"
+            >
+                Book a Lesson
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         PROGRAM HERO
+    ========================================== -->
+
+    <main>
+
+        <section class="program-hero">
+
+            <div class="program-hero-inner">
+
+                <a
+                    href="/materials/"
+                    class="back-link"
+                >
+                    ← Chinese Programs
+                </a>
+
+
+                <div class="program-icon" id="programIcon">
+                    中
+                </div>
+
+
+                <span class="program-label">
+                    CHINESE PROGRAM
+                </span>
+
+
+                <h1 id="programChineseTitle">
+                    中文课程
+                </h1>
+
+
+                <h2 id="programTitle">
+                    Chinese Program
+                </h2>
+
+
+                <p id="programDescription">
+                    Explore practical Chinese learning materials
+                    designed by Study with Jasmine.
+                </p>
+
+
+                <div class="program-stats">
+
+                    <span id="materialCount">
+                        Loading materials...
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             MATERIALS
+        ========================================== -->
+
+        <section class="program-library">
+
+            <div class="library-heading">
+
+                <div>
+
+                    <span>
+                        LEARNING MATERIALS
+                    </span>
+
+                    <h2>
+                        Start learning.
+                    </h2>
+
+                    <p>
+                        Choose a material below to begin.
+                    </p>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <input
+                        id="programSearch"
+                        type="search"
+                        placeholder="Search this program..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- MATERIALS INSERTED BY JS -->
+
+            <div
+                id="programMaterialsGrid"
+                class="materials-grid"
+            >
+
+                <div class="loading">
+
+                    <div class="loading-circle"></div>
+
+                    <p>
+                        Loading materials...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="brand-icon">
+                学
+            </div>
+
+            <div>
+
+                <strong>
+                    Study with Jasmine
+                </strong>
+
+                <small>
+                    Learn a little every day.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            © 2026 Study with Jasmine
+        </p>
+
+    </footer>
+
+
+    <!-- SUPABASE -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+    <script
+        src="/materials/program.js"
+    ></script>
+
+</body>
+
+</html>

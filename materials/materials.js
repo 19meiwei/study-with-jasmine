@@ -30,8 +30,8 @@ async function loadMaterials() {
     const { data, error } = await supabaseClient
         .from("Materials")
         .select("*")
-        .eq("is_published", true)
-        .order("created_at", { ascending: false });
+.eq("is_published", true)
+.order("course")
 
     if (error) {
         console.error("Error loading materials:", error);
@@ -64,126 +64,87 @@ function displayMaterials(materials) {
     const container = document.getElementById("materialsGrid");
 
     if (!container) {
-        console.error("Cannot find #materialsGrid");
+        console.error("Cannot find materialsGrid");
         return;
     }
+
 
     container.innerHTML = "";
 
-    if (!materials || materials.length === 0) {
 
-        container.innerHTML = `
-            <div class="empty-materials">
-                <h3>No materials yet</h3>
-                <p>New learning materials are coming soon.</p>
-            </div>
-        `;
-
-        return;
-    }
+    materials.forEach((material)=>{
 
 
-    materials.forEach((material) => {
+        const coverURL = getCoverUrl(
+            material.cover_path
+        );
+
 
         const card = document.createElement("article");
 
         card.className = "material-card";
 
-        const price = Number(material.price || 0);
-
-        const priceText =
-            price === 0
-                ? "Free"
-                : `$${price.toFixed(2)}`;
-
 
         card.innerHTML = `
 
-            <div class="material-cover">
-
-                ${
-                    material.cover_path
-    ? `<img
-        src="${getCoverUrl(material.cover_path)}"
-        alt="${material.title || "Study material"}"
-      >`
-                        : `<div class="material-cover-placeholder">
-                            学
-                           </div>`
-                }
-
-            </div>
+        <img 
+        src="${coverURL}" 
+        class="material-image"
+        >
 
 
-            <div class="material-info">
-
-                <div class="material-meta">
-
-                    <span>
-                        ${material.subject || "Learning Material"}
-                    </span>
-
-                    ${
-                        material.course
-
-                            ? `<span>
-                                ${material.course}
-                               </span>`
-
-                            : ""
-                    }
-
-                </div>
+        <div class="material-card-content">
 
 
-                <h3>
-                    ${material.title || "Untitled Material"}
-                </h3>
+        <span class="material-tag">
+        ${material.course}
+        </span>
 
 
-                <p>
-                    ${
-                        material.description ||
-                        "Study material from Study with Jasmine."
-                    }
-                </p>
+        <h3>
+        ${material.title}
+        </h3>
 
 
-                <div class="material-bottom">
-
-                    <strong class="material-price">
-                        ${priceText}
-                    </strong>
+        <p>
+        ${material.description}
+        </p>
 
 
-                    <button
-                        class="material-button"
-                        data-id="${material.id}"
-                    >
 
-                        ${
-                            price === 0
-                                ? "View Material"
-                                : "Get Material"
-                        }
+        <div class="material-footer">
 
-                    </button>
+        <strong>
+        ${Number(material.price) === 0 
+        ? "Free" 
+        : "$"+material.price}
+        </strong>
 
-                </div>
 
-            </div>
+        <button 
+        class="material-button"
+        data-id="${material.id}">
+        View Material
+        </button>
+
+
+        </div>
+
+
+        </div>
 
         `;
 
 
         container.appendChild(card);
 
+
     });
 
 
     addMaterialButtonEvents();
-}
 
+}
 
 // ==========================================
 // 5. MATERIAL BUTTONS

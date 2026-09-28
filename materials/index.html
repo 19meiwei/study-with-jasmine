@@ -308,88 +308,74 @@
                 </span>
 
 
-                <div class="category-buttons">
+<div class="category-buttons">
 
-                    <!-- Business Chinese -->
-
-                    <button
-                        type="button"
-                        data-course="Business Chinese"
-                    >
-                        商
-
-                        <span>
-                            Business Chinese
-                        </span>
-                    </button>
+    <button
+        type="button"
+        onclick="openProgram('Business Chinese')"
+    >
+        商
+        <span>
+            Business Chinese
+        </span>
+    </button>
 
 
-                    <!-- Factory & Workplace -->
-
-                    <button
-                        type="button"
-                        data-course="Factory & Workplace Chinese"
-                    >
-                        工
-
-                        <span>
-                            Factory &amp; Workplace
-                        </span>
-                    </button>
+    <button
+        type="button"
+        onclick="openProgram('Factory & Workplace Chinese')"
+    >
+        工
+        <span>
+            Factory &amp; Workplace
+        </span>
+    </button>
 
 
-                    <!-- Travel & Hospitality -->
-
-                    <button
-                        type="button"
-                        data-course="Travel & Hospitality Chinese"
-                    >
-                        旅
-
-                        <span>
-                            Travel &amp; Hospitality
-                        </span>
-                    </button>
+    <button
+        type="button"
+        onclick="openProgram('Travel & Hospitality Chinese')"
+    >
+        旅
+        <span>
+            Travel &amp; Hospitality
+        </span>
+    </button>
 
 
-                    <!-- YCT -->
-
-                    <button
-                        type="button"
-                        data-course="YCT Chinese for Kids"
-                    >
-                        童
-
-                        <span>
-                            YCT for Kids
-                        </span>
-                    </button>
+    <button
+        type="button"
+        onclick="openProgram('YCT Chinese for Kids')"
+    >
+        童
+        <span>
+            YCT for Kids
+        </span>
+    </button>
 
 
-                    <!-- English-Chinese -->
+    <button
+        type="button"
+        onclick="openProgram('English-Chinese Bilingual Chinese')"
+    >
+        EN
+        <span>
+            English–Chinese
+        </span>
+    </button>
 
-                    <button
-                        type="button"
-                        data-course="English-Chinese Bilingual Chinese"
-                    >
-                        EN
 
-                        <span>
-                            English–Chinese
-                        </span>
-                    </button>
-                    <button
-    type="button"
-    onclick="window.location.href='/materials/measure-words/'"
->
-    量
-    <span>Measure Words</span>
-</button>
+    <button
+        type="button"
+        onclick="window.location.href='/materials/measure-words/'"
+    >
+        量
+        <span>
+            Measure Words
+        </span>
+    </button>
 
-                </div>
-
-            </div>
-
+</div>
 
             <!-- =====================================
                  MATERIALS FROM SUPABASE
@@ -541,7 +527,16 @@
     <script
         src="/materials/materials.js"
     ></script>
+    
+<script>
+    function openProgram(course) {
 
+        window.location.href =
+            "/materials/program.html?course=" +
+            encodeURIComponent(course);
+
+    }
+</script>
 </body>
 
 </html>

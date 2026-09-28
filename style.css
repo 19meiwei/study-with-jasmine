@@ -2168,3 +2168,230 @@ footer p {
     }
 
 }
+.payment-section {
+
+    padding:100px 10%;
+    text-align:center;
+
+}
+
+
+.bank-card {
+
+    max-width:450px;
+
+    margin:30px auto;
+
+    padding:30px;
+
+    background:white;
+
+    border-radius:25px;
+
+    border:1px solid #f3d9e3;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+}
+
+
+.bank-card p {
+
+    margin:15px 0;
+
+    color:#5b4b52;
+
+}
+/* FIX PAYMENT SECTION SPACING */
+
+.payment-section {
+
+    padding-top:40px !important;
+
+    margin-top:0 !important;
+
+    min-height:auto !important;
+
+}
+
+
+.payment-container {
+
+    margin-top:0 !important;
+
+    padding-top:20px !important;
+
+}
+
+
+
+.payment-section h2 {
+
+    margin-top:0 !important;
+
+}
+
+
+
+/* giảm khoảng trống giữa Contact và Payment */
+
+.contact-section {
+
+    padding-bottom:40px !important;
+
+    margin-bottom:0 !important;
+
+}
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo a:hover {
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.logo a,
+.nav-links a,
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Remove default link underline */
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+}
+
+/* Keep navbar style */
+.nav-links a {
+    color: #5b4b52;
+}
+
+.nav-links a:hover {
+    color: #d95782;
+}
+
+/* Logo */
+.logo a {
+    color: #3b3036;
+}
+/* =====================================================
+   FIX MATERIAL PAGE VERTICAL SPACING
+===================================================== */
+
+/* Khung tổng của trang */
+.materials-main {
+    padding-bottom: 50px !important;
+}
+
+
+/* Chinese Programs */
+.chinese-programs {
+    margin-top: 35px !important;
+    margin-bottom: 45px !important;
+}
+
+
+/* Khu vực chứa material cards */
+#materialsGrid {
+    margin-top: 30px !important;
+    margin-bottom: 45px !important;
+    min-height: 0 !important;
+}
+
+
+/* Nếu không có material card đang hiện,
+   không được giữ khoảng trắng */
+#materialsGrid:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Khu 01 / 02 / 03 */
+.material-features,
+.features-section,
+.library-features {
+    margin-top: 45px !important;
+    padding-top: 0 !important;
+}
+
+
+/* Nếu section cha đang ép chiều cao */
+.material-library,
+.materials-section,
+.library-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* Giữ tất cả cùng chiều rộng */
+.chinese-programs,
+#materialsGrid,
+.material-features,
+.features-section,
+.library-features {
+    width: min(100% - 40px, 1270px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* 3 feature cards */
+.features-grid,
+.material-features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 28px !important;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .chinese-programs,
+    #materialsGrid,
+    .material-features,
+    .features-section,
+    .library-features {
+        width: calc(100% - 28px) !important;
+    }
+
+    .features-grid,
+    .material-features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
+.features-section {
+    margin-top: 40px !important;
+    padding-top: 0 !important;
+}
+/* FINAL MATERIAL SPACING FIX */
+
+.chinese-programs {
+    margin-bottom: 20px !important;
+}
+
+.features-section,
+.material-features,
+.library-features {
+    margin-top: 20px !important;
+}
+
+.library-section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
