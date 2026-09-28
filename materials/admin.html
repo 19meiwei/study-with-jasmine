@@ -771,7 +771,230 @@
             }
 
         }
+/* =====================================================
+   PAYMENT METHODS
+===================================================== */
 
+.payment-section {
+    margin-top: 55px;
+}
+
+.payment-heading {
+    margin-bottom: 25px;
+}
+
+.payment-heading h1 {
+    font-size: 30px;
+}
+
+
+/* LAYOUT */
+
+.payment-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 0.8fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+
+/* PAYMENT LIST */
+
+#paymentMethodsList {
+    display: grid;
+
+    gap: 12px;
+}
+
+.payment-empty {
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+/* PAYMENT CARD */
+
+.payment-item {
+    padding: 16px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: #fffdfd;
+}
+
+.payment-item-top {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.payment-item h3 {
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+.payment-item p {
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+
+/* QR PREVIEW */
+
+.payment-qr-preview {
+    width: 120px;
+    height: 120px;
+
+    margin-top: 13px;
+
+    object-fit: cover;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: white;
+}
+
+
+/* ACTIVE / INACTIVE */
+
+.active-badge,
+.inactive-badge {
+    padding:
+        5px 8px;
+
+    border-radius: 999px;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.active-badge {
+    background:
+        var(--success-bg);
+
+    color:
+        var(--success-text);
+}
+
+.inactive-badge {
+    background: #f3f0f1;
+
+    color: var(--muted);
+}
+
+
+/* PAYMENT ACTION BUTTONS */
+
+.payment-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+.payment-action-button {
+    min-height: 34px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: var(--pink);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    transition:
+        0.2s ease;
+}
+
+.payment-action-button:hover {
+    border-color:
+        var(--pink);
+
+    background:
+        var(--pink-soft);
+}
+
+.payment-action-button.delete {
+    color:
+        #a94442;
+}
+
+
+/* CANCEL EDIT */
+
+.payment-cancel-button {
+    display: none;
+
+    width: 100%;
+    min-height: 45px;
+
+    margin-top: 10px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: white;
+
+    color: var(--pink);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.payment-cancel-button:hover {
+    background:
+        var(--pink-soft);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .payment-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+}
     </style>
 
 </head>
@@ -1199,7 +1422,249 @@
                 </aside>
 
 
-            </div>
+                        </div>
+
+
+            <!-- =========================================
+                 PAYMENT METHODS
+            ========================================== -->
+
+            <section class="payment-section">
+
+                <div class="page-heading payment-heading">
+
+                    <span class="eyebrow">
+                        PAYMENTS
+                    </span>
+
+                    <h1>
+                        Payment Methods
+                    </h1>
+
+                    <p>
+                        Add and manage payment methods for your students.
+                    </p>
+
+                </div>
+
+
+                <div class="payment-layout">
+
+
+                    <!-- ADD / EDIT PAYMENT -->
+
+                    <section class="card">
+
+                        <h2 id="paymentFormTitle">
+                            Add Payment Method
+                        </h2>
+
+                        <p class="card-description">
+                            Add your bank information and upload a payment QR code.
+                        </p>
+
+
+                        <form id="paymentForm">
+
+                            <input
+                                id="paymentEditId"
+                                type="hidden"
+                            >
+
+                            <input
+                                id="paymentOldQrPath"
+                                type="hidden"
+                            >
+
+
+                            <!-- PAYMENT NAME -->
+
+                            <div class="form-group">
+
+                                <label for="paymentName">
+                                    Payment Name
+                                </label>
+
+                                <input
+                                    id="paymentName"
+                                    type="text"
+                                    placeholder="Example: VietQR"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- BANK -->
+
+                            <div class="form-group">
+
+                                <label for="paymentBank">
+                                    Bank Name
+                                </label>
+
+                                <input
+                                    id="paymentBank"
+                                    type="text"
+                                    placeholder="Example: MB Bank"
+                                >
+
+                            </div>
+
+
+                            <!-- ACCOUNT NAME + NUMBER -->
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="paymentAccountName">
+                                        Account Name
+                                    </label>
+
+                                    <input
+                                        id="paymentAccountName"
+                                        type="text"
+                                        placeholder="DANG THI MY VY"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="paymentAccountNumber">
+                                        Account Number
+                                    </label>
+
+                                    <input
+                                        id="paymentAccountNumber"
+                                        type="text"
+                                        placeholder="Enter account number"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- INSTRUCTIONS -->
+
+                            <div class="form-group">
+
+                                <label for="paymentInstructions">
+                                    Payment Instructions
+                                </label>
+
+                                <textarea
+                                    id="paymentInstructions"
+                                    placeholder="Example: Scan the QR code and include your email in the transfer note."
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- QR -->
+
+                            <div class="form-group">
+
+                                <label for="paymentQrFile">
+                                    Payment QR Image
+                                </label>
+
+                                <input
+                                    id="paymentQrFile"
+                                    class="file-input"
+                                    type="file"
+                                    accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                                >
+
+                                <small class="file-help">
+                                    JPG, PNG or WEBP
+                                </small>
+
+                            </div>
+
+
+                            <!-- ACTIVE -->
+
+                            <div class="publish-box">
+
+                                <input
+                                    id="paymentActive"
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <label for="paymentActive">
+                                    Active — show this payment method to customers
+                                </label>
+
+                            </div>
+
+
+                            <!-- SAVE -->
+
+                            <button
+                                id="paymentSaveButton"
+                                class="publish-button"
+                                type="submit"
+                            >
+                                Add Payment Method
+                            </button>
+
+
+                            <!-- CANCEL EDIT -->
+
+                            <button
+                                id="paymentCancelButton"
+                                class="payment-cancel-button"
+                                type="button"
+                            >
+                                Cancel Edit
+                            </button>
+
+
+                            <!-- STATUS -->
+
+                            <div
+                                id="paymentStatus"
+                                class="status"
+                            ></div>
+
+                        </form>
+
+                    </section>
+
+
+                    <!-- SAVED PAYMENT METHODS -->
+
+                    <aside class="card">
+
+                        <h2>
+                            Saved Payment Methods
+                        </h2>
+
+                        <p class="card-description">
+                            Your current payment options.
+                        </p>
+
+
+                        <div id="paymentMethodsList">
+
+                            <p class="payment-empty">
+                                Loading payment methods...
+                            </p>
+
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+            </section>
+
 
         </section>
 
@@ -1511,7 +1976,9 @@
 
 
                 adminUserId.textContent =
-                    user.id || "—";
+    user.id || "—";
+
+await loadPaymentMethods();
 
 
             } catch (error) {
@@ -2097,7 +2564,1193 @@
             }
         );
 
+    /* =====================================================
+   PAYMENT METHODS
+===================================================== */
 
+const paymentForm =
+    document.getElementById("paymentForm");
+
+const paymentSaveButton =
+    document.getElementById("paymentSaveButton");
+
+const paymentCancelButton =
+    document.getElementById("paymentCancelButton");
+
+const paymentStatus =
+    document.getElementById("paymentStatus");
+
+const paymentMethodsList =
+    document.getElementById("paymentMethodsList");
+
+
+/* =====================================================
+   PAYMENT STATUS
+===================================================== */
+
+function showPaymentStatus(message, type) {
+
+    paymentStatus.textContent =
+        message;
+
+    paymentStatus.className =
+        `status ${type}`;
+
+}
+
+
+/* =====================================================
+   GET PUBLIC QR URL
+===================================================== */
+
+function getPaymentQrUrl(qrPath) {
+
+    if (!qrPath) {
+        return "";
+    }
+
+
+    const { data } =
+        supabaseClient
+            .storage
+            .from("payment-qr")
+            .getPublicUrl(qrPath);
+
+
+    return data.publicUrl;
+
+}
+
+
+/* =====================================================
+   RESET PAYMENT FORM
+===================================================== */
+
+function resetPaymentForm() {
+
+    paymentForm.reset();
+
+
+    document
+        .getElementById("paymentEditId")
+        .value = "";
+
+
+    document
+        .getElementById("paymentOldQrPath")
+        .value = "";
+
+
+    document
+        .getElementById("paymentActive")
+        .checked = true;
+
+
+    document
+        .getElementById("paymentFormTitle")
+        .textContent =
+            "Add Payment Method";
+
+
+    paymentSaveButton.textContent =
+        "Add Payment Method";
+
+
+    paymentCancelButton.style.display =
+        "none";
+
+
+    paymentStatus.className =
+        "status";
+
+
+    paymentStatus.textContent =
+        "";
+
+}
+
+
+/* =====================================================
+   LOAD PAYMENT METHODS
+===================================================== */
+
+async function loadPaymentMethods() {
+
+    paymentMethodsList.innerHTML =
+        `
+        <p class="payment-empty">
+            Loading payment methods...
+        </p>
+        `;
+
+
+    const {
+        data,
+        error
+    } =
+        await supabaseClient
+            .from("payment_methods")
+            .select("*")
+            .order(
+                "created_at",
+                {
+                    ascending: false
+                }
+            );
+
+
+    if (error) {
+
+        console.error(
+            "Payment methods load error:",
+            error
+        );
+
+
+        paymentMethodsList.innerHTML =
+            `
+            <p class="payment-empty">
+                Could not load payment methods.
+            </p>
+            `;
+
+
+        return;
+
+    }
+
+
+    if (
+        !data ||
+        data.length === 0
+    ) {
+
+        paymentMethodsList.innerHTML =
+            `
+            <p class="payment-empty">
+                No payment methods yet.
+            </p>
+            `;
+
+
+        return;
+
+    }
+
+
+    paymentMethodsList.innerHTML =
+        "";
+
+
+    data.forEach(
+        (method) => {
+
+            createPaymentMethodCard(
+                method
+            );
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   CREATE PAYMENT METHOD CARD
+===================================================== */
+
+function createPaymentMethodCard(method) {
+
+    const item =
+        document.createElement("div");
+
+
+    item.className =
+        "payment-item";
+
+
+    /* TOP */
+
+    const top =
+        document.createElement("div");
+
+
+    top.className =
+        "payment-item-top";
+
+
+    const info =
+        document.createElement("div");
+
+
+    const title =
+        document.createElement("h3");
+
+
+    title.textContent =
+        method.name ||
+        "Payment Method";
+
+
+    const bankDetails =
+        document.createElement("p");
+
+
+    const details = [
+
+        method.bank_name,
+
+        method.account_name,
+
+        method.account_number
+
+    ].filter(Boolean);
+
+
+    bankDetails.textContent =
+        details.join(" • ") ||
+        "No bank information";
+
+
+    info.appendChild(
+        title
+    );
+
+
+    info.appendChild(
+        bankDetails
+    );
+
+
+    /* STATUS BADGE */
+
+    const badge =
+        document.createElement("span");
+
+
+    if (method.is_active) {
+
+        badge.className =
+            "active-badge";
+
+
+        badge.textContent =
+            "Active";
+
+    } else {
+
+        badge.className =
+            "inactive-badge";
+
+
+        badge.textContent =
+            "Inactive";
+
+    }
+
+
+    top.appendChild(
+        info
+    );
+
+
+    top.appendChild(
+        badge
+    );
+
+
+    item.appendChild(
+        top
+    );
+
+
+    /* INSTRUCTIONS */
+
+    if (method.instructions) {
+
+        const instructions =
+            document.createElement("p");
+
+
+        instructions.textContent =
+            method.instructions;
+
+
+        item.appendChild(
+            instructions
+        );
+
+    }
+
+
+    /* QR */
+
+    if (method.qr_path) {
+
+        const qrImage =
+            document.createElement("img");
+
+
+        qrImage.className =
+            "payment-qr-preview";
+
+
+        qrImage.src =
+            getPaymentQrUrl(
+                method.qr_path
+            );
+
+
+        qrImage.alt =
+            `${method.name} QR Code`;
+
+
+        item.appendChild(
+            qrImage
+        );
+
+    }
+
+
+    /* ACTIONS */
+
+    const actions =
+        document.createElement("div");
+
+
+    actions.className =
+        "payment-actions";
+
+
+    /* EDIT */
+
+    const editButton =
+        document.createElement("button");
+
+
+    editButton.type =
+        "button";
+
+
+    editButton.className =
+        "payment-action-button";
+
+
+    editButton.textContent =
+        "Edit";
+
+
+    editButton.addEventListener(
+        "click",
+        () => {
+
+            startPaymentEdit(
+                method
+            );
+
+        }
+    );
+
+
+    /* ACTIVATE / DEACTIVATE */
+
+    const toggleButton =
+        document.createElement("button");
+
+
+    toggleButton.type =
+        "button";
+
+
+    toggleButton.className =
+        "payment-action-button";
+
+
+    toggleButton.textContent =
+        method.is_active
+            ? "Deactivate"
+            : "Activate";
+
+
+    toggleButton.addEventListener(
+        "click",
+        () => {
+
+            togglePaymentMethod(
+                method
+            );
+
+        }
+    );
+
+
+    /* DELETE */
+
+    const deleteButton =
+        document.createElement("button");
+
+
+    deleteButton.type =
+        "button";
+
+
+    deleteButton.className =
+        "payment-action-button delete";
+
+
+    deleteButton.textContent =
+        "Delete";
+
+
+    deleteButton.addEventListener(
+        "click",
+        () => {
+
+            deletePaymentMethod(
+                method
+            );
+
+        }
+    );
+
+
+    actions.appendChild(
+        editButton
+    );
+
+
+    actions.appendChild(
+        toggleButton
+    );
+
+
+    actions.appendChild(
+        deleteButton
+    );
+
+
+    item.appendChild(
+        actions
+    );
+
+
+    paymentMethodsList.appendChild(
+        item
+    );
+
+}
+
+
+/* =====================================================
+   EDIT PAYMENT METHOD
+===================================================== */
+
+function startPaymentEdit(method) {
+
+    document
+        .getElementById("paymentEditId")
+        .value =
+            method.id;
+
+
+    document
+        .getElementById("paymentOldQrPath")
+        .value =
+            method.qr_path || "";
+
+
+    document
+        .getElementById("paymentName")
+        .value =
+            method.name || "";
+
+
+    document
+        .getElementById("paymentBank")
+        .value =
+            method.bank_name || "";
+
+
+    document
+        .getElementById("paymentAccountName")
+        .value =
+            method.account_name || "";
+
+
+    document
+        .getElementById("paymentAccountNumber")
+        .value =
+            method.account_number || "";
+
+
+    document
+        .getElementById("paymentInstructions")
+        .value =
+            method.instructions || "";
+
+
+    document
+        .getElementById("paymentActive")
+        .checked =
+            Boolean(
+                method.is_active
+            );
+
+
+    document
+        .getElementById("paymentQrFile")
+        .value =
+            "";
+
+
+    document
+        .getElementById("paymentFormTitle")
+        .textContent =
+            "Edit Payment Method";
+
+
+    paymentSaveButton.textContent =
+        "Save Changes";
+
+
+    paymentCancelButton.style.display =
+        "block";
+
+
+    paymentStatus.className =
+        "status";
+
+
+    paymentStatus.textContent =
+        "";
+
+
+    paymentForm.scrollIntoView(
+        {
+            behavior:
+                "smooth",
+
+            block:
+                "start"
+        }
+    );
+
+}
+
+
+/* =====================================================
+   CANCEL EDIT
+===================================================== */
+
+paymentCancelButton.addEventListener(
+    "click",
+    () => {
+
+        resetPaymentForm();
+
+    }
+);
+
+
+/* =====================================================
+   ADD / UPDATE PAYMENT METHOD
+===================================================== */
+
+paymentForm.addEventListener(
+    "submit",
+    async (event) => {
+
+        event.preventDefault();
+
+
+        /* VALUES */
+
+        const editId =
+            document
+                .getElementById(
+                    "paymentEditId"
+                )
+                .value;
+
+
+        const oldQrPath =
+            document
+                .getElementById(
+                    "paymentOldQrPath"
+                )
+                .value;
+
+
+        const name =
+            document
+                .getElementById(
+                    "paymentName"
+                )
+                .value
+                .trim();
+
+
+        const bankName =
+            document
+                .getElementById(
+                    "paymentBank"
+                )
+                .value
+                .trim();
+
+
+        const accountName =
+            document
+                .getElementById(
+                    "paymentAccountName"
+                )
+                .value
+                .trim();
+
+
+        const accountNumber =
+            document
+                .getElementById(
+                    "paymentAccountNumber"
+                )
+                .value
+                .trim();
+
+
+        const instructions =
+            document
+                .getElementById(
+                    "paymentInstructions"
+                )
+                .value
+                .trim();
+
+
+        const isActive =
+            document
+                .getElementById(
+                    "paymentActive"
+                )
+                .checked;
+
+
+        const qrFile =
+            document
+                .getElementById(
+                    "paymentQrFile"
+                )
+                .files[0];
+
+
+        /* VALIDATION */
+
+        if (!name) {
+
+            showPaymentStatus(
+                "Please enter a payment name.",
+                "error"
+            );
+
+
+            return;
+
+        }
+
+
+        /*
+            New payment methods require a QR.
+            Editing can keep the old QR.
+        */
+
+        if (
+            !editId &&
+            !qrFile
+        ) {
+
+            showPaymentStatus(
+                "Please choose a QR image.",
+                "error"
+            );
+
+
+            return;
+
+        }
+
+
+        let newQrPath =
+            oldQrPath || null;
+
+
+        let uploadedNewQr =
+            false;
+
+
+        paymentSaveButton.disabled =
+            true;
+
+
+        paymentSaveButton.textContent =
+            "Saving...";
+
+
+        try {
+
+
+            /* =============================================
+               UPLOAD NEW QR IF SELECTED
+            ============================================= */
+
+            if (qrFile) {
+
+                const extension =
+                    qrFile
+                        .name
+                        .split(".")
+                        .pop()
+                        .toLowerCase();
+
+
+                const allowedExtensions = [
+
+                    "jpg",
+
+                    "jpeg",
+
+                    "png",
+
+                    "webp"
+
+                ];
+
+
+                if (
+                    !allowedExtensions
+                        .includes(
+                            extension
+                        )
+                ) {
+
+                    throw new Error(
+                        "QR image must be JPG, PNG, or WEBP."
+                    );
+
+                }
+
+
+                const safeName =
+                    makeSafeName(
+                        name
+                    );
+
+
+                newQrPath =
+                    `${Date.now()}-${safeName}.${extension}`;
+
+
+                showPaymentStatus(
+                    "Uploading QR image...",
+                    "success"
+                );
+
+
+                const {
+                    error: uploadError
+                } =
+                    await supabaseClient
+                        .storage
+                        .from(
+                            "payment-qr"
+                        )
+                        .upload(
+                            newQrPath,
+                            qrFile,
+                            {
+                                cacheControl:
+                                    "3600",
+
+                                upsert:
+                                    false
+                            }
+                        );
+
+
+                if (uploadError) {
+
+                    throw new Error(
+                        "QR upload failed: " +
+                        uploadError.message
+                    );
+
+                }
+
+
+                uploadedNewQr =
+                    true;
+
+            }
+
+
+            /* =============================================
+               DATABASE DATA
+            ============================================= */
+
+            const paymentData = {
+
+                name:
+                    name,
+
+                bank_name:
+                    bankName || null,
+
+                account_name:
+                    accountName || null,
+
+                account_number:
+                    accountNumber || null,
+
+                instructions:
+                    instructions || null,
+
+                qr_path:
+                    newQrPath,
+
+                is_active:
+                    isActive
+
+            };
+
+
+            let databaseError;
+
+
+            /* =============================================
+               UPDATE EXISTING
+            ============================================= */
+
+            if (editId) {
+
+                const {
+                    error
+                } =
+                    await supabaseClient
+                        .from(
+                            "payment_methods"
+                        )
+                        .update(
+                            paymentData
+                        )
+                        .eq(
+                            "id",
+                            editId
+                        );
+
+
+                databaseError =
+                    error;
+
+            }
+
+
+            /* =============================================
+               INSERT NEW
+            ============================================= */
+
+            else {
+
+                const {
+                    error
+                } =
+                    await supabaseClient
+                        .from(
+                            "payment_methods"
+                        )
+                        .insert(
+                            paymentData
+                        );
+
+
+                databaseError =
+                    error;
+
+            }
+
+
+            /* =============================================
+               DATABASE ERROR
+            ============================================= */
+
+            if (databaseError) {
+
+
+                /*
+                    If database save failed,
+                    remove newly uploaded QR.
+                */
+
+                if (
+                    uploadedNewQr &&
+                    newQrPath
+                ) {
+
+                    await supabaseClient
+                        .storage
+                        .from(
+                            "payment-qr"
+                        )
+                        .remove(
+                            [
+                                newQrPath
+                            ]
+                        );
+
+                }
+
+
+                throw new Error(
+                    "Database error: " +
+                    databaseError.message
+                );
+
+            }
+
+
+            /* =============================================
+               REMOVE OLD QR AFTER SUCCESSFUL EDIT
+            ============================================= */
+
+            if (
+                editId &&
+                uploadedNewQr &&
+                oldQrPath &&
+                oldQrPath !== newQrPath
+            ) {
+
+                const {
+                    error: oldQrDeleteError
+                } =
+                    await supabaseClient
+                        .storage
+                        .from(
+                            "payment-qr"
+                        )
+                        .remove(
+                            [
+                                oldQrPath
+                            ]
+                        );
+
+
+                if (oldQrDeleteError) {
+
+                    console.warn(
+                        "Old QR cleanup failed:",
+                        oldQrDeleteError
+                    );
+
+                }
+
+            }
+
+
+            /* =============================================
+               SUCCESS
+            ============================================= */
+
+            if (editId) {
+
+                showPaymentStatus(
+                    "Payment method updated successfully!",
+                    "success"
+                );
+
+            } else {
+
+                showPaymentStatus(
+                    "Payment method added successfully!",
+                    "success"
+                );
+
+            }
+
+
+            await loadPaymentMethods();
+
+
+            setTimeout(
+                () => {
+
+                    resetPaymentForm();
+
+                },
+                900
+            );
+
+
+        } catch (error) {
+
+            console.error(
+                "Payment method error:",
+                error
+            );
+
+
+            showPaymentStatus(
+                error.message ||
+                "Something went wrong.",
+                "error"
+            );
+
+
+        } finally {
+
+            paymentSaveButton.disabled =
+                false;
+
+
+            paymentSaveButton.textContent =
+                editId
+                    ? "Save Changes"
+                    : "Add Payment Method";
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   ACTIVATE / DEACTIVATE
+===================================================== */
+
+async function togglePaymentMethod(method) {
+
+    const {
+        error
+    } =
+        await supabaseClient
+            .from(
+                "payment_methods"
+            )
+            .update(
+                {
+                    is_active:
+                        !method.is_active
+                }
+            )
+            .eq(
+                "id",
+                method.id
+            );
+
+
+    if (error) {
+
+        alert(
+            "Could not update payment method: " +
+            error.message
+        );
+
+
+        return;
+
+    }
+
+
+    await loadPaymentMethods();
+
+}
+
+
+/* =====================================================
+   DELETE PAYMENT METHOD
+===================================================== */
+
+async function deletePaymentMethod(method) {
+
+    const confirmed =
+        window.confirm(
+            `Delete "${method.name}"?`
+        );
+
+
+    if (!confirmed) {
+
+        return;
+
+    }
+
+
+    /*
+        Delete database row first.
+    */
+
+    const {
+        error
+    } =
+        await supabaseClient
+            .from(
+                "payment_methods"
+            )
+            .delete()
+            .eq(
+                "id",
+                method.id
+            );
+
+
+    if (error) {
+
+        alert(
+            "Could not delete payment method: " +
+            error.message
+        );
+
+
+        return;
+
+    }
+
+
+    /*
+        Remove QR from Storage.
+    */
+
+    if (method.qr_path) {
+
+        const {
+            error: qrDeleteError
+        } =
+            await supabaseClient
+                .storage
+                .from(
+                    "payment-qr"
+                )
+                .remove(
+                    [
+                        method.qr_path
+                    ]
+                );
+
+
+        if (qrDeleteError) {
+
+            console.warn(
+                "QR cleanup failed:",
+                qrDeleteError
+            );
+
+        }
+
+    }
+
+
+    resetPaymentForm();
+
+
+    await loadPaymentMethods();
+
+}
 
         /* =====================================================
            START PAGE
