@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study with Jasmine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="brand">
+
+        <div class="brand-mark">
+            学
+        </div>
+
+        <div class="brand-copy">
+            <strong>Study with Jasmine</strong>
+            <span>和 Jasmine 一起学习吧！</span>
+        </div>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="#home" data-i18n="navHome">
+            Home
+        </a>
+
+        <a href="#classes" data-i18n="navClasses">
+            Classes
+        </a>
+
+        <a href="#schedule" data-i18n="navSchedule">
+            Schedule
+        </a>
+
+        <a href="materials/index.html" data-i18n="navResources">
+            Materials
+        </a>
+
+        <a href="#about" data-i18n="navAbout">
+            About
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <div class="language-switcher">
+
+            <button
+                class="language-btn"
+                data-language="vi"
+                type="button"
+            >
+                VI
+            </button>
+
+            <button
+                class="language-btn"
+                data-language="zh"
+                type="button"
+            >
+                中文
+            </button>
+
+            <button
+                class="language-btn active"
+                data-language="en"
+                type="button"
+            >
+                EN
+            </button>
+
+        </div>
+
+
+        <a
+            href="#contact"
+            class="book-btn"
+            data-i18n="navBook"
+        >
+            Book a Lesson
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            ONLINE LESSONS
+        </span>
+
+        <p class="hero-chinese">
+            和 Jasmine 一起学习吧！
+        </p>
+
+
+        <h1 data-i18n="heroTitle">
+            Learn a little,<br>
+            <span>grow every day.</span>
+        </h1>
+
+
+        <p
+            class="hero-description"
+            data-i18n="heroDescription"
+        >
+            Friendly and easy-to-follow online lessons personalized
+            around each student's goals and learning pace.
+        </p>
+
+
+        <div class="subject-list">
+
+            <span>Chinese</span>
+            <span>Vietnamese</span>
+            <span>English Speaking</span>
+            <span>Cambridge Math</span>
+
+        </div>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#classes"
+                class="primary-btn"
+                data-i18n="exploreClasses"
+            >
+                Explore Classes
+            </a>
+
+            <a
+                href="#schedule"
+                class="secondary-btn"
+                data-i18n="viewSchedule"
+            >
+                View Schedule
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-image-area">
+
+        <div class="image-decoration"></div>
+
+
+        <div class="hero-photo-card">
+
+            <div class="hero-photo-window">
+
+                <img
+                    src="images/jasmine.jpg"
+                    alt="Jasmine"
+                    class="hero-photo"
+                >
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                <div>
+                    <strong>Jasmine</strong>
+                    <span>Online Tutor</span>
+                </div>
+
+                <span class="caption-cn">
+                    老师
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-note">
+            <strong>你好!</strong>
+            <span>Hello!</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INTRO STRIP
+========================================= -->
+
+<div class="intro-strip">
+
+    <span>Learn languages</span>
+
+    <i>·</i>
+
+    <span>Build confidence</span>
+
+    <i>·</i>
+
+    <span>Enjoy mathematics</span>
+
+    <i>·</i>
+
+    <span>Learn together</span>
+
+</div>
+
+
+
+<!-- =========================================
+     CLASSES
+========================================= -->
+
+<section
+    class="section classes-section"
+    id="classes"
+>
+
+    <div class="section-header">
+
+        <div>
+
+            <span class="section-label">
+                CLASSES · 课程
+            </span>
+
+            <h2 data-i18n="classesTitle">
+                Classes with Jasmine
+            </h2>
+
+        </div>
+
+
+        <p data-i18n="classesIntro">
+            Choose a class that fits your learning goals.
+        </p>
+
+    </div>
+
+
+
+    <div class="class-grid">
+
+
+        <!-- CHINESE -->
+
+        <article class="class-card pink-card">
+
+            <div class="card-top">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <span class="card-symbol">
+                    中
+                </span>
+
+            </div>
+
+
+            <h3 data-i18n="chineseTitle">
+                Chinese
+            </h3>
+
+
+            <p data-i18n="chineseText">
+                Practical Chinese for everyday communication,
+                study and professional environments.
+            </p>
+
+
+            <div class="tags">
+
+                <span>Pinyin</span>
+                <span>Speaking</span>
+                <span>Practical</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- VIETNAMESE -->
+
+        <article class="class-card yellow-card">
+
+            <div class="card-top">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <span class="card-symbol">
+                    越
+                </span>
+
+            </div>
+
+
+            <h3 data-i18n="vietnameseTitle">
+                Vietnamese for Foreigners
+            </h3>
+
+
+            <p data-i18n="vietnameseText">
+                Practical Vietnamese conversation designed
+                for international learners.
+            </p>
+
+
+            <div class="tags">
+
+                <span>Conversation</span>
+                <span>Daily Life</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ENGLISH -->
+
+        <article class="class-card green-card">
+
+            <div class="card-top">
+
+                <span class="card-number">
+                    03
+                </span>
+
+                <span class="card-symbol">
+                    A
+                </span>
+
+            </div>
+
+
+            <h3>
+                English Speaking
+            </h3>
+
+
+            <p data-i18n="englishText">
+                Build pronunciation, conversation skills
+                and confidence in spoken English.
+            </p>
+
+
+            <div class="tags">
+
+                <span>Speaking</span>
+                <span>Pronunciation</span>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MATH -->
+
+        <article class="class-card blue-card">
+
+            <div class="card-top">
+
+                <span class="card-number">
+                    04
+                </span>
+
+                <span class="card-symbol">
+                    ∑
+                </span>
+
+            </div>
+
+
+            <h3>
+                Cambridge Primary Math
+            </h3>
+
+
+            <p data-i18n="mathText">
+                Cambridge Primary Mathematics explained
+                clearly and step by step.
+            </p>
+
+
+            <div class="tags">
+
+                <span>Primary</span>
+                <span>Cambridge</span>
+                <span>Math</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SCHEDULE
+========================================= -->
+
+<section
+    class="schedule-section"
+    id="schedule"
+>
+
+    <div class="schedule-heading">
+
+        <span class="section-label">
+            SCHEDULE · 上课时间
+        </span>
+
+
+        <h2 data-i18n="scheduleTitle">
+            Lesson Schedule
+        </h2>
+
+
+        <p data-i18n="scheduleSubtitle">
+            All available lesson times are shown in Vietnam time.
+        </p>
+
+
+        <div class="timezone-badge">
+
+            🇻🇳
+
+            <span data-i18n="vietnamTime">
+                Vietnam Time · GMT+7
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="schedule-container">
+
+
+        <!-- MONDAY -->
+
+        <article class="schedule-item">
+
+            <div class="schedule-day">
+
+                <span class="day-short">
+                    MON
+                </span>
+
+                <strong data-i18n="monday">
+                    Monday
+                </strong>
+
+            </div>
+
+            <div class="schedule-time">
+                07:00 – 10:30
+            </div>
+
+        </article>
+
+
+
+        <!-- WEDNESDAY -->
+
+        <article class="schedule-item">
+
+            <div class="schedule-day">
+
+                <span class="day-short">
+                    WED
+                </span>
+
+                <strong data-i18n="wednesday">
+                    Wednesday
+                </strong>
+
+            </div>
+
+            <div class="schedule-time">
+                07:00 – 10:30
+            </div>
+
+        </article>
+
+
+
+        <!-- FRIDAY -->
+
+        <article class="schedule-item">
+
+            <div class="schedule-day">
+
+                <span class="day-short">
+                    FRI
+                </span>
+
+                <strong data-i18n="friday">
+                    Friday
+                </strong>
+
+            </div>
+
+            <div class="schedule-time">
+                07:00 – 10:30
+            </div>
+
+        </article>
+
+
+
+        <!-- SATURDAY -->
+
+        <article class="schedule-item weekend">
+
+            <div class="schedule-day">
+
+                <span class="day-short">
+                    SAT
+                </span>
+
+                <strong data-i18n="saturday">
+                    Saturday
+                </strong>
+
+            </div>
+
+            <div class="schedule-time">
+                04:30 – 11:00
+            </div>
+
+        </article>
+
+
+
+        <!-- SUNDAY -->
+
+        <article class="schedule-item weekend">
+
+            <div class="schedule-day">
+
+                <span class="day-short">
+                    SUN
+                </span>
+
+                <strong data-i18n="sunday">
+                    Sunday
+                </strong>
+
+            </div>
+
+            <div class="schedule-time">
+                04:30 – 11:00
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <div class="about-photo-wrapper">
+
+        <div class="about-shape"></div>
+
+        <video
+    class="about-photo about-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+>
+    <source
+        src="images/jasmine-about.mp4"
+        type="video/mp4"
+    >
+
+    Your browser does not support video.
+</video>
+
+    </div>
+
+
+
+    <div class="about-content">
+
+        <span class="section-label">
+            ABOUT · 关于我
+        </span>
+
+
+        <h2 data-i18n="aboutTitle">
+            Hi, I'm Jasmine.
+        </h2>
+
+
+        <p data-i18n="aboutOne">
+    I believe the best lessons are the ones that make you feel comfortable,
+    confident and excited to keep learning. That's why I keep my classes
+    practical, easy to follow and personalized to you.
+</p>
+
+<p data-i18n="aboutTwo">
+    From everyday conversations to Chinese for work, travel and study,
+    we'll focus on language you can actually use — one step at a time.
+</p>
+
+
+
+        <!-- =================================
+             SPECIALIZED CHINESE PROGRAMS
+        ================================== -->
+
+        <div class="teaching-programs">
+
+            <p
+                class="programs-title"
+                data-i18n="programsTitle"
+            >
+                Specialized Chinese Programs
+            </p>
+
+
+            <div class="program-grid">
+
+
+                <!-- BUSINESS CHINESE -->
+
+                <div class="program-item">
+
+                    <span class="program-icon">
+                        商
+                    </span>
+
+                    <div>
+
+                        <strong data-i18n="businessChinese">
+                            Business Chinese
+                        </strong>
+
+                        <small>
+                            商务中文
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FACTORY CHINESE -->
+
+                <div class="program-item">
+
+                    <span class="program-icon">
+                        工
+                    </span>
+
+                    <div>
+
+                        <strong data-i18n="factoryChinese">
+                            Factory & Workplace Chinese
+                        </strong>
+
+                        <small>
+                            工厂与职场中文
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TRAVEL & HOSPITALITY -->
+
+                <div class="program-item">
+
+                    <span class="program-icon">
+                        旅
+                    </span>
+
+                    <div>
+
+                        <strong data-i18n="travelChinese">
+                            Travel & Hospitality Chinese
+                        </strong>
+
+                        <small>
+                            旅游与酒店中文
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- YCT -->
+
+                <div class="program-item">
+
+                    <span class="program-icon">
+                        童
+                    </span>
+
+                    <div>
+
+                        <strong data-i18n="yctChinese">
+                            YCT Chinese for Kids
+                        </strong>
+
+                        <small>
+                            少儿 YCT 中文
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ENGLISH - CHINESE -->
+
+                <div class="program-item">
+
+                    <span class="program-icon">
+                        EN
+                    </span>
+
+                    <div>
+
+                        <strong data-i18n="bilingualChinese">
+                            English–Chinese Bilingual Chinese
+                        </strong>
+
+                        <small>
+                            英中双语中文
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TEACHING STYLE -->
+
+        <div class="about-points">
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <strong data-i18n="easy">
+                    Easy to Follow
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <strong data-i18n="practical">
+                    Practical
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <strong data-i18n="personalized">
+                    Personalized
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+    class="contact-section"
+    id="contact"
+>
+
+    <div class="contact-heading">
+
+        <span class="section-label light-label">
+            LET'S STUDY TOGETHER
+        </span>
+
+
+        <h2 data-i18n="contactTitle">
+            Book a Lesson with Jasmine
+        </h2>
+
+
+        <p data-i18n="contactIntro">
+            Choose what you would like to study
+            and a time that works for you.
+        </p>
+
+    </div>
+
+
+
+    <form
+        class="contact-form"
+        id="lessonForm"
+    >
+
+
+        <!-- NAME -->
+
+        <label>
+
+            <span data-i18n="yourName">
+                Your Name
+            </span>
+
+            <input
+                id="studentName"
+                type="text"
+                required
+            >
+
+        </label>
+
+
+
+        <!-- SUBJECT -->
+
+        <label>
+
+            <span data-i18n="subject">
+                Subject
+            </span>
+
+
+            <select
+                id="studentSubject"
+                required
+            >
+
+                <option
+                    value=""
+                    data-i18n="chooseSubject"
+                >
+                    Choose a subject
+                </option>
+
+                <option value="Chinese">
+                    Chinese
+                </option>
+
+                <option value="Vietnamese">
+                    Vietnamese
+                </option>
+
+                <option value="English Speaking">
+                    English Speaking
+                </option>
+
+                <option value="Cambridge Primary Math">
+                    Cambridge Primary Math
+                </option>
+
+            </select>
+
+        </label>
+
+
+
+        <!-- LEVEL -->
+
+        <label>
+
+            <span data-i18n="level">
+                Current Level
+            </span>
+
+
+            <select
+                id="studentLevel"
+                required
+            >
+
+                <option
+                    value=""
+                    data-i18n="chooseLevel"
+                >
+                    Choose your level
+                </option>
+
+                <option
+                    value="Beginner"
+                    data-i18n="beginner"
+                >
+                    Beginner
+                </option>
+
+                <option
+                    value="Basic"
+                    data-i18n="basic"
+                >
+                    Basic
+                </option>
+
+                <option
+                    value="Intermediate"
+                    data-i18n="intermediate"
+                >
+                    Intermediate
+                </option>
+
+            </select>
+
+        </label>
+
+
+
+        <!-- TIME -->
+
+        <label>
+
+            <span data-i18n="preferredTime">
+                Preferred Time
+            </span>
+
+            <input
+                id="studentTime"
+                type="text"
+                placeholder="Example: Saturday, 08:00"
+            >
+
+        </label>
+
+
+
+        <button
+            type="submit"
+            class="form-submit"
+            data-i18n="prepareMessage"
+        >
+            Prepare Registration Message
+        </button>
+
+
+
+        <div
+            class="message-result"
+            id="messageResult"
+            hidden
+        >
+
+            <p id="generatedMessage"></p>
+
+            <button
+                type="button"
+                id="copyMessage"
+                data-i18n="copy"
+            >
+                Copy
+            </button>
+
+        </div>
+
+    </form>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <strong>
+            Study with Jasmine
+        </strong>
+
+        <span>
+            和 Jasmine 一起学习吧！
+        </span>
+
+    </div>
+
+
+    <p>
+        Learn a little every day.
+    </p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

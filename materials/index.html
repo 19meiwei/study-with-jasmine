@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================
+         BASIC SETTINGS
+    ========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Study with Jasmine learning materials for Chinese, Vietnamese, English and Cambridge Primary Math."
+    >
+
+    <title>Material Library | Study with Jasmine</title>
+
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================================
+         MATERIAL PAGE CSS
+    ========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="/materials/materials.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <!-- Brand -->
+
+        <a
+            href="/"
+            class="brand"
+        >
+            <div class="brand-icon">
+                学
+            </div>
+
+            <div class="brand-text">
+                <strong>
+                    Study with Jasmine
+                </strong>
+
+                <small>
+                    和 Jasmine 一起学习吧！
+                </small>
+            </div>
+        </a>
+
+
+        <!-- Main Navigation -->
+
+        <nav
+            class="nav-links"
+            aria-label="Main navigation"
+        >
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/#classes">
+                Classes
+            </a>
+
+            <a href="/#schedule">
+                Schedule
+            </a>
+
+            <a
+                href="/materials/"
+                class="active"
+                aria-current="page"
+            >
+                Materials
+            </a>
+
+            <a href="/#about">
+                About
+            </a>
+        </nav>
+
+
+        <!-- Navigation Actions -->
+
+        <div class="nav-actions">
+
+            <a
+                href="/materials/auth.html"
+                class="login-button"
+            >
+                Log In
+            </a>
+
+            <a
+                href="/#contact"
+                class="book-button"
+            >
+                Book a Lesson
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main>
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="materials-hero">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    STUDY WITH JASMINE · 学习资料
+                </span>
+
+
+                <h1>
+                    Learn at your
+                    <span>own pace.</span>
+                </h1>
+
+
+                <p>
+                    Practical learning materials designed to make
+                    studying clearer, easier and more enjoyable.
+                </p>
+
+
+                <!-- Subjects -->
+
+                <div class="hero-subjects">
+
+                    <span>
+                        中文 Chinese
+                    </span>
+
+                    <span>
+                        Tiếng Việt
+                    </span>
+
+                    <span>
+                        English
+                    </span>
+
+                    <span>
+                        Cambridge Math
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MATERIAL LIBRARY
+        ====================================== -->
+
+        <section class="library-section">
+
+            <!-- Library Heading -->
+
+            <div class="library-header">
+
+                <div>
+
+                    <span class="section-label">
+                        MATERIAL LIBRARY
+                    </span>
+
+                    <h2>
+                        Find your next lesson.
+                    </h2>
+
+                    <p>
+                        Browse worksheets, lesson notes,
+                        practice packs and learning resources.
+                    </p>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="materialSearch"
+                        placeholder="Search materials..."
+                        autocomplete="off"
+                        aria-label="Search materials"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 SUBJECT FILTERS
+            ====================================== -->
+
+            <div
+                class="filter-section"
+                aria-label="Filter materials by subject"
+            >
+
+                <button
+                    class="filter-button active"
+                    data-filter="all"
+                    type="button"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="filter-button"
+                    data-filter="Chinese"
+                    type="button"
+                >
+                    Chinese
+                </button>
+
+
+                <button
+                    class="filter-button"
+                    data-filter="Vietnamese"
+                    type="button"
+                >
+                    Vietnamese
+                </button>
+
+
+                <button
+                    class="filter-button"
+                    data-filter="English"
+                    type="button"
+                >
+                    English
+                </button>
+
+
+                <button
+                    class="filter-button"
+                    data-filter="Cambridge Math"
+                    type="button"
+                >
+                    Cambridge Math
+                </button>
+
+            </div>
+
+
+            <!-- =====================================
+                 CHINESE PROGRAM FILTERS
+            ====================================== -->
+
+            <div class="chinese-categories">
+
+                <span class="category-title">
+                    Chinese Programs
+                </span>
+
+
+                <div class="category-buttons">
+
+                    <!-- Business Chinese -->
+
+                    <button
+                        type="button"
+                        data-course="Business Chinese"
+                    >
+                        商
+
+                        <span>
+                            Business Chinese
+                        </span>
+                    </button>
+
+
+                    <!-- Factory & Workplace -->
+
+                    <button
+                        type="button"
+                        data-course="Factory & Workplace Chinese"
+                    >
+                        工
+
+                        <span>
+                            Factory &amp; Workplace
+                        </span>
+                    </button>
+
+
+                    <!-- Travel & Hospitality -->
+
+                    <button
+                        type="button"
+                        data-course="Travel & Hospitality Chinese"
+                    >
+                        旅
+
+                        <span>
+                            Travel &amp; Hospitality
+                        </span>
+                    </button>
+
+
+                    <!-- YCT -->
+
+                    <button
+                        type="button"
+                        data-course="YCT Chinese for Kids"
+                    >
+                        童
+
+                        <span>
+                            YCT for Kids
+                        </span>
+                    </button>
+
+
+                    <!-- English-Chinese -->
+
+                    <button
+                        type="button"
+                        data-course="English-Chinese Bilingual Chinese"
+                    >
+                        EN
+
+                        <span>
+                            English–Chinese
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 MATERIALS FROM SUPABASE
+
+                 materials.js inserts material cards
+                 into #materialsGrid.
+            ====================================== -->
+
+            <div
+                class="materials-grid"
+                id="materialsGrid"
+            >
+
+                <!-- Initial Loading State -->
+
+                <div class="loading-materials">
+
+                    <div
+                        class="loading-circle"
+                        aria-hidden="true"
+                    ></div>
+
+                    <p>
+                        Loading materials...
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BENEFITS
+        ====================================== -->
+
+        <section class="library-benefits">
+
+            <!-- Benefit 01 -->
+
+            <div class="benefit">
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Easy to Follow
+                </h3>
+
+                <p>
+                    Clear explanations designed for
+                    independent learning.
+                </p>
+
+            </div>
+
+
+            <!-- Benefit 02 -->
+
+            <div class="benefit">
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Practical
+                </h3>
+
+                <p>
+                    Materials focused on useful,
+                    real-world learning.
+                </p>
+
+            </div>
+
+
+            <!-- Benefit 03 -->
+
+            <div class="benefit">
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Learn Anywhere
+                </h3>
+
+                <p>
+                    Access your learning materials
+                    whenever you need them.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <div class="brand-icon">
+                学
+            </div>
+
+
+            <div>
+
+                <strong>
+                    Study with Jasmine
+                </strong>
+
+                <small>
+                    Learn a little every day.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            © 2026 Study with Jasmine
+        </p>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+
+         Supabase MUST load before materials.js.
+    ========================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+    <script
+        src="/materials/materials.js"
+    ></script>
+
+</body>
+
+</html>

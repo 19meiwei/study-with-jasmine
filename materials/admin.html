@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Study with Jasmine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+            --bg: #fffafb;
+            --white: #ffffff;
+
+            --text: #44383c;
+            --muted: #88777d;
+
+            --pink: #d85f7e;
+            --pink-dark: #b94b69;
+            --pink-soft: #fff1f4;
+
+            --cream: #fff8ed;
+
+            --border: #eedfe3;
+
+            --success-bg: #eff9f0;
+            --success-text: #427547;
+
+            --error-bg: #fff0f0;
+            --error-text: #a94442;
+
+            --shadow:
+                0 15px 45px rgba(91, 57, 67, 0.06);
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            min-height: 100vh;
+
+            background: var(--bg);
+
+            color: var(--text);
+
+            font-family:
+                "DM Sans",
+                "Noto Sans SC",
+                sans-serif;
+
+            line-height: 1.6;
+        }
+
+
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+
+        button {
+            cursor: pointer;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        /* =====================================================
+           NAVBAR
+        ===================================================== */
+
+        .navbar {
+            min-height: 78px;
+
+            padding: 0 6%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 25px;
+
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background:
+                rgba(255, 250, 251, 0.95);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 12px;
+
+            background: var(--pink);
+
+            color: white;
+
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .brand-text strong {
+            font-size: 14px;
+        }
+
+
+        .brand-text small {
+            margin-top: 2px;
+
+            color: var(--muted);
+
+            font-size: 10px;
+        }
+
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+
+
+        .nav-button {
+            min-height: 40px;
+
+            padding: 0 16px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 9px;
+
+            background: white;
+
+            color: var(--pink);
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        .logout-button {
+            min-height: 40px;
+
+            padding: 0 16px;
+
+            border: 0;
+
+            border-radius: 9px;
+
+            background: var(--pink);
+
+            color: white;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            display: none;
+        }
+
+
+        .logout-button:hover {
+            background: var(--pink-dark);
+        }
+
+
+        /* =====================================================
+           PAGE
+        ===================================================== */
+
+        .page {
+            width: min(1180px, 90%);
+
+            margin: 0 auto;
+
+            padding:
+                60px 0 100px;
+        }
+
+
+        /* =====================================================
+           LOADING
+        ===================================================== */
+
+        #pageLoading {
+            min-height: 450px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 15px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        .loader {
+            width: 34px;
+            height: 34px;
+
+            border:
+                3px solid #f5dce3;
+
+            border-top-color:
+                var(--pink);
+
+            border-radius: 50%;
+
+            animation:
+                spin 0.8s linear infinite;
+        }
+
+
+        @keyframes spin {
+
+            to {
+                transform:
+                    rotate(360deg);
+            }
+
+        }
+
+
+        /* =====================================================
+           ACCESS DENIED
+        ===================================================== */
+
+        #accessDenied {
+            display: none;
+
+            max-width: 520px;
+
+            margin:
+                70px auto;
+
+            padding: 45px;
+
+            text-align: center;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 20px;
+
+            background: white;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        #accessDenied h2 {
+            font-size: 26px;
+        }
+
+
+        #accessDenied p {
+            margin:
+                10px 0 23px;
+
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        .login-link {
+            min-height: 43px;
+
+            padding: 0 20px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 9px;
+
+            background: var(--pink);
+
+            color: white;
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           DASHBOARD
+        ===================================================== */
+
+        #adminDashboard {
+            display: none;
+        }
+
+
+        .page-heading {
+            margin-bottom: 35px;
+        }
+
+
+        .eyebrow {
+            color: var(--pink);
+
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 0.14em;
+        }
+
+
+        .page-heading h1 {
+            margin-top: 7px;
+
+            font-size:
+                clamp(34px, 5vw, 48px);
+
+            line-height: 1.1;
+
+            letter-spacing: -0.045em;
+        }
+
+
+        .page-heading p {
+            margin-top: 10px;
+
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        .dashboard-grid {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr) 320px;
+
+            gap: 25px;
+
+            align-items: start;
+        }
+
+
+        /* =====================================================
+           CARD
+        ===================================================== */
+
+        .card {
+            padding: 30px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            background: white;
+
+            box-shadow: var(--shadow);
+        }
+
+
+        .card h2 {
+            font-size: 22px;
+
+            letter-spacing: -0.025em;
+        }
+
+
+        .card-description {
+            margin:
+                5px 0 26px;
+
+            color: var(--muted);
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           FORM
+        ===================================================== */
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+
+        .form-row {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 15px;
+        }
+
+
+        .form-group  {
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+
+            outline: none;
+
+            border:
+                1px solid #eadde1;
+
+            border-radius: 10px;
+
+            background: #fffdfd;
+
+            color: var(--text);
+
+            font-size: 12px;
+        }
+
+
+        .form-group input,
+        .form-group select {
+            height: 47px;
+
+            padding:
+                0 13px;
+        }
+
+
+        .form-group textarea {
+            min-height: 115px;
+
+            padding: 13px;
+
+            resize: vertical;
+        }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--pink);
+
+            box-shadow:
+                0 0 0 4px
+                rgba(216, 95, 126, 0.07);
+        }
+
+
+        .file-input {
+            height: auto !important;
+
+            padding: 11px !important;
+        }
+
+
+        .file-help {
+            display: block;
+
+            margin-top: 6px;
+
+            color: #a18f95;
+
+            font-size: 9px;
+        }
+
+
+        /* =====================================================
+           PUBLISH
+        ===================================================== */
+
+        .publish-box {
+            margin:
+                7px 0 22px;
+
+            padding: 15px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            border-radius: 10px;
+
+            background: var(--pink-soft);
+        }
+
+
+        .publish-box input {
+            width: 17px;
+            height: 17px;
+
+            accent-color:
+                var(--pink);
+        }
+
+
+        .publish-box label {
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           ADD BUTTON
+        ===================================================== */
+
+        .publish-button {
+            width: 100%;
+            min-height: 49px;
+
+            border: 0;
+
+            border-radius: 10px;
+
+            background: var(--pink);
+
+            color: white;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            transition:
+                background 0.2s ease;
+        }
+
+
+        .publish-button:hover {
+            background: var(--pink-dark);
+        }
+
+
+        .publish-button:disabled {
+            opacity: 0.55;
+
+            cursor: not-allowed;
+        }
+
+
+        /* =====================================================
+           STATUS
+        ===================================================== */
+
+        .status {
+            display: none;
+
+            margin-top: 16px;
+
+            padding: 13px 14px;
+
+            border-radius: 9px;
+
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+
+        .status.success {
+            display: block;
+
+            background:
+                var(--success-bg);
+
+            color:
+                var(--success-text);
+        }
+
+
+        .status.error {
+            display: block;
+
+            background:
+                var(--error-bg);
+
+            color:
+                var(--error-text);
+        }
+
+
+        /* =====================================================
+           ADMIN INFORMATION
+        ===================================================== */
+
+        .admin-info {
+            margin-bottom: 18px;
+        }
+
+
+        .admin-info span {
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #a18f95;
+
+            font-size: 9px;
+            font-weight: 700;
+
+            letter-spacing: 0.08em;
+        }
+
+
+        .admin-info strong {
+            display: block;
+
+            font-size: 11px;
+
+            word-break: break-word;
+        }
+
+
+        .admin-badge {
+            display: inline-flex;
+
+            margin-bottom: 22px;
+
+            padding:
+                6px 10px;
+
+            border-radius: 999px;
+
+            background:
+                #eff9f0;
+
+            color:
+                #427547;
+
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+
+        .security-note {
+            margin-top: 22px;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            background:
+                var(--cream);
+
+            color: #75645c;
+
+            font-size: 10px;
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .dashboard-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding:
+                    14px 5%;
+            }
+
+
+            .brand-text small {
+                display: none;
+            }
+
+
+            .page {
+                width: 92%;
+
+                padding-top: 40px;
+            }
+
+
+            .form-row {
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .card {
+                padding: 23px 19px;
+            }
+
+
+            .page-heading h1 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a
+            href="../index.html"
+            class="brand"
+        >
+
+            <div class="brand-icon">
+                学
+            </div>
+
+
+            <div class="brand-text">
+
+                <strong>
+                    Study with Jasmine
+                </strong>
+
+                <small>
+                    Admin Dashboard
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="index.html"
+                class="nav-button"
+            >
+                View Materials
+            </a>
+
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+                type="button"
+            >
+                Log Out
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE
+    ====================================================== -->
+
+    <main class="page">
+
+
+        <!-- LOADING -->
+
+        <section id="pageLoading">
+
+            <div class="loader"></div>
+
+            <p>
+                Checking admin account...
+            </p>
+
+        </section>
+
+
+
+        <!-- ACCESS DENIED -->
+
+        <section id="accessDenied">
+
+            <h2>
+                Admin Access Required
+            </h2>
+
+            <p id="accessMessage">
+                Please log in with your admin account
+                to access this dashboard.
+            </p>
+
+            <a
+                href="auth.html"
+                class="login-link"
+            >
+                Go to Log In
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ADMIN DASHBOARD
+        ================================================== -->
+
+        <section id="adminDashboard">
+
+
+            <div class="page-heading">
+
+                <span class="eyebrow">
+                    STUDY WITH JASMINE
+                </span>
+
+                <h1>
+                    Material Dashboard
+                </h1>
+
+                <p>
+                    Upload and publish learning materials
+                    without editing your website code.
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-grid">
+
+
+                <!-- =========================================
+                     ADD MATERIAL
+                ========================================== -->
+
+                <section class="card">
+
+                    <h2>
+                        Add New Material
+                    </h2>
+
+                    <p class="card-description">
+                        Upload a cover and a PDF or PowerPoint file.
+                    </p>
+
+
+                    <form id="materialForm">
+
+
+                        <!-- TITLE -->
+
+                        <div class="form-group">
+
+                            <label for="title">
+                                Title
+                            </label>
+
+                            <input
+                                id="title"
+                                type="text"
+                                placeholder="Example: YCT Level 2"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="form-group">
+
+                            <label for="description">
+                                Description
+                            </label>
+
+                            <textarea
+                                id="description"
+                                placeholder="Describe this material..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- SUBJECT + COURSE -->
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <select
+                                    id="subject"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select subject
+                                    </option>
+
+                                    <option value="Chinese">
+                                        Chinese
+                                    </option>
+
+                                    <option value="Vietnamese">
+                                        Vietnamese
+                                    </option>
+
+                                    <option value="English">
+                                        English Speaking
+                                    </option>
+
+                                    <option value="Cambridge Math">
+                                        Cambridge Primary Math
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="course">
+                                    Course
+                                </label>
+
+                                <input
+                                    id="course"
+                                    type="text"
+                                    placeholder="Example: YCT Chinese for Kids"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- PRICE -->
+
+                        <div class="form-group">
+
+                            <label for="price">
+                                Price (USD)
+                            </label>
+
+                            <input
+                                id="price"
+                                type="number"
+                                min="0"
+                                step="0.01"
+                                placeholder="4.99"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- COVER -->
+
+                        <div class="form-group">
+
+                            <label for="coverFile">
+                                Cover Image
+                            </label>
+
+                            <input
+                                id="coverFile"
+                                class="file-input"
+                                type="file"
+                                accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                                required
+                            >
+
+                            <small class="file-help">
+                                JPG, PNG or WEBP
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- MATERIAL FILE -->
+
+                        <div class="form-group">
+
+                            <label for="materialFile">
+                                Material File
+                            </label>
+
+                            <input
+                                id="materialFile"
+                                class="file-input"
+                                type="file"
+                                accept=".pdf,.pptx,application/pdf,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                                required
+                            >
+
+                            <small class="file-help">
+                                PDF or PowerPoint (.pptx)
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- PUBLISH -->
+
+                        <div class="publish-box">
+
+                            <input
+                                id="published"
+                                type="checkbox"
+                            >
+
+                            <label for="published">
+                                Publish immediately
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- BUTTON -->
+
+                        <button
+                            id="publishButton"
+                            class="publish-button"
+                            type="submit"
+                        >
+                            Add Material
+                        </button>
+
+
+
+                        <!-- STATUS -->
+
+                        <div
+                            id="statusMessage"
+                            class="status"
+                        ></div>
+
+
+                    </form>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     ADMIN INFO
+                ========================================== -->
+
+                <aside class="card">
+
+                    <h2>
+                        Admin
+                    </h2>
+
+                    <p class="card-description">
+                        Current authenticated account.
+                    </p>
+
+
+                    <div class="admin-badge">
+                        ✓ Authorized Admin
+                    </div>
+
+
+                    <div class="admin-info">
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <strong id="adminEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="admin-info">
+
+                        <span>
+                            USER ID
+                        </span>
+
+                        <strong id="adminUserId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div class="security-note">
+
+                        Cover images are stored in the
+                        public cover bucket.
+
+                        <br><br>
+
+                        PDF and PowerPoint materials are
+                        stored in the private material
+                        bucket.
+
+                    </div>
+
+                </aside>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         SUPABASE
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+
+    <script>
+
+        /* =====================================================
+           SUPABASE CONFIG
+        ===================================================== */
+
+        const SUPABASE_URL =
+            "https://eunvkjirdgovwgclqkcm.supabase.co";
+
+
+        /*
+            DÁN PUBLISHABLE KEY CỦA M VÀO ĐÂY.
+
+            Dùng key bắt đầu kiểu:
+            sb_publishable_...
+
+            KHÔNG dùng Secret Key.
+        */
+
+        const SUPABASE_KEY =
+            "sb_publishable_cvGGPzroACteZ2Y5bIYo8w_gUXkqtUV";
+
+
+        const supabaseClient =
+            supabase.createClient(
+                SUPABASE_URL,
+                SUPABASE_KEY
+            );
+
+
+
+        /* =====================================================
+           ELEMENTS
+        ===================================================== */
+
+        const pageLoading =
+            document.getElementById(
+                "pageLoading"
+            );
+
+
+        const accessDenied =
+            document.getElementById(
+                "accessDenied"
+            );
+
+
+        const accessMessage =
+            document.getElementById(
+                "accessMessage"
+            );
+
+
+        const adminDashboard =
+            document.getElementById(
+                "adminDashboard"
+            );
+
+
+        const logoutButton =
+            document.getElementById(
+                "logoutButton"
+            );
+
+
+        const adminEmail =
+            document.getElementById(
+                "adminEmail"
+            );
+
+
+        const adminUserId =
+            document.getElementById(
+                "adminUserId"
+            );
+
+
+        const materialForm =
+            document.getElementById(
+                "materialForm"
+            );
+
+
+        const publishButton =
+            document.getElementById(
+                "publishButton"
+            );
+
+
+        const statusMessage =
+            document.getElementById(
+                "statusMessage"
+            );
+
+
+
+        /* =====================================================
+           STATUS MESSAGE
+        ===================================================== */
+
+        function showStatus(
+            message,
+            type
+        ) {
+
+            statusMessage.textContent =
+                message;
+
+
+            statusMessage.className =
+                `status ${type}`;
+
+        }
+
+
+
+        /* =====================================================
+           SAFE FILE NAME
+        ===================================================== */
+
+        function makeSafeName(text) {
+
+            const result =
+                text
+                    .toLowerCase()
+
+                    .normalize("NFD")
+
+                    .replace(
+                        /[\u0300-\u036f]/g,
+                        ""
+                    )
+
+                    .replace(
+                        /[^a-z0-9]+/g,
+                        "-"
+                    )
+
+                    .replace(
+                        /^-+|-+$/g,
+                        ""
+                    );
+
+
+            return result || "material";
+
+        }
+
+
+
+        /* =====================================================
+           CHECK ADMIN
+        ===================================================== */
+
+        async function checkAdmin() {
+
+            try {
+
+                const {
+                    data: { user },
+                    error: userError
+                } =
+                    await supabaseClient
+                        .auth
+                        .getUser();
+
+
+                pageLoading.style.display =
+                    "none";
+
+
+                /* ---------------------------------------------
+                   NOT LOGGED IN
+                --------------------------------------------- */
+
+                if (
+                    userError ||
+                    !user
+                ) {
+
+                    accessDenied.style.display =
+                        "block";
+
+
+                    adminDashboard.style.display =
+                        "none";
+
+
+                    logoutButton.style.display =
+                        "none";
+
+
+                    accessMessage.textContent =
+                        "Please log in with your admin account to access this dashboard.";
+
+
+                    return;
+
+                }
+
+
+
+                /* ---------------------------------------------
+                   CHECK ADMIN DATABASE
+                --------------------------------------------- */
+
+                const {
+                    data: isAdmin,
+                    error: adminError
+                } =
+                    await supabaseClient
+                        .rpc(
+                            "is_admin"
+                        );
+
+
+                if (adminError) {
+
+                    console.error(
+                        adminError
+                    );
+
+
+                    accessDenied.style.display =
+                        "block";
+
+
+                    adminDashboard.style.display =
+                        "none";
+
+
+                    logoutButton.style.display =
+                        "block";
+
+
+                    accessMessage.textContent =
+                        "Unable to verify admin access.";
+
+
+                    return;
+
+                }
+
+
+
+                /* ---------------------------------------------
+                   NORMAL USER
+                --------------------------------------------- */
+
+                if (!isAdmin) {
+
+                    accessDenied.style.display =
+                        "block";
+
+
+                    adminDashboard.style.display =
+                        "none";
+
+
+                    logoutButton.style.display =
+                        "block";
+
+
+                    accessMessage.textContent =
+                        "This account does not have admin permission.";
+
+
+                    return;
+
+                }
+
+
+
+                /* ---------------------------------------------
+                   ADMIN
+                --------------------------------------------- */
+
+                accessDenied.style.display =
+                    "none";
+
+
+                adminDashboard.style.display =
+                    "block";
+
+
+                logoutButton.style.display =
+                    "inline-flex";
+
+
+                adminEmail.textContent =
+                    user.email || "—";
+
+
+                adminUserId.textContent =
+                    user.id || "—";
+
+
+            } catch (error) {
+
+                console.error(
+                    "Admin check error:",
+                    error
+                );
+
+
+                pageLoading.style.display =
+                    "none";
+
+
+                accessDenied.style.display =
+                    "block";
+
+
+                accessMessage.textContent =
+                    "Something went wrong while checking admin access.";
+
+            }
+
+        }
+
+
+
+        /* =====================================================
+           LOG OUT
+        ===================================================== */
+
+        logoutButton.addEventListener(
+            "click",
+            async () => {
+
+                await supabaseClient
+                    .auth
+                    .signOut();
+
+
+                window.location.href =
+                    "auth.html";
+
+            }
+        );
+
+
+
+        /* =====================================================
+           ADD MATERIAL
+        ===================================================== */
+
+        materialForm.addEventListener(
+            "submit",
+            async (event) => {
+
+                event.preventDefault();
+
+
+
+                /* ---------------------------------------------
+                   FORM VALUES
+                --------------------------------------------- */
+
+                const title =
+                    document
+                        .getElementById("title")
+                        .value
+                        .trim();
+
+
+                const description =
+                    document
+                        .getElementById("description")
+                        .value
+                        .trim();
+
+
+                const subject =
+                    document
+                        .getElementById("subject")
+                        .value;
+
+
+                const course =
+                    document
+                        .getElementById("course")
+                        .value
+                        .trim();
+
+
+                const price =
+                    Number(
+                        document
+                            .getElementById("price")
+                            .value
+                    );
+
+
+                const published =
+                    document
+                        .getElementById("published")
+                        .checked;
+
+
+                const coverFile =
+                    document
+                        .getElementById("coverFile")
+                        .files[0];
+
+
+                const materialFile =
+                    document
+                        .getElementById("materialFile")
+                        .files[0];
+
+
+
+                /* =================================================
+                   VALIDATION
+                ================================================= */
+
+                if (!title) {
+
+                    showStatus(
+                        "Please enter a title.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                if (!description) {
+
+                    showStatus(
+                        "Please enter a description.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                if (!subject) {
+
+                    showStatus(
+                        "Please select a subject.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                if (
+                    Number.isNaN(price) ||
+                    price < 0
+                ) {
+
+                    showStatus(
+                        "Please enter a valid price.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                if (!coverFile) {
+
+                    showStatus(
+                        "Please choose a cover image.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+                if (!materialFile) {
+
+                    showStatus(
+                        "Please choose a PDF or PowerPoint file.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+
+                /* =================================================
+                   COVER VALIDATION
+                ================================================= */
+
+                const coverExtension =
+                    coverFile
+                        .name
+                        .split(".")
+                        .pop()
+                        .toLowerCase();
+
+
+                const allowedCoverExtensions = [
+                    "jpg",
+                    "jpeg",
+                    "png",
+                    "webp"
+                ];
+
+
+                if (
+                    !allowedCoverExtensions
+                        .includes(
+                            coverExtension
+                        )
+                ) {
+
+                    showStatus(
+                        "Cover must be JPG, PNG, or WEBP.",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+
+                /* =================================================
+                   MATERIAL VALIDATION
+                ================================================= */
+
+                const materialExtension =
+                    materialFile
+                        .name
+                        .split(".")
+                        .pop()
+                        .toLowerCase();
+
+
+                const allowedMaterialExtensions = [
+                    "pdf",
+                    "pptx"
+                ];
+
+
+                if (
+                    !allowedMaterialExtensions
+                        .includes(
+                            materialExtension
+                        )
+                ) {
+
+                    showStatus(
+                        "Material must be PDF or PowerPoint (.pptx).",
+                        "error"
+                    );
+
+                    return;
+
+                }
+
+
+
+                /* =================================================
+                   CREATE UNIQUE PATHS
+                ================================================= */
+
+                const timestamp =
+                    Date.now();
+
+
+                const safeTitle =
+                    makeSafeName(title);
+
+
+                const coverPath =
+                    `${timestamp}-${safeTitle}.${coverExtension}`;
+
+
+                const materialPath =
+                    `${timestamp}-${safeTitle}.${materialExtension}`;
+
+
+
+                /* =================================================
+                   CONTENT TYPE
+                ================================================= */
+
+                let materialContentType;
+
+
+                if (
+                    materialExtension === "pdf"
+                ) {
+
+                    materialContentType =
+                        "application/pdf";
+
+                } else {
+
+                    materialContentType =
+                        "application/vnd.openxmlformats-officedocument.presentationml.presentation";
+
+                }
+
+
+
+                /* =================================================
+                   START
+                ================================================= */
+
+                publishButton.disabled =
+                    true;
+
+
+                publishButton.textContent =
+                    "Uploading...";
+
+
+                try {
+
+
+                    /* =============================================
+                       UPLOAD COVER
+                    ============================================= */
+
+                    showStatus(
+                        "Uploading cover image...",
+                        "success"
+                    );
+
+
+                    const {
+                        error: coverError
+                    } =
+                        await supabaseClient
+                            .storage
+                            .from(
+                                "material-covers"
+                            )
+                            .upload(
+                                coverPath,
+                                coverFile,
+                                {
+                                    cacheControl:
+                                        "3600",
+
+                                    upsert:
+                                        false
+                                }
+                            );
+
+
+                    if (coverError) {
+
+                        throw new Error(
+                            "Cover upload failed: " +
+                            coverError.message
+                        );
+
+                    }
+
+
+
+                    /* =============================================
+                       UPLOAD PDF / PPTX
+                    ============================================= */
+
+                    if (
+                        materialExtension === "pdf"
+                    ) {
+
+                        showStatus(
+                            "Uploading PDF...",
+                            "success"
+                        );
+
+                    } else {
+
+                        showStatus(
+                            "Uploading PowerPoint...",
+                            "success"
+                        );
+
+                    }
+
+
+                    const {
+                        error: materialError
+                    } =
+                        await supabaseClient
+                            .storage
+                            .from(
+                                "material-files"
+                            )
+                            .upload(
+                                materialPath,
+                                materialFile,
+                                {
+                                    cacheControl:
+                                        "3600",
+
+                                    upsert:
+                                        false,
+
+                                    contentType:
+                                        materialContentType
+                                }
+                            );
+
+
+
+                    /* =============================================
+                       MATERIAL UPLOAD FAILED
+                    ============================================= */
+
+                    if (materialError) {
+
+
+                        await supabaseClient
+                            .storage
+                            .from(
+                                "material-covers"
+                            )
+                            .remove([
+                                coverPath
+                            ]);
+
+
+                        throw new Error(
+                            "Material upload failed: " +
+                            materialError.message
+                        );
+
+                    }
+
+
+
+                    /* =============================================
+                       INSERT DATABASE ROW
+                    ============================================= */
+
+                    showStatus(
+                        "Saving material...",
+                        "success"
+                    );
+
+
+                    const {
+                        error: databaseError
+                    } =
+                        await supabaseClient
+                            .from(
+                                "Materials"
+                            )
+                            .insert({
+
+                                title:
+                                    title,
+
+                                description:
+                                    description,
+
+                                subject:
+                                    subject,
+
+                                course:
+                                    course || null,
+
+                                price:
+                                    price,
+
+                                file_path:
+                                    materialPath,
+
+                                cover_path:
+                                    coverPath,
+
+                                is_published:
+                                    published
+
+                            });
+
+
+
+                    /* =============================================
+                       DATABASE FAILED
+                    ============================================= */
+
+                    if (databaseError) {
+
+
+                        await supabaseClient
+                            .storage
+                            .from(
+                                "material-covers"
+                            )
+                            .remove([
+                                coverPath
+                            ]);
+
+
+                        await supabaseClient
+                            .storage
+                            .from(
+                                "material-files"
+                            )
+                            .remove([
+                                materialPath
+                            ]);
+
+
+                        throw new Error(
+                            "Database error: " +
+                            databaseError.message
+                        );
+
+                    }
+
+
+
+                    /* =============================================
+                       SUCCESS
+                    ============================================= */
+
+                    if (published) {
+
+                        showStatus(
+                            "Material uploaded and published successfully!",
+                            "success"
+                        );
+
+                    } else {
+
+                        showStatus(
+                            "Material uploaded successfully. It is currently unpublished.",
+                            "success"
+                        );
+
+                    }
+
+
+                    materialForm.reset();
+
+
+                } catch (error) {
+
+
+                    console.error(
+                        "Upload error:",
+                        error
+                    );
+
+
+                    showStatus(
+                        error.message ||
+                        "Something went wrong.",
+                        "error"
+                    );
+
+
+                } finally {
+
+
+                    publishButton.disabled =
+                        false;
+
+
+                    publishButton.textContent =
+                        "Add Material";
+
+                }
+
+            }
+        );
+
+
+
+        /* =====================================================
+           START PAGE
+        ===================================================== */
+
+        checkAdmin();
+
+    </script>
+
+
+</body>
+
+</html>
