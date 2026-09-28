@@ -2,1000 +2,589 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta charset="UTF-8">
 
-    <title>Admin Dashboard | Study with Jasmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>
+Admin Dashboard | Study with Jasmine
+</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
 
-    <style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-        /* =====================================================
-           ROOT
-        ===================================================== */
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        :root {
-            --bg: #fffafb;
-            --white: #ffffff;
 
-            --text: #44383c;
-            --muted: #88777d;
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+rel="stylesheet">
 
-            --pink: #d85f7e;
-            --pink-dark: #b94b69;
-            --pink-soft: #fff1f4;
 
-            --cream: #fff8ed;
+<style>
 
-            --border: #eedfe3;
 
-            --success-bg: #eff9f0;
-            --success-text: #427547;
+:root {
 
-            --error-bg: #fff0f0;
-            --error-text: #a94442;
+    --bg:#fffafb;
 
-            --shadow:
-                0 15px 45px rgba(91, 57, 67, 0.06);
-        }
+    --white:#ffffff;
 
+    --text:#44383c;
 
-        /* =====================================================
-           RESET
-        ===================================================== */
+    --muted:#88777d;
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    --pink:#d85f7e;
 
+    --pink-dark:#b94b69;
 
-        body {
-            min-height: 100vh;
+    --pink-soft:#fff1f4;
 
-            background: var(--bg);
+    --cream:#fff8ed;
 
-            color: var(--text);
+    --border:#eedfe3;
 
-            font-family:
-                "DM Sans",
-                "Noto Sans SC",
-                sans-serif;
+    --success-bg:#eff9f0;
 
-            line-height: 1.6;
-        }
+    --success-text:#427547;
 
+    --error-bg:#fff0f0;
 
-        button,
-        input,
-        textarea,
-        select {
-            font: inherit;
-        }
+    --error-text:#a94442;
 
+    --shadow:
+    0 15px 45px rgba(91,57,67,0.06);
 
-        button {
-            cursor: pointer;
-        }
-
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-
-        /* =====================================================
-           NAVBAR
-        ===================================================== */
-
-        .navbar {
-            min-height: 78px;
-
-            padding: 0 6%;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            gap: 25px;
-
-            position: sticky;
-            top: 0;
-            z-index: 100;
-
-            background:
-                rgba(255, 250, 251, 0.95);
-
-            backdrop-filter: blur(15px);
-
-            border-bottom:
-                1px solid var(--border);
-        }
-
-
-        .brand {
-            display: flex;
-            align-items: center;
-
-            gap: 12px;
-        }
-
-
-        .brand-icon {
-            width: 42px;
-            height: 42px;
-
-            display: grid;
-            place-items: center;
-
-            border-radius: 12px;
-
-            background: var(--pink);
-
-            color: white;
-
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-
-        .brand-text strong {
-            font-size: 14px;
-        }
-
-
-        .brand-text small {
-            margin-top: 2px;
-
-            color: var(--muted);
-
-            font-size: 10px;
-        }
-
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-
-            gap: 10px;
-        }
-
-
-        .nav-button {
-            min-height: 40px;
-
-            padding: 0 16px;
-
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            border:
-                1px solid var(--border);
-
-            border-radius: 9px;
-
-            background: white;
-
-            color: var(--pink);
-
-            font-size: 11px;
-            font-weight: 700;
-        }
-
-
-        .logout-button {
-            min-height: 40px;
-
-            padding: 0 16px;
-
-            border: 0;
-
-            border-radius: 9px;
-
-            background: var(--pink);
-
-            color: white;
-
-            font-size: 11px;
-            font-weight: 700;
-
-            display: none;
-        }
-
-
-        .logout-button:hover {
-            background: var(--pink-dark);
-        }
-
-
-        /* =====================================================
-           PAGE
-        ===================================================== */
-
-        .page {
-            width: min(1180px, 90%);
-
-            margin: 0 auto;
-
-            padding:
-                60px 0 100px;
-        }
-
-
-        /* =====================================================
-           LOADING
-        ===================================================== */
-
-        #pageLoading {
-            min-height: 450px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            gap: 15px;
-
-            color: var(--muted);
-
-            font-size: 12px;
-        }
-
-
-        .loader {
-            width: 34px;
-            height: 34px;
-
-            border:
-                3px solid #f5dce3;
-
-            border-top-color:
-                var(--pink);
-
-            border-radius: 50%;
-
-            animation:
-                spin 0.8s linear infinite;
-        }
-
-
-        @keyframes spin {
-
-            to {
-                transform:
-                    rotate(360deg);
-            }
-
-        }
-
-
-        /* =====================================================
-           ACCESS DENIED
-        ===================================================== */
-
-        #accessDenied {
-            display: none;
-
-            max-width: 520px;
-
-            margin:
-                70px auto;
-
-            padding: 45px;
-
-            text-align: center;
-
-            border:
-                1px solid var(--border);
-
-            border-radius: 20px;
-
-            background: white;
-
-            box-shadow: var(--shadow);
-        }
-
-
-        #accessDenied h2 {
-            font-size: 26px;
-        }
-
-
-        #accessDenied p {
-            margin:
-                10px 0 23px;
-
-            color: var(--muted);
-
-            font-size: 12px;
-        }
-
-
-        .login-link {
-            min-height: 43px;
-
-            padding: 0 20px;
-
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 9px;
-
-            background: var(--pink);
-
-            color: white;
-
-            font-size: 11px;
-            font-weight: 700;
-        }
-
-
-        /* =====================================================
-           DASHBOARD
-        ===================================================== */
-
-        #adminDashboard {
-            display: none;
-        }
-
-
-        .page-heading {
-            margin-bottom: 35px;
-        }
-
-
-        .eyebrow {
-            color: var(--pink);
-
-            font-size: 10px;
-            font-weight: 700;
-
-            letter-spacing: 0.14em;
-        }
-
-
-        .page-heading h1 {
-            margin-top: 7px;
-
-            font-size:
-                clamp(34px, 5vw, 48px);
-
-            line-height: 1.1;
-
-            letter-spacing: -0.045em;
-        }
-
-
-        .page-heading p {
-            margin-top: 10px;
-
-            color: var(--muted);
-
-            font-size: 13px;
-        }
-
-
-        .dashboard-grid {
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1fr) 320px;
-
-            gap: 25px;
-
-            align-items: start;
-        }
-
-
-        /* =====================================================
-           CARD
-        ===================================================== */
-
-        .card {
-            padding: 30px;
-
-            border:
-                1px solid var(--border);
-
-            border-radius: 18px;
-
-            background: white;
-
-            box-shadow: var(--shadow);
-        }
-
-
-        .card h2 {
-            font-size: 22px;
-
-            letter-spacing: -0.025em;
-        }
-
-
-        .card-description {
-            margin:
-                5px 0 26px;
-
-            color: var(--muted);
-
-            font-size: 11px;
-        }
-
-
-        /* =====================================================
-           FORM
-        ===================================================== */
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-
-        .form-row {
-            display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
-            gap: 15px;
-        }
-
-
-        .form-group  {
-            display: block;
-
-            margin-bottom: 7px;
-
-            font-size: 11px;
-            font-weight: 700;
-        }
-
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-
-            outline: none;
-
-            border:
-                1px solid #eadde1;
-
-            border-radius: 10px;
-
-            background: #fffdfd;
-
-            color: var(--text);
-
-            font-size: 12px;
-        }
-
-
-        .form-group input,
-        .form-group select {
-            height: 47px;
-
-            padding:
-                0 13px;
-        }
-
-
-        .form-group textarea {
-            min-height: 115px;
-
-            padding: 13px;
-
-            resize: vertical;
-        }
-
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            border-color: var(--pink);
-
-            box-shadow:
-                0 0 0 4px
-                rgba(216, 95, 126, 0.07);
-        }
-
-
-        .file-input {
-            height: auto !important;
-
-            padding: 11px !important;
-        }
-
-
-        .file-help {
-            display: block;
-
-            margin-top: 6px;
-
-            color: #a18f95;
-
-            font-size: 9px;
-        }
-
-
-        /* =====================================================
-           PUBLISH
-        ===================================================== */
-
-        .publish-box {
-            margin:
-                7px 0 22px;
-
-            padding: 15px;
-
-            display: flex;
-            align-items: center;
-
-            gap: 10px;
-
-            border-radius: 10px;
-
-            background: var(--pink-soft);
-        }
-
-
-        .publish-box input {
-            width: 17px;
-            height: 17px;
-
-            accent-color:
-                var(--pink);
-        }
-
-
-        .publish-box label {
-            font-size: 11px;
-            font-weight: 700;
-        }
-
-
-        /* =====================================================
-           ADD BUTTON
-        ===================================================== */
-
-        .publish-button {
-            width: 100%;
-            min-height: 49px;
-
-            border: 0;
-
-            border-radius: 10px;
-
-            background: var(--pink);
-
-            color: white;
-
-            font-size: 12px;
-            font-weight: 700;
-
-            transition:
-                background 0.2s ease;
-        }
-
-
-        .publish-button:hover {
-            background: var(--pink-dark);
-        }
-
-
-        .publish-button:disabled {
-            opacity: 0.55;
-
-            cursor: not-allowed;
-        }
-
-
-        /* =====================================================
-           STATUS
-        ===================================================== */
-
-        .status {
-            display: none;
-
-            margin-top: 16px;
-
-            padding: 13px 14px;
-
-            border-radius: 9px;
-
-            font-size: 11px;
-            line-height: 1.6;
-        }
-
-
-        .status.success {
-            display: block;
-
-            background:
-                var(--success-bg);
-
-            color:
-                var(--success-text);
-        }
-
-
-        .status.error {
-            display: block;
-
-            background:
-                var(--error-bg);
-
-            color:
-                var(--error-text);
-        }
-
-
-        /* =====================================================
-           ADMIN INFORMATION
-        ===================================================== */
-
-        .admin-info {
-            margin-bottom: 18px;
-        }
-
-
-        .admin-info span {
-            display: block;
-
-            margin-bottom: 5px;
-
-            color: #a18f95;
-
-            font-size: 9px;
-            font-weight: 700;
-
-            letter-spacing: 0.08em;
-        }
-
-
-        .admin-info strong {
-            display: block;
-
-            font-size: 11px;
-
-            word-break: break-word;
-        }
-
-
-        .admin-badge {
-            display: inline-flex;
-
-            margin-bottom: 22px;
-
-            padding:
-                6px 10px;
-
-            border-radius: 999px;
-
-            background:
-                #eff9f0;
-
-            color:
-                #427547;
-
-            font-size: 9px;
-            font-weight: 700;
-        }
-
-
-        .security-note {
-            margin-top: 22px;
-
-            padding: 15px;
-
-            border-radius: 10px;
-
-            background:
-                var(--cream);
-
-            color: #75645c;
-
-            font-size: 10px;
-            line-height: 1.7;
-        }
-
-
-        /* =====================================================
-           MOBILE
-        ===================================================== */
-
-        @media (max-width: 850px) {
-
-            .dashboard-grid {
-                grid-template-columns:
-                    1fr;
-            }
-
-        }
-
-
-        @media (max-width: 600px) {
-
-            .navbar {
-                padding:
-                    14px 5%;
-            }
-
-
-            .brand-text small {
-                display: none;
-            }
-
-
-            .page {
-                width: 92%;
-
-                padding-top: 40px;
-            }
-
-
-            .form-row {
-                grid-template-columns:
-                    1fr;
-            }
-
-
-            .card {
-                padding: 23px 19px;
-            }
-
-
-            .page-heading h1 {
-                font-size: 36px;
-            }
-
-        }
-/* =====================================================
-   PAYMENT METHODS
-===================================================== */
-
-.payment-section {
-    margin-top: 55px;
-}
-
-.payment-heading {
-    margin-bottom: 25px;
-}
-
-.payment-heading h1 {
-    font-size: 30px;
 }
 
 
-/* LAYOUT */
 
-.payment-layout {
-    display: grid;
+* {
+
+    box-sizing:border-box;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+body {
+
+    min-height:100vh;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+    "DM Sans",
+    "Noto Sans SC",
+    sans-serif;
+
+}
+
+
+
+button,
+input,
+textarea,
+select {
+
+    font:inherit;
+
+}
+
+
+
+button {
+
+    cursor:pointer;
+
+}
+
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+/* =========================
+NAVBAR
+========================= */
+
+
+.navbar {
+
+    min-height:78px;
+
+    padding:0 6%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:
+    rgba(255,250,251,.95);
+
+    border-bottom:
+    1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+}
+
+
+
+.brand {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.brand-icon {
+
+    width:42px;
+
+    height:42px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:12px;
+
+    background:var(--pink);
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+
+
+.brand-text {
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.brand-text strong {
+
+    font-size:14px;
+
+}
+
+
+
+.brand-text small {
+
+    color:var(--muted);
+
+    font-size:10px;
+
+}
+
+
+
+.nav-actions {
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.nav-button,
+.logout-button {
+
+    min-height:40px;
+
+    padding:0 16px;
+
+    border-radius:9px;
+
+    border:1px solid var(--border);
+
+    background:white;
+
+    color:var(--pink);
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+
+
+.logout-button {
+
+    background:var(--pink);
+
+    color:white;
+
+    display:none;
+
+}
+
+
+
+/* =========================
+PAGE
+========================= */
+
+
+.page {
+
+    width:min(1180px,90%);
+
+    margin:auto;
+
+    padding:60px 0 100px;
+
+}
+
+
+
+#pageLoading {
+
+    min-height:400px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    color:var(--muted);
+
+}
+
+
+
+#adminDashboard {
+
+    display:none;
+
+}
+
+
+
+#accessDenied {
+
+    display:none;
+
+    max-width:500px;
+
+    margin:80px auto;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:20px;
+
+    border:1px solid var(--border);
+
+}
+
+
+
+/* =========================
+CARD
+========================= */
+
+
+.dashboard-grid {
+
+    display:grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
-        minmax(300px, 0.8fr);
+    minmax(0,1fr)
+    320px;
 
-    gap: 25px;
+    gap:25px;
 
-    align-items: start;
 }
 
 
-/* PAYMENT LIST */
 
-#paymentMethodsList {
-    display: grid;
+.card {
 
-    gap: 12px;
-}
+    background:white;
 
-.payment-empty {
-    color: var(--muted);
+    padding:30px;
 
-    font-size: 11px;
-}
+    border-radius:18px;
 
+    border:1px solid var(--border);
 
-/* PAYMENT CARD */
+    box-shadow:var(--shadow);
 
-.payment-item {
-    padding: 16px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 12px;
-
-    background: #fffdfd;
-}
-
-.payment-item-top {
-    display: flex;
-
-    align-items: flex-start;
-    justify-content: space-between;
-
-    gap: 12px;
-}
-
-.payment-item h3 {
-    font-size: 14px;
-
-    line-height: 1.4;
-}
-
-.payment-item p {
-    margin-top: 4px;
-
-    color: var(--muted);
-
-    font-size: 10px;
-
-    line-height: 1.6;
-
-    word-break: break-word;
 }
 
 
-/* QR PREVIEW */
 
-.payment-qr-preview {
-    width: 120px;
-    height: 120px;
+.card h2 {
 
-    margin-top: 13px;
+    font-size:22px;
 
-    object-fit: cover;
+}
 
-    border:
-        1px solid var(--border);
 
-    border-radius: 10px;
 
-    background: white;
+.card-description {
+
+    margin:5px 0 25px;
+
+    color:var(--muted);
+
+    font-size:12px;
+
 }
 
 
-/* ACTIVE / INACTIVE */
 
-.active-badge,
-.inactive-badge {
-    padding:
-        5px 8px;
+/* =========================
+FORM
+========================= */
 
-    border-radius: 999px;
 
-    font-size: 9px;
-    font-weight: 700;
+.form-group {
 
-    white-space: nowrap;
+    margin-bottom:18px;
+
 }
 
-.active-badge {
-    background:
-        var(--success-bg);
 
-    color:
-        var(--success-text);
-}
 
-.inactive-badge {
-    background: #f3f0f1;
+.form-row {
 
-    color: var(--muted);
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
 }
 
 
-/* PAYMENT ACTION BUTTONS */
 
-.payment-actions {
-    display: flex;
+.form-group label {
 
-    flex-wrap: wrap;
+    display:block;
 
-    gap: 8px;
+    margin-bottom:7px;
 
-    margin-top: 14px;
+    font-size:11px;
+
+    font-weight:700;
+
 }
 
-.payment-action-button {
-    min-height: 34px;
 
-    padding:
-        0 12px;
 
-    border:
-        1px solid var(--border);
+.form-group input,
+.form-group textarea,
+.form-group select {
 
-    border-radius: 8px;
+    width:100%;
 
-    background: white;
+    border:1px solid #eadde1;
 
-    color: var(--pink);
+    border-radius:10px;
 
-    font-size: 10px;
-    font-weight: 700;
+    padding:12px;
 
-    transition:
-        0.2s ease;
-}
+    background:#fffdfd;
 
-.payment-action-button:hover {
-    border-color:
-        var(--pink);
-
-    background:
-        var(--pink-soft);
-}
-
-.payment-action-button.delete {
-    color:
-        #a94442;
 }
 
 
-/* CANCEL EDIT */
 
-.payment-cancel-button {
-    display: none;
+.form-group textarea {
 
-    width: 100%;
-    min-height: 45px;
+    min-height:110px;
 
-    margin-top: 10px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 10px;
-
-    background: white;
-
-    color: var(--pink);
-
-    font-size: 11px;
-    font-weight: 700;
 }
 
-.payment-cancel-button:hover {
-    background:
-        var(--pink-soft);
+
+
+.file-help {
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:10px;
+
+    color:#a18f95;
+
 }
 
 
-/* MOBILE */
 
-@media (max-width: 850px) {
+.file-input {
 
-    .payment-layout {
-        grid-template-columns:
-            1fr;
-    }
+    padding:10px !important;
 
 }
-    </style>
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+
+.publish-button {
+
+    width:100%;
+
+    min-height:48px;
+
+    border:0;
+
+    border-radius:10px;
+
+    background:var(--pink);
+
+    color:white;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+
+.publish-button:hover {
+
+    background:var(--pink-dark);
+
+}
+
+
+
+.publish-box {
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    background:var(--pink-soft);
+
+    border-radius:10px;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+
+
+/* =========================
+STATUS
+========================= */
+
+
+.status {
+
+    display:none;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:12px;
+
+}
+
+
+.status.success {
+
+    display:block;
+
+    background:var(--success-bg);
+
+    color:var(--success-text);
+
+}
+
+
+.status.error {
+
+    display:block;
+
+    background:var(--error-bg);
+
+    color:var(--error-text);
+
+}
+
+
+
+@media(max-width:850px){
+
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.form-row{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+</style>
 
 </head>
 
@@ -1003,2762 +592,1326 @@
 <body>
 
 
-    <!-- =====================================================
-         NAVBAR
-    ====================================================== -->
+<header class="navbar">
 
-    <header class="navbar">
 
-        <a
-            href="../index.html"
-            class="brand"
-        >
+<a href="../index.html" class="brand">
 
-            <div class="brand-icon">
-                学
-            </div>
 
+<div class="brand-icon">
+学
+</div>
 
-            <div class="brand-text">
 
-                <strong>
-                    Study with Jasmine
-                </strong>
+<div class="brand-text">
 
-                <small>
-                    Admin Dashboard
-                </small>
+<strong>
+Study with Jasmine
+</strong>
 
-            </div>
 
-        </a>
+<small>
+Admin Dashboard
+</small>
 
+</div>
 
-        <div class="nav-actions">
 
-            <a
-                href="index.html"
-                class="nav-button"
-            >
-                View Materials
-            </a>
+</a>
 
 
-            <button
-                id="logoutButton"
-                class="logout-button"
-                type="button"
-            >
-                Log Out
-            </button>
 
-        </div>
+<div class="nav-actions">
 
-    </header>
 
+<a
+href="index.html"
+class="nav-button"
+>
+View Materials
+</a>
 
 
-    <!-- =====================================================
-         PAGE
-    ====================================================== -->
+<button
+id="logoutButton"
+class="logout-button"
+>
+Log Out
+</button>
 
-    <main class="page">
 
+</div>
 
-        <!-- LOADING -->
 
-        <section id="pageLoading">
+</header>
 
-            <div class="loader"></div>
 
-            <p>
-                Checking admin account...
-            </p>
+<main class="page">
 
-        </section>
 
+<section id="pageLoading">
 
+Loading admin account...
 
-        <!-- ACCESS DENIED -->
+</section>
 
-        <section id="accessDenied">
 
-            <h2>
-                Admin Access Required
-            </h2>
 
-            <p id="accessMessage">
-                Please log in with your admin account
-                to access this dashboard.
-            </p>
+<section id="accessDenied">
 
-            <a
-                href="auth.html"
-                class="login-link"
-            >
-                Go to Log In
-            </a>
+<h2>
+Admin Access Required
+</h2>
 
-        </section>
 
+<p>
+Please login with your admin account.
+</p>
 
 
-        <!-- =================================================
-             ADMIN DASHBOARD
-        ================================================== -->
+<a href="auth.html">
+Go to Login
+</a>
 
-        <section id="adminDashboard">
 
+</section>
 
-            <div class="page-heading">
 
-                <span class="eyebrow">
-                    STUDY WITH JASMINE
-                </span>
+<section id="adminDashboard">
 
-                <h1>
-                    Material Dashboard
-                </h1>
 
-                <p>
-                    Upload and publish learning materials
-                    without editing your website code.
-                </p>
+<div class="page-heading">
 
-            </div>
+<h1>
+Material Dashboard
+</h1>
 
 
+<p>
+Upload and manage learning materials.
+</p>
 
-            <div class="dashboard-grid">
 
+</div>
 
-                <!-- =========================================
-                     ADD MATERIAL
-                ========================================== -->
 
-                <section class="card">
 
-                    <h2>
-                        Add New Material
-                    </h2>
+<div class="dashboard-grid">
 
-                    <p class="card-description">
-                        Upload a cover and a PDF or PowerPoint file.
-                    </p>
 
+<section class="card">
 
-                    <form id="materialForm">
 
+<h2>
+Add New Material
+</h2>
 
-                        <!-- TITLE -->
 
-                        <div class="form-group">
+<p class="card-description">
+Upload learning files.
+</p>
 
-                            <label for="title">
-                                Title
-                            </label>
 
-                            <input
-                                id="title"
-                                type="text"
-                                placeholder="Example: YCT Level 2"
-                                required
-                            >
+<form id="materialForm">
+    <!-- TITLE -->
 
-                        </div>
+<div class="form-group">
 
+<label>
+Title
+</label>
 
 
-                        <!-- DESCRIPTION -->
+<input
+id="title"
+type="text"
+placeholder="Example: Factory Chinese Vocabulary"
+required
+>
 
-                        <div class="form-group">
+</div>
 
-                            <label for="description">
-                                Description
-                            </label>
 
-                            <textarea
-                                id="description"
-                                placeholder="Describe this material..."
-                                required
-                            ></textarea>
 
-                        </div>
+<!-- DESCRIPTION -->
 
+<div class="form-group">
 
+<label>
+Description
+</label>
 
-                        <!-- SUBJECT + COURSE -->
 
-                        <div class="form-row">
+<textarea
+id="description"
+placeholder="Write material description..."
+required
+></textarea>
 
 
-                            <div class="form-group">
+</div>
 
-                                <label for="subject">
-                                    Subject
-                                </label>
 
-                                <select
-                                    id="subject"
-                                    required
-                                >
 
-                                    <option value="">
-                                        Select subject
-                                    </option>
 
-                                    <option value="Chinese">
-                                        Chinese
-                                    </option>
+<!-- SUBJECT + COURSE -->
 
-                                    <option value="Vietnamese">
-                                        Vietnamese
-                                    </option>
+<div class="form-row">
 
-                                    <option value="English">
-                                        English Speaking
-                                    </option>
 
-                                    <option value="Cambridge Math">
-                                        Cambridge Primary Math
-                                    </option>
+<div class="form-group">
 
-                                </select>
+<label>
+Subject
+</label>
 
-                            </div>
 
+<select
+id="subject"
+required
+>
 
 
-                            <div class="form-group">
+<option value="">
+Select Subject
+</option>
 
-                                <label for="course">
-                                    Course
-                                </label>
 
-                                <input
-                                    id="course"
-                                    type="text"
-                                    placeholder="Example: YCT Chinese for Kids"
-                                >
+<option value="Chinese">
+Chinese
+</option>
 
-                            </div>
 
+<option value="English">
+English
+</option>
 
-                        </div>
 
+<option value="Vietnamese">
+Vietnamese
+</option>
 
 
-                        <!-- PRICE -->
+<option value="Cambridge Math">
+Cambridge Math
+</option>
 
-                        <div class="form-group">
 
-                            <label for="price">
-                                Price (USD)
-                            </label>
+</select>
 
-                            <input
-                                id="price"
-                                type="number"
-                                min="0"
-                                step="0.01"
-                                placeholder="4.99"
-                                required
-                            >
 
-                        </div>
+</div>
 
 
 
-                        <!-- COVER -->
+<div class="form-group">
 
-                        <div class="form-group">
+<label>
+Course
+</label>
 
-                            <label for="coverFile">
-                                Cover Image
-                            </label>
 
-                            <input
-                                id="coverFile"
-                                class="file-input"
-                                type="file"
-                                accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
-                                required
-                            >
+<input
+id="course"
+type="text"
+placeholder="Factory & Workplace Chinese"
+>
 
-                            <small class="file-help">
-                                JPG, PNG or WEBP
-                            </small>
 
-                        </div>
+</div>
 
 
+</div>
 
-                        <!-- MATERIAL FILE -->
 
-                        <div class="form-group">
 
-                            <label for="materialFile">
-                                Material File
-                            </label>
 
-                            <input
-                                id="materialFile"
-                                class="file-input"
-                                type="file"
-                                accept=".pdf,.pptx,application/pdf,application/vnd.openxmlformats-officedocument.presentationml.presentation"
-                                required
-                            >
 
-                            <small class="file-help">
-                                PDF or PowerPoint (.pptx)
-                            </small>
+<!-- PRICE -->
 
-                        </div>
+<div class="form-group">
 
+<label>
+Price
+</label>
 
 
-                        <!-- PUBLISH -->
+<input
+id="price"
+type="number"
+min="0"
+step="0.01"
+value="0"
+>
 
-                        <div class="publish-box">
 
-                            <input
-                                id="published"
-                                type="checkbox"
-                            >
+<small class="file-help">
+Enter 0 for free material.
+</small>
 
-                            <label for="published">
-                                Publish immediately
-                            </label>
 
-                        </div>
+</div>
 
 
 
-                        <!-- BUTTON -->
 
-                        <button
-                            id="publishButton"
-                            class="publish-button"
-                            type="submit"
-                        >
-                            Add Material
-                        </button>
 
+<!-- COVER -->
 
+<div class="form-group">
 
-                        <!-- STATUS -->
+<label>
+Cover Image
+</label>
 
-                        <div
-                            id="statusMessage"
-                            class="status"
-                        ></div>
 
+<input
+id="coverFile"
+class="file-input"
+type="file"
+accept=".jpg,.jpeg,.png,.webp"
+required
+>
 
-                    </form>
 
-                </section>
+<small class="file-help">
+JPG, JPEG, PNG or WEBP
+</small>
 
 
+</div>
 
-                <!-- =========================================
-                     ADMIN INFO
-                ========================================== -->
 
-                <aside class="card">
 
-                    <h2>
-                        Admin
-                    </h2>
 
-                    <p class="card-description">
-                        Current authenticated account.
-                    </p>
 
+<!-- MATERIAL FILE -->
 
-                    <div class="admin-badge">
-                        ✓ Authorized Admin
-                    </div>
+<div class="form-group">
 
+<label>
+Material File
+</label>
 
-                    <div class="admin-info">
 
-                        <span>
-                            EMAIL
-                        </span>
+<input
+id="materialFile"
+class="file-input"
+type="file"
+accept=".pdf,.ppt,.pptx,.png,.jpg,.jpeg"
+required
+>
 
-                        <strong id="adminEmail">
-                            —
-                        </strong>
 
-                    </div>
+<small class="file-help">
+PDF, PPT, PPTX, PNG, JPG or JPEG
+</small>
 
 
-                    <div class="admin-info">
+</div>
 
-                        <span>
-                            USER ID
-                        </span>
 
-                        <strong id="adminUserId">
-                            —
-                        </strong>
 
-                    </div>
 
 
-                    <div class="security-note">
+<!-- PUBLISH -->
 
-                        Cover images are stored in the
-                        public cover bucket.
 
-                        <br><br>
+<div class="publish-box">
 
-                        PDF and PowerPoint materials are
-                        stored in the private material
-                        bucket.
 
-                    </div>
+<input
+id="published"
+type="checkbox"
+checked
+>
 
-                </aside>
 
+<label>
+Publish immediately
+</label>
 
-                        </div>
 
+</div>
 
-            <!-- =========================================
-                 PAYMENT METHODS
-            ========================================== -->
 
-            <section class="payment-section">
 
-                <div class="page-heading payment-heading">
 
-                    <span class="eyebrow">
-                        PAYMENTS
-                    </span>
 
-                    <h1>
-                        Payment Methods
-                    </h1>
+<button
+id="publishButton"
+class="publish-button"
+type="submit"
+>
 
-                    <p>
-                        Add and manage payment methods for your students.
-                    </p>
+Add Material
 
-                </div>
+</button>
 
 
-                <div class="payment-layout">
 
 
-                    <!-- ADD / EDIT PAYMENT -->
+<div
+id="statusMessage"
+class="status"
+></div>
 
-                    <section class="card">
 
-                        <h2 id="paymentFormTitle">
-                            Add Payment Method
-                        </h2>
 
-                        <p class="card-description">
-                            Add your bank information and upload a payment QR code.
-                        </p>
+</form>
 
 
-                        <form id="paymentForm">
+</section>
 
-                            <input
-                                id="paymentEditId"
-                                type="hidden"
-                            >
 
-                            <input
-                                id="paymentOldQrPath"
-                                type="hidden"
-                            >
 
 
-                            <!-- PAYMENT NAME -->
 
-                            <div class="form-group">
+<!-- ADMIN INFO -->
 
-                                <label for="paymentName">
-                                    Payment Name
-                                </label>
 
-                                <input
-                                    id="paymentName"
-                                    type="text"
-                                    placeholder="Example: VietQR"
-                                    required
-                                >
+<aside class="card">
 
-                            </div>
 
+<h2>
+Admin
+</h2>
 
-                            <!-- BANK -->
 
-                            <div class="form-group">
+<p class="card-description">
+Current administrator information.
+</p>
 
-                                <label for="paymentBank">
-                                    Bank Name
-                                </label>
 
-                                <input
-                                    id="paymentBank"
-                                    type="text"
-                                    placeholder="Example: MB Bank"
-                                >
 
-                            </div>
+<div class="admin-info">
 
+<strong id="adminEmail">
+—
+</strong>
 
-                            <!-- ACCOUNT NAME + NUMBER -->
 
-                            <div class="form-row">
+</div>
 
-                                <div class="form-group">
 
-                                    <label for="paymentAccountName">
-                                        Account Name
-                                    </label>
 
-                                    <input
-                                        id="paymentAccountName"
-                                        type="text"
-                                        placeholder="DANG THI MY VY"
-                                    >
+<div class="admin-info">
 
-                                </div>
+<strong id="adminUserId">
+—
+</strong>
 
 
-                                <div class="form-group">
+</div>
 
-                                    <label for="paymentAccountNumber">
-                                        Account Number
-                                    </label>
 
-                                    <input
-                                        id="paymentAccountNumber"
-                                        type="text"
-                                        placeholder="Enter account number"
-                                    >
+</aside>
 
-                                </div>
 
-                            </div>
 
 
-                            <!-- INSTRUCTIONS -->
+</div>
 
-                            <div class="form-group">
 
-                                <label for="paymentInstructions">
-                                    Payment Instructions
-                                </label>
 
-                                <textarea
-                                    id="paymentInstructions"
-                                    placeholder="Example: Scan the QR code and include your email in the transfer note."
-                                ></textarea>
 
-                            </div>
 
+<!-- =========================
+PAYMENT METHODS
+========================= -->
 
-                            <!-- QR -->
 
-                            <div class="form-group">
+<section class="card"
+style="margin-top:40px;">
 
-                                <label for="paymentQrFile">
-                                    Payment QR Image
-                                </label>
 
-                                <input
-                                    id="paymentQrFile"
-                                    class="file-input"
-                                    type="file"
-                                    accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
-                                >
+<h2>
+Payment Methods
+</h2>
 
-                                <small class="file-help">
-                                    JPG, PNG or WEBP
-                                </small>
 
-                            </div>
+<p class="card-description">
+Manage bank information and QR code.
+</p>
 
 
-                            <!-- ACTIVE -->
 
-                            <div class="publish-box">
 
-                                <input
-                                    id="paymentActive"
-                                    type="checkbox"
-                                    checked
-                                >
+<form id="paymentForm">
 
-                                <label for="paymentActive">
-                                    Active — show this payment method to customers
-                                </label>
 
-                            </div>
+<div class="form-group">
 
+<label>
+Payment Name
+</label>
 
-                            <!-- SAVE -->
 
-                            <button
-                                id="paymentSaveButton"
-                                class="publish-button"
-                                type="submit"
-                            >
-                                Add Payment Method
-                            </button>
+<input
+id="paymentName"
+placeholder="Example: VietQR"
+>
 
+</div>
 
-                            <!-- CANCEL EDIT -->
 
-                            <button
-                                id="paymentCancelButton"
-                                class="payment-cancel-button"
-                                type="button"
-                            >
-                                Cancel Edit
-                            </button>
 
 
-                            <!-- STATUS -->
+<div class="form-row">
 
-                            <div
-                                id="paymentStatus"
-                                class="status"
-                            ></div>
 
-                        </form>
+<div class="form-group">
 
-                    </section>
+<label>
+Bank Name
+</label>
 
 
-                    <!-- SAVED PAYMENT METHODS -->
+<input
+id="paymentBank"
+placeholder="MB Bank"
+>
 
-                    <aside class="card">
 
-                        <h2>
-                            Saved Payment Methods
-                        </h2>
+</div>
 
-                        <p class="card-description">
-                            Your current payment options.
-                        </p>
 
 
-                        <div id="paymentMethodsList">
 
-                            <p class="payment-empty">
-                                Loading payment methods...
-                            </p>
+<div class="form-group">
 
-                        </div>
+<label>
+Account Number
+</label>
 
-                    </aside>
 
+<input
+id="paymentAccountNumber"
+>
 
-                </div>
+</div>
 
-            </section>
 
 
-        </section>
+</div>
 
 
-    </main>
 
 
 
-    <!-- =====================================================
-         SUPABASE
-    ====================================================== -->
+<div class="form-group">
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
-    ></script>
+<label>
+Account Name
+</label>
 
 
-    <script>
+<input
+id="paymentAccountName"
+placeholder="DANG THI MY VY"
+>
 
-        /* =====================================================
-           SUPABASE CONFIG
-        ===================================================== */
 
-        const SUPABASE_URL =
-            "https://eunvkjirdgovwgclqkcm.supabase.co";
+</div>
 
 
-        /*
-            DÁN PUBLISHABLE KEY CỦA M VÀO ĐÂY.
 
-            Dùng key bắt đầu kiểu:
-            sb_publishable_...
 
-            KHÔNG dùng Secret Key.
-        */
 
-        const SUPABASE_KEY =
-            "sb_publishable_cvGGPzroACteZ2Y5bIYo8w_gUXkqtUV";
+<div class="form-group">
 
+<label>
+Payment Instructions
+</label>
 
-        const supabaseClient =
-            supabase.createClient(
-                SUPABASE_URL,
-                SUPABASE_KEY
-            );
 
+<textarea
+id="paymentInstructions"
+placeholder="Scan QR and include your email..."
+></textarea>
 
 
-        /* =====================================================
-           ELEMENTS
-        ===================================================== */
+</div>
 
-        const pageLoading =
-            document.getElementById(
-                "pageLoading"
-            );
 
 
-        const accessDenied =
-            document.getElementById(
-                "accessDenied"
-            );
 
 
-        const accessMessage =
-            document.getElementById(
-                "accessMessage"
-            );
+<div class="form-group">
 
 
-        const adminDashboard =
-            document.getElementById(
-                "adminDashboard"
-            );
+<label>
+Payment QR Image
+</label>
 
 
-        const logoutButton =
-            document.getElementById(
-                "logoutButton"
-            );
+<input
+id="paymentQrFile"
+type="file"
+accept=".jpg,.jpeg,.png,.webp"
+>
 
 
-        const adminEmail =
-            document.getElementById(
-                "adminEmail"
-            );
+<small class="file-help">
+JPG, PNG or WEBP
+</small>
 
 
-        const adminUserId =
-            document.getElementById(
-                "adminUserId"
-            );
+</div>
 
 
-        const materialForm =
-            document.getElementById(
-                "materialForm"
-            );
 
 
-        const publishButton =
-            document.getElementById(
-                "publishButton"
-            );
+<button
+id="paymentSaveButton"
+class="publish-button"
+type="submit"
+>
 
+Add Payment Method
 
-        const statusMessage =
-            document.getElementById(
-                "statusMessage"
-            );
+</button>
 
 
 
-        /* =====================================================
-           STATUS MESSAGE
-        ===================================================== */
 
-        function showStatus(
-            message,
-            type
-        ) {
+<div
+id="paymentStatus"
+class="status"
+></div>
 
-            statusMessage.textContent =
-                message;
 
 
-            statusMessage.className =
-                `status ${type}`;
+</form>
 
-        }
 
+</section>
 
 
-        /* =====================================================
-           SAFE FILE NAME
-        ===================================================== */
 
-        function makeSafeName(text) {
 
-            const result =
-                text
-                    .toLowerCase()
+</section>
 
-                    .normalize("NFD")
 
-                    .replace(
-                        /[\u0300-\u036f]/g,
-                        ""
-                    )
+</main>
 
-                    .replace(
-                        /[^a-z0-9]+/g,
-                        "-"
-                    )
 
-                    .replace(
-                        /^-+|-+$/g,
-                        ""
-                    );
 
 
-            return result || "material";
 
-        }
+<script
+src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+</script>
 
 
 
-        /* =====================================================
-           CHECK ADMIN
-        ===================================================== */
 
-        async function checkAdmin() {
+<script>
+    
+const SUPABASE_URL =
+"https://eunvkjirdgovwgclqkcm.supabase.co";
 
-            try {
 
-                const {
-                    data: { user },
-                    error: userError
-                } =
-                    await supabaseClient
-                        .auth
-                        .getUser();
+const SUPABASE_KEY =
+"sb_publishable_cvGGPzroACteZ2Y5bIYo8w_gUXkqtUV";
 
 
-                pageLoading.style.display =
-                    "none";
 
+const supabaseClient =
+supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
 
-                /* ---------------------------------------------
-                   NOT LOGGED IN
-                --------------------------------------------- */
 
-                if (
-                    userError ||
-                    !user
-                ) {
 
-                    accessDenied.style.display =
-                        "block";
 
 
-                    adminDashboard.style.display =
-                        "none";
+const pageLoading =
+document.getElementById(
+    "pageLoading"
+);
 
 
-                    logoutButton.style.display =
-                        "none";
+const adminDashboard =
+document.getElementById(
+    "adminDashboard"
+);
 
 
-                    accessMessage.textContent =
-                        "Please log in with your admin account to access this dashboard.";
+const accessDenied =
+document.getElementById(
+    "accessDenied"
+);
 
 
-                    return;
+const logoutButton =
+document.getElementById(
+    "logoutButton"
+);
 
-                }
 
+const materialForm =
+document.getElementById(
+    "materialForm"
+);
 
 
-                /* ---------------------------------------------
-                   CHECK ADMIN DATABASE
-                --------------------------------------------- */
+const publishButton =
+document.getElementById(
+    "publishButton"
+);
 
-                const {
-                    data: isAdmin,
-                    error: adminError
-                } =
-                    await supabaseClient
-                        .rpc(
-                            "is_admin"
-                        );
 
+const statusMessage =
+document.getElementById(
+    "statusMessage"
+);
 
-                if (adminError) {
 
-                    console.error(
-                        adminError
-                    );
 
 
-                    accessDenied.style.display =
-                        "block";
 
+function showStatus(
+    element,
+    message,
+    type
+){
 
-                    adminDashboard.style.display =
-                        "none";
 
+    element.textContent =
+    message;
 
-                    logoutButton.style.display =
-                        "block";
 
+    element.className =
+    "status " + type;
 
-                    accessMessage.textContent =
-                        "Unable to verify admin access.";
-
-
-                    return;
-
-                }
-
-
-
-                /* ---------------------------------------------
-                   NORMAL USER
-                --------------------------------------------- */
-
-                if (!isAdmin) {
-
-                    accessDenied.style.display =
-                        "block";
-
-
-                    adminDashboard.style.display =
-                        "none";
-
-
-                    logoutButton.style.display =
-                        "block";
-
-
-                    accessMessage.textContent =
-                        "This account does not have admin permission.";
-
-
-                    return;
-
-                }
-
-
-
-                /* ---------------------------------------------
-                   ADMIN
-                --------------------------------------------- */
-
-                accessDenied.style.display =
-                    "none";
-
-
-                adminDashboard.style.display =
-                    "block";
-
-
-                logoutButton.style.display =
-                    "inline-flex";
-
-
-                adminEmail.textContent =
-                    user.email || "—";
-
-
-                adminUserId.textContent =
-    user.id || "—";
-
-await loadPaymentMethods();
-
-
-            } catch (error) {
-
-                console.error(
-                    "Admin check error:",
-                    error
-                );
-
-
-                pageLoading.style.display =
-                    "none";
-
-
-                accessDenied.style.display =
-                    "block";
-
-
-                accessMessage.textContent =
-                    "Something went wrong while checking admin access.";
-
-            }
-
-        }
-
-
-
-        /* =====================================================
-           LOG OUT
-        ===================================================== */
-
-        logoutButton.addEventListener(
-            "click",
-            async () => {
-
-                await supabaseClient
-                    .auth
-                    .signOut();
-
-
-                window.location.href =
-                    "auth.html";
-
-            }
-        );
-
-
-
-        /* =====================================================
-           ADD MATERIAL
-        ===================================================== */
-
-        materialForm.addEventListener(
-            "submit",
-            async (event) => {
-
-                event.preventDefault();
-
-
-
-                /* ---------------------------------------------
-                   FORM VALUES
-                --------------------------------------------- */
-
-                const title =
-                    document
-                        .getElementById("title")
-                        .value
-                        .trim();
-
-
-                const description =
-                    document
-                        .getElementById("description")
-                        .value
-                        .trim();
-
-
-                const subject =
-                    document
-                        .getElementById("subject")
-                        .value;
-
-
-                const course =
-                    document
-                        .getElementById("course")
-                        .value
-                        .trim();
-
-
-                const price =
-                    Number(
-                        document
-                            .getElementById("price")
-                            .value
-                    );
-
-
-                const published =
-                    document
-                        .getElementById("published")
-                        .checked;
-
-
-                const coverFile =
-                    document
-                        .getElementById("coverFile")
-                        .files[0];
-
-
-                const materialFile =
-                    document
-                        .getElementById("materialFile")
-                        .files[0];
-
-
-
-                /* =================================================
-                   VALIDATION
-                ================================================= */
-
-                if (!title) {
-
-                    showStatus(
-                        "Please enter a title.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-                if (!description) {
-
-                    showStatus(
-                        "Please enter a description.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-                if (!subject) {
-
-                    showStatus(
-                        "Please select a subject.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-                if (
-                    Number.isNaN(price) ||
-                    price < 0
-                ) {
-
-                    showStatus(
-                        "Please enter a valid price.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-                if (!coverFile) {
-
-                    showStatus(
-                        "Please choose a cover image.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-                if (!materialFile) {
-
-                    showStatus(
-                        "Please choose a PDF or PowerPoint file.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-
-                /* =================================================
-                   COVER VALIDATION
-                ================================================= */
-
-                const coverExtension =
-                    coverFile
-                        .name
-                        .split(".")
-                        .pop()
-                        .toLowerCase();
-
-
-                const allowedCoverExtensions = [
-                    "jpg",
-                    "jpeg",
-                    "png",
-                    "webp"
-                ];
-
-
-                if (
-                    !allowedCoverExtensions
-                        .includes(
-                            coverExtension
-                        )
-                ) {
-
-                    showStatus(
-                        "Cover must be JPG, PNG, or WEBP.",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-
-                /* =================================================
-                   MATERIAL VALIDATION
-                ================================================= */
-
-                const materialExtension =
-                    materialFile
-                        .name
-                        .split(".")
-                        .pop()
-                        .toLowerCase();
-
-
-                const allowedMaterialExtensions = [
-                    "pdf",
-                    "pptx"
-                ];
-
-
-                if (
-                    !allowedMaterialExtensions
-                        .includes(
-                            materialExtension
-                        )
-                ) {
-
-                    showStatus(
-                        "Material must be PDF or PowerPoint (.pptx).",
-                        "error"
-                    );
-
-                    return;
-
-                }
-
-
-
-                /* =================================================
-                   CREATE UNIQUE PATHS
-                ================================================= */
-
-                const timestamp =
-                    Date.now();
-
-
-                const safeTitle =
-                    makeSafeName(title);
-
-
-                const coverPath =
-                    `${timestamp}-${safeTitle}.${coverExtension}`;
-
-
-                const materialPath =
-                    `${timestamp}-${safeTitle}.${materialExtension}`;
-
-
-
-                /* =================================================
-                   CONTENT TYPE
-                ================================================= */
-
-                let materialContentType;
-
-
-                if (
-                    materialExtension === "pdf"
-                ) {
-
-                    materialContentType =
-                        "application/pdf";
-
-                } else {
-
-                    materialContentType =
-                        "application/vnd.openxmlformats-officedocument.presentationml.presentation";
-
-                }
-
-
-
-                /* =================================================
-                   START
-                ================================================= */
-
-                publishButton.disabled =
-                    true;
-
-
-                publishButton.textContent =
-                    "Uploading...";
-
-
-                try {
-
-
-                    /* =============================================
-                       UPLOAD COVER
-                    ============================================= */
-
-                    showStatus(
-                        "Uploading cover image...",
-                        "success"
-                    );
-
-
-                    const {
-                        error: coverError
-                    } =
-                        await supabaseClient
-                            .storage
-                            .from(
-                                "material-covers"
-                            )
-                            .upload(
-                                coverPath,
-                                coverFile,
-                                {
-                                    cacheControl:
-                                        "3600",
-
-                                    upsert:
-                                        false
-                                }
-                            );
-
-
-                    if (coverError) {
-
-                        throw new Error(
-                            "Cover upload failed: " +
-                            coverError.message
-                        );
-
-                    }
-
-
-
-                    /* =============================================
-                       UPLOAD PDF / PPTX
-                    ============================================= */
-
-                    if (
-                        materialExtension === "pdf"
-                    ) {
-
-                        showStatus(
-                            "Uploading PDF...",
-                            "success"
-                        );
-
-                    } else {
-
-                        showStatus(
-                            "Uploading PowerPoint...",
-                            "success"
-                        );
-
-                    }
-
-
-                    const {
-                        error: materialError
-                    } =
-                        await supabaseClient
-                            .storage
-                            .from(
-                                "material-files"
-                            )
-                            .upload(
-                                materialPath,
-                                materialFile,
-                                {
-                                    cacheControl:
-                                        "3600",
-
-                                    upsert:
-                                        false,
-
-                                    contentType:
-                                        materialContentType
-                                }
-                            );
-
-
-
-                    /* =============================================
-                       MATERIAL UPLOAD FAILED
-                    ============================================= */
-
-                    if (materialError) {
-
-
-                        await supabaseClient
-                            .storage
-                            .from(
-                                "material-covers"
-                            )
-                            .remove([
-                                coverPath
-                            ]);
-
-
-                        throw new Error(
-                            "Material upload failed: " +
-                            materialError.message
-                        );
-
-                    }
-
-
-
-                    /* =============================================
-                       INSERT DATABASE ROW
-                    ============================================= */
-
-                    showStatus(
-                        "Saving material...",
-                        "success"
-                    );
-
-
-                    const {
-                        error: databaseError
-                    } =
-                        await supabaseClient
-                            .from(
-                                "Materials"
-                            )
-                            .insert({
-
-                                title:
-                                    title,
-
-                                description:
-                                    description,
-
-                                subject:
-                                    subject,
-
-                                course:
-                                    course || null,
-
-                                price:
-                                    price,
-
-                                file_path:
-                                    materialPath,
-
-                                cover_path:
-                                    coverPath,
-
-                                is_published:
-                                    published
-
-                            });
-
-
-
-                    /* =============================================
-                       DATABASE FAILED
-                    ============================================= */
-
-                    if (databaseError) {
-
-
-                        await supabaseClient
-                            .storage
-                            .from(
-                                "material-covers"
-                            )
-                            .remove([
-                                coverPath
-                            ]);
-
-
-                        await supabaseClient
-                            .storage
-                            .from(
-                                "material-files"
-                            )
-                            .remove([
-                                materialPath
-                            ]);
-
-
-                        throw new Error(
-                            "Database error: " +
-                            databaseError.message
-                        );
-
-                    }
-
-
-
-                    /* =============================================
-                       SUCCESS
-                    ============================================= */
-
-                    if (published) {
-
-                        showStatus(
-                            "Material uploaded and published successfully!",
-                            "success"
-                        );
-
-                    } else {
-
-                        showStatus(
-                            "Material uploaded successfully. It is currently unpublished.",
-                            "success"
-                        );
-
-                    }
-
-
-                    materialForm.reset();
-
-
-                } catch (error) {
-
-
-                    console.error(
-                        "Upload error:",
-                        error
-                    );
-
-
-                    showStatus(
-                        error.message ||
-                        "Something went wrong.",
-                        "error"
-                    );
-
-
-                } finally {
-
-
-                    publishButton.disabled =
-                        false;
-
-
-                    publishButton.textContent =
-                        "Add Material";
-
-                }
-
-            }
-        );
-
-    /* =====================================================
-   PAYMENT METHODS
-===================================================== */
-
-const paymentForm =
-    document.getElementById("paymentForm");
-
-const paymentSaveButton =
-    document.getElementById("paymentSaveButton");
-
-const paymentCancelButton =
-    document.getElementById("paymentCancelButton");
-
-const paymentStatus =
-    document.getElementById("paymentStatus");
-
-const paymentMethodsList =
-    document.getElementById("paymentMethodsList");
-
-
-/* =====================================================
-   PAYMENT STATUS
-===================================================== */
-
-function showPaymentStatus(message, type) {
-
-    paymentStatus.textContent =
-        message;
-
-    paymentStatus.className =
-        `status ${type}`;
 
 }
 
 
-/* =====================================================
-   GET PUBLIC QR URL
-===================================================== */
-
-function getPaymentQrUrl(qrPath) {
-
-    if (!qrPath) {
-        return "";
-    }
 
 
-    const { data } =
-        supabaseClient
-            .storage
-            .from("payment-qr")
-            .getPublicUrl(qrPath);
 
 
-    return data.publicUrl;
+function makeSafeName(text){
+
+
+    return text
+    .toLowerCase()
+    .replace(
+        /[^a-z0-9]+/g,
+        "-"
+    )
+    .replace(
+        /^-|-$/g,
+        ""
+    );
 
 }
 
 
-/* =====================================================
-   RESET PAYMENT FORM
-===================================================== */
-
-function resetPaymentForm() {
-
-    paymentForm.reset();
 
 
-    document
-        .getElementById("paymentEditId")
-        .value = "";
 
 
-    document
-        .getElementById("paymentOldQrPath")
-        .value = "";
+async function checkAdmin(){
 
 
-    document
-        .getElementById("paymentActive")
-        .checked = true;
+    const {
+        data:{
+            session
+        }
+    } =
+    await supabaseClient
+    .auth
+    .getSession();
 
 
-    document
-        .getElementById("paymentFormTitle")
-        .textContent =
-            "Add Payment Method";
+
+    if(!session){
 
 
-    paymentSaveButton.textContent =
-        "Add Payment Method";
-
-
-    paymentCancelButton.style.display =
+        pageLoading.style.display =
         "none";
 
 
-    paymentStatus.className =
-        "status";
-
-
-    paymentStatus.textContent =
-        "";
-
-}
-
-
-/* =====================================================
-   LOAD PAYMENT METHODS
-===================================================== */
-
-async function loadPaymentMethods() {
-
-    paymentMethodsList.innerHTML =
-        `
-        <p class="payment-empty">
-            Loading payment methods...
-        </p>
-        `;
-
-
-    const {
-        data,
-        error
-    } =
-        await supabaseClient
-            .from("payment_methods")
-            .select("*")
-            .order(
-                "created_at",
-                {
-                    ascending: false
-                }
-            );
-
-
-    if (error) {
-
-        console.error(
-            "Payment methods load error:",
-            error
-        );
-
-
-        paymentMethodsList.innerHTML =
-            `
-            <p class="payment-empty">
-                Could not load payment methods.
-            </p>
-            `;
-
-
-        return;
-
-    }
-
-
-    if (
-        !data ||
-        data.length === 0
-    ) {
-
-        paymentMethodsList.innerHTML =
-            `
-            <p class="payment-empty">
-                No payment methods yet.
-            </p>
-            `;
-
-
-        return;
-
-    }
-
-
-    paymentMethodsList.innerHTML =
-        "";
-
-
-    data.forEach(
-        (method) => {
-
-            createPaymentMethodCard(
-                method
-            );
-
-        }
-    );
-
-}
-
-
-/* =====================================================
-   CREATE PAYMENT METHOD CARD
-===================================================== */
-
-function createPaymentMethodCard(method) {
-
-    const item =
-        document.createElement("div");
-
-
-    item.className =
-        "payment-item";
-
-
-    /* TOP */
-
-    const top =
-        document.createElement("div");
-
-
-    top.className =
-        "payment-item-top";
-
-
-    const info =
-        document.createElement("div");
-
-
-    const title =
-        document.createElement("h3");
-
-
-    title.textContent =
-        method.name ||
-        "Payment Method";
-
-
-    const bankDetails =
-        document.createElement("p");
-
-
-    const details = [
-
-        method.bank_name,
-
-        method.account_name,
-
-        method.account_number
-
-    ].filter(Boolean);
-
-
-    bankDetails.textContent =
-        details.join(" • ") ||
-        "No bank information";
-
-
-    info.appendChild(
-        title
-    );
-
-
-    info.appendChild(
-        bankDetails
-    );
-
-
-    /* STATUS BADGE */
-
-    const badge =
-        document.createElement("span");
-
-
-    if (method.is_active) {
-
-        badge.className =
-            "active-badge";
-
-
-        badge.textContent =
-            "Active";
-
-    } else {
-
-        badge.className =
-            "inactive-badge";
-
-
-        badge.textContent =
-            "Inactive";
-
-    }
-
-
-    top.appendChild(
-        info
-    );
-
-
-    top.appendChild(
-        badge
-    );
-
-
-    item.appendChild(
-        top
-    );
-
-
-    /* INSTRUCTIONS */
-
-    if (method.instructions) {
-
-        const instructions =
-            document.createElement("p");
-
-
-        instructions.textContent =
-            method.instructions;
-
-
-        item.appendChild(
-            instructions
-        );
-
-    }
-
-
-    /* QR */
-
-    if (method.qr_path) {
-
-        const qrImage =
-            document.createElement("img");
-
-
-        qrImage.className =
-            "payment-qr-preview";
-
-
-        qrImage.src =
-            getPaymentQrUrl(
-                method.qr_path
-            );
-
-
-        qrImage.alt =
-            `${method.name} QR Code`;
-
-
-        item.appendChild(
-            qrImage
-        );
-
-    }
-
-
-    /* ACTIONS */
-
-    const actions =
-        document.createElement("div");
-
-
-    actions.className =
-        "payment-actions";
-
-
-    /* EDIT */
-
-    const editButton =
-        document.createElement("button");
-
-
-    editButton.type =
-        "button";
-
-
-    editButton.className =
-        "payment-action-button";
-
-
-    editButton.textContent =
-        "Edit";
-
-
-    editButton.addEventListener(
-        "click",
-        () => {
-
-            startPaymentEdit(
-                method
-            );
-
-        }
-    );
-
-
-    /* ACTIVATE / DEACTIVATE */
-
-    const toggleButton =
-        document.createElement("button");
-
-
-    toggleButton.type =
-        "button";
-
-
-    toggleButton.className =
-        "payment-action-button";
-
-
-    toggleButton.textContent =
-        method.is_active
-            ? "Deactivate"
-            : "Activate";
-
-
-    toggleButton.addEventListener(
-        "click",
-        () => {
-
-            togglePaymentMethod(
-                method
-            );
-
-        }
-    );
-
-
-    /* DELETE */
-
-    const deleteButton =
-        document.createElement("button");
-
-
-    deleteButton.type =
-        "button";
-
-
-    deleteButton.className =
-        "payment-action-button delete";
-
-
-    deleteButton.textContent =
-        "Delete";
-
-
-    deleteButton.addEventListener(
-        "click",
-        () => {
-
-            deletePaymentMethod(
-                method
-            );
-
-        }
-    );
-
-
-    actions.appendChild(
-        editButton
-    );
-
-
-    actions.appendChild(
-        toggleButton
-    );
-
-
-    actions.appendChild(
-        deleteButton
-    );
-
-
-    item.appendChild(
-        actions
-    );
-
-
-    paymentMethodsList.appendChild(
-        item
-    );
-
-}
-
-
-/* =====================================================
-   EDIT PAYMENT METHOD
-===================================================== */
-
-function startPaymentEdit(method) {
-
-    document
-        .getElementById("paymentEditId")
-        .value =
-            method.id;
-
-
-    document
-        .getElementById("paymentOldQrPath")
-        .value =
-            method.qr_path || "";
-
-
-    document
-        .getElementById("paymentName")
-        .value =
-            method.name || "";
-
-
-    document
-        .getElementById("paymentBank")
-        .value =
-            method.bank_name || "";
-
-
-    document
-        .getElementById("paymentAccountName")
-        .value =
-            method.account_name || "";
-
-
-    document
-        .getElementById("paymentAccountNumber")
-        .value =
-            method.account_number || "";
-
-
-    document
-        .getElementById("paymentInstructions")
-        .value =
-            method.instructions || "";
-
-
-    document
-        .getElementById("paymentActive")
-        .checked =
-            Boolean(
-                method.is_active
-            );
-
-
-    document
-        .getElementById("paymentQrFile")
-        .value =
-            "";
-
-
-    document
-        .getElementById("paymentFormTitle")
-        .textContent =
-            "Edit Payment Method";
-
-
-    paymentSaveButton.textContent =
-        "Save Changes";
-
-
-    paymentCancelButton.style.display =
+        accessDenied.style.display =
         "block";
 
 
-    paymentStatus.className =
-        "status";
+        return;
+
+    }
 
 
-    paymentStatus.textContent =
-        "";
 
 
-    paymentForm.scrollIntoView(
-        {
-            behavior:
-                "smooth",
 
-            block:
-                "start"
-        }
-    );
+    document
+    .getElementById(
+        "adminEmail"
+    )
+    .textContent =
+    session.user.email;
+
+
+
+    document
+    .getElementById(
+        "adminUserId"
+    )
+    .textContent =
+    session.user.id;
+
+
+
+
+    pageLoading.style.display =
+    "none";
+
+
+    adminDashboard.style.display =
+    "block";
+
+
+    logoutButton.style.display =
+    "block";
+
 
 }
 
 
-/* =====================================================
-   CANCEL EDIT
-===================================================== */
 
-paymentCancelButton.addEventListener(
-    "click",
-    () => {
 
-        resetPaymentForm();
 
-    }
+
+
+logoutButton.addEventListener(
+"click",
+async()=>{
+
+
+    await supabaseClient
+    .auth
+    .signOut();
+
+
+
+    location.reload();
+
+
+});
+
+
+
+
+
+
+
+
+materialForm.addEventListener(
+"submit",
+async(e)=>{
+
+
+e.preventDefault();
+
+
+
+
+
+const title =
+document
+.getElementById("title")
+.value
+.trim();
+
+
+
+const description =
+document
+.getElementById("description")
+.value
+.trim();
+
+
+
+const subject =
+document
+.getElementById("subject")
+.value;
+
+
+
+const course =
+document
+.getElementById("course")
+.value
+.trim();
+
+
+
+const price =
+Number(
+document
+.getElementById("price")
+.value
 );
 
 
-/* =====================================================
-   ADD / UPDATE PAYMENT METHOD
-===================================================== */
+
+const published =
+document
+.getElementById("published")
+.checked;
+
+
+
+
+
+const coverFile =
+document
+.getElementById("coverFile")
+.files[0];
+
+
+
+const materialFile =
+document
+.getElementById("materialFile")
+.files[0];
+
+
+
+
+
+
+
+if(!coverFile || !materialFile){
+
+
+showStatus(
+statusMessage,
+"Please choose files.",
+"error"
+);
+
+
+return;
+
+
+}
+
+
+
+
+
+
+
+const materialExtension =
+materialFile.name
+.split(".")
+.pop()
+.toLowerCase();
+
+
+
+
+const allowedMaterialExtensions =
+[
+"pdf",
+"ppt",
+"pptx",
+"png",
+"jpg",
+"jpeg"
+];
+
+
+
+
+
+if(
+!allowedMaterialExtensions.includes(
+materialExtension
+)
+){
+
+
+showStatus(
+statusMessage,
+"Unsupported material file.",
+"error"
+);
+
+
+return;
+
+
+}
+
+
+
+
+
+
+publishButton.disabled =
+true;
+
+
+publishButton.textContent =
+"Uploading...";
+
+
+
+
+
+try{
+
+
+
+const time =
+Date.now();
+
+
+
+const coverExtension =
+coverFile.name
+.split(".")
+.pop()
+.toLowerCase();
+
+
+
+
+const coverPath =
+`${time}-${makeSafeName(title)}.${coverExtension}`;
+
+
+
+const materialPath =
+`${time}-${makeSafeName(title)}.${materialExtension}`;
+
+
+
+
+
+
+
+
+await supabaseClient
+.storage
+.from(
+"material-covers"
+)
+.upload(
+coverPath,
+coverFile
+);
+
+
+
+
+
+
+
+await supabaseClient
+.storage
+.from(
+"material-files"
+)
+.upload(
+materialPath,
+materialFile,
+{
+contentType:
+materialFile.type
+}
+);
+
+
+
+
+
+
+
+const {
+error
+}
+=
+await supabaseClient
+.from(
+"Materials"
+)
+.insert({
+
+title,
+
+description,
+
+subject,
+
+course,
+
+price,
+
+cover_path:
+coverPath,
+
+file_path:
+materialPath,
+
+is_published:
+published
+
+});
+
+
+
+
+
+
+if(error)
+throw error;
+
+
+
+
+
+showStatus(
+statusMessage,
+"Material uploaded successfully!",
+"success"
+);
+
+
+
+materialForm.reset();
+
+
+
+
+
+}catch(error){
+
+
+
+console.error(error);
+
+
+
+showStatus(
+statusMessage,
+error.message,
+"error"
+);
+
+
+
+}finally{
+
+
+
+publishButton.disabled =
+false;
+
+
+
+publishButton.textContent =
+"Add Material";
+
+
+}
+
+
+
+});
+
+
+
+
+
+
+
+
+
+const paymentForm =
+document.getElementById(
+"paymentForm"
+);
+
+
+const paymentStatus =
+document.getElementById(
+"paymentStatus"
+);
+
+
+
+
+
+
 
 paymentForm.addEventListener(
-    "submit",
-    async (event) => {
+"submit",
+async(e)=>{
 
-        event.preventDefault();
 
+e.preventDefault();
 
-        /* VALUES */
 
-        const editId =
-            document
-                .getElementById(
-                    "paymentEditId"
-                )
-                .value;
 
 
-        const oldQrPath =
-            document
-                .getElementById(
-                    "paymentOldQrPath"
-                )
-                .value;
 
+const qrFile =
+document
+.getElementById(
+"paymentQrFile"
+)
+.files[0];
 
-        const name =
-            document
-                .getElementById(
-                    "paymentName"
-                )
-                .value
-                .trim();
 
 
-        const bankName =
-            document
-                .getElementById(
-                    "paymentBank"
-                )
-                .value
-                .trim();
+let qrPath =
+null;
 
 
-        const accountName =
-            document
-                .getElementById(
-                    "paymentAccountName"
-                )
-                .value
-                .trim();
 
 
-        const accountNumber =
-            document
-                .getElementById(
-                    "paymentAccountNumber"
-                )
-                .value
-                .trim();
+try{
 
 
-        const instructions =
-            document
-                .getElementById(
-                    "paymentInstructions"
-                )
-                .value
-                .trim();
+if(qrFile){
 
 
-        const isActive =
-            document
-                .getElementById(
-                    "paymentActive"
-                )
-                .checked;
+qrPath =
+`${Date.now()}-${qrFile.name}`;
 
 
-        const qrFile =
-            document
-                .getElementById(
-                    "paymentQrFile"
-                )
-                .files[0];
 
-
-        /* VALIDATION */
-
-        if (!name) {
-
-            showPaymentStatus(
-                "Please enter a payment name.",
-                "error"
-            );
-
-
-            return;
-
-        }
-
-
-        /*
-            New payment methods require a QR.
-            Editing can keep the old QR.
-        */
-
-        if (
-            !editId &&
-            !qrFile
-        ) {
-
-            showPaymentStatus(
-                "Please choose a QR image.",
-                "error"
-            );
-
-
-            return;
-
-        }
-
-
-        let newQrPath =
-            oldQrPath || null;
-
-
-        let uploadedNewQr =
-            false;
-
-
-        paymentSaveButton.disabled =
-            true;
-
-
-        paymentSaveButton.textContent =
-            "Saving...";
-
-
-        try {
-
-
-            /* =============================================
-               UPLOAD NEW QR IF SELECTED
-            ============================================= */
-
-            if (qrFile) {
-
-                const extension =
-                    qrFile
-                        .name
-                        .split(".")
-                        .pop()
-                        .toLowerCase();
-
-
-                const allowedExtensions = [
-
-                    "jpg",
-
-                    "jpeg",
-
-                    "png",
-
-                    "webp"
-
-                ];
-
-
-                if (
-                    !allowedExtensions
-                        .includes(
-                            extension
-                        )
-                ) {
-
-                    throw new Error(
-                        "QR image must be JPG, PNG, or WEBP."
-                    );
-
-                }
-
-
-                const safeName =
-                    makeSafeName(
-                        name
-                    );
-
-
-                newQrPath =
-                    `${Date.now()}-${safeName}.${extension}`;
-
-
-                showPaymentStatus(
-                    "Uploading QR image...",
-                    "success"
-                );
-
-
-                const {
-                    error: uploadError
-                } =
-                    await supabaseClient
-                        .storage
-                        .from(
-                            "payment-qr"
-                        )
-                        .upload(
-                            newQrPath,
-                            qrFile,
-                            {
-                                cacheControl:
-                                    "3600",
-
-                                upsert:
-                                    false
-                            }
-                        );
-
-
-                if (uploadError) {
-
-                    throw new Error(
-                        "QR upload failed: " +
-                        uploadError.message
-                    );
-
-                }
-
-
-                uploadedNewQr =
-                    true;
-
-            }
-
-
-            /* =============================================
-               DATABASE DATA
-            ============================================= */
-
-            const paymentData = {
-
-                name:
-                    name,
-
-                bank_name:
-                    bankName || null,
-
-                account_name:
-                    accountName || null,
-
-                account_number:
-                    accountNumber || null,
-
-                instructions:
-                    instructions || null,
-
-                qr_path:
-                    newQrPath,
-
-                is_active:
-                    isActive
-
-            };
-
-
-            let databaseError;
-
-
-            /* =============================================
-               UPDATE EXISTING
-            ============================================= */
-
-            if (editId) {
-
-                const {
-                    error
-                } =
-                    await supabaseClient
-                        .from(
-                            "payment_methods"
-                        )
-                        .update(
-                            paymentData
-                        )
-                        .eq(
-                            "id",
-                            editId
-                        );
-
-
-                databaseError =
-                    error;
-
-            }
-
-
-            /* =============================================
-               INSERT NEW
-            ============================================= */
-
-            else {
-
-                const {
-                    error
-                } =
-                    await supabaseClient
-                        .from(
-                            "payment_methods"
-                        )
-                        .insert(
-                            paymentData
-                        );
-
-
-                databaseError =
-                    error;
-
-            }
-
-
-            /* =============================================
-               DATABASE ERROR
-            ============================================= */
-
-            if (databaseError) {
-
-
-                /*
-                    If database save failed,
-                    remove newly uploaded QR.
-                */
-
-                if (
-                    uploadedNewQr &&
-                    newQrPath
-                ) {
-
-                    await supabaseClient
-                        .storage
-                        .from(
-                            "payment-qr"
-                        )
-                        .remove(
-                            [
-                                newQrPath
-                            ]
-                        );
-
-                }
-
-
-                throw new Error(
-                    "Database error: " +
-                    databaseError.message
-                );
-
-            }
-
-
-            /* =============================================
-               REMOVE OLD QR AFTER SUCCESSFUL EDIT
-            ============================================= */
-
-            if (
-                editId &&
-                uploadedNewQr &&
-                oldQrPath &&
-                oldQrPath !== newQrPath
-            ) {
-
-                const {
-                    error: oldQrDeleteError
-                } =
-                    await supabaseClient
-                        .storage
-                        .from(
-                            "payment-qr"
-                        )
-                        .remove(
-                            [
-                                oldQrPath
-                            ]
-                        );
-
-
-                if (oldQrDeleteError) {
-
-                    console.warn(
-                        "Old QR cleanup failed:",
-                        oldQrDeleteError
-                    );
-
-                }
-
-            }
-
-
-            /* =============================================
-               SUCCESS
-            ============================================= */
-
-            if (editId) {
-
-                showPaymentStatus(
-                    "Payment method updated successfully!",
-                    "success"
-                );
-
-            } else {
-
-                showPaymentStatus(
-                    "Payment method added successfully!",
-                    "success"
-                );
-
-            }
-
-
-            await loadPaymentMethods();
-
-
-            setTimeout(
-                () => {
-
-                    resetPaymentForm();
-
-                },
-                900
-            );
-
-
-        } catch (error) {
-
-            console.error(
-                "Payment method error:",
-                error
-            );
-
-
-            showPaymentStatus(
-                error.message ||
-                "Something went wrong.",
-                "error"
-            );
-
-
-        } finally {
-
-            paymentSaveButton.disabled =
-                false;
-
-
-            paymentSaveButton.textContent =
-                editId
-                    ? "Save Changes"
-                    : "Add Payment Method";
-
-        }
-
-    }
+const {
+error
+}
+=
+await supabaseClient
+.storage
+.from(
+"Payment_QR"
+)
+.upload(
+qrPath,
+qrFile
 );
 
 
-/* =====================================================
-   ACTIVATE / DEACTIVATE
-===================================================== */
 
-async function togglePaymentMethod(method) {
+if(error)
+throw error;
 
-    const {
-        error
-    } =
-        await supabaseClient
-            .from(
-                "payment_methods"
-            )
-            .update(
-                {
-                    is_active:
-                        !method.is_active
-                }
-            )
-            .eq(
-                "id",
-                method.id
-            );
-
-
-    if (error) {
-
-        alert(
-            "Could not update payment method: " +
-            error.message
-        );
-
-
-        return;
-
-    }
-
-
-    await loadPaymentMethods();
 
 }
 
 
-/* =====================================================
-   DELETE PAYMENT METHOD
-===================================================== */
-
-async function deletePaymentMethod(method) {
-
-    const confirmed =
-        window.confirm(
-            `Delete "${method.name}"?`
-        );
 
 
-    if (!confirmed) {
 
-        return;
+const {
+error
+}
+=
+await supabaseClient
+.from(
+"Payment_Methods"
+)
+.insert({
 
-    }
-
-
-    /*
-        Delete database row first.
-    */
-
-    const {
-        error
-    } =
-        await supabaseClient
-            .from(
-                "payment_methods"
-            )
-            .delete()
-            .eq(
-                "id",
-                method.id
-            );
+name:
+document.getElementById(
+"paymentName"
+).value,
 
 
-    if (error) {
-
-        alert(
-            "Could not delete payment method: " +
-            error.message
-        );
+bank:
+document.getElementById(
+"paymentBank"
+).value,
 
 
-        return;
-
-    }
-
-
-    /*
-        Remove QR from Storage.
-    */
-
-    if (method.qr_path) {
-
-        const {
-            error: qrDeleteError
-        } =
-            await supabaseClient
-                .storage
-                .from(
-                    "payment-qr"
-                )
-                .remove(
-                    [
-                        method.qr_path
-                    ]
-                );
+account_number:
+document.getElementById(
+"paymentAccountNumber"
+).value,
 
 
-        if (qrDeleteError) {
-
-            console.warn(
-                "QR cleanup failed:",
-                qrDeleteError
-            );
-
-        }
-
-    }
+account_name:
+document.getElementById(
+"paymentAccountName"
+).value,
 
 
-    resetPaymentForm();
+instructions:
+document.getElementById(
+"paymentInstructions"
+).value,
 
 
-    await loadPaymentMethods();
+qr_path:
+qrPath
+
+
+});
+
+
+
+
+
+if(error)
+throw error;
+
+
+
+
+showStatus(
+paymentStatus,
+"Payment method added!",
+"success"
+);
+
+
+
+paymentForm.reset();
+
+
+
+}catch(error){
+
+
+
+showStatus(
+paymentStatus,
+error.message,
+"error"
+);
+
+
 
 }
 
-        /* =====================================================
-           START PAGE
-        ===================================================== */
 
-        checkAdmin();
 
-    </script>
+});
+
+
+
+
+
+
+
+checkAdmin();
+
+
+</script>
 
 
 </body>
