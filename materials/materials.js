@@ -197,23 +197,78 @@ function addMaterialButtonEvents() {
 
     buttons.forEach((button) => {
 
-        button.addEventListener("click", () => {
 
-            const materialId =
+        button.addEventListener(
+            "click",
+            async () => {
+
+
+                const materialId =
                 button.dataset.id;
 
-            console.log(
-                "Selected material:",
-                materialId
-            );
 
-            // Sau này mình sẽ nối:
-            // login
-            // payment
-            // purchase verification
-            // secure download
+                const { data, error } =
+                await supabaseClient
+                .from("Materials")
+                .select("file_path")
+                .eq(
+                    "id",
+                    materialId
+                )
+                .single();
 
-        });
+
+
+                if(error){
+
+                    console.error(error);
+
+                    alert(
+                    "Cannot open material."
+                    );
+
+                    return;
+
+                }
+
+
+
+
+                if(!data.file_path){
+
+                    alert(
+                    "No file attached."
+                    );
+
+                    return;
+
+                }
+
+
+
+
+
+                const { data:urlData } =
+                supabaseClient
+                .storage
+                .from(
+                    "material-files"
+                )
+                .getPublicUrl(
+                    data.file_path
+                );
+
+
+
+                window.open(
+                    urlData.publicUrl,
+                    "_blank"
+                );
+
+
+            }
+        );
+
 
     });
 
