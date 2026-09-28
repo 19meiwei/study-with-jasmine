@@ -248,23 +248,31 @@ function addMaterialButtonEvents() {
 
 
 
-                const { data:urlData } =
-                supabaseClient
-                .storage
-                .from(
-                    "material-files"
-                )
-                .getPublicUrl(
-                    data.file_path
-                );
+                const { data:urlData, error:urlError } =
+await supabaseClient
+.storage
+.from("material-files")
+.createSignedUrl(
+    data.file_path,
+    60 * 60
+);
 
 
+if(urlError){
 
-                window.open(
-                    urlData.publicUrl,
-                    "_blank"
-                );
+    console.error(urlError);
 
+    alert("Cannot create download link");
+
+    return;
+
+}
+
+
+window.open(
+    urlData.signedUrl,
+    "_blank"
+);
 
             }
         );
