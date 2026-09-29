@@ -59,13 +59,13 @@ const PROGRAMS = {
     },
 
 
-    "English-Chinese Bilingual Chinese": {
-        icon: "EN",
-        chinese: "英中双语中文",
-        title: "English–Chinese Bilingual Chinese",
-        description:
-            "Learn Chinese through English with practical bilingual vocabulary, explanations and examples."
-    }
+    "HSK 3.0": {
+    icon: "汉语",
+    chinese: "汉语水平考试",
+    title: "HSK 3.0",
+    description:
+        "HSK 3.0 preparation materials organized by level, including vocabulary, textbooks, practice and exam resources."
+}
 
 };
 

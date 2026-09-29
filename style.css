@@ -3305,3 +3305,8 @@ small {
 .about-feature-card strong {
     font-size: 15px;
 }
+/* ABOUT - make paragraph text larger */
+.about-copy p {
+    font-size: 24px !important;
+    line-height: 1.8 !important;
+}
