@@ -2395,3 +2395,185 @@ a:active {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
 }
+/* ================================
+   GLOBAL FONT SIZE ADJUSTMENT
+================================ */
+
+body {
+    font-size: 18px;
+}
+
+
+/* Header */
+.nav-links a {
+    font-size: 17px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+}
+
+.logo-text p {
+    font-size: 14px;
+}
+
+
+/* Hero section */
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.hero h2,
+.hero .subtitle {
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+
+/* Tags */
+.hero-tags span {
+    font-size: 16px;
+}
+
+
+/* Buttons */
+.btn,
+button {
+    font-size: 17px;
+    padding: 14px 28px;
+}
+
+
+/* Section titles */
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+
+/* Paragraph */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+/* ======================================
+   INCREASE HOME PAGE CONTENT SIZE
+====================================== */
+
+/* Specialized Programs */
+.specialized-programs h3,
+.programs-title {
+    font-size: 24px !important;
+}
+
+.program-card {
+    min-height: 90px !important;
+    padding: 22px !important;
+}
+
+.program-card h4 {
+    font-size: 18px !important;
+}
+
+.program-card p {
+    font-size: 14px !important;
+}
+
+
+/* Feature cards */
+.feature-card {
+    padding: 22px !important;
+}
+
+.feature-card span {
+    font-size: 14px !important;
+}
+
+.feature-card h4 {
+    font-size: 18px !important;
+}
+
+
+/* Book lesson section */
+.booking-section h2,
+.booking-content h2 {
+    font-size: 42px !important;
+}
+
+.booking-section p {
+    font-size: 18px !important;
+}
+
+
+.booking-form {
+    padding: 35px !important;
+}
+
+
+.booking-form label {
+    font-size: 15px !important;
+}
+
+
+.booking-form input,
+.booking-form select {
+    height: 50px !important;
+    font-size: 16px !important;
+}
+
+
+.booking-form button {
+    height: 55px !important;
+    font-size: 16px !important;
+}
+
+
+/* Navbar */
+.nav-links a {
+    font-size: 18px !important;
+}
+
+
+/* General */
+body {
+    zoom: 1.05;
+}
+/* ================================
+   PROGRAM CARD TEXT SIZE
+================================ */
+
+.program-card {
+    padding: 28px !important;
+    min-height: 110px !important;
+}
+
+.program-card h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+
+.program-card p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* icon chữ Hán / EN */
+.program-card .icon,
+.program-card span {
+    font-size: 22px !important;
+}
+
+
+/* nếu text nằm trong div thay vì h4 */
+.program-card div {
+    font-size: 18px !important;
+}
