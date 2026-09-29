@@ -472,9 +472,6 @@ navPayment:"Payment",
         yctChinese:
             "YCT Chinese for Kids",
 
-        bilingualChinese:
-            "English–Chinese Bilingual Chinese",
-
         easy:
             "Easy to Follow",
 
