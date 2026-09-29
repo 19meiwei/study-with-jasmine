@@ -2,101 +2,162 @@
 // STUDY WITH JASMINE - MATERIAL LIBRARY
 // ==========================================
 
-// 1. SUPABASE INFORMATION
-const SUPABASE_URL = "https://eunvkjirdgovwgclqkcm.supabase.co";
 
-// Dán Publishable Key của m vào giữa dấu ""
-const SUPABASE_KEY = "sb_publishable_cvGGPzroACteZ2Y5bIYo8w_gUXkqtUV";
+const SUPABASE_URL =
+"https://eunvkjirdgovwgclqkcm.supabase.co";
 
 
-// ==========================================
-// 2. CONNECT TO SUPABASE
-// ==========================================
+const SUPABASE_KEY =
+"sb_publishable_cvGGPzroACteZ2Y5bIYo8w_gUXkqtUV";
 
-const supabaseClient = supabase.createClient(
+
+const supabaseClient =
+supabase.createClient(
     SUPABASE_URL,
     SUPABASE_KEY
 );
 
 
-// ==========================================
-// 3. GET MATERIALS FROM DATABASE
-// ==========================================
 
-async function loadMaterials() {
+let allMaterials = [];
 
-    console.log("Loading materials...");
 
-    const { data, error } = await supabaseClient
-        .from("Materials")
-        .select("*")
-.eq("is_published", true)
-.order("course")
 
-    if (error) {
-        console.error("Error loading materials:", error);
-        return;
-    }
+// LOAD DATA
 
-    console.log("Materials from Supabase:", data);
+async function loadMaterials(){
 
-    displayMaterials(data);
+
+    const {data,error} =
+    await supabaseClient
+    .from("Materials")
+    .select("*")
+    .eq("is_published",true)
+    .order("created_at",
+    {
+        ascending:false
+    });
+
+
+
+    if(error){
+
+console.log("Materials from Supabase:", data);
+
+// lưu dữ liệu lại để dùng khi click category
+allMaterials = data;
+
+// lúc mở trang không hiện tài liệu
+const container = document.getElementById("materialsGrid");
+
+if (container) {
+    container.innerHTML = "";
 }
 
-function getCoverUrl(coverPath) {
+setupCategoryFilter();
+function setupCategoryFilter(){
 
-    if (!coverPath) {
+    const buttons = document.querySelectorAll(".program-card");
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const course = button.dataset.course;
+
+            const filtered = allMaterials.filter(
+                material => material.course === course
+            );
+
+            displayMaterials(filtered);
+
+        });
+
+    });
+
+}
+
+}
+
+
+
+
+
+// IMAGE
+
+function getCoverUrl(path){
+
+
+    if(!path)
         return "";
-    }
 
-    const { data } = supabaseClient.storage
-        .from("material-covers")
-        .getPublicUrl(coverPath);
+
+    const {data} =
+    supabaseClient.storage
+    .from("material-covers")
+    .getPublicUrl(path);
+
 
     return data.publicUrl;
+
 }
-// ==========================================
-// 4. DISPLAY MATERIALS ON WEBSITE
-// ==========================================
 
-function displayMaterials(materials) {
 
-    const container = document.getElementById("materialsGrid");
 
-    if (!container) {
-        console.error("Cannot find materialsGrid");
+
+
+
+// DISPLAY
+
+function displayMaterials(materials){
+
+
+    const container =
+    document.getElementById(
+        "materialsGrid"
+    );
+
+
+    if(!container)
         return;
-    }
 
 
-    container.innerHTML = "";
+
+    container.innerHTML="";
 
 
-    materials.forEach((material)=>{
+
+    materials.forEach(material=>{
 
 
-        const coverURL = getCoverUrl(
-            material.cover_path
+        const card =
+        document.createElement(
+            "article"
         );
 
 
-        const card = document.createElement("article");
+        card.className =
+        "material-card";
 
-        card.className = "material-card";
 
 
         card.innerHTML = `
 
+
         <img 
-        src="${coverURL}" 
-        class="material-image"
-        >
+        src="${getCoverUrl(material.cover_path)}"
+        class="material-image">
 
 
         <div class="material-card-content">
 
 
-        <span class="material-tag">
+        <span class="tag">
+        ${material.subject}
+        </span>
+
+
+        <span class="tag">
         ${material.course}
         </span>
 
@@ -111,17 +172,17 @@ function displayMaterials(materials) {
         </p>
 
 
-
-        <div class="material-footer">
-
-        <strong>
-        ${Number(material.price) === 0 
-        ? "Free" 
-        : "$"+material.price}
-        </strong>
+        <div class="price-area">
 
 
-        <button 
+        <div class="price">
+        ${Number(material.price)==0
+        ?"Free"
+        :"$"+material.price}
+        </div>
+
+
+        <button
         class="material-button"
         data-id="${material.id}">
         View Material
@@ -133,117 +194,160 @@ function displayMaterials(materials) {
 
         </div>
 
+
         `;
+
 
 
         container.appendChild(card);
 
 
+
     });
+
 
 
     addMaterialButtonEvents();
 
+
 }
 
-// ==========================================
-// 5. MATERIAL BUTTONS
-// ==========================================
 
-function addMaterialButtonEvents() {
+
+
+
+
+
+
+// CATEGORY BUTTON
+
+function setupCategoryFilter(){
+
 
     const buttons =
-        document.querySelectorAll(".material-button");
+    document.querySelectorAll(
+        ".category-btn"
+    );
 
 
-    buttons.forEach((button) => {
+    buttons.forEach(button=>{
 
 
         button.addEventListener(
-            "click",
-            async () => {
+        "click",
+        ()=>{
 
 
-                const materialId =
-                button.dataset.id;
-
-
-                const { data, error } =
-                await supabaseClient
-                .from("Materials")
-                .select("file_path")
-                .eq(
-                    "id",
-                    materialId
-                )
-                .single();
+            const category =
+            button.dataset.course;
 
 
 
-                if(error){
+            if(category==="all"){
 
-                    console.error(error);
-
-                    alert(
-                    "Cannot open material."
-                    );
-
-                    return;
-
-                }
-
-
-
-
-                if(!data.file_path){
-
-                    alert(
-                    "No file attached."
-                    );
-
-                    return;
-
-                }
-
-
-
-
-
-     const { data: urlData } =
-supabaseClient
-.storage
-.from("material-files")
-.getPublicUrl(
-    data.file_path
-);
-
-
-window.open(
-    urlData.publicUrl,
-    "_blank"
-);
-
-
-
-window.open(
-    urlData.signedUrl,
-    "_blank"
-);
+                displayMaterials(
+                    allMaterials
+                );
 
             }
-        );
+            else{
+
+
+                const filtered =
+                allMaterials.filter(
+                    item =>
+                    item.course === category
+                );
+
+
+                displayMaterials(
+                    filtered
+                );
+
+
+            }
+
+
+
+        });
 
 
     });
 
+
+
 }
 
 
-// ==========================================
-// 6. START
-// ==========================================
+
+
+
+
+// OPEN FILE
+
+function addMaterialButtonEvents(){
+
+
+const buttons =
+document.querySelectorAll(
+".material-button"
+);
+
+
+
+buttons.forEach(button=>{
+
+
+button.onclick = async()=>{
+
+
+const id =
+button.dataset.id;
+
+
+
+const {data,error} =
+await supabaseClient
+.from("Materials")
+.select("file_path")
+.eq("id",id)
+.single();
+
+
+
+if(error){
+console.error(error);
+return;
+}
+
+
+
+const {data:urlData} =
+supabaseClient.storage
+.from("material-files")
+.getPublicUrl(
+data.file_path
+);
+
+
+
+window.open(
+urlData.publicUrl,
+"_blank"
+);
+
+
+
+};
+
+
+});
+
+
+}
+
 
 document.addEventListener(
-    "DOMContentLoaded",
-    loadMaterials
+"DOMContentLoaded",
+loadMaterials
 );
