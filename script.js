@@ -21,6 +21,8 @@ const translations = {
         navSchedule: "Lịch học",
         navResources: "Tài liệu",
         navAbout: "Về mình",
+        navContact:"Liên hệ",
+        navPayment:"Thanh toán",
         navBook: "Đăng ký học",
 
         heroTitle:
@@ -193,6 +195,9 @@ const translations = {
 
         navAbout:
             "关于我",
+
+        navContact: "联系方式",
+        navPayment: "付款方式",
 
         navBook:
             "预约课程",
@@ -367,6 +372,9 @@ const translations = {
 
         navAbout:
             "About",
+        
+        navContact:"Contact",
+navPayment:"Payment",
 
         navBook:
             "Book a Lesson",

@@ -1865,8 +1865,8 @@ footer p {
 }
 
 .program-icon {
-    width: 35px;
-    height: 35px;
+    width: 52px;
+    height: 52px;
 
     flex-shrink: 0;
 
@@ -1876,13 +1876,13 @@ footer p {
     background: var(--pink-soft);
     color: var(--pink);
 
-    border-radius: 9px;
+    border-radius: 12px;
 
     font-family:
         "Noto Sans SC",
         sans-serif;
 
-    font-size: 12px;
+    font-size: 20px !important;
     font-weight: 700;
 }
 
@@ -1898,7 +1898,7 @@ footer p {
 .program-item strong {
     color: var(--text);
 
-    font-size: 9px;
+    font-size: 18px !important;
     font-weight: 700;
 
     line-height: 1.45;
@@ -1911,11 +1911,10 @@ footer p {
         "Noto Sans SC",
         sans-serif;
 
-    font-size: 7px;
+    font-size: 14px !important;
 
     line-height: 1.5;
 }
-
 
 /* Make the fifth program look balanced */
 
@@ -2474,18 +2473,25 @@ p {
 }
 
 .program-card {
-    min-height: 90px !important;
-    padding: 22px !important;
+    min-height: 160px;
+    padding: 40px;
 }
 
-.program-card h4 {
-    font-size: 18px !important;
+
+.program-card span {
+    font-size: 32px;         /* icon chữ Hán to hơn */
+}
+
+
+.program-card h3 {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .program-card p {
-    font-size: 14px !important;
+    font-size: 26px;
+    color: #7a6870;
 }
-
 
 /* Feature cards */
 .feature-card {
@@ -2576,4 +2582,695 @@ body {
 /* nếu text nằm trong div thay vì h4 */
 .program-card div {
     font-size: 18px !important;
+}
+.programs-section h3,
+.program-card h3,
+.program-card-title {
+    font-size: 28px !important;
+}
+
+
+.programs-section p,
+.program-card p,
+.program-card-subtitle {
+    font-size: 20px !important;
+}
+/* =========================================
+   SPECIALIZED PROGRAMS - READABILITY FIX
+========================================= */
+
+.teaching-programs {
+    margin-top: 34px;
+}
+
+.programs-title {
+    margin-bottom: 20px !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.07em;
+    line-height: 1.3;
+}
+
+
+/* PROGRAM CARDS */
+
+.program-grid {
+    gap: 12px;
+}
+
+.program-item {
+    min-height: 96px;
+    padding: 18px 20px;
+
+    gap: 16px;
+
+    border-radius: 14px;
+}
+
+
+/* PINK ICON */
+
+.program-icon {
+    width: 54px;
+    height: 54px;
+
+    border-radius: 12px;
+
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+
+/* TEXT AREA */
+
+.program-item > div {
+    gap: 4px;
+}
+
+
+/* ENGLISH PROGRAM NAME */
+
+.program-item strong {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.35;
+
+    letter-spacing: 0;
+}
+
+
+/* CHINESE SUBTITLE */
+
+.program-item small {
+    font-size: 12px !important;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   THREE FEATURE BOXES
+========================================= */
+
+.about-points {
+    margin-top: 26px;
+    gap: 12px;
+}
+
+.about-points div {
+    min-height: 82px;
+
+    padding: 17px 20px;
+
+    justify-content: center;
+
+    border-radius: 12px;
+}
+
+.about-points span {
+    margin-bottom: 5px;
+
+    font-size: 10px !important;
+    font-weight: 700;
+}
+
+.about-points strong {
+    font-size: 13px !important;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .programs-title {
+        font-size: 20px !important;
+    }
+
+    .program-item {
+        min-height: 88px;
+        padding: 16px;
+    }
+
+    .program-item strong {
+        font-size: 15px !important;
+    }
+
+    .program-item small {
+        font-size: 11px !important;
+    }
+
+    .program-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 18px !important;
+    }
+
+    .about-points strong {
+        font-size: 13px !important;
+    }
+}
+/* ==================================================
+   GLOBAL READABILITY — STUDY WITH JASMINE
+   Make all small text easier to read
+================================================== */
+
+
+/* ---------- NORMAL BODY TEXT ---------- */
+
+body {
+    font-size: 16px;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.nav-links a {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.nav-actions a,
+.nav-actions button {
+    font-size: 13px !important;
+}
+
+
+/* ---------- SMALL SECTION LABELS ---------- */
+/* ONLINE LESSONS / CLASSES / SCHEDULE / ABOUT */
+
+.eyebrow,
+.section-kicker,
+.section-label {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero-copy .hero-cn {
+    font-size: 19px !important;
+    line-height: 1.5 !important;
+}
+
+.hero-copy .hero-description,
+.hero-copy p {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* Hero subject pills */
+
+.hero-tags span,
+.hero-tags li,
+.hero-tags a {
+    font-size: 12px !important;
+}
+
+
+/* Hero buttons */
+
+.hero-actions a,
+.hero-actions button {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- CLASSES ---------- */
+
+.classes-heading p,
+.classes-header p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Class title */
+
+.class-card h3,
+.class-card strong {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Class descriptions */
+
+.class-card p {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+}
+
+
+/* 01 / 02 / 03 / 04 */
+
+.class-card .number,
+.class-card .card-number {
+    font-size: 11px !important;
+}
+
+
+/* Chinese / Vietnamese icons */
+
+.class-card .symbol,
+.class-card .class-icon {
+    font-size: 22px !important;
+}
+
+
+/* Class tags */
+
+.class-card span,
+.class-card .tag {
+    font-size: 10px !important;
+}
+
+
+/* ---------- SCHEDULE ---------- */
+
+.schedule-section > p,
+.schedule-intro,
+.schedule-subtitle {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Monday / Wednesday etc */
+
+.schedule-day,
+.schedule-row strong {
+    font-size: 15px !important;
+}
+
+
+/* MON / WED / FRI */
+
+.day-badge,
+.schedule-badge {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+}
+
+
+/* Times */
+
+.schedule-time {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+
+/* Vietnam Time */
+
+.timezone,
+.timezone-badge {
+    font-size: 11px !important;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-copy p,
+.about-text p {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* ---------- SPECIALIZED CHINESE PROGRAMS ---------- */
+
+.programs-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+}
+
+.program-item strong {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.program-item small {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+.program-icon {
+    font-size: 20px !important;
+}
+
+
+/* ---------- EASY TO FOLLOW / PRACTICAL / PERSONALIZED ---------- */
+
+.about-points span {
+    font-size: 11px !important;
+}
+
+.about-points strong {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* ---------- PINK STRIP ---------- */
+
+.intro-strip,
+.intro-strip span,
+.intro-strip p {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- GENERAL SMALL TEXT SAFETY ---------- */
+
+small {
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .nav-links a {
+        font-size: 15px !important;
+    }
+
+    .hero-copy .hero-description,
+    .hero-copy p {
+        font-size: 16px !important;
+    }
+
+    .class-card h3,
+    .class-card strong {
+        font-size: 16px !important;
+    }
+
+    .class-card p {
+        font-size: 13px !important;
+    }
+
+    .program-item strong {
+        font-size: 15px !important;
+    }
+
+    .program-item small {
+        font-size: 12px !important;
+    }
+
+    .schedule-day,
+    .schedule-row strong {
+        font-size: 14px !important;
+    }
+
+    .schedule-time {
+        font-size: 15px !important;
+    }
+}
+/* ==================================================
+   GLOBAL READABILITY — STUDY WITH JASMINE
+   Make all small text easier to read
+================================================== */
+
+
+/* ---------- NORMAL BODY TEXT ---------- */
+
+body {
+    font-size: 16px;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.nav-links a {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.nav-actions a,
+.nav-actions button {
+    font-size: 13px !important;
+}
+
+
+/* ---------- SMALL SECTION LABELS ---------- */
+/* ONLINE LESSONS / CLASSES / SCHEDULE / ABOUT */
+
+.eyebrow,
+.section-kicker,
+.section-label {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.12em;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero-copy .hero-cn {
+    font-size: 19px !important;
+    line-height: 1.5 !important;
+}
+
+.hero-copy .hero-description,
+.hero-copy p {
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* Hero subject pills */
+
+.hero-tags span,
+.hero-tags li,
+.hero-tags a {
+    font-size: 12px !important;
+}
+
+
+/* Hero buttons */
+
+.hero-actions a,
+.hero-actions button {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- CLASSES ---------- */
+
+.classes-heading p,
+.classes-header p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Class title */
+
+.class-card h3,
+.class-card strong {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Class descriptions */
+
+.class-card p {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+}
+
+
+/* 01 / 02 / 03 / 04 */
+
+.class-card .number,
+.class-card .card-number {
+    font-size: 11px !important;
+}
+
+
+/* Chinese / Vietnamese icons */
+
+.class-card .symbol,
+.class-card .class-icon {
+    font-size: 22px !important;
+}
+
+
+/* Class tags */
+
+.class-card span,
+.class-card .tag {
+    font-size: 10px !important;
+}
+
+
+/* ---------- SCHEDULE ---------- */
+
+.schedule-section > p,
+.schedule-intro,
+.schedule-subtitle {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Monday / Wednesday etc */
+
+.schedule-day,
+.schedule-row strong {
+    font-size: 15px !important;
+}
+
+
+/* MON / WED / FRI */
+
+.day-badge,
+.schedule-badge {
+    font-size: 10px !important;
+    font-weight: 700 !important;
+}
+
+
+/* Times */
+
+.schedule-time {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+
+/* Vietnam Time */
+
+.timezone,
+.timezone-badge {
+    font-size: 11px !important;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-copy p,
+.about-text p {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+
+/* ---------- SPECIALIZED CHINESE PROGRAMS ---------- */
+
+.programs-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+}
+
+.program-item strong {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.program-item small {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+.program-icon {
+    font-size: 20px !important;
+}
+
+
+/* ---------- EASY TO FOLLOW / PRACTICAL / PERSONALIZED ---------- */
+
+.about-points span {
+    font-size: 11px !important;
+}
+
+.about-points strong {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* ---------- PINK STRIP ---------- */
+
+.intro-strip,
+.intro-strip span,
+.intro-strip p {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ---------- GENERAL SMALL TEXT SAFETY ---------- */
+
+small {
+    line-height: 1.5;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .nav-links a {
+        font-size: 15px !important;
+    }
+
+    .hero-copy .hero-description,
+    .hero-copy p {
+        font-size: 16px !important;
+    }
+
+    .class-card h3,
+    .class-card strong {
+        font-size: 16px !important;
+    }
+
+    .class-card p {
+        font-size: 13px !important;
+    }
+
+    .program-item strong {
+        font-size: 15px !important;
+    }
+
+    .program-item small {
+        font-size: 12px !important;
+    }
+
+    .schedule-day,
+    .schedule-row strong {
+        font-size: 14px !important;
+    }
+
+    .schedule-time {
+        font-size: 15px !important;
+    }
 }

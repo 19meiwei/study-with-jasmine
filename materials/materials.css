@@ -430,33 +430,10 @@ body {
 
 
 
+
 /* =========================
- CHINESE PROGRAMS
+   CHINESE PROGRAM BUTTONS
 ========================= */
-
-
-.chinese-categories {
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:30px;
-
-    border:1px solid var(--border);
-
-    margin-bottom:50px;
-
-}
-
-
-
-.category-title {
-
-    font-weight:700;
-
-}
-
 
 .category-buttons {
 
@@ -465,9 +442,9 @@ body {
     display:grid;
 
     grid-template-columns:
-    repeat(6,1fr);
+    repeat(auto-fit, minmax(150px, 1fr));
 
-    gap:15px;
+    gap:18px;
 
 }
 
@@ -478,13 +455,21 @@ body {
 
     border:1px solid var(--border);
 
-    padding:20px 10px;
+    padding:22px 12px;
 
     border-radius:20px;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:all .3s ease;
+
+    min-height:85px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:var(--text);
 
 }
 
@@ -497,37 +482,9 @@ body {
 
     color:white;
 
-}
-
-
-
-.category-buttons span {
-
-    display:block;
-
-    margin-top:8px;
+    border-color:var(--pink);
 
 }
-
-
-
-/* =========================
- MATERIAL CARDS
-========================= */
-
-
-.materials-grid {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:25px;
-
-}
-
-
 
 /* =========================
    MATERIAL CARD MODERN
