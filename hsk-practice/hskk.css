@@ -1,0 +1,11 @@
+
+#hskkSection{scroll-margin-top:20px}
+.hskk-workspace{background:#fff;border:1px solid #ecd6df;border-radius:16px;padding:26px;margin-top:20px}
+.hskk-workspace-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.hskk-workspace h3{font-size:25px;margin:7px 0}
+.hskk-status{background:#fbeef3;color:#9f3e60;border-radius:99px;padding:7px 13px;font-size:12px;font-weight:700}
+.hskk-label{display:block;font-size:12px;font-weight:800;letter-spacing:.1em;margin:23px 0 9px;color:#9f3e60}
+#hskkAudio,#hskkRecording audio{display:block;width:100%;margin:12px 0}
+.hskk-record-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hskk-note{font-size:13px;margin-top:22px}
+@media(max-width:600px){.hskk-workspace{padding:18px}}

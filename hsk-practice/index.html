@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HSK Practice | Study with Jasmine</title><link rel="stylesheet" href="./hsk.css"><link rel="stylesheet" href="./hskk.css"><script src="./hsk.js" defer></script><script src="./language.js" defer></script></head><body>
+<header><a class="brand" href="../index.html"><b>Study with Jasmine</b><small>和 Jasmine 一起学习吧！</small></a><nav><a href="../index.html">Home</a><a href="../materials/index.html">Materials</a><a class="here" href="./index.html">HSK Practice</a></nav><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="vi" aria-pressed="false">VI</button><button type="button" data-lang="en" aria-pressed="true">EN</button></div></header>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<main><section class="hero"><span class="eyebrow">CHINESE LANGUAGE LEARNING</span><h1>HSK Practice & Mock Exams</h1><p>Structured exercises, question-by-question feedback and timed exam practice.</p><div class="heroStats"><span>HSK 1–4</span><span>Listening · Reading · Writing · Speaking</span><span>Original practice questions</span></div></section>
+<section class="section"><div class="sectionhead"><span class="step">01</span><div><h2>Choose your level</h2><p class="muted">Select the level you want to work on.</p></div></div><div class="grid" id="levels"><button class="tile active" data-level="1"><small>BEGINNER</small><strong>HSK 1</strong><span>Foundation</span></button><button class="tile" data-level="2"><small>ELEMENTARY</small><strong>HSK 2</strong><span>Everyday language</span></button><button class="tile" data-level="3"><small>INTERMEDIATE</small><strong>HSK 3</strong><span>Practical communication</span></button><button class="tile" data-level="4"><small>UPPER INTERMEDIATE</small><strong>HSK 4</strong><span>Advanced situations</span></button></div></section>
+<section class="section"><div class="sectionhead"><span class="step">02</span><div><h2>Choose your study mode</h2><p class="muted">Learn at your pace or practice under time pressure.</p></div></div><div class="grid modes"><button class="tile active" data-mode="practice"><small>LEARN & REVIEW</small><strong>Practice Mode</strong><span>One question at a time. Check answers and explanations immediately.</span></button><button class="tile" data-mode="mock"><small>EXAM SIMULATION</small><strong>Mock Exam</strong><span>Timed questions, answer navigation, submission and detailed review.</span></button></div></section>
+<section class="section" id="skillsWrap"><div class="sectionhead"><span class="step">03</span><div><h2>Choose a skill</h2><p class="muted">Currently selected: <b id="currentLevel">HSK 1</b></p></div></div><div class="grid skills" id="skills"><button class="tile" data-skill="listening"><small>01 / AUDIO</small><strong>Listening</strong><span>Hear Chinese and select answers</span></button><button class="tile" data-skill="reading"><small>02 / TEXT</small><strong>Reading</strong><span>Read and understand Chinese</span></button><button class="tile" data-skill="writing"><small>03 / SENTENCES</small><strong>Writing</strong><span>Type Chinese answers</span></button><button class="tile" data-skill="speaking"><small>04 / PRONUNCIATION</small><strong>Speaking</strong><span>Listen, record and compare</span></button></div></section>
+<section class="section" id="bookPractice"><div class="sectionhead"><span class="step">15 TESTS</span><div><h2> HSK Practice Test Library </h2><p class="muted">Review questions, track your progress, and strengthen your exam skills.</p></div></div><p><a class="btn" href="./book-practice.html">Explore Practice Tests → </a></p></section>
+<section class="section" id="originalMockAudio">
+<div class="sectionhead"><span class="step">AUDIO</span><div>
+<h2>Mock test listening recordings</h2>
+<p class="muted">Three full-length recordings supplied for exam listening practice. Choose a recording and play it below.</p>
+</div></div>
+<div class="audio-tracks">
+<div class="audio-track"><div class="audio-track-head"><strong>全真模拟题 1 · Mock Test 1</strong><span>Listening audio</span></div><audio controls preload="none" src="./audio/mock-test-1.mp3">Audio playback is not supported in this browser.</audio></div>
+<div class="audio-track"><div class="audio-track-head"><strong>全真模拟题 2 · Mock Test 2</strong><span>Listening audio</span></div><audio controls preload="none" src="./audio/mock-test-2.mp3">Audio playback is not supported in this browser.</audio></div>
+<div class="audio-track"><div class="audio-track-head"><strong>全真模拟题 3 · Mock Test 3</strong><span>Listening audio</span></div><audio controls preload="none" src="./audio/mock-test-3.mp3">Audio playback is not supported in this browser.</audio></div>
+
+<section class="panel hidden" id="mockIntro"><span class="eyebrow">READY TO BEGIN?</span><h2>Timed HSK practice exam</h2><p>Complete listening, reading and writing questions. You can move between questions and submit when ready. Answers are revealed only after submission.</p><p class="muted">This is an original shortened practice simulation, not an official or full-length HSK examination.</p><button class="btn" id="beginMock">Start mock exam →</button></section><section class="panel hidden" id="panel" aria-live="polite"></section>
+<section class="section" id="hskkSection">
+  <div class="sectionhead"><span class="step">04</span><div>
+    <h2 data-vi="Thi nói HSKK 3.0" data-en="HSKK 3.0 Speaking Mock Tests">Thi nói HSKK 3.0</h2>
+    <p class="muted" data-vi="Đề nghe mô phỏng theo cấp độ 3–6. Nghe audio và ghi âm câu trả lời như trong phòng thi." data-en="Level 3–6 speaking simulations. Play the exam audio and record your responses.">Đề nghe mô phỏng theo cấp độ 3–6. Nghe audio và ghi âm câu trả lời như trong phòng thi.</p>
+  </div></div>
+  <div class="grid" id="hskkLevels">
+    <button type="button" class="tile active" data-hskk="3"><small>HSKK 3.0</small><strong>Level 3</strong><span>Speaking mock test</span></button>
+    <button type="button" class="tile" data-hskk="4"><small>HSKK 3.0</small><strong>Level 4</strong><span>Speaking mock test</span></button>
+    <button type="button" class="tile" data-hskk="5"><small>HSKK 3.0</small><strong>Level 5</strong><span>Speaking mock test</span></button>
+    <button type="button" class="tile" data-hskk="6"><small>HSKK 3.0</small><strong>Level 6</strong><span>Speaking mock test</span></button>
+  </div>
+  <div class="hskk-workspace">
+    <div class="hskk-workspace-head"><div><span class="eyebrow">SPEAKING EXAM · 口语考试</span><h3 id="hskkTitle">HSKK Level 3</h3></div><span class="hskk-status" id="hskkStatus">Ready</span></div>
+    <p class="muted" data-vi="Audio gốc của đề mô phỏng. Làm theo hướng dẫn được đọc trong audio; phần ghi âm dùng để nghe lại, không tự động chấm điểm." data-en="Original simulation audio. Follow the spoken instructions; your recording is for review and is not automatically scored.">Audio gốc của đề mô phỏng. Làm theo hướng dẫn được đọc trong audio; phần ghi âm dùng để nghe lại, không tự động chấm điểm.</p>
+    <label class="hskk-label" for="hskkAudio">EXAM AUDIO</label>
+    <audio id="hskkAudio" controls preload="metadata" src="./audio/hskk-3.mp3"></audio>
+    <div class="hskk-record-actions">
+      <button type="button" class="btn" id="hskkRecord">● Start recording</button>
+      <button type="button" class="btn outline" id="hskkStop" disabled>■ Stop</button>
+      <button type="button" class="btn outline" id="hskkDownload" disabled>↓ Save recording</button>
+    </div>
+    <div id="hskkRecording"></div>
+  </div>
+</section>
