@@ -8,3 +8,23 @@
 
 .vocab-quiz{background:#f5eee8;border:1px solid #e9dfd4;padding:30px;border-radius:18px;margin-bottom:24px}.vocab-quiz[hidden]{display:none}.vocab-quiz h3{font-size:25px}.vocab-quiz-answers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.vocab-quiz-answers button{padding:15px;border-radius:10px;background:white;border:1px solid #e4ded8;text-align:left;color:#334e42}.vocab-quiz-answers button.correct{background:#def1e4;border-color:#76b98a}.vocab-quiz-answers button.incorrect{background:#ffebed;border-color:#d98b9b}.vocab-quiz #vocabQuizFeedback{font-size:13px;min-height:24px}@media(max-width:600px){.vocab-quiz-answers{grid-template-columns:1fr}}
 .vocab-dashboard{display:grid;grid-template-columns:repeat(3,1fr) auto;align-items:center;gap:12px;background:#f0f5ee;border:1px solid #dce9dd;border-radius:15px;padding:17px 20px;margin:0 0 18px}.vocab-dashboard>div{display:flex;flex-direction:column}.vocab-dashboard strong{font-size:27px;color:#315b49}.vocab-dashboard small{font-size:11px;color:#738578}.vocab-tools select{border:1px solid #e0e6df;background:#fff;padding:13px;border-radius:10px;max-width:220px}.vocab-card-top>span{font-size:10px}.vocab-ipa{font-size:12px;color:#748d7c;margin:0 0 8px}.vocab-example-vi{margin:8px 0 0;color:#9b6174;font-size:12px}.vocab-collocations{font-size:12px;color:#627969;margin:14px 0 0}.vocab-review-label{font-size:11px;color:#8c9b8f;margin:13px 0 0}.vocab-grade-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:18px 0}.vocab-grade-buttons[hidden]{display:none}.vocab-grade-buttons button{border:1px solid #c8dfd0;background:#fff;border-radius:9px;padding:10px 13px;font-weight:750;color:#365d4b;font-size:12px}.vocab-grade-buttons button:hover{background:#d7ebdc}@media(max-width:750px){.vocab-dashboard{grid-template-columns:repeat(3,1fr)}.vocab-dashboard>.btn{grid-column:1/-1}}@media(max-width:450px){.vocab-dashboard{grid-template-columns:repeat(2,1fr)}.vocab-dashboard>.btn{grid-column:1/-1}}
+
+/* American–Vietnamese CEFR course navigator */
+:root{--navy:#163552;--crimson:#ba4549;--paper:#fffdfa;--quiet:#637582}
+.level-section-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin:22px 0 15px;font-size:11px;letter-spacing:.09em;font-weight:800;color:var(--navy)}
+.level-section-head span:last-child{color:var(--quiet);font-weight:500;letter-spacing:0}
+.cefr-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:23px}
+.cefr-card{display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-height:175px;padding:19px 17px;border:1px solid #dbe4e8;border-radius:16px;background:var(--paper);color:var(--navy);box-shadow:0 6px 22px #1735520a;transition:transform .2s,border-color .2s,box-shadow .2s;cursor:pointer}
+.cefr-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px #17355217}
+.cefr-card[aria-pressed=true]{border:2px solid var(--crimson);background:#fff6f2}
+.cefr-card .cefr-number{font-family:Georgia,serif;font-size:39px;line-height:1.1;font-weight:700;letter-spacing:-.05em}
+.cefr-card .cefr-name{font-size:12px;font-weight:800;margin-top:9px}
+.cefr-card .cefr-vi{font-size:11px;color:var(--quiet);margin-top:4px}
+.cefr-card .cefr-count{margin-top:auto;padding-top:15px;font-size:11px;color:var(--crimson);font-weight:800}
+.level-selected-bar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;padding:16px 19px;margin:10px 0 19px;background:#f1f5f6;border:1px solid #dbe5e6;border-radius:13px;color:var(--navy)}
+.level-selected-bar[hidden],#grammarLibraryBody[hidden],#vocabLibraryBody[hidden]{display:none!important}
+.level-selected-bar button{border:0;background:transparent;color:var(--crimson);font-weight:800;cursor:pointer}
+#vocabLevels{display:none!important}
+#grammarLibraryBody .filters{margin-top:12px}
+@media(max-width:950px){.cefr-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:580px){.cefr-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.cefr-card{min-height:150px;padding:15px}.level-section-head span:last-child{display:none}}
