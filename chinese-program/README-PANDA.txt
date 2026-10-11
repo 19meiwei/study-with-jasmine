@@ -1,0 +1,1 @@
+Panda Chinese Program hero update. Replaces poster on landing page with the approved panda illustration. Other learning functions unchanged. Copy entire chinese-program folder into project and push GitHub. Illustration source: image preview approved in this conversation.
