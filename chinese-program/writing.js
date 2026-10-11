@@ -17,9 +17,15 @@ const examples={
 '现在':[['现在几点？','xiàn zài jǐ diǎn','What time is it now?','Bây giờ là mấy giờ?']]
 };
 let selected=0,charAt=0,writer=null,renderToken=0;
-const terms=[...new Map(bank.map(w=>[w.zh,w])).values()];
+let terms=[];
 const select=el('writeSelect');
-terms.forEach((w,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=`${w.zh} · ${w.py} · Lesson ${w.lesson}`;select.appendChild(o)});
+function refreshTerms(){
+ terms=[...new Map(bank.map(w=>[w.zh,w])).values()];
+ selected=0;charAt=0;select.replaceChildren();
+ terms.forEach((w,i)=>{const o=document.createElement('option');o.value=String(i);o.textContent=`${w.zh} · ${w.py} · Lesson ${w.lesson}`;select.appendChild(o)});
+ render();
+}
+window.refreshWritingBank=refreshTerms;
 function sentenceRows(w){
 const preset=examples[w.zh];
 if(preset)return preset;
@@ -68,5 +74,5 @@ el('resetChar').onclick=draw;
 el('hearWrite').onclick=()=>speech(terms[selected].zh);
 document.querySelectorAll('[data-tab="writing"]').forEach(btn=>btn.addEventListener('click',()=>{if(!writer)draw()}));
 document.addEventListener('click',event=>{const word=event.target.closest('.word');if(!word||event.target.closest('button'))return;const hanzi=word.querySelector('.cn')?.textContent;const i=terms.findIndex(w=>w.zh===hanzi);if(i<0)return;selected=i;select.value=String(i);render();document.querySelector('[data-tab="writing"]').click();el('writing').scrollIntoView({behavior:'smooth',block:'start'})});
-render();
+refreshTerms();
 })();

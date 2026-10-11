@@ -1,7 +1,7 @@
 'use strict';
 // Data organized by the 11 teaching units in YCT Standard Course 1.
 // Fields: Chinese | tone-marked pinyin | English | Vietnamese.
-const lessons=[
+const yct1Lessons=[
 ['你好！ Hello!','你|nǐ|you|bạn','好|hǎo|good|tốt','你好|nǐ hǎo|hello|xin chào','老师|lǎoshī|teacher|giáo viên','再见|zàijiàn|goodbye|tạm biệt','一|yī|one|một','二|èr|two|hai','三|sān|three|ba','四|sì|four|bốn','五|wǔ|five|năm','六|liù|six|sáu','七|qī|seven|bảy','八|bā|eight|tám','九|jiǔ|nine|chín','十|shí|ten|mười'],
 ['你叫什么？ What’s your name?','我|wǒ|I; me|tôi','叫|jiào|to be called|tên là; gọi','什么|shénme|what|cái gì','认识|rènshi|to know; recognize|quen biết','很|hěn|very|rất','高兴|gāoxìng|happy|vui','她|tā|she; her|cô ấy','吗|ma|question particle|trợ từ nghi vấn','不|bù|not; no|không','你叫什么|nǐ jiào shénme|what is your name|bạn tên gì','我叫月月|wǒ jiào Yuèyuè|my name is Yueyue|tôi tên là Nguyệt Nguyệt'],
 ['他是谁？ Who is he?','他|tā|he; him|anh ấy','是|shì|to be|là','谁|shéi|who|ai','哪|nǎ|which|nào','国|guó|country|nước; quốc gia','人|rén|person|người','中国人|Zhōngguó rén|Chinese person|người Trung Quốc','中国|Zhōngguó|China|Trung Quốc','他是谁|tā shì shéi|who is he|anh ấy là ai','他是中国人|tā shì Zhōngguó rén|he is Chinese|anh ấy là người Trung Quốc'],
@@ -15,4 +15,16 @@ const lessons=[
 ['你吃什么？ Food & drink','米饭|mǐfàn|rice|cơm','面条|miàntiáo|noodles|mì sợi','苹果|píngguǒ|apple|táo','牛奶|niúnǎi|milk|sữa','水|shuǐ|water|nước','吃|chī|to eat|ăn','喝|hē|to drink|uống','爱|ài|to love|yêu; thích','蛋糕|dàngāo|cake|bánh kem','你吃什么|nǐ chī shénme|what would you like to eat|bạn muốn ăn gì','我爱吃蛋糕|wǒ ài chī dàngāo|I love eating cake|tôi thích ăn bánh kem']
 ];
 
-const bank=lessons.flatMap((lesson,i)=>lesson.slice(1).map(line=>{const [zh,py,en,vi]=line.split('|');return {zh,py,en,vi,lesson:i+1}}));
+
+let currentLevel=1;
+let lessons=yct1Lessons;
+let bank=[];
+function setCourse(level){
+ currentLevel=Number(level);
+ lessons=currentLevel===1?yct1Lessons:yctBanks[currentLevel];
+ bank=lessons.flatMap((lesson,i)=>lesson.slice(1).map(line=>{
+ const [zh,py,en,vi]=line.split('|');return {zh,py,en,vi,lesson:i+1,level:currentLevel};
+ }));
+}
+setCourse(1);
+

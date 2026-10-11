@@ -1,9 +1,9 @@
 'use strict';
 const $=id=>document.getElementById(id);
-const KEY='jasmine-yct1-learned-v2';
-const unique=[...new Map(bank.map(w=>[w.zh,w])).values()];
+const progressKey=()=>currentLevel===1?'jasmine-yct1-learned-v2':`jasmine-yct${currentLevel}-learned-v3`;
+
 let scope='all',cards=[],idx=0,flipped=false,solo=null,battle=null;
-let learned=new Set();try{learned=new Set(JSON.parse(localStorage.getItem(KEY)||'[]'))}catch{}
+let learned=new Set();try{learned=new Set(JSON.parse(localStorage.getItem(progressKey())||'[]'))}catch{}
 const rand=n=>Math.floor(Math.random()*n);
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=rand(i+1);[b[i],b[j]]=[b[j],b[i]]}return b}
 function pool(){return scope==='all'?bank:bank.filter(w=>w.lesson===+scope)}
@@ -20,12 +20,22 @@ function showSolo(){const el=$('solo');if(solo.at>=solo.questions.length){el.inn
 function startSolo(mode){const qs=buildQuestions(mode,+$('amount').value);if(!qs)return;solo={mode,questions:qs,at:0,score:0,correct:0,answered:false};$('solo').classList.remove('hidden');showSolo();$('solo').scrollIntoView({block:'nearest',behavior:'smooth'})}
 function showBattle(){const el=$('battleGame');if(battle.at>=battle.questions.length){const [a,b]=battle.scores;const winner=a===b?'🤝 Tie game!':'🏆 '+esc(battle.names[a>b?0:1])+' wins!';el.innerHTML=`<h2>${winner}</h2><div class="scores">${battle.scores.map((s,i)=>`<div class="scorecard"><span>${esc(battle.names[i])}</span><b>${s} points</b></div>`).join('')}</div><button class="primary" id="againBattle">Play again ↻</button>`;return}const turn=battle.at%2;const q=battle.questions[battle.at];el.innerHTML=`<div class="scores">${battle.scores.map((s,i)=>`<div class="scorecard ${turn===i?'active':''}"><span>${esc(battle.names[i])}</span><b>${s} points</b></div>`).join('')}</div><div class="gamebar" style="margin-top:20px"><span>Turn ${battle.at+1}/${battle.questions.length}</span><span>${esc(battle.names[turn])}'s turn</span></div>${question(q)}`;if(q.m==='listen')speech(q.w.zh)}
 function startBattle(){const qs=buildQuestions('mix',+$('rounds').value);if(!qs)return;battle={names:[$('p1').value.trim()||'Player 1',$('p2').value.trim()||'Player 2'],scores:[0,0],questions:qs,at:0,answered:false};$('battleGame').classList.remove('hidden');showBattle()}
-lessons.forEach((l,i)=>{$('lesson').insertAdjacentHTML('beforeend',`<option value="${i+1}">Lesson ${i+1} · ${esc(l[0])}</option>`)});
+function populateLessons(){ $('lesson').innerHTML='<option value="all">All lessons · Full YCT '+currentLevel+' review</option>';lessons.forEach((l,i)=>{$('lesson').insertAdjacentHTML('beforeend',`<option value="${i+1}">Lesson ${i+1} · ${esc(l[0])}</option>`)})} populateLessons();
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('selected',x===b));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===b.dataset.tab))}));
 $('lesson').addEventListener('change',e=>{scope=e.target.value;reload()});$('search').addEventListener('input',library);
 function flip(){flipped=!flipped;renderCard()};$('flash').addEventListener('click',flip);$('flash').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flip()}});
 $('prev').addEventListener('click',()=>{idx=(idx+cards.length-1)%cards.length;flipped=false;renderCard()});$('next').addEventListener('click',()=>{idx=(idx+1)%cards.length;flipped=false;renderCard()});$('speak').addEventListener('click',()=>speech(cards[idx].zh));
-$('mark').addEventListener('click',()=>{const z=cards[idx].zh;learned.has(z)?learned.delete(z):learned.add(z);try{localStorage.setItem(KEY,JSON.stringify([...learned]))}catch{}renderCard();updateStats()});$('reset').addEventListener('click',()=>{if(confirm('Reset your learned-word progress?')){learned.clear();try{localStorage.removeItem(KEY)}catch{}reload()}});
+$('mark').addEventListener('click',()=>{const z=cards[idx].zh;learned.has(z)?learned.delete(z):learned.add(z);try{localStorage.setItem(progressKey(),JSON.stringify([...learned]))}catch{}renderCard();updateStats()});$('reset').addEventListener('click',()=>{if(confirm('Reset your learned-word progress?')){learned.clear();try{localStorage.removeItem(progressKey())}catch{}reload()}});
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>startSolo(b.dataset.mode)));$('startBattle').addEventListener('click',startBattle);
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-say'))speech(b.dataset.say);if(b.hasAttribute('data-answer')){const i=+b.dataset.answer;if(b.closest('#solo')&&solo&&!solo.answered){solo.answered=true;if(decorate($('solo'),solo.questions[solo.at],i)){solo.score+=100;solo.correct++}$('solo').insertAdjacentHTML('beforeend','<button class="nextbtn" id="nextSolo">Next question →</button>')}else if(b.closest('#battleGame')&&battle&&!battle.answered){battle.answered=true;if(decorate($('battleGame'),battle.questions[battle.at],i))battle.scores[battle.at%2]+=100;$('battleGame').insertAdjacentHTML('beforeend','<button class="nextbtn" id="nextBattle">Pass to next player →</button>')}}if(b.id==='nextSolo'){solo.at++;solo.answered=false;showSolo()}if(b.id==='againSolo')startSolo(solo.mode);if(b.id==='nextBattle'){battle.at++;battle.answered=false;showBattle()}if(b.id==='againBattle')startBattle()});
+document.getElementById('courseLevel').addEventListener('change',event=>{
+ setCourse(event.target.value);scope='all';populateLessons();
+ try{learned=new Set(JSON.parse(localStorage.getItem(progressKey())||'[]'))}catch{learned=new Set()}
+ solo=null;battle=null;$('solo').classList.add('hidden');$('battleGame').classList.add('hidden');
+ reload();window.refreshWritingBank?.();
+ document.getElementById('courseNotice').textContent=currentLevel===1
+ ?'YCT 1 · Existing course vocabulary.'
+ :'YCT '+currentLevel+' · 96 teacher-created practice entries, grouped into 12 themes. Not yet a verified transcription of the scanned textbook.';
+ document.querySelector('#practice h2').textContent='Four ways to master YCT '+currentLevel;
+});
 reload();
