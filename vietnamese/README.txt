@@ -1,1 +1,0 @@
-Replace the entire vietnamese folder. This package updates all 3 Vietnamese pages to share one Vietnamese-only speech engine. It does NOT include prerecorded Vietnamese MP3s, so universal playback and 100% pronunciation accuracy cannot be guaranteed. Without an available vi-VN browser voice, a clear message is shown instead of using English.
