@@ -1,0 +1,301 @@
+﻿level,word,ipa,pos,topic,vi,example,exampleVi,collocations
+A1,hello,/hʌlˈoʊ/,,General English,xin chào,"Hello, my name is Anna.","Xin chào, tôi tên là Anna.",say hello; hello everyone
+A1,family,/fˈæmʌli/,,People & relationships,gia đình,My family lives in a small town.,Gia đình tôi sống ở một thị trấn nhỏ.,family member; close family
+A1,friend,/fɹˈɛnd/,,People & relationships,bạn bè,She is my best friend.,Cô ấy là bạn thân nhất của tôi.,best friend; make friends
+A1,school,/skˈul/,,School & learning,trường học,I walk to school every morning.,Tôi đi bộ đến trường mỗi sáng.,go to school; primary school
+A1,teacher,/tˈitʃɝ/,,School & learning,giáo viên,Our teacher is very kind.,Giáo viên của chúng tôi rất tốt bụng.,English teacher; class teacher
+A1,student,/stˈudʌnt/,,School & learning,học sinh,He is a new student.,Cậu ấy là học sinh mới.,university student; student life
+A1,book,/bˈʊk/,,School & learning,quyển sách,This book is interesting.,Quyển sách này rất thú vị.,read a book; book a table
+A1,water,/wˈɔtɝ/,,Daily life,nước,Can I have some water?,Cho tôi xin một ít nước được không?,drink water; a glass of water
+A1,food,/fˈud/,,Daily life,thức ăn,The food is delicious.,Món ăn rất ngon.,healthy food; delicious food
+A1,house,/hˈaʊs/,,Daily life,ngôi nhà,Their house is near the park.,Nhà của họ ở gần công viên.,a big house; move house
+A1,room,/ɹˈum/,,Daily life,căn phòng,My room is tidy.,Phòng của tôi rất gọn gàng.,living room; clean the room
+A1,morning,/mˈɔɹnɪŋ/,,Daily life,buổi sáng,I study English in the morning.,Tôi học tiếng Anh vào buổi sáng.,early morning; good morning
+A1,evening,/ˈivnɪŋ/,,Daily life,buổi tối,We eat together in the evening.,Chúng tôi ăn cùng nhau vào buổi tối.,this evening; good evening
+A1,happy,/hˈæpi/,,Daily life,vui vẻ,I feel happy today.,Hôm nay tôi cảm thấy vui.,feel happy; happy birthday
+A1,tired,/tˈaɪɝd/,,Daily life,mệt mỏi,She is tired after school.,Cô ấy mệt sau giờ học.,feel tired; get tired
+A1,small,/smˈɔl/,,General English,nhỏ,They have a small dog.,Họ có một chú chó nhỏ.,a small town; small business
+A1,beautiful,/bjˈutʌfʌl/,,General English,đẹp,The garden is beautiful.,Khu vườn rất đẹp.,beautiful scenery; a beautiful day
+A1,important,/ˌɪmpˈɔɹtʌnt/,,General English,quan trọng,Your health is important.,Sức khỏe của bạn rất quan trọng.,very important; an important decision
+A1,learn,/lˈɝn/,,School & learning,học,I want to learn English.,Tôi muốn học tiếng Anh.,learn English; learn from mistakes
+A1,speak,/spˈik/,,General English,nói,Can you speak slowly?,Bạn có thể nói chậm lại không?,speak English; speak clearly
+A1,listen,/lˈɪsʌn/,,School & learning,nghe,Please listen carefully.,Xin hãy lắng nghe cẩn thận.,listen carefully; listen to music
+A1,write,/ɹˈaɪt/,,School & learning,viết,Write your name here.,Viết tên của bạn vào đây.,write a letter; write down
+A1,read,/ɹˈɛd/,,School & learning,đọc,I read before bed.,Tôi đọc sách trước khi đi ngủ.,read aloud; read a book
+A1,buy,/bˈaɪ/,,Daily life,mua,I want to buy a notebook.,Tôi muốn mua một quyển vở.,buy a ticket; buy online
+A1,help,/hˈɛlp/,,General English,giúp đỡ,Can you help me?,Bạn có thể giúp tôi không?,ask for help; help someone
+A1,today,/tʌdˈeɪ/,,Daily life,hôm nay,Today is Monday.,Hôm nay là thứ Hai.,later today; today’s lesson
+A1,tomorrow,/tʌmˈɑɹˌoʊ/,,Daily life,ngày mai,See you tomorrow.,Hẹn gặp bạn ngày mai.,see you tomorrow; tomorrow morning
+A1,always,/ˈɔlwˌeɪz/,,Daily life,luôn luôn,I always brush my teeth.,Tôi luôn đánh răng.,almost always; always remember
+A1,sometimes,/sʌmtˈaɪmz/,,Daily life,thỉnh thoảng,I sometimes play tennis.,Thỉnh thoảng tôi chơi quần vợt.,sometimes forget; sometimes feel
+A1,because,/bɪkˈɔz/,,General English,bởi vì,I stayed home because I was sick.,Tôi ở nhà vì tôi bị ốm.,
+A2,appointment,/ʌpˈɔɪntmʌnt/,,Daily life,cuộc hẹn,I have a doctor's appointment tomorrow.,,
+A2,arrive,/ɝˈaɪv/,,Travel & places,đến nơi,The train arrives at noon.,,
+A2,borrow,/bˈɑɹˌoʊ/,,General English,mượn,May I borrow your pen?,,
+A2,lend,/lˈɛnd/,,General English,cho mượn,Can you lend me a book?,,
+A2,choose,/tʃˈuz/,,Decisions & problem-solving,lựa chọn,You can choose any color.,,
+A2,decide,/dˌɪsˈaɪd/,,Decisions & problem-solving,quyết định,We decided to leave early.,,
+A2,describe,/dɪskɹˈaɪb/,,General English,miêu tả,Describe your favorite place.,,
+A2,direction,/dɝˈɛkʃʌn/,,Travel & places,hướng đi,Could you give me directions?,,
+A2,environment,/ɪnvˈaɪɹʌnmʌnt/,,Science & society,môi trường,We should protect the environment.,,
+A2,experience,/ɪkspˈɪɹiʌns/,,General English,trải nghiệm,It was an exciting experience.,,
+A2,favorite,/fˈeɪvɝɪt/,,General English,yêu thích,My favorite subject is science.,,
+A2,healthy,/hˈɛlθi/,,Daily life,khỏe mạnh,Eating vegetables is healthy.,,
+A2,invite,/ˌɪnvˈaɪt/,,People & relationships,mời,I invited her to my party.,,
+A2,journey,/dʒˈɝni/,,Travel & places,hành trình,Our journey took three hours.,,
+A2,message,/mˈɛsʌdʒ/,,General English,tin nhắn,I sent you a message.,,
+A2,museum,/mjuzˈiʌm/,,Travel & places,bảo tàng,We visited a history museum.,,
+A2,neighborhood,/nˈeɪbɝhˌʊd/,,Travel & places,khu phố,My neighborhood is quiet.,,
+A2,opinion,/ʌpˈɪnjʌn/,,Ideas & discussion,ý kiến,What is your opinion?,,
+A2,organize,/ˈɔɹɡʌnˌaɪz/,,Work & business,"sắp xếp, tổ chức",Let's organize our study notes.,,
+A2,perhaps,/pɝhˈæps/,,General English,có lẽ,Perhaps we can meet later.,,
+A2,polite,/pʌlˈaɪt/,,People & relationships,lịch sự,It is polite to say thank you.,,
+A2,prepare,/pɹipˈɛɹ/,,General English,chuẩn bị,I need to prepare for the exam.,,
+A2,promise,/pɹˈɑmʌs/,,General English,lời hứa; hứa,I promise to call you.,,
+A2,recommend,/ɹˌɛkʌmˈɛnd/,,General English,"giới thiệu, đề xuất",Can you recommend a good book?,,
+A2,repair,/ɹɪpˈɛɹ/,,General English,sửa chữa,They will repair the bicycle.,,
+A2,schedule,/skˈɛdʒʊl/,,Daily life,lịch trình,My schedule is busy today.,,
+A2,similar,/sˈɪmʌlɝ/,,General English,tương tự,These two pictures are similar.,,
+A2,surprise,/sɝpɹˈaɪz/,,General English,sự ngạc nhiên,The gift was a lovely surprise.,,
+A2,traffic,/tɹˈæfɪk/,,Travel & places,giao thông,There is heavy traffic today.,,
+A2,usually,/jˈuʒʌwʌli/,,Daily life,thường xuyên,I usually walk to work.,,
+B1,achieve,/ʌtʃˈiv/,,Work & business,đạt được,She worked hard to achieve her goal.,,achieve a goal; achieve success
+B1,advantage,/ædvˈæntɪdʒ/,,General English,lợi thế,One advantage is the low cost.,,a major advantage; take advantage of
+B1,although,/ˌɔlðˈoʊ/,,General English,mặc dù,"Although it rained, we went out.",,
+B1,approach,/ʌpɹˈoʊtʃ/,,Decisions & problem-solving,cách tiếp cận,We need a different approach.,,a practical approach; approach a problem
+B1,attitude,/ˈætʌtˌud/,,People & relationships,thái độ,A positive attitude can help.,,a positive attitude; change your attitude
+B1,avoid,/ʌvˈɔɪd/,,General English,tránh,Try to avoid making the same mistake.,,avoid mistakes; avoid doing something
+B1,challenge,/tʃˈælʌndʒ/,,Decisions & problem-solving,thử thách,Learning a language is a challenge.,,face a challenge; overcome a challenge
+B1,communicate,/kʌmjˈunʌkˌeɪt/,,People & relationships,giao tiếp,We communicate through video calls.,,communicate clearly; communicate with someone
+B1,compare,/kʌmpˈɛɹ/,,General English,so sánh,Compare the two solutions.,,compare results; compare A with B
+B1,confidence,/kˈɑnfʌdʌns/,,People & relationships,sự tự tin,Practice builds confidence.,,build confidence; gain confidence
+B1,consider,/kʌnsˈɪdɝ/,,Decisions & problem-solving,cân nhắc,Please consider my suggestion.,,carefully consider; consider an option
+B1,contribute,/kʌntɹˈɪbjut/,,Work & business,đóng góp,Everyone can contribute ideas.,,contribute to a project; make a contribution
+B1,convenient,/kʌnvˈinjʌnt/,,Travel & places,thuận tiện,Online lessons are convenient.,,highly convenient; a convenient time
+B1,develop,/dɪvˈɛlʌp/,,Work & business,phát triển,She wants to develop new skills.,,develop skills; develop a plan
+B1,effort,/ˈɛfɝt/,,General English,nỗ lực,Your effort will make a difference.,,make an effort; put in effort
+B1,encourage,/ɛnkˈɝɪdʒ/,,General English,khuyến khích,Teachers encourage students to ask questions.,,encourage someone to try; strongly encourage
+B1,evidence,/ˈɛvʌdʌns/,,Science & society,bằng chứng,We need evidence to support the claim.,,strong evidence; provide evidence
+B1,improve,/ˌɪmpɹˈuv/,,School & learning,cải thiện,Reading helps improve vocabulary.,,improve performance; improve steadily
+B1,influence,/ˈɪnfluʌns/,,General English,ảnh hưởng,Friends can influence our choices.,,have an influence on; influence a decision
+B1,instead,/ˌɪnstˈɛd/,,General English,thay vào đó,Let's walk instead of driving.,,
+B1,manage,/mˈænʌdʒ/,,Work & business,quản lý,He manages his time well.,,manage time; manage a team
+B1,opportunity,/ˌɑpɝtˈunʌti/,,Work & business,cơ hội,This is a great opportunity to learn.,,a great opportunity; seize an opportunity
+B1,persuade,/pɝswˈeɪd/,,People & relationships,thuyết phục,She persuaded me to join.,,
+B1,predict,/pɹɪdˈɪkt/,,Decisions & problem-solving,dự đoán,Can you predict the result?,,predict the outcome; accurately predict
+B1,prevent,/pɹɪvˈɛnt/,,Decisions & problem-solving,ngăn ngừa,Exercise can help prevent illness.,,prevent accidents; prevent someone from doing something
+B1,progress,/pɹˈɑɡɹˌɛs/,,General English,tiến bộ,You have made excellent progress.,,make progress; steady progress
+B1,reliable,/ɹɪlˈaɪʌbʌl/,,General English,đáng tin cậy,This source is reliable.,,a reliable source; highly reliable
+B1,require,/ɹˌikwˈaɪɝ/,,General English,yêu cầu,The course requires regular practice.,,require attention; require someone to do something
+B1,responsibility,/ɹispˌɑnsʌbˈɪlʌti/,,People & relationships,trách nhiệm,Taking care of the pet is my responsibility.,,take responsibility; a sense of responsibility
+B1,solution,/sʌlˈuʃʌn/,,Decisions & problem-solving,giải pháp,We found a simple solution.,,find a solution; a practical solution
+B2,accurate,/ˈækjɝʌt/,,General English,chính xác,The report contains accurate figures.,,accurate information; highly accurate
+B2,acknowledge,/æknˈɑlɪdʒ/,,General English,"thừa nhận, công nhận",She acknowledged her mistake.,,acknowledge a mistake; acknowledge the importance
+B2,alternative,/ɔltˈɝnʌtɪv/,,Decisions & problem-solving,phương án thay thế,We need an alternative plan.,,an alternative solution; consider alternatives
+B2,analyze,/ˈænʌlˌaɪz/,,Science & society,phân tích,Students analyze the results.,,analyze data; critically analyze
+B2,assumption,/ʌsˈʌmpʃʌn/,,Ideas & discussion,giả định,That assumption may be incorrect.,,make an assumption; underlying assumption
+B2,beneficial,/bˌɛnʌfˈɪʃʌl/,,Science & society,có lợi,Regular exercise is beneficial.,,highly beneficial; beneficial to health
+B2,circumstance,/sˈɝkʌmstˌæns/,,General English,hoàn cảnh,The decision depends on the circumstances.,,under the circumstances; exceptional circumstances
+B2,complex,/kˈɑmplɛks/,,General English,phức tạp,The problem is more complex than it seems.,,a complex issue; highly complex
+B2,consequence,/kˈɑnsʌkwʌns/,,Decisions & problem-solving,hậu quả,Every choice has a consequence.,,serious consequences; unintended consequences
+B2,consistent,/kʌnsˈɪstʌnt/,,General English,nhất quán,Her performance is consistent.,,consistent results; remain consistent
+B2,controversial,/kˌɑntɹʌvˈɝʃʌl/,,Ideas & discussion,gây tranh cãi,It is a controversial issue.,,a controversial issue; highly controversial
+B2,demonstrate,/dˈɛmʌnstɹˌeɪt/,,School & learning,"chứng minh, thể hiện",The experiment demonstrates the effect.,,demonstrate ability; clearly demonstrate
+B2,distinguish,/dɪstˈɪŋɡwɪʃ/,,General English,phân biệt,Can you distinguish fact from opinion?,,distinguish between; clearly distinguish
+B2,efficient,/ɪfˈɪʃʌnt/,,Work & business,hiệu quả,This is a more efficient method.,,an efficient process; energy-efficient
+B2,emphasize,/ˈɛmfʌsˌaɪz/,,General English,nhấn mạnh,The speaker emphasized safety.,,strongly emphasize; emphasize the importance
+B2,evaluate,/ɪvˈæljuˌeɪt/,,Decisions & problem-solving,đánh giá,We must evaluate the evidence.,,evaluate performance; critically evaluate
+B2,establish,/ɪstˈæblɪʃ/,,Work & business,thiết lập,They established a new program.,,establish a relationship; establish a system
+B2,flexible,/flˈɛksʌbʌl/,,General English,linh hoạt,Our schedule is flexible.,,a flexible schedule; remain flexible
+B2,fundamental,/fˌʌndʌmˈɛntʌl/,,General English,"cơ bản, cốt lõi",Trust is fundamental to teamwork.,,fundamental principles; a fundamental difference
+B2,generate,/dʒˈɛnɝˌeɪt/,,Science & society,tạo ra,The project will generate new ideas.,,generate ideas; generate revenue
+B2,impact,/ˌɪmpˈækt/,,Science & society,tác động,Technology has a major impact.,,have an impact on; significant impact
+B2,implement,/ˈɪmplʌmʌnt/,,Work & business,triển khai,We plan to implement the changes.,,implement changes; implement a strategy
+B2,interpret,/ˌɪntˈɝpɹʌt/,,General English,diễn giải,How do you interpret these findings?,,interpret results; interpret data
+B2,justify,/dʒˈʌstʌfˌaɪ/,,Decisions & problem-solving,"biện minh, chứng minh hợp lý",Can you justify your answer?,,justify a decision; fully justify
+B2,maintain,/meɪntˈeɪn/,,Work & business,duy trì,It's hard to maintain concentration.,,maintain standards; maintain a balance
+B2,perspective,/pɝspˈɛktɪv/,,Ideas & discussion,góc nhìn,Try to see another perspective.,,a different perspective; from my perspective
+B2,priority,/pɹaɪˈɔɹʌti/,,Work & business,ưu tiên,Safety is our first priority.,,top priority; give priority to
+B2,significant,/sʌɡnˈɪfɪkʌnt/,,General English,đáng kể,There was a significant improvement.,,significant improvement; a significant difference
+B2,strategy,/stɹˈætʌdʒi/,,Work & business,chiến lược,We need a clear strategy.,,develop a strategy; long-term strategy
+B2,sustainable,/sʌstˈeɪnʌbʌl/,,Science & society,bền vững,The city promotes sustainable transport.,,sustainable development; environmentally sustainable
+C1,ambiguous,/æmbˈɪɡjuʌs/,,Ideas & discussion,"mơ hồ, đa nghĩa",The instructions were ambiguous.,,an ambiguous statement; deliberately ambiguous
+C1,articulate,/ɑɹtˈɪkjʌlˌeɪt/,,Ideas & discussion,diễn đạt rõ ràng,She can articulate complex ideas.,,articulate an idea; articulate clearly
+C1,coherent,/koʊhˈɪɹʌnt/,,Ideas & discussion,mạch lạc,His argument was coherent.,,a coherent argument; coherent explanation
+C1,compelling,/kʌmpˈɛlɪŋ/,,Ideas & discussion,"thuyết phục, hấp dẫn",She presented compelling evidence.,,compelling evidence; a compelling reason
+C1,comprehensive,/kˌɑmpɹihˈɛnsɪv/,,General English,toàn diện,We need a comprehensive review.,,a comprehensive review; comprehensive analysis
+C1,concede,/kʌnsˈid/,,General English,thừa nhận miễn cưỡng,He conceded that the plan had flaws.,,concede defeat; reluctantly concede
+C1,contemplate,/kˈɑntʌmplˌeɪt/,,General English,"suy ngẫm, cân nhắc",They contemplated moving abroad.,,contemplate a change; seriously contemplate
+C1,contradict,/kˌɑntɹʌdˈɪkt/,,Ideas & discussion,"mâu thuẫn, phủ nhận",The results contradict earlier findings.,,contradict the evidence; directly contradict
+C1,conventional,/kʌnvˈɛnʃʌnʌl/,,General English,theo thông lệ,They rejected conventional methods.,,conventional wisdom; conventional methods
+C1,crucial,/kɹˈuʃʌl/,,General English,then chốt,Timing is crucial to success.,,a crucial role; absolutely crucial
+C1,detrimental,/dˌɛtɹʌmˈɛntʌl/,,General English,có hại,Poor sleep can be detrimental to health.,,detrimental to health; potentially detrimental
+C1,dilemma,/dɪlˈɛmʌ/,,Decisions & problem-solving,tình thế tiến thoái lưỡng nan,She faced a difficult dilemma.,,face a dilemma; moral dilemma
+C1,discrepancy,/dɪskɹˈɛpʌnsi/,,General English,sự khác biệt không nhất quán,We noticed a discrepancy in the data.,,a discrepancy between; identify discrepancies
+C1,elaborate,/ɪlˈæbɹʌt/,,Ideas & discussion,giải thích chi tiết,Could you elaborate on your point?,,elaborate on a point; elaborate explanation
+C1,empirical,/ˌɛmpˈɪɹɪkʌl/,,Science & society,dựa trên thực nghiệm,The theory needs empirical support.,,empirical evidence; empirical research
+C1,enhance,/ɛnhˈæns/,,General English,nâng cao,The course aims to enhance communication.,,enhance performance; enhance understanding
+C1,feasible,/fˈizʌbʌl/,,Decisions & problem-solving,khả thi,Is the proposal financially feasible?,,technically feasible; economically feasible
+C1,fluctuate,/flˈʌktʃʌwˌeɪt/,,Science & society,dao động,Prices fluctuate throughout the year.,,prices fluctuate; fluctuate significantly
+C1,implication,/ˌɪmplʌkˈeɪʃʌn/,,General English,"hàm ý, hệ quả",Consider the implications of this decision.,,far-reaching implications; consider the implications
+C1,inherent,/ɪnhˈɪɹʌnt/,,General English,"vốn có, cố hữu",Every approach has inherent limitations.,,inherent risk; inherent limitations
+C1,innovative,/ˈɪnʌvˌeɪtɪv/,,Science & society,"đổi mới, sáng tạo",They developed an innovative solution.,,an innovative approach; innovative solution
+C1,meticulous,/mʌtˈɪkjʌlʌs/,,General English,tỉ mỉ,She kept meticulous records.,,meticulous attention to detail; meticulous planning
+C1,nuance,/nˈuɑns/,,Ideas & discussion,sắc thái tinh tế,Translation can lose important nuances.,,subtle nuance; cultural nuances
+C1,paradox,/pˈɛɹʌdˌɑks/,,General English,nghịch lý,It seems like a paradox.,,an apparent paradox; paradox of choice
+C1,plausible,/plˈɔzʌbʌl/,,General English,có vẻ hợp lý,That is a plausible explanation.,,a plausible explanation; entirely plausible
+C1,profound,/pɹoʊfˈaʊnd/,,General English,sâu sắc,The book had a profound effect on me.,,a profound effect; profound understanding
+C1,resilient,/ɹɪzˈɪljʌnt/,,Science & society,kiên cường,The community remained resilient.,,highly resilient; resilient community
+C1,scrutinize,/skɹˈutʌnˌaɪz/,,General English,xem xét kỹ lưỡng,We must scrutinize the evidence.,,scrutinize the evidence; closely scrutinize
+C1,substantiate,/sʌbstˈæntʃiˌeɪt/,,General English,chứng minh bằng bằng chứng,Can you substantiate that claim?,,substantiate a claim; substantiate with evidence
+C1,undermine,/ˈʌndɝmˌaɪn/,,General English,làm suy yếu,Rumors can undermine public trust.,,undermine confidence; undermine trust
+A1,apple,/ˈæpʌl/,,General English,quả táo,I eat an apple after lunch.,,
+A1,banana,/bʌnˈænʌ/,,General English,quả chuối,She has a banana for breakfast.,,
+A1,bread,/bɹˈɛd/,,General English,bánh mì,We buy fresh bread every day.,,
+A1,breakfast,/bɹˈɛkfʌst/,,General English,bữa sáng,Breakfast is ready at seven.,,
+A1,lunch,/lˈʌntʃ/,,General English,bữa trưa,I have lunch with my classmates.,,
+A1,dinner,/dˈɪnɝ/,,General English,bữa tối,Dinner is at six o'clock.,,
+A1,coffee,/kˈɑfi/,,General English,cà phê,My dad drinks coffee in the morning.,,
+A1,city,/sˈɪti/,,General English,thành phố,This city has many parks.,,
+A1,country,/kˈʌntɹi/,,General English,đất nước,Vietnam is a beautiful country.,,
+A1,street,/stɹˈit/,,General English,đường phố,The school is on this street.,,
+A1,park,/pˈɑɹk/,,General English,công viên,Children play in the park.,,
+A1,shop,/ʃˈɑp/,,General English,cửa hàng,There is a shop near my house.,,
+A1,hospital,/hˈɑspˌɪtʌl/,,General English,bệnh viện,The hospital is next to the bank.,,
+A1,bus,/bˈʌs/,,General English,xe buýt,I take the bus to school.,,
+A1,train,/tɹˈeɪn/,,General English,tàu hỏa,The train leaves at eight.,,
+A1,bicycle,/bˈaɪsɪkʌl/,,General English,xe đạp,My bicycle is blue.,,
+A1,window,/wˈɪndoʊ/,,General English,cửa sổ,Please open the window.,,
+A1,door,/dˈɔɹ/,,General English,cửa ra vào,"Close the door, please.",,
+A1,table,/tˈeɪbʌl/,,General English,cái bàn,Put your bag on the table.,,
+A1,chair,/tʃˈɛɹ/,,General English,cái ghế,There are four chairs here.,,
+A1,computer,/kʌmpjˈutɝ/,,General English,máy tính,I use a computer at school.,,
+A1,phone,/fˈoʊn/,,General English,điện thoại,My phone is in my bag.,,
+A1,question,/kwˈɛstʃʌn/,,General English,câu hỏi,I have a question.,,
+A1,answer,/ˈænsɝ/,,General English,câu trả lời,Do you know the answer?,,
+A1,easy,/ˈizi/,,General English,dễ,This exercise is easy.,,
+A1,difficult,/dˈɪfʌkʌlt/,,General English,khó,The test is difficult.,,
+A1,fast,/fˈæst/,,General English,nhanh,The train is very fast.,,
+A1,slow,/slˈoʊ/,,General English,chậm,Please speak slowly.,,
+A1,early,/ˈɝli/,,General English,sớm,I get up early on weekdays.,,
+A1,late,/lˈeɪt/,,General English,muộn,We are late for class.,,
+A2,adventure,/ædvˈɛntʃɝ/,,General English,cuộc phiêu lưu,Our trip was a great adventure.,,
+A2,activity,/æktˈɪvʌti/,,General English,hoạt động,Swimming is my favorite activity.,,
+A2,actually,/ˈæktʃˌuʌli/,,General English,thực ra,"Actually, I prefer tea.",,
+A2,already,/ɔlɹˈɛdi/,,General English,đã rồi,I have already finished my homework.,,
+A2,anywhere,/ˈɛniwˌɛɹ/,,General English,bất cứ đâu,We can sit anywhere.,,
+A2,argue,/ˈɑɹɡju/,,General English,tranh luận,They sometimes argue about music.,,
+A2,awful,/ˈɑfʌl/,,General English,rất tệ,The weather was awful yesterday.,,
+A2,belong,/bɪlˈɔŋ/,,General English,thuộc về,This bag belongs to my sister.,,
+A2,careful,/kˈɛɹfʌl/,,General English,cẩn thận,Be careful when crossing the road.,,
+A2,celebrate,/sˈɛlʌbɹˌeɪt/,,General English,ăn mừng,We celebrate her birthday in June.,,
+A2,comfortable,/kˈʌmfɝtʌbʌl/,,General English,thoải mái,These shoes are comfortable.,,
+A2,community,/kʌmjˈunʌti/,,General English,cộng đồng,Our community has a library.,,
+A2,complain,/kʌmplˈeɪn/,,General English,phàn nàn,He complained about the noise.,,
+A2,crowded,/kɹˈaʊdʌd/,,General English,đông đúc,The market is crowded on Sundays.,,
+A2,deliver,/dɪlˈɪvɝ/,,General English,giao hàng,They deliver food to our home.,,
+A2,dentist,/dˈɛntʌst/,,General English,nha sĩ,I went to the dentist yesterday.,,
+A2,discover,/dɪskˈʌvɝ/,,General English,khám phá,We discovered a new walking trail.,,
+A2,excited,/ɪksˈaɪtʌd/,,General English,háo hức,I'm excited about the trip.,,
+A2,explain,/ɪksplˈeɪn/,,General English,giải thích,Can you explain the rule again?,,
+A2,foreign,/fˈɔɹʌn/,,General English,nước ngoài,She enjoys learning foreign languages.,,
+A2,future,/fjˈutʃɝ/,,General English,tương lai,What do you want to do in the future?,,
+A2,imagine,/ˌɪmˈædʒʌn/,,General English,tưởng tượng,Imagine living by the sea.,,
+A2,introduce,/ˌɪntɹʌdˈus/,,General English,giới thiệu,Let me introduce my friend.,,
+A2,local,/lˈoʊkʌl/,,General English,địa phương,We visited a local restaurant.,,
+A2,necessary,/nˈɛsʌsˌɛɹi/,,General English,cần thiết,A passport is necessary for this trip.,,
+A2,notice,/nˈoʊtʌs/,,General English,nhận thấy,Did you notice the sign?,,
+A2,patient,/pˈeɪʃʌnt/,,General English,kiên nhẫn,Our teacher is very patient.,,
+A2,recently,/ɹˈisʌntli/,,General English,gần đây,I recently started learning guitar.,,
+A2,several,/sˈɛvɹʌl/,,General English,một vài,Several students joined the club.,,
+A2,weather,/wˈɛðɝ/,,General English,thời tiết,The weather is warm today.,,
+B1,affect,/ʌfˈɛkt/,,General English,ảnh hưởng đến,Lack of sleep can affect concentration.,,
+B1,apologize,/ʌpˈɑlʌdʒˌaɪz/,,General English,xin lỗi,I apologized for being late.,,
+B1,apply,/ʌplˈaɪ/,,General English,"nộp đơn, áp dụng",She plans to apply for the scholarship.,,
+B1,argument,/ˈɑɹɡjʌmʌnt/,,Ideas & discussion,"lập luận, cuộc tranh cãi",His argument was easy to follow.,,
+B1,aware,/ʌwˈɛɹ/,,General English,nhận thức được,Are you aware of the risks?,,
+B1,behavior,/bɪhˈeɪvjɝ/,,General English,hành vi,The teacher noticed a change in his behavior.,,
+B1,benefit,/bˈɛnʌfɪt/,,General English,lợi ích,Exercise has many health benefits.,,
+B1,career,/kɝˈɪɹ/,,General English,sự nghiệp,She wants a career in engineering.,,
+B1,cause,/kˈɑz/,,General English,"nguyên nhân, gây ra",What caused the delay?,,
+B1,condition,/kʌndˈɪʃʌn/,,General English,điều kiện,The roads are in poor condition.,,
+B1,connect,/kʌnˈɛkt/,,General English,kết nối,The bridge connects two villages.,,
+B1,culture,/kˈʌltʃɝ/,,General English,văn hóa,We learned about Vietnamese culture.,,
+B1,demand,/dɪmˈænd/,,General English,nhu cầu,There is high demand for the product.,,
+B1,depend,/dɪpˈɛnd/,,General English,phụ thuộc,The price depends on the size.,,
+B1,detail,/dɪtˈeɪl/,,General English,chi tiết,Please explain the details.,,
+B1,difference,/dˈɪfɝʌns/,,General English,sự khác biệt,What is the difference between these words?,,
+B1,discuss,/dɪskˈʌs/,,General English,thảo luận,Let's discuss the problem together.,,
+B1,education,/ˌɛdʒʌkˈeɪʃʌn/,,General English,giáo dục,Education opens new opportunities.,,
+B1,expect,/ɪkspˈɛkt/,,General English,mong đợi,I expect the train to arrive soon.,,
+B1,focus,/fˈoʊkʌs/,,General English,tập trung,Try to focus on one task.,,
+B1,habit,/hˈæbʌt/,,General English,thói quen,Reading is a useful habit.,,
+B1,individual,/ˌɪndʌvˈɪdʒʌwʌl/,,General English,cá nhân,Each individual has different needs.,,
+B1,likely,/lˈaɪkli/,,General English,có khả năng,It is likely to rain tomorrow.,,
+B1,method,/mˈɛθʌd/,,General English,phương pháp,This method is easy to use.,,
+B1,participate,/pɑɹtˈɪsʌpˌeɪt/,,General English,tham gia,Students can participate in the event.,,
+B1,performance,/pɝfˈɔɹmʌns/,,General English,"hiệu suất, màn trình diễn",Her performance improved this term.,,
+B1,purpose,/pˈɝpʌs/,,General English,mục đích,What is the purpose of this exercise?,,
+B1,relationship,/ɹilˈeɪʃʌnʃˌɪp/,,General English,mối quan hệ,They have a strong relationship.,,
+B1,support,/sʌpˈɔɹt/,,General English,hỗ trợ,My family supports my studies.,,
+B1,valuable,/vˈæljʌbʌl/,,General English,có giá trị,Your feedback is valuable.,,
+B2,adapt,/ʌdˈæpt/,,General English,thích nghi,People adapt to new environments.,,
+B2,allocate,/ˈælʌkˌeɪt/,,General English,phân bổ,We allocated more time to revision.,,
+B2,anticipate,/æntˈɪsʌpˌeɪt/,,General English,dự đoán trước,We anticipate higher costs this year.,,
+B2,appropriate,/ʌpɹˈoʊpɹiʌt/,,General English,phù hợp,Choose an appropriate response.,,
+B2,assess,/ʌsˈɛs/,,General English,đánh giá,The teacher will assess our progress.,,
+B2,capacity,/kʌpˈæsʌti/,,General English,"năng lực, sức chứa",The room has a capacity of fifty people.,,
+B2,clarify,/klˈɛɹʌfˌaɪ/,,General English,làm rõ,Could you clarify your question?,,
+B2,collaborate,/kʌlˈæbɝˌeɪt/,,General English,hợp tác,The teams collaborate on research.,,
+B2,commitment,/kʌmˈɪtmʌnt/,,General English,sự cam kết,Learning requires long-term commitment.,,
+B2,component,/kʌmpˈoʊnʌnt/,,General English,thành phần,This device has several components.,,
+B2,conduct,/kˈɑndʌkt/,,General English,tiến hành,Researchers conducted a survey.,,
+B2,constraint,/kʌnstɹˈeɪnt/,,General English,sự hạn chế,Time is our main constraint.,,
+B2,context,/kˈɑntɛkst/,,General English,bối cảnh,The meaning depends on the context.,,
+B2,coordinate,/koʊˈɔɹdʌnʌt/,,General English,phối hợp,We need to coordinate our schedules.,,
+B2,criteria,/kɹaɪtˈɪɹiʌ/,,General English,tiêu chí,What criteria will you use?,,
+B2,decline,/dɪklˈaɪn/,,General English,"suy giảm, từ chối",Sales declined in September.,,
+B2,derive,/dɝˈaɪv/,,General English,"bắt nguồn, suy ra",The formula is derived from an earlier result.,,
+B2,distribute,/dɪstɹˈɪbjut/,,General English,phân phối,Volunteers distribute food every week.,,
+B2,dominate,/dˈɑmʌnˌeɪt/,,General English,chiếm ưu thế,One team dominated the match.,,
+B2,emerge,/ɪmˈɝdʒ/,,General English,xuất hiện,New patterns emerged from the data.,,
+B2,expand,/ɪkspˈænd/,,General English,mở rộng,The school plans to expand its programs.,,
+B2,exposure,/ɪkspˈoʊʒɝ/,,General English,sự tiếp xúc,Exposure to English helps listening skills.,,
+B2,framework,/fɹˈeɪmwˌɝk/,,General English,khuôn khổ,The framework guides our decisions.,,
+B2,insight,/ˈɪnsˌaɪt/,,General English,hiểu biết sâu sắc,The interview provided useful insight.,,
+B2,modify,/mˈɑdʌfˌaɪ/,,General English,điều chỉnh,We modified the design after testing.,,
+B2,objective,/ʌbdʒˈɛktɪv/,,General English,"mục tiêu, khách quan",Our main objective is to reduce waste.,,
+B2,outcome,/ˈaʊtkˌʌm/,,General English,kết quả,The outcome was better than expected.,,
+B2,proportion,/pɹʌpˈɔɹʃʌn/,,General English,tỷ lệ,A large proportion of students agreed.,,
+B2,regulate,/ɹˈɛɡjʌlˌeɪt/,,General English,"điều chỉnh, quản lý",The rules regulate how data is used.,,
+B2,trend,/tɹˈɛnd/,,General English,xu hướng,The graph shows an upward trend.,,
+C1,abrupt,/ʌbɹˈʌpt/,,General English,đột ngột,The meeting came to an abrupt end.,,
+C1,advocate,/ˈædvʌkʌt/,,General English,"ủng hộ, người vận động",She advocates for equal access to education.,,
+C1,alleviate,/ʌlˈiviˌeɪt/,,General English,làm giảm nhẹ,The changes may alleviate traffic problems.,,
+C1,arbitrary,/ˈɑɹbʌtɹˌɛɹi/,,General English,tùy tiện,The deadline seemed arbitrary.,,
+C1,assert,/ʌsˈɝt/,,General English,khẳng định,He asserted that the findings were accurate.,,
+C1,austerity,/ˌɔstˈɛɹɪti/,,General English,chính sách thắt lưng buộc bụng,The government introduced austerity measures.,,
+C1,bolster,/bˈoʊlstɝ/,,General English,củng cố,The evidence bolstered her argument.,,
+C1,catalyst,/kˈætʌlʌst/,,General English,"chất xúc tác, yếu tố thúc đẩy",The discovery was a catalyst for change.,,
+C1,coincide,/kˌoʊɪnsˈaɪd/,,General English,"trùng hợp, xảy ra cùng lúc",The festival coincides with the holiday.,,
+C1,constrain,/kʌnstɹˈeɪn/,,General English,hạn chế,A small budget can constrain development.,,
+C1,corroborate,/kɝˈɑbɝˌeɪt/,,General English,xác nhận bằng chứng,Other witnesses corroborated her account.,,
+C1,cumulative,/kjˈumjʌlʌtɪv/,,General English,tích lũy,The cumulative effect was substantial.,,
+C1,defer,/dɪfˈɝ/,,General English,trì hoãn,The committee decided to defer the vote.,,
+C1,depict,/dɪpˈɪkt/,,General English,miêu tả,The painting depicts life in the village.,,
+C1,disparity,/dɪspˈɛɹʌti/,,General English,sự chênh lệch,The study highlighted income disparities.,,
+C1,disseminate,/dɪsˈɛmʌnˌeɪt/,,General English,"phổ biến, truyền bá",The team disseminated the results widely.,,
+C1,elicit,/ɪlˈɪsɪt/,,General English,"gợi ra, thu được",The question elicited thoughtful responses.,,
+C1,exacerbate,/ɪɡzˈæsɝbˌeɪt/,,General English,làm trầm trọng thêm,The drought exacerbated water shortages.,,
+C1,exemplify,/ɪɡzˈɛmplʌfˌaɪ/,,General English,minh họa tiêu biểu,Her work exemplifies careful research.,,
+C1,explicit,/ɪksplˈɪsʌt/,,General English,"rõ ràng, minh bạch",The instructions were explicit.,,
+C1,formulate,/fˈɔɹmjʌlˌeɪt/,,General English,"xây dựng, hình thành",We need to formulate a new policy.,,
+C1,inadvertent,/ˌɪnʌdvˈɝtʌnt/,,General English,vô ý,The mistake was inadvertent.,,
+C1,indispensable,/ˌɪndɪspˈɛnsʌbʌl/,,General English,không thể thiếu,Good communication is indispensable.,,
+C1,mitigate,/mˈɪtʌɡˌeɪt/,,General English,giảm thiểu,The project aims to mitigate flood risks.,,
+C1,notwithstanding,/nˌɑtwɪθstˈændɪŋ/,,General English,bất chấp,"Notwithstanding the delays, work continued.",,
+C1,pervasive,/pɝvˈeɪsɪv/,,General English,"lan rộng, phổ biến",Technology has a pervasive influence.,,
+C1,reconcile,/ɹˈɛkʌnsˌaɪl/,,General English,"hòa giải, dung hòa",It is difficult to reconcile the two accounts.,,
+C1,rigorous,/ɹˈɪɡɝʌs/,,General English,"nghiêm ngặt, chặt chẽ",The experiment followed rigorous procedures.,,
+C1,tentative,/tˈɛntʌtɪv/,,General English,"tạm thời, chưa chắc chắn",We have a tentative schedule.,,
+C1,viable,/vˈaɪʌbʌl/,,General English,khả thi,The proposal is not financially viable.,,

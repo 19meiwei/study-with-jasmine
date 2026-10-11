@@ -1,18 +1,23 @@
-STUDY WITH JASMINE — ENGLISH SPEAKING STUDIO
+JASMINE ENGLISH STUDIO — VOCABULARY PRO (PARTIAL CONTENT EXPANSION)
 
-Place the english-speaking/ folder beside index.html in your existing website.
+INSTALL
+Copy the english-speaking folder beside the site's root index.html, replacing the old english-speaking folder.
+Open english-speaking/index.html via Live Server, then deploy with git add ., git commit, git push.
 
-To link the green English Speaking homepage card, add an anchor:
-<a href="english-speaking/index.html">English Speaking</a>
-or wrap the existing green card in an anchor while preserving its class and contents.
+WHAT IS COMPLETE
+- 300 distinct curated English vocabulary entries, 60 per A1/A2/B1/B2/C1 level.
+- Vietnamese meanings and English example sentences for all 300.
+- Pronunciation strings for all 300, approximated from CMU US English pronunciations (stress marked, no syllable dots).
+- 116 manually curated collocation fields.
+- 30 individually written Vietnamese example-sentence translations.
+- Topic filters, keyword search, level filters, audio via browser speechSynthesis, save list, flashcards, 10-question quiz.
+- A spaced-repetition study workflow with Again/Hard/Good/Easy, localStorage persistence, due counts and next review dates.
+- A CSV vocabulary bank with all 300 entries, suitable for editorial expansion.
+- Existing grammar, speaking and quiz functionality retained.
 
-Includes 79 carefully organized grammar topic summaries in 6 collections, grammar search/filter, one-example-per-topic, 2-choice grammar quiz, 8 speaking prompts with optional browser voice, local progress tracking and responsive layout.
+WHAT IS NOT COMPLETE
+This package DOES NOT contain 3,000–5,000 fully edited words, nor does it claim to. 300 accurate entries were preserved rather than adding thousands of guessed Vietnamese translations or mechanically generated examples. Additional words should be individually researched and reviewed before publication.
+Part-of-speech fields are intentionally empty until validated. Collocations and Vietnamese sentence translations are omitted on entries not yet editorially reviewed. CEFR levels are approximate. Pronunciation uses browser speech for audio, not human recordings. Spaced repetition uses a simplified interval algorithm, not a validated assessment.
 
-Scope note: 79 topics are a broad English grammar reference, NOT every possible construction or an exhaustive English grammar textbook. Level labels are editorial approximations, not official CEFR assessment. Some topics have identical example/answer text where an illustrative correct sentence is appropriate, so they are excluded from quiz.
-
-Audio is speechSynthesis, dependent on browser voices; it is not a library of recorded human voice. No AI-generated images. No internet required for function except optional Google font.
-
-To deploy:
-git add .
-git commit -m "Add English Speaking Studio"
-git push origin main
+LOCAL DATA
+Review history and saved words are stored in the user's browser only; clearing localStorage will remove them.
