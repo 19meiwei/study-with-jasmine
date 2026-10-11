@@ -1,0 +1,1010 @@
+[
+ {
+  "id": 1,
+  "page": 3,
+  "question": "Số có 1995 chữ số 7 khi chia cho 15 thì phần thập phân của thương là bao\n\nnhiêu?\n\n                               A  A A  A\n                                           =    =   0,2",
+  "solution": "Gọi số có 1995 chữ số 7 là A. Ta có: 15   3   5   3\n\n   Một số chia hết cho 3 khi tổng các chữ số của số đó chia hết cho 3. Tổng các chữ\n\nsố của A là 1995 x 7. Vì 1995 chia hết cho 3 nên 1995 x 7 chia hết cho 3. Do đó A =\n\n777...77777 chia hết cho 3.\n\n1995 chữ số 7\n\n   Một số hoặc chia hết cho 3 hoặc chia cho 3 cho số dư là 1 hoặc 2.\n\n   Chữ số tận cùng của A là 7 không chia hết cho 3, nhưng A chia hết cho 3 nên\n\ntrong phép chia của A cho 3 thì số cuối cùng chia cho 3 phải là 27. Vậy chữ số tận\n\ncùng của thương trong phép chia A cho 3 là 9, mà 9 x 2 = 18, do đó số A/3 x 0,2 là số\n\ncó phần thập phân là 8.\n\nVì vậy khi chia A = 777...77777 cho 15 sẽ được thương có phần thập phân là 8.\n\n                1995 chữ số 7\n\n    Nhận xét : Điều mấu chốt trong lời giải bài toán trên là việc biến đổi A/15 = A/3\n\nx 0,2 Sau đó là chứng minh A chia hết cho 3 và tìm chữ số tận cùng của thương trong\n\nphép chia A cho 3. Ta có thể mở rộng bài toán trên tới bài toán sau :"
+ },
+ {
+  "id": 2,
+  "page": 3,
+  "question": "Tìm phần thập phân của thương trong phép chia số A cho 15\n\nbiết rằng số A gồm n chữ số a và A chia hết cho 3 ?\n\n    Nếu kí hiệu A = aaa...aaaa và giả thiết A chia hết cho 3 (tức là n x a chia hết cho\n\n3), thì khi\n\n                   n chữ số a\n\nđó tương tự như cách giải bài toán 1 ta tìm được phần thập phân của thương khi chia A\n\ncho 15 như sau :\n\n      - Với a = 1 thì phần thập phân là 4 (A = 111...1111  , với n chia hết cho 3)\n\n                                                                                                 1\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                                      n chữ số 1\n\n      - Với a = 2 thì phần thập phân là 8 (A = 222...2222  , với n chia hết cho 3).\n\n                                     n chữ số 2\n\n      - Với a = 3 thì phần thập phân là 2 (A = 333...3333  , với n tùy ý).\n\n                                     n chữ số 3\n\n      - Với a = 4 thì phần thập phân là 6 (A = 444...4444  , với n chia hết cho 3)\n\n                                     n chữ số 4\n\n      - Với a = 5 thì phần thập phân là 0 (A = 555...5555  , với n chia hết cho 3).\n\n                                      n chữ số 5\n\n      - Với a = 6 thì phần thập phân là 4 (A = 666...6666  , với n tùy ý)\n\n                                     n chữ số 6\n\n\n     - Với a = 7 thì phần thập phân là 8 (A = 777...7777  , với n chia hết cho 3)\n\n                                     n chữ số 7\n\n     - Với a = 8 thì phần thập phân là 2 (A = 888...8888  , với n chia hết cho 3)\n\n                                     n chữ số 8\n\n     - Với a = 9 thì phần thập phân là 6 (A = 999...9999   , với n tùy ý).\n\n                                      n chữ số 9\n\n   Trong các bài toán 1 và 2 (1*) ở trên thì số chia đều là 15. Bây giờ ta xét tiếp một\n\nví dụ mà số chia không phải là 15.",
+  "solution": ""
+ },
+ {
+  "id": 3,
+  "page": 4,
+  "question": "Tìm phần thập phân của thương trong phép chia số 111...1111 cho 36?\n\n\n2007 chữ số 1\n\n      Giải. Đặt A = 111...1111\n\n                2007 chữ số 1\n\n           A  A  1  A\n               =    =   ,0 25\n    Ta có:   36   9  4   9\n\n    Vì 0,25 có hai chữ số ở phần thập phân nên ta sẽ tìm hai chữ số tận cùng của\n\nthương trong phép chia A cho 9.\n\n    Một số chia hết cho 9 khi tổng các chữ số của số đó chia hết cho 9. Tổng các chữ\n\nsố của A là 2007 x 1 = 2007. Vì 2007 chia hết cho 9 nên A = 111....1111 chia hết cho\n\n9.\n                                                                                                 2\nchữ số 1\n\n    Một số hoặc chia hết cho 9 hoặc chia cho 9 cho số dư là một trong các số 1, 2, 3,\n\n4, 5, 6, 7, 8. Chữ số tận cùng của A là 1 không chia hết cho 9, nhưng A chia hết cho 9\n\nnên trong phép chia của A cho 9, thì ở bước cuối (ta gọi là bước k) : số chia cho 9 phải\n\nlà 81. Vậy chữ số tận cùng của thương trong phép chia A cho 9 là 9. Cũng trong phép\n\nchia của A cho 9, ở trước bước cuối (bước k - 1) : số chia cho 9 cho số dư là 8 sẽ là 71\n\nvà khi đó ở thương ta được số giáp số cuối cùng là 7.\n\n    Vậy hai chữ số tận cùng của thương trong phép chia A cho 9 là 79.\n\n             A\n                 0,25\n    Do đó số 9     =  ......79 X 0,25 =    ......,75 là số có phần thập phân là 75.\n\n     Nhận xét:\n\n    a) Vì số 0,25 có phần thập phân là số có hai chữ số, nên nếu ta chỉ tìm một chữ số\n\ntận cùng của thương trong phép chia A cho 9 và sau đó nhân chữ số cuối này với 0,25\n\nthì kết quả sẽ không đúng.\n\n     b) Cũng có thể biến đổi 36 = 12 x 3 hoặc 36 = 6 x 6, ... tuy nhiên việc tính toán sẽ\n\nphức tạp và trong nhiều trường hợp là không thực hiện được.\n\n     Vận dụng: Tìm phần thập phân trong thương của phép chia :\n\n                          a) Số  111....1111   cho 12 ?\n\n                                         2001 ch÷ sè 1\n                         b) Số  888...8888    cho 45 ?\n\n                                         2007 ch÷ sè 1\n                          c) Số  333...3333    cho 24 ?\n\n                                       1000000 ch÷ sè 3",
+  "solution": ""
+ },
+ {
+  "id": 4,
+  "page": 5,
+  "question": "Cho mảnh bìa hình vuông ABCD. Hãy cắt từ mảnh bìa đó một hình\n\n     vuông sao cho diện tích còn lại bằng diện tích của mảnh bìa đã cho.\n\n\n\n\n\n                                                                                                 3\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n                  Hướng dẫn giải bài tập Toán 5 bài 4:\n\n     Theo đầu bài thì hình vuông ABCD được ghép bởi 2 hình vuông nhỏ và 4 tam\n\ngiác (trong đó có 2 tam giác to, 2 tam giác con). Ta thấy có thể ghép 4 tam giác con để\n\nđược tam giác to đồng thời cũng ghép 4 tam giác con để được 1 hình vuông nhỏ. Vậy\n\ndiện tích của hình vuông ABCD chính là diện tích của 2 + 2 x 4 + 2 x 4 = 18 (tam giác\n\ncon). Do đó diện tích của hình vuông ABCD là :\n     18 x (10 x 10) / 2 = 900 (cm2)",
+  "solution": ""
+ },
+ {
+  "id": 5,
+  "page": 6,
+  "question": "Tuổi ông hơn tuổi cháu là 66 năm. Biết rằng tuổi ông bao nhiêu\n\nnăm thì tuổi cháu bấy nhiêu tháng . hãy tính tuổi ông và tuổi cháu (tương tự bài\n\nTính tuổi - cuộc thi Giải toán qua thư TTT số 1)\n                                   Giải\n\n     Giả sử cháu 1 tuổi (tức là 12 tháng) thì ông 12 tuổi.\n\n     Lúc đó ông hơn cháu : 12 - 1 = 11 (tuổi)\n\n     Nhưng thực ra ông hơn cháu 66 tuổi, tức là gấp 6 lần 11 tuổi (66:11=6).\n\n    Do đó thực ra tuổi ông là : 12 x 6 = 72 (tuổi)\n\n     Còn tuổi cháu là : 1 x 6 = 6 (tuổi)\n\n      thử lại 6 tuổi = 72 tháng ; 72 - 6 = 66 (tuổi)\n\n                                Đáp số :Ông : 72 tuổi\n\n                                  Cháu : 6 tuổi",
+  "solution": ""
+ },
+ {
+  "id": 6,
+  "page": 6,
+  "question": "Một vị phụ huynh học sinh hỏi thầy giáo : \"Thưa thầy, trong lớp có\n\nbao nhiêu học sinh ?\" Thầy cười và trả lưòi :\" Nếu có thêm một số trẻ em bằng số\n\nhiện có và thêm một nửa số đó, rồi lại thêm 1/4 số đó, rồi cả thêm con của quý vị\n\n(một lần nữa) thì sẽ vừa tròn 100\". Hỏi lơp có bao nhiêu học sinh ?",
+  "solution": "Theo đầu bài thì tổng của tất cả số HS và tất cả số HS và 1/2 số HS và 1/4 số HS\n\ncủa lớp sẽ bằng : 100 - 1 = 99 (em)\n\n    Để tìm được số HS của lớp ta có thể tìm trước 1/4 số HS cả lớp.\n\n     Giả sử 1/4 số HS của lớp là 1 em thì cả lớp có 4 HS\n\n     Vậy : 1/4 số HS của lứop là : 4 : 2 = 2 (em).\n\n     Suy ra tổng nói trên bằng : 4 + 4 + 2 + 1 = 11 9em)\n\n                                                                                                 4\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Nhưng thực tế thì tổng ấy phải bằng 99 em, gấp 9 lần 11 em (99 : 11 = 9)\n\n     Suy ra số HS của lớp là : 4 x 9 = 36 (em)\n\n     Thử lại: 36 + 36 = 36/2 + 36/4 + 1 = 100\n\n                                    Đáp số: 36 học sinh."
+ },
+ {
+  "id": 7,
+  "page": 7,
+  "question": "Tham gia hội khoẻ Phù Đổng huyện có tất cả 222 cầu thủ thi đấu hai\n\nmôn: Bóng đá và bóng chuyền. Mỗi đội bóng đá có 11 người. Mỗi đội bóng\n\nchuyền có 6 người. Biết rằng có cả thảy 27 đội bóng, hãy tính số đội bóng đá, số\n\nđội bóng chuyền.\n\n                                       Giải\n\n     Giả sử có 7 đội bóng đá, thế thì số đội bóng chuyền là:\n\n                         27 - 7 = 20 (đội bóng chuyền)\n\n     Lúc đó tổng số cầu thủ là: 7 x 11 + 20 x 6 = 197 (người)\n\n     Nhưng thực tế có tới 222 người nên ta phải tìm cách tăng thêm: 222 - 197 = 25\n\n(người), mà tổng số dội vẫn không đổi.\n\n     Ta thấy nếu thay một dội bóng chuyền bằng một đội bóng đá thì tổng số đội vẫn\n\nkhông thay đổi nhưng tổng số người sẽ tăng thêm: 11 - 6 = 5 (người)\n\n     Vậy muốn cho tổng số người tăng thêm 25 thì số dội bống chuyền phải thay\n\nbằng đọi bóng đá là:\n\n                               25 : 5 = 5 (đội)\n\n    Do đó, số đội bóng chuyền là: 20 - 5 = 15 (đội)\n\n     Còn số đội bống đá là: 7 + 5 = 12 (đội)\n\n                 Đáp số: 12 đội bóng đá, 15 đội bóng chuyền.",
+  "solution": ""
+ },
+ {
+  "id": 8,
+  "page": 7,
+  "question": "Số gà nhiều hơn số thỏ là 28 con. Số chân gà nhiều hơn số chân thỏ là\n\n40 chân. Hỏi có bao nhiêu con gà, bao nhiêu con thỏ?\n\n                                       Giải\n\n     Giả sử có 10 con thỏ, thế thì có: 10 + 28 = 38 (con)\n\n     Số chân gà là: 38 x 2 = 76 (chân)\n\n     Số chân thỏ là: 10 x 4 = 40 (chân)\n\n     Hiệu số chân gà và thỏ là: 76 - 40 = 36 (chân)\n\n     Vì thực tế thì số chân gà hơn số chân thỏ tới 40 chân nên ta phải tìm cách thêm\n\nvào hiệu trên: 40 - 36 = 4 (chân)\n\n\n                                                                                                 5\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Ta thấy nếu cùng bớt một con thỏ và một con gà thì hiệu số gà và thỏ vẫn không\n\nthay đổi song hiệu số chân gà và thỏ sẽ tăng thêm: 4 - 2 = 2 (chân)\n\n    Để hiệu số chân tăng thêm 4 thì số thỏ và gà phải bớt đi là : 4 : 2 = 2 (con)\n\n     Vậy số thỏ là: 10 - 2 = 8 (con thỏ)\n\n     Số gà là: 38 - 2 = 36 (con gà)\n\n                     Đáp số là : 36 con gà và 8 con thỏ",
+  "solution": ""
+ },
+ {
+  "id": 9,
+  "page": 8,
+  "question": "Một ô tô đi từ A đến B với vận tốc 30 km/giờ. Sau đó đi từ B về A với\n\nvận tốc 45 km/giờ. Tính quãng đường AB biết thời gian đi từ B về A ít hơn thời\n\ngian đi từ A đến B là 40 phút.",
+  "solution": "Tỉ số giữa vận tốc đi và vận tốc về trên quãng đường AB là : 30 : 45 = 2/3.\n\n     Vì quãng đường như nhau nên vận tốc và thời gian là hai đại lượng tỉ lệ nghịch\n\nvới nhau. Do đó tỉ số thời gian đi và thời gian về là 3/2.\n\nTa có sơ đồ :\n\n\n\n     Thời gian đi từ A đến B là : 40 x 3 = 120 (phút) Đổi 120 phút = 2 giờ\n\n     Quãng đường AB dài là : 30 x 2 = 60 (km)"
+ },
+ {
+  "id": 10,
+  "page": 8,
+  "question": "Tích sau đây có tận cùng bằng chữ số nào?",
+  "solution": "Tích của bốn thừa số 2 là 2 x 2 x 2 x 2 = 16 và 2003 : 4 = 500 (dư 3) nên ta có\n\nthể viết tích của 2003 thừa số 2 dưới dạng tích của 500 nhóm (mỗi nhóm là tích của\n\nbốn thừa số 2) và tích của ba thừa số 2 còn lại.\n\n     Vì tích của các thừa số có tận cùng là 6 cũng là số có tận cùng bằng 6 nên tích\n\ncủa 500 nhóm trên có tận cùng là 6.\n\n    Do 2 x 2 x 2 = 8 nên khi nhân số có tận cùng bằng 6 với 8 thì ta được số có tận\n\ncùng bằng 8 (vì 6 x 8 = 48). Vậy tích của 2003 thừa số 2 sẽ là số có tận cùng bằng 8.\n\n\n\n\n\n                                                                                                 6\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 11,
+  "page": 9,
+  "question": "Một người mang cam đi đổi lấy táo và lê. Cứ 9 quả cam thì đổi\n\nđược 2 quả táo và 1 quả lê, 5 quả táo thì đổi được 2 quả lê. Nếu người đó đổi hết\n\nsố cam mang đi thì được 17 quả táo và 13 quả lê. Hỏi người đó mang đi bao nhiêu\n\nquả cam ?",
+  "solution": "9 quả cam đổi được 2 quả táo và 1 quả lê nên 18 quả cam đổi được 4 quả táo và\n\n2 quả lê. Vì 5 quả táo đổi được 2 quả lê nên 18 quả cam đổi được : 4 + 5 = 9 (quả táo).\n\n    Do đó 2 quả cam đổi được 1 quả táo. Cứ 5 quả táo đổi được 2 quả lê nên 10 quả\n\ncam đổi được 2 quả lê. Vậy 5 quả cam đổi được 1 quả lê. Số cam người đó mang đi để\n\nđổi được 17 quả táo và 13 quả lê là : 2 x 17 + 5 x 13 = 99 (quả)."
+ },
+ {
+  "id": 12,
+  "page": 9,
+  "question": "Tìm một số tự nhiên sao cho khi lấy 1/3 số đó chia cho 1/17 số đó\n\nthì có dư là 100.",
+  "solution": "Vì 17 x 3 = 51 nên để dễ lí luận, ta giả sử số tự nhiên cần tìm được chia ra thành\n\n51 phần bằng nhau. Khi ấy 1/3 số đó là 51 : 3 = 17 (phần) ; 1/17 số đó là 51 : 17 = 3\n\n(phần).\n\n     Vì 17 : 3 = 5 (dư 2) nên 2 phần của số đó có giá trị là 100 suy ra số đó là :\n\n                             100 : 2 x 51 = 2550."
+ },
+ {
+  "id": 13,
+  "page": 9,
+  "question": "Tuổi của con hiện nay bằng 1/2 hiệu tuổi của bố và tuổi con. Bốn\n\nnăm trước, tuổi con bằng 1/3 hiệu tuổi của bố và tuổi con. Hỏi khi tuổi con bằng\n\n1/4 hiệu tuổi của bố và tuổi của con thì tuổi của mỗi người là bao nhiêu?",
+  "solution": "Hiệu số tuổi của bố và con không đổi. Trước đây 4 năm tuổi con bằng 1/3 hiệu\n\nnày, do đó 4 năm chính là : 1/2 - 1/3 = 1/6 (hiệu số tuổi của bố và con).\n\n     Số tuổi bố hơn con là : 4 : 1/6 = 24 (tuổi).\n\n     Khi tuổi con bằng 1/4 hiệu số tuổi của bố và con thì tuổi con là:\n\n                              24 x 1/4 = 6 (tuổi).\n\n     Lúc đó tuổi bố là : 6 + 24 = 30 (tuổi).\n\n\n\n\n\n                                                                                                 7\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 14,
+  "page": 10,
+  "question": "Hoa có một sợi dây dài 16 mét. Bây giờ Hoa cần cắt đoạn dây đó để\n\ncó đoạn dây dài 10 mét mà trong tay Hoa chỉ có một cái kéo. Các bạn có biết Hoa\n\ncắt thế nào không ?",
+  "solution": "Cách 1 : Gập đôi sợi dây liên tiếp 3 lần, khi đó sợi dây sẽ được chia thành 8\n\nphần bằng nhau.\n\n    Độ dài mỗi phần chia là : 16 : 8 = 2 (m)\n\n      Cắt đi 3 phần bằng nhau thì còn lại 5 phần.\n\n     Khi đó độ dài đoạn dây còn lại là : 2 x 5 = 10 (m)\n\n     Cách 2: Gập đôi sợi dây liên tiếp 2 lần, khi đó sợi dây sẽ được chia thành 4\n\nphần bằng nhau.\n\n    Độ dài mỗi phần chia là : 16 : 4 = 4 (m)\n\n     Đánh dấu một phần chia ở một đầu dây, phần đoạn dây còn lại được gập đôi lại,\n\ncắt đi một phần ở đầu bên kia thì độ dài đoạn dây cắt đi là : (16 - 4) : 2 = 6 (m)\n\n    Do đó độ dài đoạn dây còn lại là : 16 - 6 = 10 (m)"
+ },
+ {
+  "id": 15,
+  "page": 10,
+  "question": "Một thửa ruộng hình chữ nhật được chia thành 2 mảnh, một mảnh\n\nnhỏ trồng rau và mảnh còn lại trồng ngô (hình vẽ). Diện tích của mảnh trồng ngô\n\ngấp 6 lần diện tích của mảnh trồng rau. Chu vi mảnh trồng ngô gấp 4 lần chu vi\n\nmảnh trồng rau. Tính diện tích thửa ruộng ban đầu, biết chiều rộng của nó là 5\n\nmét.",
+  "solution": "Diện tích mảnh trồng ngô gấp 6 lần diện tích mảnh trồng rau mà hai mảnh có\n\nchung một cạnh nên cạnh còn lại của mảnh trồng ngô gấp 6 lần cạnh còn lại của mảnh\n\ntrồng rau. Gọi cạnh còn lại của mảnh trồng rau là a thì cạnh còn lại của mảnh trồng\n\nngô là a x 6. Vì chu vi mảnh trồng ngô (P1) gấp 4 lần chu vi mảnh trồng rau (P2) nên\n\nnửa chu vi mảnh trồng ngô gấp 4 lần nửa chu vi mảnh trồng rau.\n\n     Nửa chu vi mảnh trồng ngô hơn nửa chu vi mảnh trồng rau là :\n\n                                                                                                 8\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                              a x 6 + 5 - (a + 5) = 5 x a.\n\n     Ta có sơ đồ :\n\n\n\n\n\n    Độ dài cạnh còn lại của mảnh trồng rau là : 5 x 3 : (5 x a - 3 x a) = 7,5 (m)\n\n    Độ dài cạnh còn lại của mảnh trồng ngô là : 7,5 x 6 = 45 (m)\n     Diện tích thửa ruộng ban đầu là : (7,5 + 4,5) x 5 = 262,5 (m2)"
+ },
+ {
+  "id": 16,
+  "page": 11,
+  "question": "Tôi đi bộ từ trường về nhà với vận tốc 5 km/giờ. Về đến nhà lập tức\n\ntôi đạp xe đến bưu điện với vận tốc 15 km/giờ. Biết rằng quãng đường từ nhà tới\n\ntrường ngắn hơn quãng đường từ nhà đến bưu điện 3 km. Tổng thời gian tôi đi\n\ntừ trường về nhà và từ nhà đến bưu điện là 1 giờ 32 phút. Bạn hãy tính quãng\n\nđường từ nhà tôi đến trường.",
+  "solution": "Thời gian để đi 3 km bằng xe đạp là : 3 : 15 = 0,2 (giờ)\n\n     Đổi : 0,2 giờ = 12 phút.\n\n     Nếu bớt 3 km quãng đường từ nhà đến bưu điện thì thời gian đi cả hai quãng\n\nđường từ nhà đến trường và từ nhà đến bưu điện (đã bớt 3 km) là :\n\n     1 giờ 32 phút - 12 phút = 1 giờ 20 phút = 80 phút.\n\n     Vận tốc đi xe đạp gấp vận tốc đi bộ là : 15 : 5 = 3 (lần)\n\n     Khi quãng đường không đổi, vận tốc tỉ lệ nghịch với thời gian nên thời gian đi\n\ntừ nhà đến trường gấp 3 lần thời gian đi từ nhà đến thư viện (khi đã bớt đi 3 km). Vậy :\n\n     Thời gian đi từ nhà đến trường là : 80 : (1 + 3) x 3 = 60 (phút); 60 phút = 1 giờ\n\n     Quãng đường từ nhà đến trường là : 1 x 5 = 5 (km)"
+ },
+ {
+  "id": 17,
+  "page": 11,
+  "question": "Cho phân số :\n\n\n\n      a) Có thể xóa đi trong tử số và mẫu số những số nào mà giá trị của phân số\n\nvẫn không thay đổi không ?\n\n\n                                                                                                 9\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n      b) Nếu ta thêm số 2004 vào mẫu số thì phải thêm số tự nhiên nào vào tử số\n\nđể phân số không đổi ?",
+  "solution": "= 45 / 270 = 1/6.\n\n       a) Để giá trị của phân số không đổi thì ta phải xóa những số ở mẫu mà tổng của\n\nnó gấp 6 lần tổng của những số xóa đi ở tử. Khi đó tổng các số còn lại ở mẫu cũng gấp\n\n6 lần tổng các số còn lại ở tử. Vì vậy đổi vai trò các số bị xóa với các số còn lại ở tử và\n\nmẫu thì ta sẽ có thêm phương án xóa.\n\n    Có nhiều cách xóa, ví dụ:\n\n     Số các số bị xóa ở mẫu tăng dần và tổng chia hết cho 6: mẫu xóa 12 thì tử xóa 2\n\n; mẫu xóa 18 thì tử xóa 3 hoặc xóa 1, 2 ; mẫu xóa 24 hoặc xóa 11, 13 thì tử xóa 4 hoặc\n\nxóa 1, 3 ; mẫu xóa 12, 18 hoặc 13, 17 hoặc 14, 16 thì tử xóa 5 hoặc 2, 3 hoặc 1, 4 ;\n\nmẫu xóa 12, 24 hoặc 11, 25 hoặc 13, 23 hoặc 14, 22 hoặc 15, 21 hoặc 16, 20 hoặc 17,\n\n19 thì tử xóa 6 hoặc 1, 5 hoặc 2, 4 hoặc 1, 2, 3 ; mẫu xóa 18, 24 hoặc 17, 25 hoặc 19,\n\n23 hoặc 20, 22 hoặc 11, 13, 18 hoặc 12, 13, 17 hoặc 11, 14, 17 hoặc 11, 15, 16 hoặc\n\n12, 14, 16 hoặc 13, 14, 15 thì tử xóa 7 hoặc 1, 6 hoặc 2, 5 hoặc 3, 4 hoặc 1, 2, 4 ; ...\n\n      b) Để giá trị phân số không đổi, ta thêm một số nào đó vào tử bằng 1/6 số thêm\n\nvào mẫu. Vậy nếu thêm 2004 vào mẫu thì số phải thêm vào tử là :\n\n                               2004 : 6 = 334."
+ },
+ {
+  "id": 18,
+  "page": 12,
+  "question": "Người ta lấy tích các số tự nhiên liên tiếp từ 1 đến 30 để chia cho\n\n1000000. Bạn hãy cho biết :\n\n      1) Phép chia có dư không ?\n\n      2) Thương là một số tự nhiên có chữ số tận cùng là bao nhiêu ?",
+  "solution": "Xét tích A = 1 x 2 x 3 x ... x 29 x 30, trong đó các thừa số chia hết cho 5 là 5,\n\n10, 15, 20, 25, 30 ; mà 25 = 5 x 5 do đó có thể coi là có 7 thừa số chia hết cho 5. Mỗi\n\nthừa số này nhân với một số chẵn cho ta một số có tận cùng là số 0. Trong tích A có\n\ncác thừa số là số chẵn và không chia hết cho 5 là : 2, 4, 6, 8, 12, . . . , 26, 28 (có 12 số).\n\nNhư vật trong tích A có ít nhất 7 cặp số có tích tận cùng là 0, do đó tích A có tận cùng\n\nlà 7 chữ số 0.\n                                                                                               10\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Số 1 000 000 có tận cùng là 6 chữ số 0 nên A chia hết cho 1 000 000 và thương\n\nlà số tự nhiên có tận cùng là chữ số 0."
+ },
+ {
+  "id": 19,
+  "page": 13,
+  "question": "Ba bạn Toán, Tuổi và Thơ có một số vở. Nếu lấy 40% số vở của\n\nToán chia đều cho Tuổi và Thơ thì số vở của ba bạn bằng nhau. Nhưng nếu Toán\n\nbớt đi 5 quyển thì số vở của Toán bằng tổng số vở của Tuổi và Thơ. Hỏi mỗi bạn\n\ncó bao nhiêu quyển vở ?",
+  "solution": "Đổi 40% = 2/5.\n\n     Nếu lấy 2/5 số vở của Toán chia đều cho Tuổi và Thơ thì mỗi bạn Tuổi hay Thơ\n\nđều được thêm 2/5 : 2 = 1/5 (số vở của Toán)\n\n     Số vở còn lại của Toán sau khi cho là :\n\n                         1 - 2/5 = 3/5 (số vở của Toán)\n\n    Do đó lúc đầu Tuổi hay Thơ có số vở là :\n\n                             3/5 - 1/5 = 2/5 (số vở của Toán)\n\n     Tổng số vở của Tuổi và Thơ lúc đầu là :\n\n                              2/5 x 2 = 4/5 (số vở của Toán)\n\n     Mặt khác theo đề bài nếu Toán bớt đi 5 quyển thì số vở của Toán bằng tổng số\n\nvở của Tuổi và Thơ, do đó 5 quyển ứng với : 1 - 4/5 = 1/5 (số vở của Toán)\n\n     Số vở của Toán là : 5 : 1/5 = 25 (quyển)\n\n     Số vở của Tuổi hay Thơ là : 25 x 2/5 = 10 (quyển)"
+ },
+ {
+  "id": 20,
+  "page": 13,
+  "question": "Hai số tự nhiên A và B, biết A < B và hai số có chung những đặc\n\nđiểm sau:\n\n        - Là số có 2 chữ số.\n\n        - Hai chữ số trong mỗi số giống nhau.\n\n        - Không chia hết cho 2 ; 3 và 5.\n\n      a) Tìm 2 số đó.\n\n      b) Tổng của 2 số đó chia hết cho số tự nhiên nào ?",
+  "solution": "11\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n       a) Vì A và B đều không chia hết cho 2 và 5 nên A và B chỉ có thể có tận cùng là\n\n1 ; 3 ; 7 ; 9. Vì 3 + 3 = 6 và 9 + 9 = 18 là 2 số chia hết cho 3 nên loại trừ số 33 và 99.\n\nA < B nên A = 11 và B = 77.\n\n      b) Tổng của hai số đó là : 11 + 77 = 88.\n\n     Ta có :\n\n     88 = 1 x 88 = 2 x 44 = 4 x 22 = 8 x 11.\n\n     Vậy tổng 2 số chia hết cho các số : 1 ; 2 ; 4 ; 8 ; 11 ; 22 ; 44 ; 88."
+ },
+ {
+  "id": 21,
+  "page": 14,
+  "question": "Cho mảnh bìa hình vuông ABCD. Hãy cắt từ mảnh bìa đó một\n\nhình vuông sao cho diện tích còn lại bằng diện tích của mảnh bìa đã cho.",
+  "solution": "Theo đầu bài thì hình vuông ABCD được ghép bởi 2 hình vuông nhỏ và 4 tam\n\ngiác (trong đó có 2 tam giác to, 2 tam giác con). Ta thấy có thể ghép 4 tam giác con để\n\nđược tam giác to đồng thời cũng ghép 4 tam giác con để được 1 hình vuông nhỏ. Vậy\n\ndiện tích của hình vuông ABCD chính là diện tích của 2 + 2 x 4 + 2 x 4 = 18 (tam giác\n\ncon). Do đó diện tích của hình vuông ABCD là :\n     18 x (10 x 10) / 2 = 900 (cm2)"
+ },
+ {
+  "id": 22,
+  "page": 14,
+  "question": "Hai bạn Xuân và Hạ cùng một lúc rời nhà của mình đi đến nhà bạn.\n\nHọ gặp nhau tại một điểm cách nhà Xuân 50 m. Biết rằng Xuân đi từ nhà mình\n\nđến nhà Hạ mất 12 phút còn Hạ đi đến nhà Xuân chỉ mất 10 phút. Hãy tính\n\nquãng đường giữa nhà hai bạn.",
+  "solution": "Trên cùng một quãng đường thì tỉ số thời gian đi của Xuân và Hạ là : 12 : 10 =\n\n6/5.\n\n\n\n\n\n                                                                                               12\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Thời gian tỉ lệ nghịch với vận tốc nên tỉ số vận tốc của Xuân và Hạ là 5/6. Như\n\nvậy Xuân và Hạ cùng xuất phát thì đến khi gặp nhau thì quãng đường Xuân đi được\n\nbằng 5/6 quãng đường Hạ đi được.\n\n    Do đó quãng đường Hạ đi được là :\n\n                              50 : 5/6 = 60 (m).\n\n     Quãng đường giữa nhà Xuân và Hạ là : 50 + 60 = 110 (m)."
+ },
+ {
+  "id": 23,
+  "page": 15,
+  "question": "A là số tự nhiên có 2004 chữ số. A là số chia hết cho 9 ; B\n\nlà tổng các chữ số của A ; C là tổng các chữ số của B ; D là tổng các chữ số của C.\n\nTìm D.",
+  "solution": "Vì A là số chia hết cho 9 mà B là tổng các chữ số của A nên B chia hết cho 9.\n\nTương tự ta có C, D cũng chia hết cho 9 và đương nhiên khác 0. Vì A gồm 2004 chữ\n\nsố mà mỗi chữ số không vượt quá 9 nên B không vượt quá 9x 2004 = 18036.\n\n    Do đó B có không quá 5 chữ số và C < 9 x 5 = 45. Nhưng C là số chia hết cho 9\n\nvà khác 0 nên C chỉ có thể là 9 ; 18 ; 27 ; 36. Dù trường hợp nào xảy ra thì ta cũng có\n\nD = 9."
+ },
+ {
+  "id": 24,
+  "page": 15,
+  "question": "Một khu vườn hình chữ nhật có chu vi 120 m. Người ta mở rộng\n\nkhu vườn như hình vẽ để được một vườn hình chữ nhật lớn hơn. Tính diện tích\n\nphần mới mở thêm.",
+  "solution": "Nếu ta “dịch chuyển” khu vườn cũ ABCD vào một góc của khu vườn mới\n\nEFHD ta được hình vẽ bên. Kéo dài EF về phía F lấy M sao cho FM = BC thì diện tích\n\nhình chữ nhật BKHC đúng bằng diện tích hình chữ nhật FMNK. Do đó phần diện tích\n\nmới mở thêm chính là diện tích hình chữ nhật EMNA.\n\n\n                                                                                               13\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Ta có AN = AB + KN + BK vì AB + KN = 120 : 2 = 60 (m) ; BK = 10 m\n\n     nên AN = 70 m. Vậy diện tích phần mới mở thêm là : 70 x 10 = 700 (m2)"
+ },
+ {
+  "id": 25,
+  "page": 16,
+  "question": "Bao nhiêu giờ ?\n\n                         Khi đi gặp nước ngước dòng\n\n                    Khó khăn đến bến mất tong tám giờ\n\n                            Khi về từ lúc xuống đò\n\n                     Đến khi cập bến bốn giờ nhẹ veo\n\n                        Hỏi rằng riêng một khóm bèo\n\n                     Bao nhiêu giờ để trôi theo ta về ?",
+  "solution": "Cách 1 : Vì đò đi ngược dòng đến bến mất 8 giờ nên trong 1 giờ đò đi được 1/8\n\nquãng sông đó. Đò đi xuôi dòng trở về mất 4 giờ nên trong 1 giờ đò đi được 1/4 quãng\n\nsông đó. Vận tốc đò xuôi dòng hơn vận tốc đò ngược dòng là : 1/4 - 1/8 = 1/8 (quãng\n\nsông đó).\n\n     Vì hiệu vận tốc đò xuôi dòng và vận tốc đò ngược dòng chính là 2 lần vận tốc\n\ndòng nước nên một giờ khóm bèo trôi được là : 1/8 : 2 = 1/16 (quãng sông đó).\n\n     Thời gian để khóm bèo trôi theo đò về là : 1 : 1/16 = 16 (giờ).\n\n     Cách 2 : Tỉ số giữa thời gian đò xuôi dòng và thời gian đò ngược dòng là :4 : 8\n\n= 1/2 Trên cùng một quãng đường thì vận tốc và thời gian của một chuyển động tỉ lệ\n\nnghịch với nhau nên tỉ số vận tốc đò xuôi dòng và vận tốc đò ngược dòng là 2. Vận tốc\n\nđò xuôi dòng hơn vận tốc đò ngược dòng chính là 2 lần vận tốc dòng nước. Ta có sơ\n\nđồ:\n\n\n\n\n\n     Theo sơ đồ ta có vận tốc ngược dòng gấp 2 lần vận tốc dòng nước nên thời gian\n\nđể cụm bèo trôi theo đò về gấp 2 lần thời gian ngược dòng. Vậy thời gian cụm bèo trôi\n\ntheo đò về là : 8 x 2 = 16 (giờ).\n\n\n\n\n\n                                                                                               14\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 26,
+  "page": 17,
+  "question": "Một hình chữ nhật có chiều dài gấp 4 lần chiều rộng. Nếu tăng\n\nchiều rộng thêm 45 m thì được hình chữ nhật mới có chiều dài vẫn gấp 4 lần\n\nchiều rộng. Tính diện tích hình chữ nhật ban đầu.",
+  "solution": "Khi tăng chiều rộng thêm 45 m thì khi đó chiều rộng sẽ trở thành chiều dài của\n\nhình chữ nhật mới, còn chiều dài ban đầu sẽ trở thành chiều rộng của hình chữ nhật\n\nmới. Theo đề bài ta có sơ đồ :\n\n\n\n\n\n    Do đó 45 m ứng với số phần là : 16 - 1 = 15 (phần)\n\n     Chiều rộng ban đầu là : 45 : 15 = 3 (m)\n\n     Chiều dài ban đầu là : 3 x 4 = 12 (m)\n     Diện tích hình chữ nhật ban đầu là : 3 x 12 = 36 (m2)"
+ },
+ {
+  "id": 27,
+  "page": 17,
+  "question": "Bạn An đã có một số bài kiểm tra, bạn đó tính rằng : Nếu được\n\nthêm ba điểm 10 và ba điểm 9 nữa thì điểm trung bình của tất cả các bài sẽ là 8.\n\nNếu được thêm một điểm 9 và hai điểm 10 nữa thì điểm trung bình của tất cả các\n\nbài là 7,5. Hỏi bạn An đã có tất cả mấy bài kiểm tra ?",
+  "solution": "Nếu được thêm ba điểm 10 và ba điểm 9 nữa thì số điểm được thêm là :\n\n                           10 x 3 + 9 x 3 = 57 (điểm)\n\n    Để được điểm trung bình của tất cả các bài là 8 thì số điểm phải bù thêm vào\n\ncho các bài đã kiểm tra là : 57 - 8 x (3 + 3) = 9 (điểm)\n\n     Nếu được thêm một điểm 9 và hai điểm 10 nữa thì số điểm được thêm là :\n\n                           9 x 1 + 10 x 2 = 28 (điểm)\n\n    Để được điểm trung bình của tất cả các bài là 7,5 thì số điểm phải bù thêm vào\n\ncho các bài đã kiểm tra là : 29 - 7,5 x (1 + 2) = 6,5 (điểm)\n\n    Như vậy khi tăng điểm trung bình của tất cả các bài từ 7,5 lên 8 thì tổng số điểm\n\ncủa các bài đã kiểm tra sẽ tăng lên là : 9 - 6,5 = 2,5 (điểm)\n\n                                                                                               15\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Hiệu hai điểm trung bình là : 8 - 7,5 = 0,5 (điểm)\n\n     Vậy số bài đã kiểm tra của bạn An là : 2,5 : 0,5 = 5 (bài)"
+ },
+ {
+  "id": 28,
+  "page": 18,
+  "question": "Bạn hãy cắt một hình vuông có diện tích bằng 5 / 8 diện tích của\n\nmột tấm bìa hình vuông cho trước.",
+  "solution": "Chia cạnh tấm bìa hình vuông cho trước làm 4 phần bằng nhau (bằng cách gấp\n\nđôi liên tiếp). Sau đó cắt theo các đường AB, BC, CD, DA. Các miếng bìa AMB,\n\nBNC, CPD, DQA xếp trùng khít lên nhau nên AB = BC = CD = DA (có thể kiểm tra\n\nbằng thước đo). Dùng êke kiểm tra các góc của tấm bìa ABCD ta thấy các góc là\n\nvuông.\n\n     Nếu kẻ bằng bút chì các đường chia tấm bìa ban đầu thành những ô vuông như\n\nhình vẽ thì ta có thể thấy :\n\n     + Diện tích tấm bìa MNPQ là 16 ô vuông (ghép 2 hình tam giác với nhau thì\n\nđược hình chữ nhật gồm 3 hình vuông).\n\n    Do đó diện tích hình vuông ABCD là 16 – 6 = 10 (ô vuông) nên diện tích ô\n\nvuông ABCD bằng 10 / 16 = 5 / 8 diện tích tấm bìa ban đầu."
+ },
+ {
+  "id": 29,
+  "page": 18,
+  "question": "Một mảnh đất hình chữ nhật được chia thành 4 hình chữ nhật nhỏ\n\nhơn có diện tích được ghi như hình vẽ. Bạn có biết diện tích hình chữ nhật còn lại\n\ncó diện tích là bao nhiêu hay không ?",
+  "solution": "16\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Hai hình chữ nhật AMOP và MBQO có chiều rộng bằng nhau và có diện tích\n\nhình MBQO gấp 3 lần diện tích hình AMOP (24 : 8 = 3 (lần)), do đó chiều dài hình\n\nchữ nhật MBQO gấp 3 lần chiều dài hình chữ nhật AMOP (OQ = PO x 3). (1)\n\n     Hai hình chữ nhật POND và OQCN có chiều rộng bằng nhau và có chiều dài\n\nhình OQCN gấp 3 lần chiều dài hình POND (1). Do đó diện tích hình OQCN gấp 3 lần\n\ndiện tích hình POND.\n     Vậy diện tích hình chữ nhật OQCD là : 16 x 3 = 48 (cm2)."
+ },
+ {
+  "id": 30,
+  "page": 19,
+  "question": "Cho A = 2004 x 2004 x ... x 2004 (A gồm 2003 thừa số) và\n\n    B = 2003 x 2003 x ... x 2003 (B gồm 2004 thừa số).\n\n    Hãy cho biết A + B có chia hết cho 5 hay không ? Vì sao ?",
+  "solution": "A = (2004 x 2004 x ... x 2004) x 2004 = C x 2004 (C có 2002 thừa số 2004). C\n\ncó tận cùng là 6 nhân với 2004 nên A có tận cùng là 4 (vì 6 x 4 = 24).\n\n    B = 2003 x 2003 x  ... x 2003 (gồm 2004 thừa số) = (2003 x 2003 x 2003 x\n\n2003) x ... x (2003 x 2003 x 2003 x 2003). Vì 2004 : 4 = 501 (nhòm) nên B có 501\n\nnhóm, mỗi nhóm gồm 4 thừa số 2003. Tận cùng của mỗi nhóm là 1 (vì 3 x 3 = 9 ; 9 x\n\n3 = 27 ; 27 x 3 = 81).\n\n     Vậy tận cùng của A + B là 4 + 1 = 5. Do đó A + B chia hết cho 5."
+ },
+ {
+  "id": 31,
+  "page": 19,
+  "question": "Biết rằng số A chỉ viết bởi các chữ số 9. Hãy tìm số tự nhiên nhỏ\n\nnhất mà cộng số này với A ta được số chia hết cho 45.",
+  "solution": "Cách 1 : A chỉ viết bởi các chữ số 9 nên:\n\n\n\n     Vậy A chia cho 45 dư 9. Một số nhỏ nhất mà cộng với A để được số chia hết\n\ncho 45 thì số đó cộng với 9 phải bằng 45.\n\n     Vậy số đó là : 45 - 9 = 36.\n\n     Cách 2 : Gọi số tự nhiên nhỏ nhất cộng vào A là m. Ta có A + m là số chia hết\n\ncho 45 hay chia hết cho 5 và 9 (vì 5 x 9 = 45 ; 5 và 9 không cùng chia hết cho một số\n\nsố nào đó khác 1). Vì A viết bởi các chữ số 9 nên A chia hết cho 9, do đó m chia hết\n\ncho 9. A + m chia hết cho 5 khi A + m có tận cùng là 0 hoặc 5 mà A có tận cùng là 9\n\n                                                                                               17\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nnên m có tận cùng là 1 hoặc 6. Số nhỏ nhất có tận cùng là 1 hoặc 6 mà chia hết cho 9\n\nlà 36.\n\n                             Vậy m = 36."
+ },
+ {
+  "id": 32,
+  "page": 20,
+  "question": "Cho một hình thang vuông có đáy lớn bằng 3 m, đáy nhỏ và chiều\n\ncao bằng 2 m. Hãy chia hình thang đó thành 5 hình tam giác có diện tích bằng\n\nnhau. Hãy tìm các kiểu chia khác nhau sao cho số đo chiều cao cũng như số đo\n\nđáy của tam giác đều là những số tự nhiên.",
+  "solution": "Diện tích hình thang là : (3 + 2) x 2 : 2 = 5 (m2)\n\n     Chia hình thang đó thành 5 tam giác có diện tích bằng nhau thì diện tích một\ntam giác là : 5 : 5 = 1 (m2). Các tam giác này có chiều cao và số đo đáy là số tự nhiên\n\nnên nếu chiều cao là 1m thì đáy là 2 m. Nếu chiều cao là 2 m thì đáy là 1 m. Có nhiều\n\ncách chia, via dụ :"
+ },
+ {
+  "id": 33,
+  "page": 20,
+  "question": "Bạn hãy tính chu vi của hình có từ một hình vuông bị cắt mất đi\n\nmột phần bởi một đường gấp khúc gồm các đoạn song song với cạnh hình vuông.\n\n\n\n\n\n                                                                                               18\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Ta kí hiệu các điểm như hình vẽ sau :\n\n\n\n\n\n     Nhìn hình vẽ ta thấy : CE + GH + KL + MD = CE + EI = CI.\n\n    EG + HK + LM + DA = ID + DA = IA.\n\n    Từ đó chu vi của hình tô màu chính là :\n\nAB + BC + CE + EG + GH + HK + KL + LM + MD + DA = AB + BC + (CE + GH +\n\nKL + MD) + (EG + HK + LM + DA) = AB + BC + CI + IA = AB x 4.\n\n     Vậy chu vi của hình tô màu là : 10 x 4 = 40 (cm)."
+ },
+ {
+  "id": 34,
+  "page": 21,
+  "question": "Cho băng giấy gồm 13 ô với số ở ô thứ hai là 112 và số ở ô thứ bảy\n\nlà 215.\n\n      Biết rằng tổng của ba số ở ba ô liên tiếp luôn bằng 428. Tính tổng của các\n\nchữ số trên băng giấy đó.",
+  "solution": "Ta chia các ô thành các nhóm 3 ô, mỗi nhóm đánh số thứ tự như sau :\n\n\n\n\n\n     Tổng các số của mỗi nhóm 3 ô liên tiếp là 428. Như vậy ta thấy các số viết ở ô\n\nsố 1 là 215, ở ô số 2 là 112, ở ô số 3 là : 428 - (215 + 112) = 101.\n\n     Ta có băng giấy ghi số như sau :\n\n\n\n\n\n                                                                                               19\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Tổng các chữ số của mỗi nhóm 3 ô là : 2 + 1 + 5 + 1 + 1 + 2 + 1 + 0 + 1 = 14.\n\n    Có tất cả 4 nhóm 3 ô và một số ở ô số 1 nên tổng các chữ số trên băng giấy là :\n\n                            14 x 4 + 2 + 1 + 5 = 64."
+ },
+ {
+  "id": 35,
+  "page": 22,
+  "question": "Tuổi của em tôi hiện nay bằng 4 lần tuổi của nó khi tuổi của anh tôi\n\nbằng tuổi của em tôi hiện nay. Đến khi tuổi của em tôi bằng tuổi của anh tôi hiện\n\nnay thì tổng số tuổi của hai anh em là 51. Hỏi hiện nay anh tôi, em tôi bao nhiêu\n\ntuổi ?",
+  "solution": "Hiệu số tuổi của hai anh em là một số không đổi.\n\n     Ta có sơ đồ biểu diễn số tuổi của hai anh em ở các thời điểm : Trước đây (TĐ),\n\nhiện nay (HN), sau này (SN) :\n\n\n\n\n\n     Giá trị một phần là : 51 : (7 + 10) = 3 (tuổi)\n\n     Tuổi em hiện nay là : 3 x 4 = 12 (tuổi)\n\n     Tuổi anh hiện nay là : 3 x 7 = 21 (tuổi)"
+ },
+ {
+  "id": 36,
+  "page": 22,
+  "question": "Tham gia SEA Games 22 môn bóng đá nam vòng loại ở bảng B có\n\nbốn đội thi đấu theo thể thức đấu vòng tròn một lượt và tính điểm theo quy định\n\nhiện hành. Kết thúc vòng loại, tổng số điểm các đội ở bảng B là 17 điểm. Hỏi ở\n\nbảng B môn bóng đá nam có mấy trận hòa ?",
+  "solution": "Bảng B có 4 đội thi đấu vòng tròn nên số trận đấu là : 4 x 3 : 2 = 6 (trận)\n\n     Mỗi trận thắng thì đội thắng được 3 điểm đội thua thì được 0 điểm nên tổng số\n\nđiểm là : 3 + 0 = 3 (điểm).\n\n     Mỗi trận hòa thì mỗi đội được 1 điểm nên tổng số điểm là : 1 + 1 = 2 (điểm).\n\n     Cách 1 : Giả sử 6 trận đều thắng thì tổng số điểm là : 6 x 3 = 18 (điểm).\n\n                                                                                               20\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Số điểm dôi ra là : 18 - 17 = 1 (điểm).\n\n     Sở dĩ dôi ra 1 điểm là vì một trận thắng hơn một trận hòa là : 3 - 2 = 1 (điểm).\n\n     Vậy số trận hòa là : 1 : 1 = 1 (trận)\n\n     Cách 2 : Giả sử 6 trận đều hòa thì số điểm ở bảng B là : 6 x 2 = 12 (điểm).\n\n     Số điểm ở bảng B bị hụt đi : 17 - 12 = 5 (điểm).\n\n     Sở dĩ bị hụt đi 5 điểm là vì mỗi trận hòa kém mỗi trận thắng là : 3 - 2 = 1\n\n      (điểm). Vậy số trận thắng là : 5 : 1 = 5 (trận).\n\n     Số trận hòa là : 6 - 5 = 1 (trận)."
+ },
+ {
+  "id": 37,
+  "page": 23,
+  "question": "Một cửa hàng có ba thùng A, B, C để đựng dầu. Trong đó thùng A\n\nđựng đầy dầu còn thùng B và C thì đang để không. Nếu đổ dầu ở thùng A vào\n\nđầy thùng B thì thùng A còn 2/5 thùng. Nếu đổ dầu ở thùng A vào đầy thùng C\n\nthì thùng A còn 5/9 thùng. Muốn đổ dầu ở thùng A vào đầy cả thùng B và thùng\n\nC thì phải thêm 4 lít nữa. Hỏi mỗi thùng chứa bao nhiêu lít dầu ?",
+  "solution": "So với thùng A thì thùng B có thể chứa được số dầu là : 1 - 2/5 = 3/5 (thùng A).\n\n     Thùng C có thể chứa được số dầu là : 1 - 5/9 = 4/9 (thùng A).\n\n     Cả 2 thùng có thể chứa được số dầu nhiều hơn thùng A là :\n\n                              (3/5 + 4/9) - 1 = 2/45 (thùng A).\n\n      2/45 số dầu thùng A chính là 4 lít dầu.\n\n    Do đó số dầu ở thùng A là : 4 : 2/45 = 90 (lít).\n\n     Thùng B có thể chứa được là : 90 x 3/5 = 54 (lít).\n\n     Thùng C có thể chứa được là : 90 x 4/9 = 40 (lít)."
+ },
+ {
+  "id": 38,
+  "page": 23,
+  "question": "Hải hỏi Dương : “Anh phải hơn 30 tuổi phải không ?”. Anh Dương\n\nnói : “Sao già thế ! Nếu tuổi của anh nhân với 6 thì được số có ba chữ số, hai chữ\n\nsố cuối chính là tuổi anh”. Các bạn cùng Hải tính tuổi của anh Dương nhé.",
+  "solution": "Cách 1 : Tuổi của anh Dương không quá 30, khi nhân với 6 sẽ là số có 3 chữ số.\n\nVậy chữ số hàng trăm của tích là 1. Hai chữ số cuối của số có 3 chữ số chính là tuổi\n\nanh. Vậy tuổi anh Dương khi nhân với 6 hơn tuổi anh Dương là 100 tuổi. Ta có sơ đồ :\n\n\n                                                                                               21\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n\n     Tuổi của anh Dương là : 100 : (6 - 1) = 20 (tuổi)\n\n     Cách 2 : Gọi tuổi của anh Dương là   (a > 0, a, b là chữ số)\n\n     Vì  không quá 30 nên khi nhân với 6 sẽ được số có ba chữ số mà chữ số hàng\n\ntrăm là 1. Ta có phép tính :\n\n\n\n\n\n     Vậy tuổi của anh Dương là 20."
+ },
+ {
+  "id": 39,
+  "page": 24,
+  "question": "ở SEA Games 22 vừa qua, chị Nguyễn Thị Tĩnh giành Huy chương\n\nvàng ở cự li 200 m. Biết rằng chị chạy 200 m chỉ mất     giây. Bạn hãy cho biết\n\nchị chạy 400 m hết bao nhiêu giây ?",
+  "solution": "Kết quả thi đấu ở SEA Games 22 đã cho biết : Chị Nguyễn Thị Tĩnh chạy cự li\n\n400 m với thời gian là 51 giây 82.\n\n    Nhận xét : Dụng ý của người ra đề là muốn các bạn giải toán lưu ý đến tính\n\nthực tế của đề toán. Đề toán đọc lên cứ như là loại toán về tương quan tỉ lệ thuận. Đa\n\nsố các bạn đều tưởng như vậy nên đã giải sai, ra đáp số là    giây (!)."
+ },
+ {
+  "id": 40,
+  "page": 24,
+  "question": "Hãy khám phá “bí mật” của hình vuông rồi điền nốt bốn số tự\n\nnhiên còn thiếu vào ô trống.\n\n\n\n\n\n                                                                                               22\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "“Bí mật” của hình vuông là tổng các số hàng ngang, hàng dọc và đường chéo\n\ncủa hình vuông đều bằng 34 (các bạn tự kiểm tra lại).\n\n     Gọi các số cần tìm ở 4 góc của hình vuông là a, b, c, d. ở hàng ngang đầu tiên, ta\n\ncó : a + 3 + 2 + b = 34, từ đó a + b = 34 - 5 = 29 (1).\n\n    Ở cột dọc đầu tiên ta có : a + 5 + 9 + d = 34, từ đó a + d = 34 - 14 = 20 (2).\n\n    Từ (1) và (2) ta có : a + b - (a + d) = 29 - 20 = 9 hay b - d = 9 (3).\n\n    Ở một đường chéo, ta lại có : b + 6 + 11 + d = 34, từ đó b + d = 34 - 17 = 17 (4).\n\n    Từ (3) và (4) ta có : (b - d) + (b + d) = 9 + 17 hay b + b = 26 ; b = 13.\n\n     Vì b + d = 17 nên d = 17 - 13 = 4.\n\n     Vì a + b = 29 nên a = 29 - 13 = 16.\n\n    Ở đường chéo thứ hai, ta có a + 10 + 7 + c = 34 hay a + c = 34 - 17 = 17.\n\n    Từ đó c = 17 - 16 = 1. Thay a, b, c, d bằng các số vừa tìm được ta có hình vuông\n\nsau :\n\n\n\n\n\n    Nhận xét : Hình vuông trên gọi là hình vuông kì ảo (hoặc ma phương) cấp 4.\n\nNgười ta đã nhìn thấy nó lần đầu tiên trong bản khắc của họa sĩ Đuy-rơ năm 1514. Các\n\nbạn có thể thấy : Tổng bốn số trong bốn ô ở bốn góc cũng bằng 34."
+ },
+ {
+  "id": 41,
+  "page": 25,
+  "question": "Bạn có thể cắt hình này :\n\n\n\n\n\n     thành 16 hình:     Bạn hãy nói rõ cách cắt nhé !",
+  "solution": "23\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Tổng số ô vuông là : 8 x 8 = 64 (ô)\n\n     Khi ta cắt hình vuông ban đầu thành các phần nhỏ (hình chữ T), mỗi phần gồm\n\n4 ô vuông thì sẽ được số hình là : 64 : 4 = 16 (hình)\n\n     Ta có thể cắt theo nhiều cách khác nhau:"
+ },
+ {
+  "id": 42,
+  "page": 26,
+  "question": "Cho hình vuông như hình vẽ. Em hãy thay các chữ bởi các số thích\n\nhợp sao cho tổng các số ở các ô thuộc hàng ngang, cột dọc, đường chéo đều bằng\n\nnhau.",
+  "solution": "Vì tổng các số ở hàng ngang, cột dọc, đường chéo đều bằng nhau nên ta có  :\n\na + 35 + b = a + 9 + d hay 26 + b = d (cùng trừ 2 vế đi a và 9). Do đó d - b = 26. b + g\n\n+ d = 35 + g + 13 hay b + d = 48. Vậy b = (48 - 26 ) : 2 = 11, d = 48 - 11 = 37. d + 13\n\n+ c = d + 9 + a hay 4 + c = a (cùng trừ 2 vế đi d và 9). Do đó a - c = 4, a + g + c = 9 +\n\ng +39 hay a + c = 9 + 39 (cùng trừ 2 vế đi g), do đó a + c = 48. Vậy c = (48 - 4) : 2 =\n\n22, a = 22 + 4 = 26. 35 + g + 13 = a + 35 + b = 26 + 35 + 11 = 72.\n\n    Do đó 48 + g = 72 ; g = 72 - 48 = 24. Thay a = 26, b = 11, c = 22, d =37 , g = 24\n\nvào hình vẽ ta có :"
+ },
+ {
+  "id": 43,
+  "page": 26,
+  "question": "Số chữ số dùng để đánh số trang của một quyển sách bằng đúng 2\n\nlần số trang của cuốn sách đó. Hỏi cuốn sách đó có bao nhiêu trang ?",
+  "solution": "24\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    Để số chữ số bằng đúng 2 lần số trang quyển sách thì trung bình mỗi trang phải\n\ndùng hai chữ số. Từ trang 1 đến trang 9 có 9 trang gồm một chữ số, nên còn thiếu 9\n\nchữ số. Từ trang 10 đến trang 99 có 90 trang, mỗi trang đủ hai chữ số. Từ trang 100\n\ntrở đi mỗi trang có 3 chữ số, mỗi trang thừa một chữ số, nên phải có 9 trang để “bù”\n\nđủ cho 9 trang gồm một chữ số.\n\nVậy quyển sách có số trang là : 9 + 90 + 9 = 108 (trang)."
+ },
+ {
+  "id": 44,
+  "page": 27,
+  "question": "Người ta ngăn thửa đất hình chữ nhật thành 2 mảnh, một mảnh\n\nhình vuông, một mảnh hình chữ nhật. Biết chu vi ban đầu hơn chu vi mảnh đất\n\nhình vuông là 28 m. Diện tích của thửa đất ban đầu hơn diện tích hình vuông là\n\n224 m2. Tính diện tích thửa đất ban đầu.",
+  "solution": "Nửa chu vi hình ABCD hơn nửa chu vi hình AMND là : 28 : 2 = 14 (m).\n\n     Nửa chu vi hình ABCD là AD + AB.\n\n     Nửa chu vi hình AMND là AD + AM.\n\n    Do đó : MB = AB - AM = 14 (m).\n\n     Chiều rộng BC của hình ABCD là : 224 : 14 = 16 (m)\n\n     Chiều dài AB của hình ABCD là : 16 + 14 = 30 (m)\n\n     Diện tích hình ABCD là : 30 x 16 = 480 (m2)."
+ },
+ {
+  "id": 45,
+  "page": 27,
+  "question": "Trong một hội nghị có 100 người tham dự, trong đó có 10 người\n\nkhông biết tiếng Nga và tiếng Anh, có 75 người biết tiếng Nga và 83 người biết\n\nTiếng Anh. Hỏi trong hội nghị có bao nhiêu người biết cả 2 thứ tiếng Nga và Anh\n\n?",
+  "solution": "Cách 1 : Số người biết ít nhất 1 trong 2 thứ tiếng Nga và Anh là :\n\n                          100 - 10 = 90 (người).\n\n                       Số người chỉ biết tiếng Anh là :\n\n                           90 - 75 = 15 (người)\n\n                                                                                               25\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                Số người biết cả tiếng Nga và tiếng Anh là :\n\n                           83 - 15 = 68 (người)\n\n            Cách 2 : Số người biết ít nhất một trong 2 thứ tiếng là :\n\n                          100 - 10 = 90 (người).\n\n                     Số người chỉ biết tiếng Nga là :\n\n                           90 - 83 = 7 (người).\n\n                     Số người chỉ biết tiếng Anh là :\n\n                          90 - 75 = 15 (người).\n\n                Số người biết cả 2 thứ tiếng Nga và Anh là :\n\n                        90 - (7 + 15) = 68 (người)"
+ },
+ {
+  "id": 46,
+  "page": 28,
+  "question": "Một hình chữ nhật đã bị cắt đi một hình vuông ở một góc. Chỉ cần\n\nmột nhát cắt thẳng, bạn hãy chia phần còn lại thành 2 phần có diện tích bằng\n\nnhau.",
+  "solution": "Chỉ cần các bạn biết được tính chất: Mọi đường thẳng đi qua tâm của hình chữ\n\nnhật  để  chia  hình  chữ  nhật  thành  hai  hình  có  diện  tích  bằng  nhau.\n\nCó thể chia được bằng nhiều cách:"
+ },
+ {
+  "id": 47,
+  "page": 28,
+  "question": "Cho biết : 4 x 396 x 0,25 : (x + 0,75) = 1,32.\n\n    Hãy tìm cách đặt thêm một dấu phẩy vào chỗ nào đó trong đẳng thức trên\n\nđể giá trị của x giảm 297 đơn vị.",
+  "solution": "26\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Theo đề bài : 4 x 396 x 0,25 : (x + 0,75) = 1,32 ; vì 4 x 0,25 = 1 nên ta có :\n\n396 : (x + 0,75) = 1,32 hay x + 0,75 = 396 : 1,32 = 300. Khi x giảm đi 297 đơn vị thì\n\ntổng x + 0,75 cũng giảm đi 297 đơn vị, tức là x + 0,75 = 300 - 297 = 3 hay x = 3 - 0,75\n\n= 2,25. Trong đẳng thức x + 0,75 = 396 : 1,32 ; để x = 2,25 thì phải thêm dấu phẩy vào\n\nsố 396 để có số 3,96.\n\n    Như vậy cần đặt thêm dấu phẩy vào giữa chữ số 3 và 9 của số 396 để x giảm đi\n\n297 đơn vị. Các bạn có thể thử lại."
+ },
+ {
+  "id": 48,
+  "page": 29,
+  "question": "Điền đủ 9 chữ số : 1, 2, 3, 4, 5, 6, 7, 8, 9 vào 9 ô trống sau để được\n\nphép tính đúng :",
+  "solution": "Bài toán chỉ có bốn cách điền như sau :\n\n                          2 x 78 = 156 = 39 x 4\n\n                          4 x 39 = 156 = 78 x 2\n\n                          3 x 58 = 174 = 29 x 6\n\n                          6 x 29 = 174 = 58 x 3"
+ },
+ {
+  "id": 49,
+  "page": 29,
+  "question": "Tính tuổi của ông biết: Thời niên thiếu chiếm 1/5 quãng đời của\n\nông, 1/8 quãng đời còn lại là tuổi sinh viên, 1/7 số tuổi còn lại ông được học ở\n\ntrường quân đội. Tiếp theo ông được rèn luyện 7 năm liền và sau đó được vinh\n\ndự trực tiếp đánh Mĩ. Như vậy thời gian đánh Mĩ vừa tròn 1/2 quãng đời của\n\nông.",
+  "solution": "Phân số chỉ số tuổi còn lại sau thời niên thiếu của ông là : 1- 1/5 = 1/4 (số tuổi ông)\n\n                     Thời sinh viên của ông có số năm là :\n\n                           4/5 x 1/8 = 1/10 (số tuổi ông)\n\n    Số năm còn lại sau thời sinh viên của ông là : 4/5 - 1/10 = 7/10 (số tuổi ông)\n\n     Số năm học ở trường quân đội của ông là : 7/10 x 1/7 = 1/10 (số tuổi ông)\n\n Do đó: 7 năm rèn luyện của ông là : 1 - (1/5 + 1/10 + 1/10 + 1/2) = 1/10 (số tuổi ông)\n\n                Suy ra số tuổi của ông là : 7: 1/10 = 70 (tuổi)."
+ },
+ {
+  "id": 50,
+  "page": 29,
+  "question": "Một miếng bìa hình chữ nhật, có chiều rộng 30 cm, chiều dài 40\n\ncm. Người ta muốn cắt đi một hình chữ nhật nằm chính giữa miếng bìa trên sao\n\ncho cạnh của hai hình chữ nhật song song và cách đều nhau, đồng thời diện tích\n\n                                                                                               27\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\ncắt đi bằng 1/2 diện tích miếng bìa ban đầu. Hỏi hai cạnh tương ứng của hai hình\n\nchữ nhật ban đầu và cắt đi cách nhau bao nhiêu ?",
+  "solution": "Chia miếng bìa ABCD thành các ô vuông, mỗi ô vuông có cạnh là 5 cm. Số ô\n\nvuông của miếng bìa đó là : 8 x 6 = 48 (ô vuông).\n\n     Số ô vuông của hình chữ nhật MNPQ là : 6 x 4 = 24 (ô vuông)\n\n     Vì 48 : 24 = 2 (lần) nên hình chữ nhật MNPQ có diện tích đúng bằng diện tích\n\nhình cắt đi. Mặt khác các cạnh của hình chữ nhật MNPQ song song và cách đều các\n\ncạnh tương ứng của miếng bìa ABCD. Vì vậy hình MNPQ đúng là hình chữ nhật bị\n\ncắt đi. Mỗi cặp cạnh tương ứng của hình ABCD và MNPQ cách nhau 5 cm."
+ },
+ {
+  "id": 51,
+  "page": 30,
+  "question": "Tìm 4 số tự nhiên có tổng bằng 2003. Biết rằng nếu xóa bỏ chữ số\n\nhàng đơn vị của số thứ nhất ta được số thứ hai. Nếu xóa bỏ chữ số hàng đơn vị\n\ncủa số thứ hai ta được số thứ ba. Nếu xóa bỏ chữ số hàng đơn vị của số thứ ba ta\n\nđược số thứ tư.",
+  "solution": "Số thứ nhất không thể nhiều hơn 4 chữ số vì tổng 4 số bằng 2003. Nếu số thứ\n\nnhất có ít hơn 4 chữ số thì sẽ không tồn tại số thứ tư. Vậy số thứ nhất phải có 4 chữ số.\n\nGọi số thứ nhất là abcd (a > 0, a, b, c, d < 10). Số thứ hai, số thứ ba, số thứ tư lần lượt\n\nsẽ là : abc ; ab ; a.\n\n     Theo bài ra ta có phép tính:\n\n                            abcd + abc + ab + a = 2003.\n\n         Theo phân tích cấu tạo số ta có : aaaa + bbb + cc + d = 2003 (*)\n\n       Từ phép tính (*) ta có a < 2, nên a = 1. Thay a = 1 vào (*) ta được :\n\n                       1111 + bbb + cc + d = 2003.\n\n                        bbb + cc + d = 2003 - 1111\n\n                         bbb + cc + d = 892 (**)\n\n\n                                                                                               28\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n b > 7 vì nếu b nhỏ hơn hoặc bằng 7 thì bbb + cc + d nhỏ hơn 892 ; b < 9 vì nếu b = 9\n\n                      thì bbb = 999 > 892. Suy ra b chỉ có thể bằng 8.\n\n                      Thay b = 8 vào (**) ta được :\n\n                           888 + cc + d = 892\n\n                               cc + d = 892 - 888\n\n                                   cc + d = 4\n\n               Từ đây suy ra c chỉ có thể bằng 0 và d = 4.\n\n    Vậy số thứ nhất là 1804, số thứ hai là 180, số thứ ba là 18 và số thứ tư là 1.\n\n               Thử lại : 1804 + 180 + 18 + 1 = 2003 (đúng)"
+ },
+ {
+  "id": 52,
+  "page": 31,
+  "question": "Một người mang ra chợ 5 giỏ táo gồm hai loại. Số táo trong mỗi giỏ\n\nlần lượt là : 20 ; 25 ; 30 ; 35 và 40. Mỗi giỏ chỉ đựng một loại táo. Sau khi bán hết\n\nmột giỏ táo nào đó, người ấy thấy rằng : Số táo loại 2 còn lại đúng bằng nửa số\n\ntáo loại 1. Hỏi số táo loại 2 còn lại là bao nhiêu ?",
+  "solution": "Số táo người đó mang ra chợ là : 20 + 25 + 30 + 35 + 40 = 150 (quả)\n\n   Vì số táo loại 2 còn lại đúng bằng nửa số táo loại 1 nên sau khi bán, số táo còn lại\n\nphải chia hết cho 3.\n\n   Vì tổng số táo mang ra chợ là 150 quả chia hết cho 3 nên số táo đã bán phải chia\n\nhết cho 3. Trong các số 20, 25, 30, 35, 40 chỉ có 30 chia hết cho 3. Do vậy người ấy đã\n\nbán giỏ táo đựng 30 quả.\n\n   Tổng số táo còn lại là : 150 - 30 = 120 (quả)\n\nTa có sơ đồ biểu diễn số táo của loại 1 và loại 2 còn lại :\n\n\n\n\n                 Số táo loại 2 còn lại là : 120 : (2 + 1) = 40 (quả)\n\n         Vậy người ấy còn lại giỏ đựng 40 quả chính là số táo loại 2 còn lại.\n\n                            Đáp số : 40 quả"
+ },
+ {
+  "id": 53,
+  "page": 31,
+  "question": "Không được thay đổi vị trí của các chữ số đã viết trên bảng : 8 7 6\n\n5 4 3 2 1 mà chỉ được viết thêm các dấu cộng (+), bạn có thể cho được kết quả của\n\ndãy phép tính là 90 được không ?",
+  "solution": "29\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    Có hai cách điền :  8 + 7 + 65 + 4 + 3 + 2 + 1 = 90\n\n                          8 + 7 + 6 + 5 + 43 + 21 = 90\n\n    Để tìm được hai cách điền này ta có thể có nhận xét sau :\n\n     Tổng 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 36 ; 90 - 36 = 54.\n\n    Như vậy muốn có tổng 90 thì trong các số hạng phải có một hoặc hai số là số có\n\nhai chữ số. Nếu số có hai chữ số đó là 87 hoặc 76 mà 87 > 54, 76 > 54 nên không thể\n\nđược. Nếu số có hai chữ số là 65 ; 65 + 36 - 6 - 5 = 90, ta có thể điền :\n\n8 + 7 + 65 + 4 + 3 + 2 + 1 - 90.\n\n     Nếu số có hai chữ số là 54 thì cũng không thể có tổng là 90 được vì 54 + 36 - 5 -\n\n4 < 90.\n\n     Nếu số có hai chữ số là 43 ; 43 < 54 nên cũng không thể được. Nếu trong tổng\n\ncó 2 số có hai chữ số là 43 và 21 thì ta có 43 + 21 - (4 + 3 + 2 + 1) = 54. Như vậy ta có\n\nthể điền : 8 + 7 + 6 + 5 + 43 + 21 = 90."
+ },
+ {
+  "id": 54,
+  "page": 32,
+  "question": "Cho phân số M = (1 + 2 +... + 9)/(11 + 12 +... +19).\n\n     Hãy bớt một số hạng ở tử số và một số hạng ở mẫu số sao cho giá trị phân\n\nsố không thay đổi.\n\nTóm tắt bài giải :\n\nM = (1 + 2 +... + 9)/(11 + 12 +... +19) = 45/135 = 1/3.\n\nTheo tính chất của hai tỉ số bằng nhau thì 45/135 = (45 - k)/(135 - kx3)(k là số tự\n\nnhiên nhỏ hơn 45). Do đó ở tử số của M bớt đi 4 ; 5 ; 6 thì tương ứng ở mẫu số phải\n\nbớt đi 12 ; 15 ; 18.",
+  "solution": ""
+ },
+ {
+  "id": 55,
+  "page": 32,
+  "question": "Chỉ có một chiếc ca\n\n        Đựng đầy vừa một lít\n\n          Bạn hãy mau cho biết\n\n          Đong nửa lít thế nào ?",
+  "solution": "Ai khéo tay tinh mắt\n\n                         Nghiêng ca như hình trên\n\n                           Sẽ đạt yêu cầu liền\n\n                          Trong ca : đúng nửa lít !\n\n\n\n\n                                                                                               30\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 56,
+  "page": 33,
+  "question": "Điền số thích hợp theo mẫu :",
+  "solution": "Bài này có hai cách điền :\n\n\n\n\n\n     Cách 1 : Theo hình 1, ta có 4 là trung bình cộng của 3 và 5 (vì (3 + 5) : 2 = 4).\n\n     Khi đó ở hình 2, gọi A là số cần điền, ta có A là trung bình cộng của 5 và 13.\n\n    Do đó A = (5 + 13) : 2 = 9.\n\n    Ở hình 3, gọi B là số cần điền, ta có 15 là trung bình cộng của 8 và B.\n\n    Do đó 8 + B = 15 x 2. Từ đó tìm được B = 22.\n\n     Cách 2 : Theo hình 1, ta có : 3 x 3 + 4 x 4 = 5 x 5.\n\n     Khi đó ở hình 2 ta có : 5 x 5 + A x A = 13 x 13.\n\n      suy ra A x A = 144. Vậy A = 12 (vì 12 x 12 = 144).\n\n    Ở hình 3 ta có : 8 x 8 + 15 x 15 = B x B.\n\n     Suy ra B x B = 289. Vậy B = 17 (vì 17 x 17 = 289)."
+ },
+ {
+  "id": 57,
+  "page": 33,
+  "question": "Cả lớp 4A phải làm một bài kiểm tra toán gồm có 3 bài toán. Giáo\n\nviên chủ nhiệm lớp báo cáo với nhà trường rằng : cả lớp mỗi em đều làm được ít\n\nnhất một bài, trong lớp có 20 em giải được bài toán thứ nhất, 14 em giải được bài\n\ntoán thứ hai, 10 em giải được bài toán thứ ba, 5 em giải được bài toán thứ hai và\n\nthứ ba, 2 em giải được bài toán thứ nhất và thứ hai, có mỗi một em được 10 điểm\n\nvì đã giải được cả ba bài. Hỏi rằng lớp học đó có bao nhiêu em tất cả ?",
+  "solution": "31\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Mỗi hình tròn để ghi số bạn giải đúng một bài nào đó. Vì chỉ có một bạn giải\n\nđúng 3 bài nên điền số 1 vào phần chung của 3 hình tròn. Số bạn giải đúng bài I và bài\n\nII là 2 nên phần chung của hai hình tròn này mà không chung với hình tròn còn lại sẽ\n\nđược ghi số 1 (vì 2 - 1 = 1). Tương tự, ta ghi được các số vào các phần còn lại.\n\n      Số học sinh lớp 4A chính là tổng các số đã điền vào các phần :\n\n                  13 + 5 + 1 + 1 + 4 + 8 + 0 = 32 (HS)"
+ },
+ {
+  "id": 58,
+  "page": 34,
+  "question": "Bạn hãy điền các số từ 1 đến 9 vào các ô trống để các phép tính đều\n\nthực hiện đúng (cả hàng dọc và hàng ngang).",
+  "solution": "Ta đặt tên cho các số phải tìm như trong bảng. Các số điền vào ô trống là các số\n\ncó 1 chữ số nên tổng các số lớn nhất chỉ có thể là 17.\n\n\n\n\n\n     ở cột 1, có A + D : H = 6, nên H chỉ có thể lớn nhất là 2.\n\n     Cột 5 có C + G : M = 5 nên M chỉ có thể lớn nhất là 3.\n\n     * Nếu H = 1 thì A + D = 6 = 2 + 4, do đó M = 3 và H + K = 2 x 3 = 6 = 1 + 5.\n\nK = 5 thì B x E = 4 + 5 = 9, như thế chỉ có thể B hoặc E bằng 1, điều đó chứng tỏ H\n\nkhông thể bằng 1.\n\n     * Nếu H = 2 thì M phải bằng 1 hoặc 3; nếu M = 1 thì H + K = 2, như vậy K = 0,\n\nđiều này cũng không thể được.\n\n     Vậy M = 3 ; H + K = 6 thì K = 4.\n\n    H = 2 thì A + D = 12 = 5 + 7 ; như vậy A = 5, D = 7 hoặc D = 5, A = 7.\n\n    K = 4 thì B x E = 4 + 4 = 8 = 1 x 8 ; như vậy B = 1, E = 8 hoặc E = 1, B = 8.\n\n   M = 3 thì C + G = 15 = 6 + 9 ; như vậy C = 6, G = 9 hoặc G = 6, C = 9 ; G chỉ\n\ncó thể bằng 9 vì nếu G = 6 thì D + E = 10, mà trong các số 1, 5, 7, 8 không có hai số\n\nnào có tổng bằng 10. Vậy C = 6 và A + B = 8, như vậy B chỉ có thể bằng 1, A = 7 thì\n\n\n\n                                                                                               32\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nD = 5 và E = 8.\n\n     Các số điền vào bảng như hình sau."
+ },
+ {
+  "id": 59,
+  "page": 35,
+  "question": "S = 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 có phải là số tự nhiên\n\nkhông ? Vì sao ?",
+  "solution": "Ta có thể giải theo các hướng sau:\n\n     Hướng 1 : Tính S = 1 201/280\n\n     Hướng 2 : Khi qui đồng mẫu số để tính S thì mẫu số chung là số chẵn. Với mẫu\n\nsố chung này thì 1/2 ; 1/3 ; 1/4 ; 1/5 ; 1/6 ; 1/7 sẽ trở thành các phân số mà tử số là số\n\nchẵn, chỉ có 1/8 là trở thành phân số mà tử số là số lẻ. Vậy S là một phân số có tử số là\n\nsố lẻ và mẫu số là số chẵn nên S không phải là số tự nhiên.\n\n    Hướng 3 : Chứng minh 5/4 < S < 2\n\n     Thật vậy 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 > 6 x 1/8 = ¾ nên S > 3/4 + 1/2 = 5/4\n\n     Mặt khác : 1/4 + 1/5 + 1/6 + 1/7 < 4 x 1/4 = 1 nên S < 1 + 1/2 + 1/3 + 1/8 = 1 +\n\n1/2 + 11/24 <2\n\n    Vì 5/4 < S < 2 nên S không phải là số tự nhiên."
+ },
+ {
+  "id": 60,
+  "page": 35,
+  "question": "Cho hai hình vuông ABCD và MNPQ như trong hình vẽ. Biết BD =\n\n12 cm. Hãy tính diện tích phần gạch chéo.",
+  "solution": "Diện tích tam giác ABD là :(12 x (12 : 2))/2 = 36 (cm2)\n      Diện tích hình vuông ABCD là :36 x 2 = 72 (cm2)\n      Diện tích hình vuông AEOK là : 72 : 4 = 18 (cm2)\n\n\n\n\n\n                                                                                               33\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    Do đó : OE x OK = 18 (cm2)\n\n          r x r = 18 (cm2)\n      Diện tích hình tròn tâm O là : 18 x 3,14 = 56,92 (cm2)\n      Diện tích tam giác MON = r x r : 2 = 18 : 2 = 9 (cm2)\n      Diện tích hình vuông MNPQ là : 9 x 4 = 36 (cm2)\n\n     Vậy diện tích phần gạch chéo là : 56,52 - 36 = 20,52 (cm2)"
+ },
+ {
+  "id": 61,
+  "page": 36,
+  "question": "Bạn Toàn nhân một số với 2002 nhưng “đãng trí” quên viết 2 chữ\n\nsố 0 của số 2002 nên kết quả “bị” giảm đi 3965940 đơn vị. Toàn đã định nhân số\n\nnào với 2002 ?",
+  "solution": "Vì \"đãng trí\" nên bạn Toàn đã nhân nhầm số đó với 22.\n\n     Thừa số thứ hai bị giảm đi số đơn vị là : 2002 - 22 = 1980 (đơn vị).\n\n    Do đó kết quả bị giảm đi 1980 lần thừa số thứ nhất, và bằng 3965940 đơn vị.\n\n     Vậy thừa số thứ nhất là : 3965940 : 1980 = 2003."
+ },
+ {
+  "id": 62,
+  "page": 36,
+  "question": "Người ta cộng 5 số và chia cho 5 thì được 138. Nếu xếp các số theo\n\nthứ tự lớn dần thì cộng 3 số đầu tiên và chia cho 3 sẽ được 127, cộng 3 số cuối và\n\nchia cho 3 sẽ được 148. Bạn có biết số đứng giữa theo thứ tự trên là số nào không\n\n?",
+  "solution": "38 là trung bình cộng của 5 số, nên tổng 5 số là : 138 x 5 = 690.\n\n     Tổng của ba số đầu tiên là : 127 x 3 = 381.\n\n     Tổng của ba số cuối cùng là : 148 x 3 = 444.\n\n     Tổng của hai số đầu tiên là : 690 - 444 = 246.\n\n     Số ở giữa là số đứng thứ ba, nên số ở giữa là : 381 - 246 = 135."
+ },
+ {
+  "id": 63,
+  "page": 36,
+  "question": "Cho bảng ô vuông gồm 10 dòng và 10 cột. Hai bạn Tín và Nhi tô\n\nmàu các ô, mỗi ô một màu trong 3 màu : xanh, đỏ, tím. Bạn Tín bảo : \"Lần nào\n\ntô xong hết các ô cũng có 2 dòng mà trên 2 dòng đó có một màu tô số ô dòng này\n\nbằng tô số ô dòng kia\". Bạn Nhi bảo : \"Tớ phát hiện ra bao giờ cũng có 2 cột\n\nđược tô như thế\".\n\nNào, bạn hãy cho biết ai đúng, ai sai ?",
+  "solution": "34\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Giả sử số ô tô màu đỏ ở tất cả các dòng đều khác nhau mà mỗi dòng có 10 ô nên\n\nsố ô được tô màu đỏ ít nhất là :0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45 (ô).\n\n      Lí luận tương tự với màu xanh, màu tím ta cũng có kết quả như vậy.\n\n    Do đó bảng sẽ có ít nhất 45 + 45 + 45 = 135 (ô). Điều này mâu thuẫn với bảng\n\nchỉ có 100 ô.\n\n     Chứng tỏ ít nhất phải có 2 dòng mà số ô tô bởi cùng một màu là như nhau.\n\n    Đối với các cột, ta cũng lập luận tương tự như trên. Do đó cả hai bạn đều nói\n\nđúng."
+ },
+ {
+  "id": 64,
+  "page": 37,
+  "question": "Bạn hãy điền đủ các số từ 1 đến 14 vào các ô vuông sao cho tổng 4\n\nsố ở mỗi hàng ngang hay tổng 5 số ở mỗi cột dọc đều là 30.",
+  "solution": "Tổng các số từ 1 đến 14 là : (14 + 1) x 14 : 2 = 105.\n\n     Tổng các số của 4 hàng là : 30 x 4 = 120.\n\n     Tổng bốn số ở bốn ô có dấu * là : 120 - 105 = 15.\n\n     Cặp bốn số ở bốn ô có dấu * là một trong các trường hợp sau :\n\n\n\n\n\n                          15 = 1 + 2 + 3 + 9 (1)\n\n                          = 1 + 2 + 4 + 8 (2)\n\n                          = 1 + 2 + 5 + 7 (3)\n\n                          = 1 + 3 + 4 + 7 (4)\n\n                          = 1 + 3 + 5 + 7 (5)\n\n                          = 2 + 3 + 4 + 6 (6)\n\n    Từ mỗi trường hợp này có thể tạo nên nhiều cách sắp xếp các số khác nhau.\n\n                                                                                               35\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 65,
+  "page": 38,
+  "question": "Căn phòng có 4 bức tường, trên mỗi bức tường treo 3 lá cờ mà\n\nkhoảng cách giữa 3 lá cờ trên một bức tường là như nhau. Bạn có biết căn phòng\n\ntreo mấy lá cờ không ?",
+  "solution": "Để đơn giản, ta sẽ treo tất cả các lá cờ ở độ cao ngang nhau trên cả 4 bức tường.\n\n     Khi đó cách treo cờ sẽ giống như bài toán trồng cây.\n\n     Ta có 5 cách trồng ứng với số lá cờ là 8, 9, 10, 11, 12 lá cờ như sau (coi mỗi lá\n\ncờ là một điểm chấm tròn):\n\n\n\n\n\n     Nếu các lá cờ được treo ở độ cao khác nhau trên mỗi bức tường thì vị trí 3 lá cờ\n\ntrên một bức tường sẽ tạo thành 3 đỉnh của một hình tam giác đều. Khi đó ta sẽ có các\n\ncách treo khác ứng với số lá cờ là 6,] 7, 8, 9, 10, 11, 12 lá cờ. Ta có 2 cách treo ứng\n\nvới số lá cờ là 6 lá và 7 lá như sau:\n\n\n\n\n\n     Vậy số lá cờ trong căn phòng có thể từ 6 đến 12 lá cờ.\n\n\n                                                                                               36\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 66,
+  "page": 39,
+  "question": "Lọ Lem chia một quả dưa (dưa đỏ) thành 9 phần cho 9 cụ già.\n\nNhưng khi các cụ ăn xong, Lọ Lem thấy có 10 miếng vỏ dưa. Lọ Lem chia dưa\n\nkiểu gì ấy nhỉ ?",
+  "solution": "Có nhiều cách bổ dưa, Lo Lem đã bổ dưa như sau: Cắt ngang quả dưa làm 3\n\nphần, sau đó lại bổ dọc quả dưa làm 3 phần sẽ được 9 miếng dưa (như hình vẽ) chia\n\ncho 9 cụ, sau khi ăn xong sẽ có 10 miếng vỏ dưa. Vì riêng miếng số 5 có vỏ ở 2 đầu,\n\nnên khi ăn xong sẽ có 2 miếng vỏ."
+ },
+ {
+  "id": 67,
+  "page": 39,
+  "question": "Bạn hãy điền đủ các số từ 1 đến 10 vào các ô vuông sao cho tổng các\n\nsố ở nét dọc (1 nét) cũng như ở nét ngang (3 nét) đều là 16.",
+  "solution": "Tất cả các bạn đều nhận ra một phương án điền số: a = 1; b = 9; c = 5; d = 4; e =\n\n6; g = 10; h = 3; i = 1; k = 8; l = 7. Từ đó sẽ có các phương án khác bằng cách:\n\n      1) Đổi các ô b và c.\n\n      2) Đổi các ô k và l.\n\n      3) Đổi các ô d và h.\n\n      4) Đổi đồng thời cả 3 ô a, b, c cho 3 ô i, k, l.\n\n    Như vậy các bạn sẽ có 16 cách điền số khác nhau."
+ },
+ {
+  "id": 68,
+  "page": 39,
+  "question": "Trong một cuộc thi tài Toán Tuổi thơ có 51 bạn tham dự. Luật cho\n\nđiểm như sau:\n                                                                                               37\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    + Mỗi bài làm đúng được 4 điểm.\n\n    + Mỗi bài làm sai hoặc không làm sẽ bị trừ 1 điểm.\n\n    Bạn chứng tỏ rằng tìm được 11 bạn có số điểm bằng nhau.",
+  "solution": "Thi tài giải Toán Tuổi thơ có 5 bài. Số điểm của 51 bạn thi có thể xếp theo 5\n\nloại điểm sau đây:\n\n     + Làm đúng 5 bài được: 4 x 5 = 20 (điểm).\n\n     + Làm đúng 4 bài được: 4 x 4 - 1 x 1 = 15 (điểm).\n\n     + Làm đúng 3 bài được: 4 x 3 - 1 x 2 = 10 (điểm).\n\n     + Làm đúng 2 bài được: 4 x 2 - 1 x 3 = 5 (điểm).\n\n     + Làm đúng 1 bài được: 4 x 1 - 1 x 4 = 0 (điểm).\n\n     Vì 51 : 5 = 10 (dư 1) nên phải có ít nhất 11 bạn có số điểm bằng nhau."
+ },
+ {
+  "id": 69,
+  "page": 40,
+  "question": "Vũ Hữu cùng với Lương Thế Vinh\n\n                       Hai nhà toán học, một năm sinh\n\n                    Thực hành, tính toán đều thông thạo\n\n                      Vẻ vang dân tộc nước non mình\n\n    Năm sinh của hai ông là một số có bốn chữ số, tổng các chữ số bằng 10. Nếu\n\nviết năm sinh theo thứ tự ngược lại thì năm sinh không đổi. Bạn đã biết năm sinh\n\ncủa hai ông chưa?",
+  "solution": "Gọi năm sinh của hai ông là abba (a ≠ 0, a < 3, b <10).\n\n     Ta có: a + b + b + a = 10 hay (a + b) x 2 = 10. Do đó a + b = 5.\n\n     Vì a ≠ 0 và a < 3 nên a = 1 hoặc 2.\n\n     * Nếu a = 1 thì b = 5 - 1 = 4. Khi đó năm sinh của hai ông là 1441 (đúng).\n\n     * Nếu a = 2 thì b = 5 - 2 = 3. Khi đó năm sinh của hai ông là 2332 (loại).\n\n     Vậy hai ông Vũ Hữu và Lương Thế Vinh sinh năm 1441."
+ },
+ {
+  "id": 70,
+  "page": 40,
+  "question": "Tâm giúp bán cam trong ba ngày, Ngày thứ hai: số cam bán được\n\ntăng 10% so với ngày thứ nhất. Ngày thứ ba: số cam bán được giảm 10% so với\n\n\n\n\n                                                                                               38\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nngày thứ hai. Bạn có biết trong ngày thứ nhất và ngày thứ ba thì ngày nào Tâm\n\nbán được nhiều cam hơn không ?",
+  "solution": "Biểu thị số cam bán ngày thứ nhất là 100% thì số bán ngày thứ hai là:\n\n                 100% + 10% = 110% (số cam ngày thứ nhất)\n\n     Biểu thị số cam bán ngày thứ hai là 100% thì số bán ngày thứ hai là:\n\n                  100% - 10% = 90% (số cam ngày thứ hai)\n\n     So với ngày thứ nhất thì số cam ngày thứ ba bán là:\n\n                 110% x 90% = 99% (số cam ngày thứ nhất)\n\n     Vì 100% > 99% nên ngày thứ nhất bán được nhiều cam hơn ngày thứ ba."
+ },
+ {
+  "id": 71,
+  "page": 41,
+  "question": "Cu Tí chọn 4 chữ số liên tiếp nhau và dùng 4 chữ số này để viết ra 3\n\nsố gồm 4 chữ số khác nhau. Biết rằng số thứ nhất viết các chữ số theo thứ tự tăng\n\ndần, số thứ hai viết các chữ số theo thứ tự giảm dần và số thứ ba viết các chữ số\n\ntheo thứ tự nào đó. Khi cộng ba số vừa viết thì được tổng là 12300. Bạn hãy cho\n\nbiết các số mà cu Tí đã viết.",
+  "solution": "Gọi 4 số tự nhiên liên tiếp từ nhỏ đến lớn là a, b, c, d.\n\n     Số thứ nhất cu Tí viết là abcd, số thứ hai cu Tí viết là dcba.\n\n     Ta xét các chữ số hàng nghìn của ba số có tổng là 12300:\n\n      a là số lớn hơn 1 vì nếu a = 1 thì d = 4, khi đó số thứ ba có chữ số hàng nghìn\n\nlớn nhất là 4 và tổng của ba chữ số này lớn nhất là:\n\n     1 + 4 + 4 = 9 < 12; như vậy tổng của ba số nhỏ hơn 12300.\n\n      a là số nhỏ hơn 5 vì nếu a = 5 thì d = 8 và a + d = 13 > 12; như vậy tổng của ba\n\nsố lớn hơn 12300.\n\n      a chỉ có thể nhận 3 giá trị là 2, 3, 4.\n\n        - Nếu a = 2 thì số thứ nhất là 2345, số thứ hai là 5432. Số thứ ba là: 12300 -\n\n(2345 + 5432) = 4523 (đúng, vì số này có các chữ số là 2, 3, 4, 5).\n\n        - Nếu a = 3 thì số thứ nhất là 3456, số thứ hai là 6543.\n\n     Số thứ ba là : 12300 - (3456 + 6543) = 2301 (loại, vì số này có các chữ số khác\n\nvới 3, 4, 5, 6).\n\n\n                                                                                               39\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n        - Nếu a = 4 thì số thứ nhất là 4567, số thứ hai là 7654. Số thứ ba là:\n\n                        12300 - (4567 + 7654) = 79 (loại).\n\n     Vậy các số mà cu Tí đã viết là : 2345, 5432, 4523."
+ },
+ {
+  "id": 72,
+  "page": 42,
+  "question": "Với 4 chữ số 2 và các dấu phép tính bạn có thể viết được một biểu\n\nthức để có kết quả là 9 được không? Tôi đã cố gắng viết một biểu thức để có kết\n\nquả là 7 nhưng chưa được. Còn bạn? Bạn thử sức xem nào!",
+  "solution": "Với bốn chữ số 2 ta viết được biểu thức có giá trị bằng 9 là: 22 : 2 - 2 = 9.\n\n     Không thể dùng bốn chữ số 2 để viết được biểu thức có kết quả là 7."
+ },
+ {
+  "id": 73,
+  "page": 42,
+  "question": "Với 36 que diêm đã được xếp như hình dưới.\n\n\n\n\n\n      1) Bạn đếm được bao nhiêu hình vuông?\n\n      2) Bạn hãy nhấc ra 4 que diêm để chỉ còn 4 hình vuông được không?",
+  "solution": "1) Nhìn vào hình vẽ, ta thấy có 2 loại hình vuông, hình vuông có cạnh là 1 que\n\ndiêm và hình vuông có cạnh là 2 que diêm.\n\n     Hình vuông có cạnh là 1 que diêm gồm có 13 hình, hình vuông có cạnh là 2 que\n\ndiêm gồm có 4 hình. Vậy có tất cả là 17 hình vuông.\n\n      2) Mỗi que diêm có thể nằm trên cạnh của nhiều nhất là 3 hình vuông, nếu nhặt\n\nra 4 que diêm thì ta bớt đi nhiều nhất là : 4 x 3 = 12 (hình vuông),\n\n     còn lại 17 - 12 = 5 (hình vuông). Như vậy không thể nhặt ra 4 que diêm để còn\n\nlại 4 hình vuông được."
+ },
+ {
+  "id": 74,
+  "page": 42,
+  "question": "Có 7 thùng đựng đầy dầu, 7 thùng chỉ còn nửa thùng dầu và 7 vỏ\n\nthùng. Làm sao có thể chia cho 3 người để mọi người đều có lượng dầu như nhau\n\nvà số thùng như nhau ?",
+  "solution": "40\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Gọi thùng đầy dầu là A, thùng có nửa thùng dầu là B, thùng không có dầu là C.\n\n     Cách 1: Không phải đổ dầu từ thùng này sang thùng kia.\n\n     Người thứ nhất nhận: 3A, 1B, 3C.\n\n     Người thứ hai nhận: 2A, 3B, 2C.\n\n     Người thứ ba nhận: 2A, 3B, 2C.\n\n     Cách 2: Không phải đổ dầu từ thùng này sang thùng kia.\n\n     Người thứ nhất nhận: 3A, 1B, 3C.\n\n     Người thứ hai nhận: 3A, 1B, 3C.\n\n     Người thứ ba nhận: 1A, 5B, 1C.\n\n     Cách 3: Đổ dầu từ thùng này sang thùng kia.\n\n     Lấy 4 thùng chứa nửa thùng dầu (4B) đổ đầy sang 2 thùng không (2C) để được\n\n2 thùng đầy dầu (2A). Khi đó có 9A, 3B, 9C và mỗi người sẽ nhận được như nhau là\n\n3A, 1B, 3C."
+ },
+ {
+  "id": 75,
+  "page": 43,
+  "question": "Hãy vẽ 4 đoạn thẳng đi qua 9 điểm ở hình bên mà không được nhấc\n\nbút hay tô lại.",
+  "solution": "Cái khó ở bài toán này là chỉ được vẽ 4 đoạn thẳng và chỉ được vẽ bằng một nét\n\nnên cần phải “tạo thêm” hai điểm ở bên ngoài 9 điểm thì mới thực hiện được yêu cầu\n\ncủa đề bài.\n\n     Ta có một cách vẽ với hai “đường đi” khác nhau (bắt đầu từ điểm 1 và kết thúc\n\nở điểm 2 với đường đi theo chiều mũi tên) như sau:\n\n\n\n\n\n     Khi xoay hoặc lật hai hình trên ta sẽ có các cách vẽ khác."
+ },
+ {
+  "id": 76,
+  "page": 43,
+  "question": "41\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                              Chiếc bánh trung thu\n\n                          Nhân tròn ở giữa\n\n                            Hãy cắt 4 lần\n\n                           Thành 12 miếng\n\n                        Nhưng nhớ điều kiện\n\n                          Các miếng bằng nhau\n\n                           Và lần cắt nào\n\n                         Cũng qua giữa bánh",
+  "solution": "Có nhiều cách cắt được các bạn đề xuất. Xin giới thiệu 3 cách.\n\n     Cách 1: Nhát thứ nhất chia đôi theo bề dầy của chiếc bánh và để nguyên vị trí\n\nnày cắt thêm 3 nhát (như hình vẽ).\n\n\n\n\n\n     Lưu ý là AM = BN = DQ = CP = 1/6 AB và IA = ID = KB = KC = 1/2 AB.\n\n     Ta có thể dễ dàng chứng minh được 12 miếng bánh là bằng nhau và cả 3 nhát\n\ncắt đều đi qua đúng ... tâm bánh.\n\n     Cách 2: Cắt 2 nhát theo 2 đường chéo để được 4 miếng rồi chồng 4 miếng này\n\nlên nhau cắt 2 nhát để chia mỗi miếng thành 3 phần bằng nhau (lưu ý: BM = MN =\n\nNC).\n\n\n\n\n\n     Cách 3: Nhát thứ nhất cắt như cách 1 và để nguyên vị trí này để cắt thêm 3 nhát\n\nnhư hình vẽ.\n\n     Lưu ý: AN = AM = CQ = CP = 1/2 AB.\n\n\n                                                                                               42\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 77,
+  "page": 45,
+  "question": "Mỗi đỉnh của một tấm bìa hình tam giác được đánh số lần lượt là 1;\n\n2; 3. Người ta chồng các tam giác này lên nhau sao cho không có chữ số nào bị\n\nche lấp. Một bạn cộng tất cả các chữ số nhìn thấy thì được kết quả là 2002. Liệu\n\nbạn đó có tính nhầm không?",
+  "solution": "Tổng các số trên ba đỉnh của mỗi hình tam giác là 1 + 2 + 3 = 6. Tổng này là\n\nmột số chia hết cho 6. Khi chồng các hình tam giác này lên nhau sao cho không có chữ\n\nsố nào bị che lấp, rồi tính tổng tất cả các chữ số nhìn thấy được phải có kết quả là số\n\nchia hết cho 6. Vì số 2002 không chia hết cho 6 nên bạn đó đã tính sai."
+ },
+ {
+  "id": 78,
+  "page": 45,
+  "question": "Bạn hãy điền đủ 12 số từ 1 đến 12, mỗi số vào một ô vuông sao cho\n\ntổng 4 số cùng nằm trên một cột hay một hàng đều như nhau.",
+  "solution": "Tổng các số từ 1 đến 12 là: (12+1) x 12 : 2 = 78\n\n     Vì tổng 4 số cùng nằm trên một cột hay một hàng đều như nhau nên tổng số của\n\n4 hàng và cột phải là một số chia hết cho 4. Đặt các chữ cái A, B, C, D vào các ô\n\nvuông ở giữa (hình vẽ).\n\n\n\n\n\n     Khi tính tổng số của 4 hàng và cột thì các số ở các ô A, B, C, D được tính hai\n\nlần. Do đó để tổng 4 hàng, cột chia hết cho 4 thì tổng 4 số của 4 ô A, B, C, D phải chia\n\ncho 4 dư 2 (vì 78 chia cho 4 dư 2). Ta thấy tổng của 4 số có thể là: 10, 14, 18, 22, 26,\n\n30, 34, 38, 42.\n\n     Ta xét một vài trường hợp:\n\n                                                                                               43\n) Tổng của 4 số bé nhất là 10. Khi đó 4 số sẽ là 1, 2, 3, 4. Do đó tổng của mỗi\n\nhàng (hay mỗi cột) là: (78 + 10) : 4 = 22. Xin nêu ra một cách điền như hình dưới:\n\n\n\n\n\n      2) Tổng của 4 số là 14. Ta có:\n\n     14 = 1 + 2 + 3 + 8 = 1 + 2 + 4 + 7 = 1 + 3 + 4 + 6 = 2 + 3 + 4 + 5.\n\n    Do đó tổng của mỗi hàng (hay mỗi cột) là: (78 + 14) : 4 = 23.\n\n     Ta có thể điền như hình sau:\n\n\n\n\n\n     Các trường hợp còn lại sẽ cho ta kết quả ở mỗi hàng (hay mỗi cột) lần lượt là\n\n24, 25, 26, 27, 28, 29, 30."
+ },
+ {
+  "id": 79,
+  "page": 46,
+  "question": "Một đội tuyển tham dự kỳ thi học sinh giỏi 3 môn Văn, Toán, Ngoại ngữ do\n\nthành phố tổ chức đạt được 15 giải. Hỏi đội tuyển học sinh giỏi đó có bao nhiêu học\n\nsinh? Biết rằng:\n\n    Học sinh nào cũng có giải.\n\n     Bất kỳ môn nào cũng có ít nhất 1 học sinh chỉ đạt 1 giải.\n\n     Bất kỳ hai môn nào cũng có ít nhất 1 học sinh đạt giải cả hai môn.\n\n    Có ít nhất 1 học sinh đạt giải cả 3 môn.\n\n     Tổng số học sinh đạt 3 giải, 2 giải, 1 giải tăng dần.",
+  "solution": "Gọi số học sinh đạt giải cả 3 môn là a (học sinh)\n\n     Gọi số học sinh đạt giải cả 2 môn là b (học sinh)\n\n     Gọi số học sinh chỉ đạt giải 1 môn là c (học sinh)\n\n     Tổng số giải đạt được là: 3 x a + 2 x b + c = 15 (giải).\n\n     Vì tổng số học sinh đạt 3 giải, 2 giải, 1 giải tăng dần nên a < b < c.\n                                                                                               44\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Vì bất kỳ 2 môn nào cũng có ít nhất 1 học sinh đạt giải cả 2 môn nên:\n\n        - Có ít nhất 1 học sinh đạt giải cả 2 môn Văn và Toán.\n\n        - Có ít nhất 1 học sinh đạt giải cả 2 môn Toán và Ngoại Ngữ.\n\n        - Có ít nhất 1 học sinh đạt giải cả 2 môn Văn và Ngoại Ngữ.\n\n    Do vậy b= 3.\n\n     Giả sử a = 2 thì b bé nhất là 3, c bé nhất là 4; do đó tổng số giải bé nhất là:\n\n               3 x 2 + 2 x 3 + 4 = 16 > 15 (loại). Do đó a < 2, nên a = 1.\n\n     Ta có: 3 x 1 + 2 x b + c = 15 suy ra: 2 x b + c = 12.\n\n     Nếu b = 3 thì c = 12 - 2 x 3 = 6 (đúng).\n\n     Nếu b = 4 thì c = 12 - 2 x 4 = 4 (loại vì trái với điều kiện b < c)\n\n     Vậy có 1 bạn đạt 3 giải, 3 bạn đạt 2 giải, 6 bạn đạt 1 giải.\n\n     Đội tuyển đó có số học sinh là: 1 + 3 + 6 = 10 (bạn)."
+ },
+ {
+  "id": 80,
+  "page": 47,
+  "question": "Điền số: Sử dụng các số 3, 5, 8, 10 và các dấu +, - , x để điền vào mỗi\n\nô còn trống ở bảng sau( Chỉ được điền một dấu hoặc một số vào mỗi hàng hoặc mỗi\n\ncột. Điền từ trái sang phải, từ trên xuống dưới):",
+  "solution": "Ta có thể xét các tổng theo từng hàng, từng cột và không khó khăn\n\nlắm sẽ có kết quả sau:\n\n\n\n\n\n                                                                                               45\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 81,
+  "page": 48,
+  "question": "20 Giỏ dưa hấu”Trí và Dũng giúp bố mẹ xếp 65 quả dưa hấu mỗi\n\nquả nặng 1kg, 35 quả dưa hấu mỗi quả nặng 2kg và 15 quả dưa hấu mỗi quả nặng\n\n3kg vào trong 20 giỏ. Mọi người cùng đang làm việc, Trí chạy đến bàn học lấy giấy\n\nbút ra ghi... ghi và Trí la lên: “Có xếp thế nào đi chăng nữa, chúng ta luôn tìm\n\nđược 2 giỏ trong 20 giỏ này có khối lượng bằng nhau”.\n\n     Các bạn hãy chứng tỏ là Trí đã nói đúng.",
+  "solution": "Tổng khối lượng dưa là: 1 x 65 + 2 x 35 + 3 x 15 = 180 (kg).\n\n     Giả sử khối lượng dưa ở mỗi giỏ khác nhau thì tổng khối lượng dưa ở 20 giỏ bé\n\nnhất là: 1 + 2 + 3 + ... + 19 + 20 = 210 (kg).\n\n     Vì 210 kg > 180 kg nên chắc chắn phải có ít nhất 2 giỏ trong 20 giỏ có khối\n\nlượng bằng nhau. Vậy Trí đã nói đúng."
+ },
+ {
+  "id": 82,
+  "page": 48,
+  "question": "Hoàng mua 6 quyển vở, Hùng mua 3 quyển vở. Hai bạn góp số vở\n\ncủa mình với số vở của bạn Sơn, rồi chia đều cho nhau. Sơn tính rằng mình phải\n\ntrả các bạn đúng 800 đồng. Tính giá tiền 1 quyển vở, biết rằng cả ba bạn đều mua\n\ncùng một loại vở.",
+  "solution": "Vì Hoàng và Hùng góp số vở của mình với số vở của Sơn, rồi chia đều cho\n\nnhau, nên tổng số vở của ba bạn là một số chia hết cho 3. Số vở của Hoàng và Hùng\n\nđều chia hết cho 3 nên số vở của Sơn cũng là số chia hết cho 3.\n\n     Số vở của Sơn phải ít hơn 6 vì nếu số vở của Sơn bằng hoặc nhiều hơn số vở\n\ncủa Hoàng (6 quyển) thì sau khi góp vở lại chia đều Sơn sẽ không phải trả thêm 800\n\nđồng. Số vở của Sơn khác 0 (Sơn phải có vở của mình thì mới góp chung với các bạn\n\nđược chứ!), nhỏ hơn 6 và chia hết cho 3 nên Sơn có 3 quyển vở.\n\n     Số vở của mỗi bạn sau khi chia đều là: (6 + 3 + 3) : 3 = 4 (quyển)\n\n    Như vậy Sơn được các bạn đưa thêm: 4 - 3 = 1 (quyển)\n\n     Giá tiền một quyển vở là 800 đồng."
+ },
+ {
+  "id": 83,
+  "page": 48,
+  "question": "Hãy điền các số từ 1 đến 9 vào các ô trống để được các phép tính\n\nđúng\n\n\n                                                                                               46\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Đặt các chữ cái vào các ô trống:\n\n\n\n\n\n     Theo đầu bài ta có các chữ cái khác nhau biểu thị các số khác nhau. Do đó: a ≠\n\n1; c ≠ 1; d ≠ 1; b > 1; e > 1. Vì 9 = 1 x 9 = 3 x 3 nên b ≠ 9 và e ≠ 9; và 7 = 1 x 7 nên b\n\n≠ 7 và e ≠ 7.\n\n    Do đó: b = 6 và e = 8 hoặc b = 8 và e = 6.\n\n     Vì 6 = 2 x 3 và 8 = 2 x 4 nên a = b : c = e : d = 2.\n\n     Trong các ô trống a, b, c, d, e đã có các số 2, 3, 4, 6, 8; do đó chỉ còn các số 1, 5,\n\n7, 9 điền vào các ô trống g, h, i, k.\n\n     * Nếu e = 6 thì g = 7 và h = 1. Do đó a = i - k = 9 - 5 = 42 (loại).\n\n     * Nếu e = 8 thì g = 9 và h = 1. Do đó a = i - k = 7 - 5 = 2 (đúng). Khi đó: b = 6\n\nvà c = 3. Kết quả:\n\n\n\n\n\n                                                                                               47\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 84,
+  "page": 50,
+  "question": "Có 13 tấm bìa, mỗi tấm bìa được ghi một chữ số và xếp theo thứ tự\n\nsau:\n\n\n\n    Không thay đổi thứ tự các tấm bìa, hãy đặt giữa chúng dấu các phép tính +\n\n, - , x và dấu ngoặc nếu cần, sao cho kết quả là 2002.",
+  "solution": "Bài toán có rất nhiều cách đặt dấu phép tính và dấu ngoặc. Ví dụ:\n\n     Cách 1: (123 + 4 x 5) x (6 + 7 - 8 + 9 + 1 - 2 - 3 + 4) = 2002\n\n     Cách 2: (1 x 2 + 3 x 4) x (5 + 6) x [(7 + 8 + 9) - (1 + 2 x 3 + 4)] = 2002\n\n     Cách 3: (1 + 2 + 3 + 4 x 5) x (6 x 7 + 8 + 9 - 1 + 23 - 4) = 2002"
+ },
+ {
+  "id": 85,
+  "page": 50,
+  "question": "Hai bạn Huy và Nam đi mua 18 gói bánh và 12 gói kẹo để đến lớp\n\nliên hoan. Huy đưa cho cô bán hàng 2 tờ 100000 đồng và được trả lại 72000 đồng.\n\nNam nói: “Cô tính sai rồi”. Bạn hãy cho biết Nam nói đúng hay sai? Giải thích tại\n\nsao?",
+  "solution": "Vì số 18 và số 12 đều chia hết cho 3, nên tổng số tiền mua 18 gói bánh và 12 gói\n\nkẹo phải là số chia hết cho 3.\n\n     Vì Huy đưa cho cô bán hàng 2 tờ 100000 đồng và được trả lại 72000 đồng, nên\n\nsố tiền mua 18 gói bánh và 12 gói kẹo là:\n\n                      100000 x 2 - 72000 = 128000 (đồng).\n\n     Vì số 128000 không chia hết cho 3, nên bạn Nam nói “Cô tính sai rồi” là đúng.\n\n\n                                                                                               48\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 86,
+  "page": 51,
+  "question": "Có hai cái đồng hồ cát 4 phút và 7 phút. Có thể dùng hai cái đồng\n\nhồ này để đo thời gian 9 phút được không?",
+  "solution": "Có nhiều cách để đo được 9 phút: Bạn có thể cho cả 2 cái đồng hồ cát cùng chảy\n\nmột lúc và chảy hết cát 3 lần. Khi đồng hồ 4 phút chảy hết cát 3 lần (4 x 3 = 12(phút))\n\nthì bạn bắt đầu tính thời gian, từ lúc đó đến khi đồng hồ 7 phút chảy hết cát 3 lần thì\n\nvừa đúng được 9 phút (7 x 3 - 12 = 9(phút)); hoặc cho cả hai đồng hồ cùng chảy một\n\nlúc, đồng hồ 7 phút chảy hết cát một lần (7 phút), đồng hồ 4 phút chảy hết cát 4 lần (16\n\nphút). Khi đồng hồ 7 phút chảy hết cát ta bắt đầu tính thời gian, từ lúc đó đến lúc đồng\n\nhồ 4 phút chảy hết cát 4 lần là vừa đúng 9 phút (16 - 7 = 9 (phút)); ..."
+ },
+ {
+  "id": 87,
+  "page": 51,
+  "question": "Vui xuân mới, các bạn cùng làm phép toán sau, nhớ rằng các chữ\n\ncái khác nhau cần thay bằng các chữ số khác nhau, các chữ cái giống nhau thay\n\nbằng các chữ số giống nhau.\n\n                  NHAM + NGO = 2002",
+  "solution": "- Vì A≠G mà chữ số hàng chục của tổng là 0 nên phép cộng có nhớ 1 sang hàng\n\ntrăm nên ở hàng trăm: H + N + 1 (nhớ) = 10; nhớ 1 sang hàng nghìn. Do đó H + N =\n\n10 - 1 = 9.\n\n        - Phép cộng ở hàng nghìn: N + 1 (nhớ) = 2 nên N = 2 - 1 = 1.\n\n     Thay N = 1 ta có: H + 1 = 9 nên H = 9 - 1 = 8\n\n        - Phép cộng ở hàng đơn vị: Có 2 trường hợp xảy ra:\n\n     * Trường hợp 1: Phép cộng ở hàng đơn vị không nhớ sang hàng chục.\n\n     Khi đó: M + O = 0 và A + G = 10.\n\n     Ta có bảng: (Lưu ý 4 chữ M, O, A, G phải khác nhau và khác 1; 8)\n\n\n\n\n\n     * Trường hợp 2: Phép cộng ở hàng đơn vị có nhớ 1 sang hàng chục.\n\n     Khi đó: M + O = 12 và A + G = 9. Ta có bảng:\n\n\n                                                                                               49\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n\n     Vậy bài toán có 24 đáp số như trên."
+ },
+ {
+  "id": 88,
+  "page": 52,
+  "question": "Hãy xếp 8 quân đôminô vào một hình vuông 4x4 sao cho tổng số\n\nchấm trên các hàng ngang, dọc, chéo của hình vuông đều bằng 11.",
+  "solution": "Có ba cách giải cơ bản sau:\n\n\n\n\n\n    Từ ba cách giải cơ bản này có thể tạo nên nhiều phương án khác, chẳng hạn:"
+ },
+ {
+  "id": 89,
+  "page": 52,
+  "question": "Sử dụng các con số trong mỗi biển số xe ô tô 39A 0452, 38B 0088,\n\n52N 8233 cùng các dấu +, -, x, : và dấu ngoặc ( ), [ ] để làm thành một phép tính\n\nđúng.",
+  "solution": "* Biển số 39A 0452. Có một số cách:\n\n\n                                                                                               50\n                               500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                            (4 x 2 - 5 + 0) x 3 = 9\n\n                        5 x 2 - 4 + 3 + 0 = 9\n\n                          45 : 9 - 3 - 2 = 0\n\n                              (9 + 2 - 3) x 5 = 40\n\n                            (4 + 5) : 9 + 2 + 0 = 3\n\n                        9 : 3 - ( 5 - 4 + 2) = 0\n\n                        3 - 9 : (4 + 5) - 0 = 2\n\n                        9 : (4 + 5) + 2 + 0 = 3\n\n                             (9 + 5) : 2 - 4 + 0 = 3\n\n                        9 + 3 : (5 - 2) + 0 = 4\n\n                         5 + 2 - 9 : 3 - 0 = 4\n\n                             (9 : 3 + 0) + 4 - 2 = 5\n\n                          (9 + 3) : 4 + 0 + 2 = 5 . . . .\n\n* Biển số 38B 0088. Có nhiều lời giải dựa vào tính chất “nhân một số với số 0”\n\n                          38 x 88 x 0 = 0\n\nhoặc tính chất “chia số 0 cho một số khác 0”\n\n                          0 : (38 + 88) = 0\n\nMột vài cách khác:        (9 - 8) + 0 - 8 : 8 = 0\n\n                      8 : 8 + 8 + 0 + 0 = 9 . . . .\n\n* Biển số 52N 8233. Có một số cách:\n\n                        5 x 2 - 8 + 3 - 3 = 2\n\n                        8 : (5 x 2 - 3 - 3) = 2\n\n                             [(23 - 3) : 5] x 2 = 8\n\n                            (5 + 2 + 2) - (3 : 3) = 8\n\n                            (8 : 2 - 3) x (3 + 2) = 5\n\n                              [(8 + 2) x 3 : 3] : 2 = 5\n\n                            (5 x 2 + 3 + 3) : 2 = 8\n\n                      3 x 3 - 5 + 2 + 2 = 8 . . . .\n\n\n\n\n\n                                                                                        51\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 90,
+  "page": 54,
+  "question": "Một chiếc đồng hồ đang hoạt động bình thường, hiện tại kim giờ và\n\nkim phút đang không trùng nhau. Hỏi sau đúng 24 giờ (tức 1 ngày đêm), hai kim\n\nđó trùng nhau bao nhiêu lần? Hãy lập luận để làm đúng sáng tỏ kết qu đó.",
+  "solution": "Với một chiếc đồng hồ đang hoạt động bình thường, cứ mỗi giờ trôi qua thì kim\n\nphút quay được một vòng, còn kim giờ quay được 1/12 vòng.\n\n     Hiệu vận tốc của kim phút và kim giờ là: 1 - 1/12 = 11/12 (vòng/giờ)\n\n     Thời gian để hai kim trùng nhau một lần là: 1 : 11/12 = 12/11 (giờ)\n\n     Vậy sau 24 giờ hai kim sẽ trùng nhau số lần là : 24 : 12/11 = 22 (lần)."
+ },
+ {
+  "id": 91,
+  "page": 54,
+  "question": "Có ba người dùng chung một két tiền. Hỏi phải làm cho cái két ít\n\nnhất bao nhiêu ổ khoá và bao nhiêu chìa để két chỉ mở được nếu có mặt ít nhất\n\nhai người?",
+  "solution": "Vì két chỉ mở được nếu có mặt ít nhất hai người, nên số ổ khoá phải lớn hơn\n\nhoặc bằng 2.\n\n       a) Làm 2 ổ khoá.\n\n     + Nếu làm 3 chìa thì sẽ có hai người có cùng một loại chìa; hai người này không\n\nmở được két.\n\n     + Nếu làm nhiều hơn 3 chìa thì ít nhất có một người cầm 2 chìa khác loại; chỉ\n\ncần một người này đã mở được két.\n\n     Vậy không thể làm 2 ổ khoá.\n\n      b) Làm 3 ổ khoá\n\n     + Nếu làm 3 chìa thì cần phải có đủ ba người mới mở được két.\n\n     + Nếu làm 4 chìa hoặc 5 chìa thì ít nhất có hai người không mở được két.\n\n     + Nếu làm 6 chìa (mỗi khoá 2 chìa) thì mỗi người cầm hai chìa khác nhau thì\n\nchỉ cần hai người bất kỳ là mở được két.\n\n     Vậy ít nhất phải làm 3 ổ khoá và mỗi ổ khoá làm 2 chìa."
+ },
+ {
+  "id": 92,
+  "page": 54,
+  "question": "Có 4 tấm gỗ dài và 4 tấm gỗ hình cung tròn. Nếu sắp xếp như hình\n\nbên thì được 4 chuồng nhốt 4 chú thỏ, nhưng 1 chú lại chưa có chuồng. Bạn hãy\n\nxếp lại các tấm gỗ để có đủ 5 chuồng cho mỗi chú thỏ có một chuồng riêng.\n\n\n\n\n                                                                                               52\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Bài toán có nhiều cách xếp. Xin nêu ra ba cách xếp như sau:"
+ },
+ {
+  "id": 93,
+  "page": 55,
+  "question": "Một phân xưởng có 25 người. Hỏi rằng trong phân xưởng đó có thể\n\ncó 20 người ít hơn 30 tuổi và 15 người nhiều hơn 20 tuổi được không?",
+  "solution": "Vì chỉ có 25 người, mà trong đó có 20 ít hơn 30 tuổi và 15 người nhiều hơn 25\n\ntuổi, nên số người được điểm 2 lần là:\n\n      (20 + 15) - 25 = 10 (người)\n\n     Đây chính là số người có độ tuổi ít hơn 30 tuổi và nhiều hơn 20 tuổi (từ 21 tuổi\n\nđến 29 tuổi).\n\n\n\n\n\n     Số người từ 30 tuổi trở lên là: 25 - 20 = 5 (người)\n\n     Số người từ 20 tuổi trở xuống là: 25 - 15 = 10 (người)\n\n     Số người ít hơn 30 tuổi là: 10 + 10 = 20 (người)\n\n     Số người nhiều hơn 20 tuổi là: 10 + 5 = 15 (người)\n\n     Vậy có thể có 20 người dưới 30 tuổi và 15 người trên 20 tuổi; trong đó từ 21\n\nđến 29 tuổi ít nhất có hai người cùng độ tuổi."
+ },
+ {
+  "id": 94,
+  "page": 55,
+  "question": "Tìm 4 số tự nhiên liên tiếp có tích là 3024",
+  "solution": "53\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Giả sử cả 4 số đều là 10 thì tích là 10 x 10 x 10 x 10 = 10000 mà 10000 > 3024\n\nnên cả 4 số tự nhiên liên tiếp đó phải bé hơn 10.\n\n     Vì 3024 có tận cùng là 4 nên cả 4 số phải tìm không thể có tận cùng là 5. Do đó\n\ncả 4 số phải hoặc cùng bé hơn 5, hoặc cùng lớn hơn 5.\n\n     Nếu 4 số phải tìm là 1; 2; 3; 4 thì: 1 x 2 x 3 x 4 = 24 < 3024 (loại)\n\n     Nếu 4 số phải tìm là 6; 7; 8; 9 thì: 6 x 7 x 8 x 9 = 3024 (đúng)\n\n     Vậy 4 số phải tìm là 6; 7; 8; 9."
+ },
+ {
+  "id": 95,
+  "page": 56,
+  "question": "Có 3 loại que với số lượng và các độ dài như sau:\n\n        - 16 que có độ dài 1 cm\n\n        - 20 que có độ dài 2 cm\n\n        - 25 que có độ dài 3 cm\n\n     Hỏi có thể xếp tất cả các que đó thành một hình chữ nhật được không?",
+  "solution": "Một hình chữ nhật có chiều dài (a) và chiều rộng (b) đều là số tự nhiên (cùng\n\nmột đơn vị đo) thì chu vi (P) của hình đó phải là số chẵn: P = (a + b) x 2\n\n     Tổng độ dài của tất cả các que là: 1 x 16 + 2 x 20 + 3 x 25 = 131 (cm)\n\n     Vì 131 là số lẻ nên không thể xếp tất cả các que đó thành một hình chữ nhật\n\nđược."
+ },
+ {
+  "id": 96,
+  "page": 56,
+  "question": "Hãy phát hiện ra mối liên hệ giữa các số rồi sử dụng mối liên hệ đó\n\nđể điền số hợp lý vào (?)",
+  "solution": "Để cho gọn, ta ký hiệu các số trên những ô tròn theo bảng sau:\n\n\n\n\n\n                                                                                               54\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n     Lấy A chia cho K: 72 : 9 =\n\n     Lấy G chia cho C: 8 : 1 =\n\n     Lấy B chia cho H: 16 : 2 =\n\n     Lấy E chia cho D: 24 : 3 = đều cho cùng một kết quả ở ô Đ. Vậy (?) là 8."
+ },
+ {
+  "id": 97,
+  "page": 57,
+  "question": "Cô giáo yêu cầu: “Các con lấy 6 điểm trên một đường tròn, nối các\n\nđiểm đó bởi các đoạn thẳng tô bởi mực xanh hoặc mực đỏ”.\n\n    Bạn lớp trưởng tập hợp các hình vẽ lại và xem, bạn thốt lên: “Bạn nào\n\ncũng vẽ được 1 tam giác mà 3 cạnh cùng màu mực”! Bạn hãy thử làm lại xem. Ai\n\ncó thể lập luận để làm rõ tính chất này?",
+  "solution": "Ta gọi 6 điểm nằm trên đường tròn là A1, A2, A3, A4, A5, A6. Bằng bút xanh và\n\nđỏ ta nối A1 với 5 điểm còn lại ta được 5 đoạn thẳng có hai màu xanh hoặc đỏ.\n\n\n\n\n\n     Theo nguyên lý Điríchlê có ít nhất 3 đoạn thẳng cùng màu. Không làm mất tính\n\ntổng quát, ta nối 3 đoạn A1A2, A1A3, A1A4 bằng bút màu đỏ. Ta nối tiếp A2A4 và A2A3.\n\nĐể tam giác A1A2A3 và tam giác A1A2A4 có 3 cạnh không cùng màu thì A2A4 và A2A3\n\nphải tô màu xanh. Bây giờ ta tiếp tục nối A3A4, ta thấy A3A4 được tô bằng bất kỳ màu\n\nxanh hoặc đỏ thì ta cũng được ít nhất một tam giác có 3 cạnh cùng màu (hoặc A1A3A4\n\ncó 3 cạnh đỏ hoặc A2A3A4 có 3 cạnh màu xanh)."
+ },
+ {
+  "id": 98,
+  "page": 57,
+  "question": "Thi bắn súng\n\n    Hôm nay Dũng đi thi bắn súng. Dũng bắn giỏi lắm, Dũng đã bắn hơn 11\n\nviên, viên nào cũng trúng bia và đều trúng các vòng 8;9;10 điểm. Kết thúc cuộc\n\nthi, Dũng được 100 điểm. Dũng vui lắm. Còn các bạn có biết Dũng đã bắn bao\n\nnhiêu viên và kết quả bắn vào các vòng ra sao không?\n                                                                                               55\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Số viên đạn Dũng đã bắn phải ít hơn 13 viên (vì nếu Dũng bắn 13 viên thì Dũng\n\nđược số điểm ít nhất là: 8 x 11 + 9 x 1 + 10 x 1 = 107 (điểm) > 100 điểm, điều này vô\n\nlý).\n\n     Theo đề bài Dũng đã bắn hơn 11 viên nên số viên đạn Dũng đã bắn là 12 viên.\n\n     Mặt khác 12 viên đều trúng vào các vòng 8, 9, 10 điểm nên ít nhất có 10 viên\n\nvào vòng 8 điểm, 1 viên vào vòng 9 điểm, 1 viên vào vòng 10 điểm.\n\n    Do đó số điểm Dũng bắn được ít nhất là: 8 x 10 + 9 x 1 + 10 x 1 = 99 (điểm)\n\n     Số điểm hụt đi so với thực tế là: 100 - 99 = 1 (điểm)\n\n    Như vậy sẽ có 1 viên không bắn vào vòng 8 điểm mà bắn vào vòng 9 điểm;\n\nhoặc có 1 viên không bắn vào vòng 9 điểm mà bắn vào vòng 10 điểm.\n\n     Nếu có 1 viên Dũng không bắn vào vòng 9 điểm mà bắn vào vòng 10 điểm thì\n\ntổng cộng sẽ có 10 viên vào vòng 8 điểm và 2 viên vào vòng 10 điểm (loại vì không có\n\nviên nào bắn vào vòng 9 điểm).\n\n     Vậy sẽ có 1 viên không bắn vào vòng 8 điểm mà bắn vào vòng 9 điểm, tức là có\n\n9 viên vào vòng 8 điểm, 2 viên vào vòng 9 điểm và 1 viên vào vòng 10 điểm."
+ },
+ {
+  "id": 99,
+  "page": 58,
+  "question": "Ai xem ca nhạc?\n\n    Một gia đình có năm người: bà nội, bố, mẹ và hai bạn Chi, Bảo. Một hôm\n\ngia đình được tặng 2 vé mời xem ca nhạc. Năm ý kiến của năm người như sau:\n\n      a) “Bà nội và mẹ đi”\n\n      b) “Bố và mẹ đi”\n\n       c) “Bố và bà nội đi”\n\n      d) “Bà nội và Chi đi”\n\n       e) “Bố và Bảo đi”\n\n     Sau cùng, mọi người theo ý kiến của bà nội và như vậy trong ý kiến của\n\nmọi người khác đều có một phần đúng.\n\n    Bà nội đã nói câu nào?",
+  "solution": "Một bài toán lôgíc cơ bản và khó, sau đây là lời giải.\n\n\n\n\n                                                                                               56\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Ta ký hiệu theo thứ tự “đi xem” ca nhạc: n (Bà nội), m (mẹ), b (Bố), C (Chi) và\n\nB (Bảo) và năm người trên khi họ “không đi” là n, m, b, C và B.\n\n    Như vậy theo ý kiến của năm người là:\n\n       a) n và m\n\n      b) b và m\n\n       c) b và n\n\n      d) n và C\n\n       e) b và B.\n\n     Mỗi trong năm ý trên đều có một phần đúng và một phần sai (trừ ý của bà!).\n\n     Câu mà bà nội nói là đúng với cả năm ý trên.\n\n        - Nếu chọn câu a) thì không có e tức b và B.\n\n        - Nếu chọn câu b) thì không có d tức n và C.\n\n        - Nếu chọn câu c) thì các ý kiến khác có một phần đúng. Bà nội đã nói câu c)"
+ },
+ {
+  "id": 100,
+  "page": 59,
+  "question": "Chơi bốc diêm\n\n     Trên mặt bàn có 18 que diêm. Hai người tham gia cuộc chơi: Mỗi người lần\n\nlượt đến phiên mình lấy ra một số que diêm. Mỗi lần, mỗi người lấy ra không quá\n\n4 que. Người nào lấy được số que cuối cùng thì người đó thắng. Nếu bạn được\n\nbốc trước, bạn có chắc chắn thắng được không?",
+  "solution": "Giả sử rằng A và B tham gia cuộc chơi mà A lấy diêm trước. Để chắc thắng thì\n\ntrước lần cuối cùng A phải để lại 5 que diêm, trước đó A phải để lại 10 que diêm và\n\nlần bốc đầu tiên A để lại 15 que diêm, khi đó dù B có bốc bao nhiêu que thì vẫn còn lại\n\nsố que để A chỉ cần bốc một lần là hết.Muốn vậy thì lần trước đó A phải để lại 10 que\n\ndiêm , khi đó dù B bốc bao nhiêu que vẫn còn lại số que mà A có thể bốc để còn lại 5\n\nque . Tương tự như thế thì lần bốc đầu tiên A phải để lại 15 que diêm . Với \" chiến\n\nlược\" này bao giờ A cũng là người thắng cuộc."
+ },
+ {
+  "id": 101,
+  "page": 59,
+  "question": "Tô màu Hình bên gồm 6 đỉnh A, B, C, D, E, F và các cạnh nối một\n\nsố đỉnh với nhau. Ta tô màu các đỉnh sao cho hai đỉnh được nối bởi một cạnh\n\n\n\n\n                                                                                               57\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nphải được tô bởi hai màu khác nhau. Hỏi phải cần ít nhất là bao nhiêu màu để\n\nlàm việc đó?",
+  "solution": "Tất cả các đỉnh A, B, C, D, E đều nối với đỉnh F nên đỉnh F phải tô màu khác\n\nvới các đỉnh còn lại. Với 5 đỉnh còn lại thì A và C tô cùng một màu. B và D tô cùng\n\nmột màu, E tô riêng một màu, như vậy cần ít nhất 3 màu để tô 5 đỉnh sao cho 2 đỉnh\n\nđược nối bởi một cạnh được tô bởi 2 màu khác nhau. Vậy cần ít nhất 4 màu để tô 6\n\nđỉnh của hình theo yêu cầu của đề bài."
+ },
+ {
+  "id": 102,
+  "page": 60,
+  "question": "Điền số trên đường tròn Điền 6 số chẵn từ 2 đến 12 vào các chấm\n\ntrên 3 vòng tròn sao cho tổng 3 số nằm trên mỗi vòng tròn đều bằng 18.",
+  "solution": "Sáu số chẵn đó là: 2, 4, 6, 8, 10, 12.\n\n     Ta có: 18 = 2 + 4 + 12\n\n          18 = 2 + 6 + 10\n\n          18 = 4 + 6 + 8\n\n     Trên hình vẽ ta thấy cứ hai đường tròn lại có một điểm chung. Như vậy số nào\n\nđiền vào điểm chung đó sẽ thuộc hai tổng đã cho. Ta thấy số 2, số 4, số 6 đều lặp lại\n\nhai lần nên ba số đó được điền vào ba điểm chung. Các số đã cho được điền vào hình\n\nvẽ như sau:\n\n\n\n\n\n                                                                                               58\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 103,
+  "page": 61,
+  "question": "Tìm hai số biết rằng tổng của chúng gấp 5 lần hiệu của chúng và\n\ntích của chúng gấp 4008 lần hiệu của chúng.",
+  "solution": "Coi hiệu của hai số là 1 phần thì tổng của chúng là 5 phần. Do đó số lớn là (5 +\n\n1) : 2 = 3 (phần). Số bé là : 3 - 1 = 2 (phần). Tích của hai số là : 2 x 3 = 6 (phần), mà\n\ntích hai số là 4008 nên giá trị một phần là : 4008 : 6 = 668. Số bé là : 668 x 2 = 1336 ;\n\nsố lớn là : 668 x 3 = 2004."
+ },
+ {
+  "id": 104,
+  "page": 61,
+  "question": "Trong kho của một đơn vị dân công còn lại đúng một bao gạo\n\nchứa 39 kg gạo. Bác cấp dưỡng cần lấy ra 11/13 số gạo đó. Hỏi chỉ với một chiếc\n\ncân loại cân đĩa và một quả cân 1 kg, bác cấp dưỡng phải làm thế nào để chỉ sau 3\n\nlần cân lấy ra đủ số gạo cần dùng.",
+  "solution": "Số gạo bác cấp dưỡng cần lấy ra là : 39 x 11/13 = 33 (kg)\n\n     Số gạo còn lại sau khi bác cấp dưỡng lấy là : 39 - 33 = 6 (kg)\n\n     Cách thực hiện cân như sau :\n\n     Lần 1 : Đặt quả cân lên một đĩa cân, đổ gạo vào đĩa cân bên kia đến khi cân\n\nthăng bằng, được 1 kg gạo.\n\n     Lần 2 : Đặt quả cân sang đĩa có 1 kg gạo vừa cân được rồi đổ gạo vào đĩa cân\n\ntrống đến khi cân thăng bằng, được 2 kg gạo.\n\n     Lần 3 : Đặt cả 3 kg gạo cân được ở hai lần trên vào một đĩa cân, đĩa cân kia đổ\n\ngạo vào cho đến khi cân thăng bằng, được mỗi bên 3 kg gạo.\n\n    Như vậy số gạo có được sau ba lần cân là 6 kg. Số gạo còn lại trong bao chính\n\nlà số gạo mà bác cấp dưỡng cần dùng.\n\n\n\n\n\n                                                                                               59\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 105,
+  "page": 62,
+  "question": "Lan nói một số có 4 chữ số bất kì sẽ bằng 1/5 số viết theo thứ tự\n\nngược lại. Đố bạn biết Lan nói đúng hay sai ?",
+  "solution": "Gọi số đó là      (a > 0 ; a, b, c, d < 10). Số viết theo thứ tự ngược lại là\n\n     Theo đầu bài ta có :\n\n\n\n\n     Nhưng d x 5 có tận cùng là 0 hoặc 5 (khác 1) nên không tìm được giá trị của a\n\nhoặc d. Vậy bạn Lan nói sai."
+ },
+ {
+  "id": 106,
+  "page": 62,
+  "question": "Bác Phong có một mảnh đất hình chữ nhật, chiều rộng mảnh đất\n\ndài 8 m. Bác ngăn mảnh đó thành hai phần, một phần để làm nhà, phần còn lại\n\nđể làm vườn. Diện tích phần đất làm nhà bằng 1/2 diện tích mảnh đất còn chu vi\n\nphần đất làm nhà bằng 2/3 chu vi mảnh đất. Tính diện tích mảnh đất của bác.",
+  "solution": "Có hai cách chia mảnh đất hình chữ nhật thành hai phần có diện tích bằng nhau.\n\n     Cách chia 1 : như hình 1.\n\n\n\n\n\n                                   Hình 1\n\n     Gọi mảnh đất hình chữ nhật là ABCD và phần đất làm nhà là AMND.\n\n     Vì diện tích phần đất làm nhà bằng nửa diện tích mảnh đất nên M, N lần lượt là\n\nđiểm chính giữa của AB và CD. Do đó AM = MB = CN = ND.\n\n     Chu vi của phần đất làm nhà là :\n\n    (AM + AD) x 2 = (AM + 8) x 2 = = AM x 2 + 8 x 2 = AB + 16.\n\n     Chu vi của mảnh đất là :\n\n          (AB + AD) 2 = (AB + 8) x 2 = = AB x 2 + 8 x 2 = AB x 2 + 16.\n\n     Hiệu chu vi mảnh đất và chu vi phần đất làm nhà là :\n\n                                                                                               60\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n                     (AB x 2 + 16) - (AB + 16) = AB.\n\n     Hiệu này so với chu vi mảnh đất thì chiếm : 1 - 2/3 = 1/3 (chu vi mảnh đất)\n\n    Do đó ta có : AB x 3 = AB x 2 + 16\n\n           AB x 3 - AB x 2 = 16\n\n           AB x (3 - 2) = 16\n\n           AB = 16 (m).\n     Vậy diện tích mảnh đất là : 16 x 8 = 128 (m2)\n\n     Cách chia 2 : như hình 2.\n\n\n\n\n\n                                   Hình 2\n\n     Lập luận tương tự trường hợp trên, ta tìm được AB = 4 m. Điều này vô lí vì AB\n\nlà chiều dài của mảnh đất hình chữ nhật, đương nhiên phải lớn hơn 8 m. Do đó trường\n\nhợp này bị loại."
+ },
+ {
+  "id": 107,
+  "page": 63,
+  "question": "Cho một phép chia hai số tự nhiên có dư. Tổng các số : số bị chia,\n\nsố chia, số thương và số dư là 769. Số thương là 15 và số dư là số dư lớn nhất có\n\nthể có trong phép chia đó. Hãy tìm số bị chia và số chia trong phép chia.",
+  "solution": "Số dư trong phép chia là số dư lớn nhất nên kém số chia 1 đơn vị.\n\n     Ta có sơ đồ sau:\n\n\n\n\n     Theo sơ đồ, nếu gọi số chia là 1 phần, thêm 1 đơn vị vào số dư và số bị chia thì\n\ntổng số phần của số chia, số bị chia và số dư (mới) gồm : 15 + 1 + 1 + 1 = 18 (phần)\n\nnhư vậy. Khi đó tổng của số chia, số bị chia và số dư (mới) là : 769 - 15 + 1 + 1 = 756.\n\n     Số chia là : 756 : 18 = 42\n\n     Số dư là : 42 - 1 = 41\n\n     Số bị chia là : 42 x 15 + 41 = 671\n\n\n                                                                                               61\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 108,
+  "page": 64,
+  "question": "Số táo của An, Bình và Chi là như nhau. An cho đi 17 quả, Bình\n\ncho đi 19 quả thì lúc này số táo của Chi gấp 5 lần tổng số táo còn lại của An và\n\nBình. Hỏi lúc đầu mỗi bạn có bao nhiêu quả táo ?",
+  "solution": "Nếu coi số táo của Chi gồm 5 phần thì tổng số táo của An và Bình là 10 phần.\n\nSố táo mà An và Bình đã cho đi là : 17 + 19 = 36 (quả)\n\n     Vì số táo của Chi gấp 5 lần tổng số táo còn lại của An và Bình nên số táo còn lại\n\ncủa hai bạn gồm 1 phần. Như vậy An và Bình đã cho đi số phần là : 10 - 1 = 9 (phần)\n\n     Vậy số táo của Chi là : (36 : 9) x 5 = 20 (quả)\n\n     Vì ba bạn có số táo bằng nhau nên mỗi bạn lúc đầu có 20 quả."
+ },
+ {
+  "id": 109,
+  "page": 64,
+  "question": "Con số nào trong các số 2, 3, 4, 5 cần thay vào dấu chấm hỏi (?) để\n\nhợp lôgic ?",
+  "solution": "Gọi số thay vào hình tròn là a, số thay vào tam giác là b và số thay vào hình\n\nvuông là c, ta có : a + 3 x b = 22. Vì 3 x b chia hết cho 3 ; 22 chia cho 3 dư 1 nên a\n\nchia cho 3 dư 1 (*). Ta lại có 2 x a + 2 x c = 10, c nhỏ nhất là 2 nên a lớn nhất là (10 -\n\n2 x 2) : 2 = 3 (**). Từ (*) và (**) ta có a = 1. Do đó 1 + 3 x b = 22 ; b = (22 - 1) : 3 = 7\n\n; c = (10 - 2 x 1) : 2 = 4.\n\n     Vậy số cần thay vào dấu chấm hỏi để hợp lôgic là số 4."
+ },
+ {
+  "id": 110,
+  "page": 64,
+  "question": "Hãy dùng tất cả các chữ số, mỗi chữ số một lần để viết năm số tự\n\nnhiên, trong đó có một số lần lượt bằng 1/2 ; 1/3 ; 1/4 và 1/5 các số còn lại.",
+  "solution": "Gọi 5 số tự nhiên xếp theo thứ tự từ bé đến lớn là A ; B ; C ; D ; E.\n\n\n                                                                                               62\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Nếu A có 1 chữ số thì E không vượt quá 9 x 5 = 45. Như thế có 4 số có không\n\nquá 2 chữ số nên mới chỉ dùng không quá 9 chữ số (2 x 4 + 1 = 9). Vậy A có nhiều\n\nhơn 1 chữ số. Nếu E có 3 chữ số thì A có ít nhất 2 chữ số (vì 100 : 5 = 20). Như vậy có\n\n4 số có 2 chữ số và 1 số có 3 chữ số nên phải dùng nhiều hơn 10 chữ số (2 x 4 + 3 =\n\n11). Vậy cả 5 số phải là các số có 2 chữ số và E lớn hơn 45 chia hết cho 5. Vậy E có\n\nthể là : 95 ; 90 ; 85 ; 80 ; 75 ; 70 ; 65 ; 60 ; 55 ; 50. Ta có bảng lựa chọn sau :\n\n\n\n\n\n     Số thứ nhất là 18, số thứ hai là 36, số thứ ba là 54, số thứ tư là 72 và số thứ 5 là\n\n90."
+ },
+ {
+  "id": 111,
+  "page": 65,
+  "question": "Bạn hãy xóa những chữ số nào đó để được phép tính đúng : 151 x\n\n375 = 450.",
+  "solution": "Hai thừa số ở vế trái đẳng thức chỉ có các chữ số lẻ nên dù xóa các chữ số như\n\nthế nào thì kết quả phép nhân cũng là một số lẻ. Vậy vế phải chỉ có thể là 45 hoặc 5.\n\n     Trường hợp 1 : Kết quả phép nhân là 45 ta có một cách xóa :\n\n\n\n\n     Trường hợp 2 : Kết quả phép nhân là 5 ta có hai cách xóa :\n\n\n\n\n\n                                                                                               63\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 112,
+  "page": 66,
+  "question": "Có hai tấm bìa hình vuông mà số đo các cạnh là số tự nhiên chia\n\nhết cho 3. Đặt tấm bìa hình vuông nhỏ lên tấm bìa hình vuông lớn thì diện tích\nphần tấm bìa không bị chồng lên là 63 cm2. Tìm cạnh của mỗi tấm bìa đó.",
+  "solution": "Ta đặt tấm bìa hình vuông nhỏ lên tấm bìa hình vuông lớn sao cho cạnh hình\n\nvuông nhỏ trùng khít với cạnh hình vuông lớn. Gọi hai hình vuông là ABCD và\n\nAEGH. Diện tích phần tấm bìa không bị chồng lên bao gồm hai hình chữ nhật BCKE\n\nvà DKGH. Hai hình chữ nhật này có BE = DH (chính là hiệu số đo các cạnh của hai\n\nhình vuông). Chuyển hình chữ nhật BCKE xuống bên cạnh hình chữ nhật DKGH ta\nđược hình chữ nhật GKMN. Khi đó ta có diện tích hình chữ nhật HDMN là 63 cm2. Ta\n\nthấy hình chữ nhật HDMN có chiều dài và chiều rộng chính là tổng và hiệu số đo hai\n\ncạnh hình vuông. Vì hai hình vuông đều có số đo các cạnh là số tự nhiên chia hết cho\n\n3, nên tổng và hiệu số đo hai cạnh hình vuông cũng phải là số chia hết cho 3. Do đó\n\nchiều dài và chiều rộng của hình chữ nhật HDMN đều là số chia hết cho 3.\n\n     Vì 63 = 1 x 63 = 3 x 21 = 7 x 9 nên chiều dài và chiều rộng của hình chữ nhật\n\nHDMN phải là 21 cm và 3 cm.\n\n     Vậy độ dài cạnh của tấm bìa hình vuông nhỏ là : (21 - 3) : 2 = 9 (cm)\n\n    Độ dài cạnh của tấm bìa hình vuông lớn là : 9 + 3 = 12 (cm)"
+ },
+ {
+  "id": 113,
+  "page": 66,
+  "question": "So sánh M và N biết :",
+  "solution": "64\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 114,
+  "page": 67,
+  "question": "Một bảng ô vuông gồm 3 dòng và 8 cột như hình vẽ. Trên mỗi\n\ndòng ta điền các số tự nhiên liên tiếp từ 1 đến 8 vào mỗi ô theo thứ tự tùy ý (mỗi ô\n\nmột số và mỗi số chỉ điền một lần) sao cho tổng các số ở 8 cột đều bằng nhau. Bạn\n\nNhi cho rằng có thể làm được còn bạn Tín khẳng định không điền được. Hỏi ai\n\nđúng, ai sai ?",
+  "solution": "Giả sử có thể điền được theo yêu cầu bài toán (Bạn Nhi nói đúng).\n\n     Tổng các số tự nhiên liên tiếp từ 1 đến 8 là : 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36.\n\n     Mỗi dòng điền các số tự nhiên liên tiếp từ 1 đến 8 nên tổng các số trên 3 dòng\n\ntrong bảng ô vuông đó là : 36 x 3 = 108. Vì tổng các số ở 8 cột đều bằng nhau nên\n\ntổng tất cả các số trong bảng ô vuông phải là một số chia hết cho 8. Nhưng 108 không\n\nchia hết cho 8 nên điều giả sử ở trên là sai tức là bạn Nhi nói sai và bạn Tín nói đúng."
+ },
+ {
+  "id": 115,
+  "page": 67,
+  "question": "Nếu đếm các chữ số ghi tất cả các ngày trong năm 2004 trên tờ\n\nlịch treo tường thì sẽ được kết quả là bao nhiêu ?",
+  "solution": "Năm 2004 là năm nhuận có 366 ngày.\n\n     Một năm có 12 tháng, mỗi tháng có 9 ngày từ mùng 1 đến mùng 9 là những\n\nngày được viết bằng các số có 1 chữ số. Như vậy số ngày được viết bằng số có 1 chữ\n\nsố là : 9 x 12 = 108 (ngày).\n\n     Số ngày còn lại trong năm được viết bằng số có 2 chữ số là :\n\n                                                                                               65\n- 108 = 258 (ngày).\n\n     Vậy đếm các chữ số ghi tất cả các ngày của năm 2004 trên tờ lịch thì ta được :\n\n                        1 x 108 + 2 x 258 = 624 (chữ số)."
+ },
+ {
+  "id": 116,
+  "page": 68,
+  "question": "Cho :\n\n\n                                         Hãy so sánh S và 1/2.",
+  "solution": ""
+ },
+ {
+  "id": 117,
+  "page": 68,
+  "question": "Cho một số tự nhiên, nếu viết thêm một chữ số vào bên phải số đó\n\nta được số mới hơn số đã cho đúng 2004 đơn vị. Tìm số đã cho và chữ số viết\n\nthêm.",
+  "solution": "Cách 1 : Khi viết thêm một chữ số nào đó vào bên phải một số tự nhiên đã cho\n\nta được số mới bằng 10 lần số tự nhiên đó cộng thêm chính chữ số viết thêm. Gọi chữ\n\nsố viết thêm là a, ta có sơ đồ :\n\n\n\n\n\n     9 lần số đã cho là : 2004 - a.\n\n     Số đã cho là : (2004 - a) : 9.\n\n     Vì số đã cho là số tự nhiên nên 2004 - a phải chia hết cho 9, số 2004 chia 9 dư 6\n\nnên a chia cho 9 phải dư 6, mà a là chữ số nên a = 6. Số tự nhiên đã cho là (2004 - 6) :\n\n9 = 222.\n\n     Cách 2 : Gọi số tự nhiên đã cho là A chữ số viết thêm là x thì số mới là     .\n\n     Ta có    - A = 2004\n\n                                                                                               66\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    A x 10 + x - A = 2004 (phân tích số)\n\n    A x 10 - A + x = 2004\n\n    A x (10 - 1) + x = 2004 (một số nhân với một tổng)\n\n    A x 9 + x = 2004\n\n     Vì A x 9 chia hết cho 9 ; 2004 chia 9 dư 6 nên x chia cho 9 phải dư 6. Vì x là\n\nchữ số nên x = 6. Ta có :\n\n    A x 9 + 6 = 2004\n\n    A x 9 = 2004 - 6\n\n    A x 9 = 1998\n\n    A = 1998 : 9\n\n    A = 222.\n\n     Vậy số tự nhiên đã cho là 222 ; chữ số viết thêm là 6."
+ },
+ {
+  "id": 118,
+  "page": 69,
+  "question": "Một tờ giấy hình vuông có diện tích là 72 cm2 thì đường chéo của\n\ntờ giấy đó dài bao nhiêu ?",
+  "solution": "Gọi tờ giấy hình vuông là ABCD. Nối hai đường chéo AC và BD cắt nhau tại O\n\n(hình vẽ).\n\n\n\n\n\n     Hình vuông được chia thành 4 tam giác vuông nhỏ có diện tích bằng nhau.\n     Diện tích tam giác AOB là : 72 : 4 = 18 (cm2).\n\n     Vì diện tích tam giác AOB bằng (OA x OB) : 2, do đó (OA x OB) : 2 = 18\n\n      (cm2). Suy ra OA x OB = 36 (cm2).\n\n     Vì OA = OB mà 36 = 6 x 6 nên OA = 6 (cm).\n\n     Vì AC = 2 x OA nên độ dài đường chéo của tờ giấy đó là : 6 x 2 = 12 (cm).\n\n\n\n\n\n                                                                                               67\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 119,
+  "page": 70,
+  "question": "Trong đợt trồng cây đầu năm, lớp 5A cử một số bạn đi trồng cây\n\nvà trồng được 180 cây, mỗi học sinh trồng được 8 hoặc 9 cây. Tính số học sinh\n\ntham gia trồng cây, biết số học sinh tham gia là một số chia hết cho 3.",
+  "solution": "Nếu mỗi bạn trồng 9 cây thì số người tham gia sẽ ít nhất và chính là :\n\n                             180 : 9 = 20 (người).\n\n     Vì 180 : 8 = 22 (dư 4) nên số người tham gia nhiều nhất là 22 người và khi đó\n\ncó 4 người trồng 9 cây, còn lại mỗi người trồng 8 cây.\n\n     Theo đầu bài số người tham gia là một số chia hết cho 3 nên có 21 bạn tham gia."
+ },
+ {
+  "id": 120,
+  "page": 70,
+  "question": "Chứng minh rằng không thể thay các chữ bằng các chữ số để có\n\nphép tính đúng :\n\n                                                   -      = 2004",
+  "solution": "Cách 1 : Đặt tính :\n\n     Xét chữ số hàng đơn vị : Có 2 trường hợp xảy ra :\n\n     Trường hợp 1 : I > C.\n\n     Khi đó phép trừ ở hàng đơn vị không có nhớ sang hàng chục.\n\n    Ở chữ số hàng chục : U - O = 0 hay U = O.\n\n    Ở chữ số hàng trăm : V - H = 0 hay V = H.\n\n    Do đó                   (vì ở chữ số hàng nghìn C < I).\n\n     Trường hợp 2 : I < C.\n\n     Khi đó phép trừ ở hàng đơn vị có nhớ 1 sang hàng chục.\n\n    Do đó ở hàng chục : U - O - 1 = 0 hay U - O = 1 nên O < U. Phép trừ không có\n\nnhớ sang hàng trăm. ở hàng trăm : V - H = 0 hay V = H.\n\n     Vì thế                   (vì ở chữ số hàng chục nghìn O < U).\n\n     Vậy ta không thể thay thế các chữ bằng các chữ số để có phép tính như đã cho.\n\n     Cách 2 : Dùng tính chất chia hết của một hiệu :\n\n     Ta thấy 2 số       và       có tổng các chữ số bằng nhau nên cả 2 số sẽ có\n\ncùng số dư khi chia cho 9, do đó hiệu của hai số chắc chắn sẽ chia hết cho 9.\n\n    Mà 2004 không chia hết cho 9, do đó hiệu của hai số không thể bằng 2004.\n\n\n                                                                                               68\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Nói cách khác ta không thể thay các chữ bằng các chữ số để có phép tính đúng."
+ },
+ {
+  "id": 121,
+  "page": 71,
+  "question": "Số chữ số dùng để đánh số trang của một quyển sách là một số\n\nchia hết cho số trang của cuốn sách đó. Biết rằng cuốn sách đó trên 100 trang và\n\nít hơn 500 trang. Hỏi cuốn sách đó có bao nhiêu trang ?",
+  "solution": "Vì cuốn sách đó trên 100 trang và ít hơn 500 trang nên số trang của cuốn sách\n\nđó là một số có 3 chữ số.\n\n     Gọi số trang của cuốn sách đó là    với a, b, c là các chữ số và a khác 0.\n\n     Các số trang của cuốn sách là các số tự nhiên từ 1 đến      .\n\n    Có 9 trang có 1 chữ số nên cần 9 chữ số để đánh số trang cho các trang này.\n\n    Có 90 trang có 2 chữ số nên cần 2 x 90 = 180 (chữ số) để đánh số trang cho các\n\ntrang này. Số trang có 3 chữ số là     - 99 trang. Số chữ số dùng để đánh số trang có 3\n\nchữ số là : 3 x (     - 99)\n\n     Số chữ số dùng để đánh số trang của cuốn sách đó là : 9 + 180 + 3 x (     - 99) =\n\n189 + 3 x     - 297 = 3 x     - 180.\n\n     Vì số chữ số dùng để đánh số trang của cuốn sách là số chia hết cho số trang của\n\ncuốn sách đó nên chia hết cho hay 108 chia hết cho. Suy ra chính bằng 108. Vậy cuốn\n\nsách đó có 108 trang."
+ },
+ {
+  "id": 122,
+  "page": 71,
+  "question": "Cha hiện nay 43 tuổi. Nếu tính sang năm thì tuổi cha vừa gấp 4\n\ntuổi con hiện nay. Hỏi lúc con mấy tuổi thì tuổi cha gấp 5 lần tuổi con ? Có bao\n\ngiờ tuổi cha gấp 4 lần tuổi con không ? Vì sao ?",
+  "solution": "Tuổi của cha sang năm là : 43 + 1 = 44 (tuổi)\n\n     Tuổi của con hiện nay là : 44 : 4 = 11 (tuổi)\n\n     Tuổi cha hơn tuổi con là : 43 - 11 = 32 (tuổi)\n\n     Khi tuổi cha gấp 5 lần tuổi con thì cha vẫn hơn con 32 tuổi.\n\n     Ta có sơ đồ khi tuổi cha gấp 5 lần tuổi con như sau :\n\n\n\n\n\n                                                                                               69\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Nhìn vào sơ đồ ta thấy :\n\n     Tuổi con khi đó là : 32 : (5 - 1) = 8 (tuổi)\n\n     Nếu tuổi cha gấp 4 lần tuổi con, khi đó tuổi con là 1 phần thì tuổi cha là 4 phần\n\nnhư thế. Tuổi cha hơn tuổi con số phần là : 4 - 1 = 3 (phần), khi đó cha cũng vẫn hơn\n\ncon 32 tuổi ; 32 không chia hết cho 3 nên không bao giờ tuổi cha gấp 4 lần tuổi con (vì\n\nta coi tuổi con hàng năm là một số tự nhiên)."
+ },
+ {
+  "id": 123,
+  "page": 72,
+  "question": "Có 4 bình (đánh số là 1, 2, 3, 4) đựng số lượng các hòn bi bằng\n\nnhau. Lấy ra từ bình thứ nhất một số viên bi, lấy gấp đôi số đó từ bình thứ hai,\n\nlấy gấp ba số đó từ bình thứ ba và cuối cùng lấy gấp bốn số đó từ bình thứ tư.\n\nKhi đó tổng số bi còn lại trong cả bốn bình là 40 viên và bình thứ tư còn lại đúng\n\n1 viên bi. Hỏi ban đầu số lượng bi trong bốn bình là bao nhiêu ?",
+  "solution": "Số bi lấy ra từ bình 1 là : (40 - 1 x 4) : (3 + 2 + 1) = 6 (viên).\n\n     Lúc đầu số lượng bi trong bốn bình là : (6 x 4 + 1) x 4 = 100 (viên)."
+ },
+ {
+  "id": 124,
+  "page": 72,
+  "question": "Từ một tờ giấy kẻ ô vuông, bạn Khang cắt ra một hình sao bốn\n\ncánh như hình bên. Hình sao này có diện tích bằng mấy ô vuông ?",
+  "solution": "Cách 1 : Diện tích hình sao đúng bằng diện tích hình vuông gồm 16 ô vuông trừ\n\nđi diện tích bốn hình tam giác bằng nhau. Mỗi tam giác này có diện tích là 2 ô vuông.\n\nDo đó diện tích hình sao là : 16 - 2 x 4 = 8 (ô vuông).\n\n\n\n\n\n                                                                                               70\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Cách 2 : Cắt ghép để từ hình sao ta có hình mới mà hình này diện tích đúng\n\nbằng 8 ô vuông."
+ },
+ {
+  "id": 125,
+  "page": 73,
+  "question": "Một đoàn tàu hỏa dài 200 m lướt qua một người đi xe đạp ngược\n\nchiều với tàu hết 12 giây. Tính vận tốc của tàu, biết vận tốc của người đi xe đạp là\n\n18 km/giờ.",
+  "solution": "Đoàn tàu hỏa dài 200 m lướt qua người đi xe đạp hết 12 giây, có nghĩa là sau 12\n\ngiây tổng quãng đường tàu hỏa và xe đạp đi là 200 m. Như vậy tổng vận tốc của tàu\n\nhỏa và xe đạp là : 200 : 12 = 50/3(m/giây), 50/3 m/giây = 60 km/giờ.\n\n     Vận tốc của xe đạp là 18 km/giờ, thì vận tốc của tàu hỏa là :\n\n                            60 - 18 = 42 (km/giờ)."
+ },
+ {
+  "id": 126,
+  "page": 73,
+  "question": "Cho số gồm bốn chữ số có chữ số hàng trăm là 9 và chữ số hàng\n\nchục là 7. Tìm số đã cho biết số đó chia hết cho 5 và 27.",
+  "solution": "Gọi số phải tìm là      (a khác 0 ; a ; b <10)\n\n     Vì     chia hết cho 5 nên b = 0 hoặc b = 5.\n\n     Vì     chia hết cho 27 nên     chia hết cho 9.\n\n     Thay b = 0 ta có     chia hết cho 9 nên a = 2. Thử 2970 : 27 = 110 (đúng).\n\n     Thay b = 5 ta có     chia hết cho 9 nên a = 6. Thử 6975 : 27 = 258 (dư 9) trái\n\nvới điều kiện bài toán. Vậy số tìm được là 2970."
+ },
+ {
+  "id": 127,
+  "page": 73,
+  "question": "Ba lớp 5A, 5B và 5C trồng cây nhân dịp đầu xuân. Trong đó số\n\ncây của lớp 5A và lớp 5B trồng được nhiều hơn số cây của 5B và 5C là 3 cây. Số\n\ncây của lớp 5B và 5C trồng được nhiều hơn số cây của 5A và 5C là 1 cây. Tính số\n\ncây trồng được của mỗi lớp. Biết rằng tổng số cây trồng được của ba lớp là 43\n\ncây.\n\n                                                                                               71\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Cách 1 : Vì số cây lớp 5A và lớp 5B trồng được nhiều hơn số cây của lớp 5B và\n\n5C là 3 cây nên số cây của lớp 5A hơn số cây của lớp 5C là 3 cây. Số cây của lớp 5B\n\nvà 5C trồng được nhiều hơn số cây của lớp 5A và 5C là 1 cây nên số cây của lớp 5B\n\ntrồng được nhiều hơn số cây của lớp 5A là 1 cây.\n\n     Ta có sơ đồ :\n\n\n\n\n\n     Ba lần số cây của lớp 5C là : 43 - (3 + 3 + 1) = 36 (cây)\n\n     Số cây của lớp 5C là : 36 : 3 = 12 (cây).\n\n     Số cây của lớp 5A là : 12 + 3 = 15 (cây).\n\n     Số cây của lớp 5B là : 15 + 1 = 16 (cây).\n\n     Cách 2 : Hai lần tổng số cây của 3 lớp là : 43 x 2 = 86 (cây).\n\n     Ta có sơ đồ :\n\n\n\n\n\n     Số cây của lớp 5A và 5C trồng được là : (86 - 3 - 1 - 1) : 3 = 27 (cây).\n\n     Số cây của lớp 5B là : 43 - 27 = 16 (cây).\n\n     Số cây của lớp 5B và 5C là : 27 + 1 = 28 (cây).\n\n     Số cây của lớp 5C là : 28 - 16 = 12 (cây).\n\n     Số cây của lớp 5A là : 43 - 28 = 15 (cây)."
+ },
+ {
+  "id": 128,
+  "page": 74,
+  "question": "Một dãy có 7 ô vuông gồm 3 ô đen và 4 ô trắng được sắp xếp như\n\nhình vẽ.\n\n\n\n    Cho phép mỗi lần chọn hai ô tùy ý và đổi màu chúng (từ đen sang trắng và\n\ntừ trắng sang đen). Hỏi rằng nếu làm như trên nhiều lần thì có thể nhận được dãy\n\nô vuông có màu xen kẽ nhau như sau hay không ?\n\n\n\n                                                                                               72\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Nhìn vào hình vẽ ta thấy ở hình ban đầu có 3 ô đen và 4 ô trắng, còn hình lúc\n\nsau có 4 ô đen và 3 ô trắng.\n\n     Khi chọn hai ô tùy ý để đổi màu của chúng (từ đen sang trắng và từ trắng sang\n\nđen) thì có ba khả năng xảy ra :\n\n        - Chọn hai ô trắng : Khi đó hai ô trắng được chọn sẽ đổi thành hai ô đen, do đó\n\nsố ô đen tăng lên 2 ô.\n\n        - Chọn hai ô đen : Khi đó hai ô đen được chọn sẽ đổi thành hai ô trắng, do đó số\n\nô đen giảm đi 2 ô.\n\n        - Chọn một ô đen và một ô trắng : Khi đó ô trắng đổi thành ô đen và ô đen đổi\n\nthành ô trắng, do đó số ô đen giữ nguyên.\n\n    Do vậy khi thực hiện việc chọn hai ô để đổi màu của chúng thì số lượng ô đen\n\nhoặc tăng lên 2 ô, hoặc giảm đi 2 ô, hoặc giữ nguyên. Điều đó có nghĩa là nếu chọn hai\n\nô tùy ý và đổi màu chúng nhiều lần thì số ô đen vẫn luôn luôn là một số lẻ.\n\n     Vì hình sau có 4 ô đen nên không thể thực hiện được."
+ },
+ {
+  "id": 129,
+  "page": 75,
+  "question": "Một tờ giấy hình chữ nhật được gấp theo đường chéo như hình\n\nvẽ. Diện tích hình nhận được bằng 5/8 diện tích hình chữ nhật ban đầu. Biết diện\n\ntích phần tô màu là 18 cm2. Tính diện tích tờ giấy ban đầu.",
+  "solution": "73\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Khi gấp tờ giấy hình chữ nhật theo đường chéo (đường nét đứt) thì phần hình\n\ntam giác được tô màu bị xếp chồng lên nhau. Do đó diện tích hình chữ nhật ban đầu\n\nlớn hơn diện tích hình nhận được chính là diện tích tam giác được tô màu.\n\n     Diện tích hình chữ nhật ban đầu giảm đi bằng 1 - 5/8 = 3/8 diện tích hình chữ\n\nnhật ban đầu.\n\n    Do vậy diện tích tam giác tô màu bằng 3/8 diện tích hình chữ nhật ban đầu, hay\n\n3/8 diện tích hình chữ nhật ban đầu bằng 18 cm2.\n\n     Vậy diện tích hình chữ nhật ban đầu là : 18 : 3/8 = 48 (cm2)"
+ },
+ {
+  "id": 130,
+  "page": 76,
+  "question": "Chứng tỏ rằng kết quả của phép nhân sau :\n\n     3 x 3 x 3 x ... x 3 (2000 thừa số 3) là số có ít hơn 1001 chữ số.\n\n                                  Lời giải.\n\n     Trong tích số A = 3 x 3 x 3 x ... x 3 gồm 2000 thừa số 3, kết hợp từng cặp số 3\n\nđược A = (3 x 3) (3 x 3) ... (3 x 3) = 9 x 9 x ... x 9 gồm 1000 thừa số 9.\n\n     Xét số B = 9 x 10 x ...x 10 thừa số 10 nên số B = 90...0 có 999 chữ số 0 và 1 chữ\n\nsố 9, nghĩa là có 1000 chữ số.\n\n     Vì 9 < 10 nên A = 9 x 9 x ... x 9 < B = 9 x10 x ... x 10\n\n     Vậy số A có ít hơn 1001 chữ số.",
+  "solution": ""
+ },
+ {
+  "id": 131,
+  "page": 76,
+  "question": "Tính diện tích hình chữ nhật ABCD. Biết rằng diện tích phần màu\n\nvàng là 20cm2 và I là điểm chia AB thành 2 phần bằng nhau.\n\n                                  Lời giải.\n\n      Kí hiệu S là diện tích của một hình. Nối D với I. Qua I và C vẽ các đường thẳng\n\nIP và CQ vuông góc với BD, IH vuông góc với DC.\n\n\n\n\n\n     Ta có SADB = SCDB = 1/2 SABCD SDIB = 1/2 SADB (vì có chung đường cao DA, IB\n\n= 1/2 AB), SDIB = 1/2 SDBC.\n\n    Mà 2 tam giác này có chung đáy DB\n\n                                                                                               74\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Nên IP = 1/2 CQ. SIDK = 1/2 SCDK (vì có chung đáy DK và IP = 1/2 CQ)\n\n      SCDI = SIDK + SDKC = 3SDIK.\n\n     Ta có : SADI = 1/2 AD x AI, SDIC = 1/2 IH x DC\n\n    Mà IH = AD, AI = 1/2 DC, SDIC = 2SADI nên SADI = 3/2 SDIK\n     Vì AIKD là phần được tô màu vàng nên SAIKD = 20(cm2)\n      SDAI + SIDK = 20(cm2)\n\n\n      SDAI + 2/3 SADI = 20(cm2)\n      SDAI = (3 x 20)/5 = 12 (cm2)\n\n     Mặt khác SDAI = 1/2 SDAB (cùng chung chiều cao DA, AI = 1/2 AB)\n               = 1/4 SABCD suy ra SABCD = 4 x SDAI = 4 x 12 = 48 (cm2).",
+  "solution": ""
+ },
+ {
+  "id": 132,
+  "page": 77,
+  "question": "Nếu trong một tháng nào đó mà có 3 ngày thứ bảy đều là các ngày\n\nchẵn thì ngày 25 của tháng đó sẽ là ngày thứ mấy ?\n\n                                  Lời giải.\n\n     Cách 1. Trong một tháng nào đó có ba ngày thứ bảy là ngày chẵn thì chắc chắn\n\ncòn có hai ngày thứ Bảy là ngày lẻ. Năm ngày thứ Bảy đó sắp xếp như sau :\n\n                Thứ Bảy  (1) Thứ Bảy (2)\n\n                   chẵn           lẻ\n\n                Thứ Bảy  (3) Thứ Bảy (4) Thứ Bảy  (5)\n\n                   chắn           lẻ           chẵn\n\n\n     Số ngày nhiều nhất trong một tháng là 31 ngày. Tháng này có 4 tuần và 3 ngày.\n\nNếu thứ bảy đầu tiên là ngày mùng 4 thì tháng đó sẽ có số ngày là: 4 + 7 x 4 = 32\n\n(ngày) ; trái với lịch thông thường.\n\n     Vì thế thứ bảy đầu tiên (1) phải là ngày mùng 2; thứ 7 thứ tư sẽ là ngày: 2 + 7 x\n\n3 = 23\n\n     Vậy ngày 25 của tháng đó là ngày thứ hai.\n\n     Cách 2. Lập bảng theo tuần lễ :\n\n\n                 1    2    3    4    5    6    7\n\n                                                                                               75\n9    10   11   12   13   14\n\n                 15   16   17   18   19   20   21\n\n                 22   23   24   25   26   27   28\n\n                 29   30   31\n\n     Trong 3 cột đầu tiên chỉ có cột 2 thích hợp với đầu bài toán. Cột này có 5 ngày\n\nthứ bảy. Vì ngày 23 là thứ bảy, nên ngày 25 là thứ hai.",
+  "solution": ""
+ },
+ {
+  "id": 133,
+  "page": 78,
+  "question": "Bốn bạn Xuân, Hạ, Thu, Đông có tất cả 61 viên bi. Xuân có số bi ít\n\nnhất, Đông có số bi nhiều nhất và là số lẻ, Thu có số bi gấp 9 lần số bi của Hạ.\n\nHãy cho biết mỗi bạn có bao nhiêu viên bi ?\n\n                                  Lời giải.\n\n     + Số bi của Thu gấp 9 lần số bi của Hạ nên tổng số bi của Thu và Hạ là một số\n\nchẵn. Tống số bi của bốn bạn là số lẻ, số bi của Đông là số lẻ, tổng số bi của Hạ và\n\nThu là số lẻ ; do đó số bi của Xuân phải là số chẵn.\n\n     + Số bi của Hạ phải là số bé hơn 4 vì nếu số đó là 4 thì số bi của Thu là 4 x 9 =\n\n36. Khi đó ít nhất Đông có số bi là 37 thì chỉ riêng tổng số bi của Thu và Đông đã vượt\n\nquá tổng số bi của bốn bạn (36 + 37 = 73 > 61).\n\n     + Nếu số bi của Xuân là 2 thì số bi của Hạ là 3, số bi của Thu là 27 (3 x 9 = 27)\n\n     Số bi của Đông là : 61 - (2 + 3 + 27) = 29 (viên).",
+  "solution": ""
+ },
+ {
+  "id": 134,
+  "page": 78,
+  "question": "Thay các chữ cái dưới đây bởi các chữ số (chữ cái khác nhau thì\n\nthay bởi các chữ số khác nhau) sao cho kết quả các phép tính dưới đây đạt giá trị\n\nlớn nhất. CHUC + MUNG + THAY + CO + NHAN + NGAY - 20 - 11\n\n                                  Lời giải.\n\n     Vì N xuất hiện ở những hàng cao nhất và nhiều lần nhất nên N phải bằng 9 để\n\nkết quả lớn nhất. Tiếp đó C xuất hiện ở hàng cao nhất còn lại giống M và T nhưng C\n\ncòn ở hai hàng khác nữa nên C bằng 8. Nếu M là 7 thì T là 6 và ngược lại, kết quả của\n\nphép toán không thay đổi. Với lập luận như trên thì H bằng 5, U bằng 4 và G là 3. Từ\n\nđó A bằng 2, Y bằng 1 và O là 0.\n\n     Vậy ta có 2 đáp số :\n\n     8548 + 6493 + 7521 + 80 + 9529 + 9321 - 20 - 11 = 41461\n\n                                                                                               76\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     và 8548 + 7493 + 6521 + 80 + 9529 + 9321 - 20 - 11 = 41461",
+  "solution": ""
+ },
+ {
+  "id": 135,
+  "page": 79,
+  "question": "Thăng đố Long biết được số học sinh của trường Thăng cuối năm\n\nhọc vừa rồi có bao nhiêu học sinh được nhận thưởng ? Biết rằng số học sinh được\n\nnhận thưởng là số có ba chữ số và rất thú vị là chữ số hàng trăm, chữ số hàng\n\nđơn vị giống nhau. Nếu nhân số này với 6 thì được tích là số cũng có ba chữ số và\n\ntrong tích đó có một chữ số 2.",
+  "solution": "Gọi số phi tìm là aba(a khác b;a ; b nhỏ hoặc bằng 9). Theo đầu bài ta có: aba x\n\n6 = deg (d khác 0 ; d; e; g nhỏ hơn hoặc bằng 9).Nếu a lớn hơn hoặc bằng 2 thì tích\n\nnhiều hơn 3 chữ số.Vậy a = 1. Ta có 1b1x 6 = deg ( deg có một chữ số 2).\n\n    Do đó : g = 1 x 6 = 6 và d lớn hơn hoặc bằng 6. Vì thế : e = 2\n\n    Vì b x 6 = nên b = 2 hoặc b = 7.\n\n    Nếu b = 2 thì 121 x 6 = 726 (Đúng)\n\n    Nếu b = 7 thì 171 x 6 = 1026 (Loại)\n\n    Vậy số học sịnh nhận thưởng là 121 bạn."
+ },
+ {
+  "id": 136,
+  "page": 79,
+  "question": "Em hãy di chuyển hai que diêm lại đúng vị trí để kết quả phép tính là\n\nđúng :",
+  "solution": "Cách 1 : Ta chuyển que diêm ở giữa chữ số 8 để có chữ số 0. Lấy que diêm đó\n\nghép vào chữ số 5 của số 502 để được số 602. Lấy 1 que diêm ở chữ số 3 của số 2003\n\nvà đặt vào vị trí khác của chữ số 3 đó để chuyển số 2003 thành số 2002, ta có phép\n\ntính đúng :\n\n     Cách 2 : Ta chuyển que diêm ở giữa số 8 để có chữ số 0. lấy que diêm đó ghép\n\nvào chữ số 5 của số 502 để được số 602. Lấy 1 que diêm ở chữ số 2 của số 602 và đặt\n\nvào vị trí khác của chữ số 2 đó để chuyển số 602 thành số 603, ta có phép tính đúng :"
+ },
+ {
+  "id": 137,
+  "page": 79,
+  "question": "Một bạn chọn hai số tự nhiên tuỳ ý, tính tổng của chúng rồi lấy\n\ntổng đó nhân với chính nó. Bạn ấy cũng làm tưng tự đối với hiệu của hai số mà\n\n\n                                                                                               77\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nmình đã chọn đó. Cuối cùng cộng hai tích tìm được với nhau. Hỏi rằng tổng của\n\nhai tích đó là số chẵn hay số lẻ ? Vì sao ?",
+  "solution": "Sẽ xảy ra một trong hai trường hợp : C hai số đều chẵn (hoặc đều lẻ) ; một số\n\nchẵn và một số lẻ.\n\n       a) Hai số chẵn (hoặc hai số lẻ). Tổng, hiệu của hai số đó là số chẵn. Số chẵn\n\nnhân với chính nó được số chẵn. Do đó cộng hai tích (là hai số chẵn) phải được số\n\nchẵn.\n\n      b) Một số chẵn và một số lẻ. Tổng, hiệu của chúng đều là số lẻ. Số lẻ nhân với\n\nchính nó được số lẻ. Do đó cộng hai tích (là hai số lẻ) phải được số chẵn.\n\n     Vậy theo điều kiện của bài toán thì kết quả của bài toán phải là số chẵn."
+ },
+ {
+  "id": 138,
+  "page": 80,
+  "question": "a) Hãy phân tích 20 thành tổng các số tự nhiên sao cho tích các số tự nhiên\n\nấy cũng bằng 20.\n\n      b) Bạn có thể làm như thế với bất kì số tự nhiên nào được không ?",
+  "solution": "Phân tích 20 thành tích các số tự nhiên khác 1.\n\n     20 = 2 x 2 x 5 = 4 x 5 = 10 x 2\n\n     Trường hợp : 2 x 2 x 5 = 20 thì tổng của chúng là : 2+ 2 + 5 = 9. Vậy để tổng\n\nbằng 20 thì phải thêm vào : 20 - 9 = 11, ta thay 11 bằng tổng của 11 số 1 khi đó tích sẽ\n\nkhông thay đổi.\n\n      Lí luận tương tự với các trường hợp : 20 = 4 x 5 và 20 = 10 x 2. Ta có 3 cách\n\nphân tích như sau :\n\n     Cách 1 :\n\n     20 = 2 x 2 x 5 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1.\n\n     20 = 2 + 2 + 5 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1.\n\n     Cách 2 :\n\n     20 = 4 x 5 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1.\n\n     20 = 4 + 5 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1.\n\n\n\n\n                                                                                               78\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n     Cách 3 :\n\n     20 = 10 x 2 x 1 x 1 x 1 x 1 x 1 x 1 x 1 x 1.\n\n     20 = 10 + 2 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1.\n\n      b) Một số chia hết cho 1 và chính nó sẽ không làm được như trên vì tích của\n\n1với chính nó luôn nhỏ hơn tổng của 1 với chính nó."
+ },
+ {
+  "id": 139,
+  "page": 81,
+  "question": "Tìm số tự nhiên a nhỏ nhất sao cho a chia cho 2 dư 1, chia cho 5\n\ndư 1, chia cho 7 dư 3 và chia hết cho 9.",
+  "solution": "Vì a chia cho 2 dư 1 nên a là số lẻ.\n\n     Vì a chia cho 5 dư 1 nên a có tận cùng là 1 hoặc 6.\n\n    Do đó a phải có tận cùng là 1.\n\n        - Nếu a là số có hai chữ số thì do a chia hết cho 9 nên a = 81, loại vì 81 : 7 = 11\n\ndư 4 (trái với điều kiện của đề bài).\n\n        - Nếu a là số có ba chữ số thì để a nhỏ nhất thì chữ số hàng trăm phải là 1. Khi\n\nđó để a chia hết cho 9 thì theo dấu hiệu chia hết cho 9 ta có chữ số hàng chục phi là 7\n\n(để 1 + 7 + 1 = 9 9).\n\n     Vì 171 : 7 = 24 dư 3 nên a = 171.\n\n     Vậy số phải tìm nhỏ nhất thỏa mãn điều kiện của đề bài là 171."
+ },
+ {
+  "id": 140,
+  "page": 81,
+  "question": "Số này nằm trong phạm vi các số tự nhiên từ 1 đến 58. Khi viết\n\n\"nó\" không sử dụng các chữ số 1 ; 2 ; 3. Ngoài ra \"nó\" là số lẻ và không chia hết\n\ncho các số 3 ; 5 ; 7. Vậy \"nó\" là số nào ?",
+  "solution": "Nó là số lẻ nằm trong phạm vi các số tự nhiên từ 1 đến 58, khi viết nó không sử\n\ndụng các chữ số 1 ; 2 ; 3 nên nó có thể là : 5 ; 7 ; 9 ; 45 ; 47 ; 49 ; 55 ; 57 ; 59.\n\nNhưng nó không chia hết cho 3 ; 5 ; 7 nên trong các số trên chỉ có số 47 là thỏa mãn.\n\nVậy nó là số 47."
+ },
+ {
+  "id": 141,
+  "page": 81,
+  "question": "Bạn Tân thực hiện phép chia một số cho 12 thì dư 1 và chia số đó\n\ncho 14 thì dư 2. Bạn hãy chứng tỏ Tân đã làm sai ít nhất một phép tính.\n\n\n                                                                                               79\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "A = 12 x p + 1 = 14 x q + 2 (với p ; q là số tự nhiên)\n\n     Ta thấy : 12 x p là số chẵn nên A = 12 x p + 1 là số lẻ.\n\n     14 x q là số chẵn nên A = 14 x q + 2 là số chẵn.\n\n    A không thể vừa lẻ vừa chẵn nên chắc chắn có ít nhất một phép tính sai."
+ },
+ {
+  "id": 142,
+  "page": 82,
+  "question": "Vườn cây bà Thược có số cây chưa đến 100 và có 4 loại cây : xoài,\n\ncam, mít, bưởi. Trong đó số cây xoài chiếm 1/5 số cây, số cây cam chiếm 1/6 số\n\ncây, số cây bưởi chiếm1/4 số cây và còn lại là mít. Hãy tính xem mỗi loại có bao\n\nnhiêu cây?",
+  "solution": "Số cây xoài chiếm 1/5 số cây, số cây cam chiếm 1/6 số cây, số cây bưởi chiếm\n\n1/4 số cây nên số cây trong vườn phải chia hết cho 4, 5, 6. Mà 6 = 2 x 3 nên số cây\n\ntrong vườn phải chia hết cho 3, 4, 5. Số nhỏ hơn 100 chia hết cho 3, 4, 5 là 60. Vậy số\n\ncây trong vườn là 60 cây.\n\n     Số cây xoài trong vườn là : 60 : 5 = 12 (cây)\n\n     Số cây cam trong vườn là : 60 : 6 = 10 (cây)\n\n     Số cây bưởi trong vườn là : 60 : 4 = 15 (cây)\n\n     Số cây mít trong Vườn là : 60 - (12 + 10 + 15) = 23 (cây)\n\n     Đáp số : xoài : 12 cây ; cam : 10 cây ; bưởi : 15 cây ; mít : 23 cây"
+ },
+ {
+  "id": 143,
+  "page": 82,
+  "question": "Bạn hãy chia tấm bìa bên dưới thành 6 phần giống hệt nhau về\n\nhình dạng và mỗi phần có một bông hoa.",
+  "solution": "Ta chia tấm bìa thành các ô vuông nhỏ bằng nhau như trong hình vẽ sau :\n\n\n\n\n\n     Nhìn hình vẽ ta thấy tổng số ô vuông nhỏ là 18 ô. Do đó khi chia tấm bìa thành\n\n6 phần giống hệt nhau về hình dạng thì mỗi phần sẽ có số ô là : 18 : 6 = 3 (ô) và hình\n\n\n                                                                                               80\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\ndạng mỗi phần phải có dạng hình chữ L. Ta có cách chia như sau : (cắt theo đường\n\nmàu)"
+ },
+ {
+  "id": 144,
+  "page": 83,
+  "question": "Cho dãy các số chẵn liên tiếp : 2 ; 4 ; 6 ; 8 ;  ... ; 998 ; 1000.\n\nSau khi điền thêm các dấu + hoặc dấu - vào giữa các số theo ý mình, bạn Bình\n\nthực hiện phép tính được kết quả là 2002 ; bạn Minh thực hiện phép tính được\n\nkết quả là 2006. Ai tính đúng ?",
+  "solution": "Từ  2  đến  1000  có   :  (1000   -  2)   :  2  +  1  =  500  (số  chẵn)\n\n     Tổng các số đó : N = (1000 + 2) x 500 : 2 = 250500. Số này chia hết cho 4.\n\n      Khi thay + a thành - a thì N bị giảm đi a x 2 cũng là số chia hết cho 4.\n\n    Do đó kết quả cuối cùng phải là số chia hết cho 4. Bình tính được 2002, Minh\n\ntính được 2006 đều là số không chia hết cho 4. Vậy cả hai bạn đều tính sai."
+ },
+ {
+  "id": 145,
+  "page": 83,
+  "question": "Trường Tiểu học Xuân Đỉnh tham gia hội khỏe Phù Đổng, có 11\n\nhọc sinh đoạt giải, trong đó có 6 em giành ít nhất 2 giải, có 4 em giành ít nhất 3\n\ngiải và có 2 em giành mỗi người 4 giải. Hỏi trường đó đã giành được bao nhiêu\n\ngiải ?",
+  "solution": "Có 11 em đoạt giải, trong đó có 6 em giành ít nhất 2 giải nên số học sinh giành\n\nmỗi em 1 giải là : 11 - 6 = 5 (em). Có 6 em giành ít nhất 2 giải, trong đó có 4 em giành\n\nít nhất 3 giải nên số em giành mỗi em 2 giải là : 6 - 4 = 2 (em). Có 4 em giành ít nhất 3\n\ngiải trong đó có có 2 em giành mỗi em 4 giải nên số em giành mỗi em 3 giải là : 4 - 2\n\n= 2 (em). Số em giành từ 1 đến 4 giải là : 5 + 2 + 2 + 2 = 11 (em). Do đó không có em\n\nnào giành được nhiều hơn 4 giải.\n\n     Vậy số giải mà trường đó giành được là : 1 x 5 + 2 x 2 + 3 x 2 + 4 x 2 = 23\n\n(giải)."
+ },
+ {
+  "id": 146,
+  "page": 83,
+  "question": "Tính nhanh tổng sau :\n\n                                                                                               81\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Đặt tổng trên bằng A ta có :"
+ },
+ {
+  "id": 147,
+  "page": 84,
+  "question": "Tìm số tự nhiên a để biểu thức : A = 4010 - 2005 : (2006 - a) có giá\n\ntrị nhỏ nhất.",
+  "solution": "Để A có giá trị nhỏ nhất thì số trừ 2005 : (2006 - a) có giá trị lớn nhất không\n\nvượt quá 4010. Để 2005 : (2006 - a) có giá trị lớn nhất thì số chia (2006 - a) có giá trị\n\nnhỏ nhất lớn hơn 0.\n\n     Vậy 2006 - a = 1\n\n            a = 2006 - 1\n\n            a = 2005."
+ },
+ {
+  "id": 148,
+  "page": 84,
+  "question": "Một lớp có 29 học sinh. Trong một lần kiểm tra chính tả. bạn\n\nXuân mắc 9 lỗi, còn các bạn trong lớp mắc ít lỗi hơn. Chứng minh rằng : Trong\n\nlớp có ít nhất 4 bạn có số lỗi bằng nhau (kể cả trường hợp số lỗi bằng 0).",
+  "solution": "Vì các bạn trong lớp đều có ít lỗi hơn Xuân, nên các bạn chỉ có số lỗi từ 0 đến 8.\n\nTrừ Xuân ra thì số bạn còn lại là : 29 - 1 = 28 (bạn). Nếu chia các bạn còn lại thành\n\ncác nhóm theo số lỗi thì tối đa có 9 nhóm. Nếu mỗi nhóm có không quá 3 bạn thì 9\n\nnhóm sẽ có không quá 3 x 9 = 27 (bạn). Điều này mâu thuẫn với số bạn còn lại là 28\n\n\n                                                                                               82\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nbạn. Chứng tỏ ít nhất phải có một nhóm có quá 3 bạn tức là trong lớp có ít nhất có 4\n\nbạn có số lỗi bằng nhau."
+ },
+ {
+  "id": 149,
+  "page": 85,
+  "question": "Hợp tác xã Hòa Bình dự định xây dựng một khu vui chơi cho trẻ\n\nem trong xã. Vì thế họ đã mở rộng một mảnh đất hình chữ nhật để diện tích gấp\n\nba lần diện tích ban đầu. Chiều rộng mảnh đất chỉ có thể tăng lên gấp đôi nên\n\nphải mở rộng thêm chiều dài. Khi đó mảnh đất trở thành hình vuông. Hãy tính\n\ndiện tích khu vui chơi đó. Biết rằng chu vi mảnh đất ban đầu là 56 m.",
+  "solution": "Gọi mảnh đất hình chữ nhật lúc đầu là ABCD, khi mở rộng mảnh đất hình chữ\n\nnhật để được mảnh đất hình vuông APMN có cạnh hình vuông gấp 2 lần chiều rộng\n\nmảnh đất hình chữ nhật ABCD và diện tích gấp 3 lần diện tích mảnh đất hình chữ nhật\n\nấy. Khi đó diện tích của các mảnh đất hình chữ nhật ABCD, DCHN, BPMH bằng\n\nnhau.\n\n    Mảnh đất hình chữ nhật BPMH có độ dài cạnh BH gấp 2 lần độ dài cạnh AD\n\n     nên\n\n\n\n\n\n     Nửa chu vi mảnh đất ban đầu là 56 m nên AD + AB = 56 : 2 = 28 (m).\n\n     Ta có : Chiều rộng mảnh đất ban đầu (AD) là : 28 : (3 + 4) x 3 = 12 (m).\n\n     Cạnh hình vuông APMN là : 12 x 2 = 24 (m).\n\n\n                                                                                               83\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Diện tích khu vui chơi là : 24 x 24 = 576 (m2)."
+ },
+ {
+  "id": 150,
+  "page": 86,
+  "question": "Cho (1), (2), (3), (4) là các hình thang vuông có kích thước bằng\n\nnhau. Biết rằng PQ = 4 cm. Tính diện tích hình chữ nhật ABCD.",
+  "solution": "Vì các hình thang vuông PQMA, QMBC, QPNC, PNDA bằng nhau nên :\n\n              MQ = NP = QP = 4 cm và CN = AD.\n\n     Mặt khác AD = NP + QM = 4 + 4 = 8 (cm)\n\n    Do đó : CN = AD = 8 cm.\n\n     Diện tích hình thang vuông PQCN là :\n\n                (CN + PQ) x NP : 2 = (8 + 4) x 4 : 2 = 24 (cm2)\n     Suy ra : Diện tích hình chữ nhật ABCD là : 24 x 4 = 96 (cm2)"
+ },
+ {
+  "id": 151,
+  "page": 86,
+  "question": "Một ô tô dự định đi từ C đến D trong 3 giờ. Do thời tiết xấu nên\n\nvận tốc của ô tô giảm 14 km/giờ và vì vậy đến D muộn 1 giờ so với thời gian dự\n\nđịnh. Tính quãng đường CD.",
+  "solution": "Thời gian ô tô thực đi quãng đường CD là : 3 + 1 = 4 (giờ)\n\n      Tỉ số giữa thời gian dự định và thời gian thực đi là 3 : 4 = 3/4.\n\n     Vì quãng đường CD không đổi nên vận tốc và thời gian là hai đại lượng tỉ lệ\n\n      nghịch với nhau. Do đó tỉ số vận tốc dự định (vdự định) và vận tốc thực đi (vthực đi)\n\n       là 4/3.\n\n     Nếu vdự định và vthực đi tính theo đơn vị km/giờ thì ta có sơ đồ sau :\n\n\n\n\n\n                                                                                               84\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n\n     Vận tốc dự định đi quãng đường CD là : 14 x 4 = 56 (km/giờ)\n\n     Quãng đường CD dài là : 56 x 3 = 168 (km)."
+ },
+ {
+  "id": 152,
+  "page": 87,
+  "question": "Một ca nô xuôi dòng từ A đến B hết 5 giờ và ngược dòng từ B về\n\nA hết 6 giờ. Tính khoảng cách AB biết vận tốc dòng nước là 3 km/giờ.\n\n     Phân tích : Đây là bài toán chuyển động trên dòng nước. Ngoài giả thiết mà bài\n\n      toán đã cho, chúng ta cần biết thêm kiến thức về chuyển động trên dòng nước\n\n     như sau :\n\n     Vận tốc xuôi dòng = Vận tốc thực + Vận tốc dòng nước.\n\n     Vận tốc ngược dòng = Vận tốc thực - Vận tốc dòng nước.\n\n    Từ đó ta có :\n\n     Vận tốc xuôi dòng - Vận tốc ngược dòng = 2 x Vận tốc dòng nước.\n\n      Bài toán này cho biết vận tốc dòng nước nên ta tính được hiệu vận tốc xuôi\n\n     dòng và ngược dòng. Biết thời gian xuôi dòng và thời gian ngược dòng ta dựa\n\n     vào đó tìm tỉ số vận tốc và đưa về dạng toán tìm 2 số biết hiệu và tỉ.",
+  "solution": "Hiệu vận tốc xuôi dòng và vận tốc ngược dòng chính là 2 lần vận tốc dòng nước\n\n     nên hiệu đó là : 3 x 2 = 6 (km/giờ)\n\n      Tỉ số thời gian xuôi dòng và thời gian ngược dòng là 5 : 6 = 5/6.\n\n     Vì quãng đường không đổi nên vận tốc và thời gian là hai đại lượng tỉ lệ nghịch.\n\n    Do đó tỉ số vận tốc xuôi dòng và ngược dòng là 6/5.\n\n     Ta có sơ đồ :\n\n\n\n\n     Vận tốc xuôi dòng là : 6 x 6 = 36 (km/giờ)\n\n     Quãng đường AB là : 36 x 5 = 180 (km)."
+ },
+ {
+  "id": 153,
+  "page": 87,
+  "question": "Cho hình chữ nhật ABCD, gọi M và N lần lượt là điểm chính giữa của\n\nAB và CD. Nối DM, BN cắt AC tại I và K. Chứng tỏ rằng AI = IK = KC.\n\n\n                                                                                               85\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "(ở bài này ta cần vận dụng mối quan hệ giữa diện tích, c.đáy và c.cao của tam\n\ngiác)\n\n     Ta có : dt (ABC) = 2 x dt (AMD) (vì AB = 2 x AM và AD = BC) ; dt (DCM) =\n\ndt (ABC) (vì AB = DC và c.cao cùng bằng BC)\n\n     Suy ra dt (DCM) = 2 x dt (AMD). Gọi CH và AE lần lượt là chiều cao của tam\n\ngiác DCM và DAM xuống đáy DM, khi đó CH = 2 x AE. Nhưng CH và AE lần lượt là\n\nchiều cao của tam giác ICM và IAM có chung cạnh đáy IM. Vậy dt (ICM) = 2 x dt\n\n(IAM). Mà tam giác IAM và ICM chung chiều cao từ M, do đó IC = 2 x AI, suy ra AC\n\n= 3 x AI hay AI = 1/3 AC.\n\n    Làm tương tự với các cặp tam giác ABN và CBN ; KCN và KAN ta có KC =\n\n1/3 AC. Vậy AI = KC = 1/3 AC, suy ra IK = 1/3 AC.\n\n    Do đó AI = IK = KC.\n\n     Chú ý : ở đây để chứng tỏ các đoạn thẳng bằng nhau ta phải chứng tỏ các tam\n\ngiác có chung chiều cao và diện tích bằng nhau."
+ },
+ {
+  "id": 154,
+  "page": 88,
+  "question": "Cho tam giác ABC, gọi các điểm M, N lần lượt nằm trên các cạnh\n\nAB, AC sao cho : AB = 3 x AM, AC = 3 x AN. Gọi I là điểm chính giữa của cạnh\n\nBC.\n\na) Chứng tỏ rằng tứ giác BMNC là hình thang và BC = 3 x MN.\n\nb) Chứng tỏ rằng các đoạn thẳng BN, CM, AI cùng cắt nhau tại một điểm.",
+  "solution": "a) Vì AB = 3 x AM, AC = 3 x AN, nên MB = 2/3 x AB, NC = 2/3 x AC.\n\n    Từ đó suy ra : dt (MBC) = 2/3 x dt (ABC) (chung chiều cao từ C\n\n       dt (NCB) = 2/3 x dt (ABC) (chung chiều cao từ B)\n\n\n\n\n\n                                                                                               86\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Vậy dt (MBC) = dt (NCB) mà tam giác MBC và tam giác NCB có chung đáy\n\nBC, nên chiều cao từ M bằng chiều cao từ N xuống đáy BC hay MN song song với\n\nBC. Do đó BMNC là hình thang.\n\n    Từ MB = 2/3 x AB, nên dt (MBN) = 2/3 x dt (ABN) (chung chiều cao từ N) hay\n\ndt (ABN) = 2/3 x dt (MBN).\n\n    Hơn nữa từ AC = 3 x AN, nên NC = 2 x AN, do đó dt (NBC) = 2 x dt (ABN)\n\n(chung chiều cao từ B) ; suy ra dt (NBC) = 3/2 x 2 x dt (MBN) = 3 x dt (MBN).\n\nMà tam giác NBC và tam giác MBN có chiều cao bằng nhau (cùng là chiều cao của\n\nhình thang BMNC). Vì vậy đáy BC = 3 x MN.\n\n      b) Gọi BN cắt CM tại O. Ta sẽ chứng tỏ AI cũng cắt BN tại O. Muốn vậy, nối\n\nAO kéo dài cắt BC tại K, ta sẽ chứng tỏ K là điểm chính giữa của BC (hay K trùng với\n\nI).\n\n     Theo phần a) ta đã có dt (NBC) = 2 x dt (ABN). Mà tam giác NBC và tam giác\n\nABN có chung đáy BN, nên chiều cao từ C gấp 2 lần chiều cao từ A xuống đáy BN.\n\nNhưng đó là chiều cao tương ứng của hai tam giác BCO và BAO có chung đáy BO, vì\n\nvậy dt (BCO) = 2 x dt (BAO)\n\n     Tương tự ta cũng có dt (BCO) = 2 x dt (CAO).\n\n    Do đó dt (BAO) = dt (CAO). Hai tam giác BAO và CAO có chung đáy AO, nên\n\nchiều cao từ B bằng chiều cao từ C xuống đáy AO. Đó cũng là chiều cao tương ứng\n\ncủa hai tam giác BOK và COK có chung đáy OK, vì vậy dt (BOK) = dt (COK). Mà\n\nhai tam giác BOK và tam giác COK lại chung chiều cao từ O, nên hai đáy BK = CK\n\nhay K là điểm chính giữa của cạnh BC. Vậy điểm K trùng với điểm I hay BN, CM, AI\n\ncùng cắt nhau tại điểm O."
+ },
+ {
+  "id": 155,
+  "page": 89,
+  "question": "Một viên quan mang lễ vật đến dâng vua và được vua ban thưởng\n\ncho một quả cam trong vườn thượng uyển, nhưng phải tự vào vườn hái. Đường\n\nvào vườn thượng uyển phải qua ba cổng có lính canh. Viên quan đến cổng thứ\n\nnhất, người lính canh giao hẹn: “Ta cho ông vào nhưng lúc ra ông phải biếu ta\n\nmột nửa số cam, thêm nửa quả”. Qua cổng thứ hai rồi thứ ba lính canh cũng đều\n\ngiao hẹn như vậy. Hỏi để có một quả cam mang về thì viên quan đó phải hái bao\n\nnhiêu cam trong vườn?\n\n\n                                                                                               87\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải",
+  "solution": "Số cam viên quan còn lại sau khi cho lính gác cổng thứ hai (cổng giữa) là:\n\n\n\n\n\n     Số cam viên quan còn lại sau khi cho lính gác cổng thứ ba (cổng trong cùng) là:\n\n\n\n\n\n     Số cam viên quan phải hái trong vườn là:\n\n\n\n\n\n     Vậy để có được một quả cam mang về thì viên quan phải hái 15 quả trong vườn.\n\n                           Đáp số: 15 quả cam"
+ },
+ {
+  "id": 156,
+  "page": 90,
+  "question": "Có một giống bèo cứ mỗi ngày lại nở tăng gấp đôi. Nếu ngày đầu\n\ncho vào mặt hồ một cây bèo thì 10 ngày sau bèo lan phủ kín mặt hồ. Vậy nếu ban\n\nđầu cho vào 16 cây bèo thì mấy ngày sau bèo phủ kín mặt hồ?",
+  "solution": "Ta có bảng sau biểu diễn số cây bèo trên mặt hồ:\n\n\n\n\n\n                                                                                               88\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n\n     Nhìn vào bảng trên ta thấy: Nếu ngày đầu cho vào mặt hồ 16 cây bèo thì 6 ngày\n\nsau bèo sẽ lan phủ kín mặt hồ."
+ },
+ {
+  "id": 157,
+  "page": 91,
+  "question": "Lớp 4A trồng được 21 cây ; lớp 4B trồng được 22 cây ; lớp 4C\n\ntrồng được 29 cây ; lớp 4D trồng được số cây hơn trung bình cộng số cây của cả 4\n\nlớp là 3 cây. Hỏi lớp 4D trồng được bao nhiêu cây?\n\n     Phân tích : Bài toán này cho số cây của lớp 4D không những bằng trung bình cộng số cây\n\ncủa c 4 lớp mà còn hơn trung bình cộng số cây của bốn lớp là 3 cây.\n\nDùng phương pháp sơ đồ đoạn thẳng ta có :\n\n\n\n     Tổng số cây của 3 lớp 4A ; 4B ; 4C và thêm 3 cây nữa sẽ là 3 lần trung bình\n\ncộng số cây của cả 4 lớp. Từ đó ta tìm được số cây của lớp 4D.",
+  "solution": "Theo bài ra ta có sơ đồ:\n\n\n\n     Nhìn vào sơ đồ ta có trung bình cộng số cây của cả 4 lớp là :\n\n                           (21 + 22 + 29 + 3) : 3 = 25 (cây)\n\n     Số cây của lớp 4D trồng được là : 25 + 3 = 28 (cây)\n\n\n\n\n\n                                                                                               89\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n    Nhận xét : Nếu có 3 số a ; b ; c và số chưa biết x mà x lớn hơn trung bình cộng\n\ncủa cả 4 số a ; b ; c ; x là n đơn vị thì trung bình cộng của cả bốn số là: (a + b + c + n) :\n\n3 hay (a + b + c + x) : 4 = (a + b + c + n) : 3\n\n     (Vận dụng giải bài tập sau: Lớp 4A trồng được 21 cây ; lớp 4B trồng được 22\n\ncây ; lớp 4C trồng được 29 cây. Lớp 4D trồng được số cây kém trung bình cộng số cây\n\ncủa cả 4 lớp là 3 cây. Hỏi lớp 4D trồng được bao nhiêu cây?)"
+ },
+ {
+  "id": 158,
+  "page": 92,
+  "question": "Hưng đi xe đạp từ nhà lên huyện với vận tốc 12 km/giờ. Sau đó\n\ntrở về với vận tốc 10 km/giờ. Tính quãng đường từ nhà lên huyện biết rằng thời\n\ngian lúc về lâu hơn lúc đi là 10 phút.\n\n                                       Giải\n\n    Nhận xét : Ta thấy Hưng đi và về trên cùng một đoạn đường từ nhà lên huyện.\n\nDo đó thời gian đi và về sẽ tỉ lệ nghịch với vận tốc lúc đi và vận tốc lúc về. ở đây tỉ số\n\nvề vận tốc giữa lúc đi và lúc về là 12/10 = 6/5. Vậy tỉ số giữa thời gian đi và thời gian\n\nvề là 5/6. Mà thời gian lúc về lâu hơn lúc đi là 10 phút hay nhiều hơn 10 phút. Từ đó ta\n\ncó sơ đồ :\n\n\n\n\n         Thời gian lúc về hết là :10 : (6 - 5) x 6 = 60 (phút) Đổi : 60 phút = 1 giờ\n\n               Quãng đường từ nhà lên huyện là : 10 x 1 = 10 (km)\n\n                            Đáp số : 10 km.",
+  "solution": ""
+ },
+ {
+  "id": 159,
+  "page": 92,
+  "question": "Cho tam giác ABC có diện tích 75 cm2. Trên BC lấy M sao cho\n\nBM = 2/3 BC. Tính diện tích tam giác ABM.\n\n    Nhận xét : Ta thấy tam giác ABM và tam giác ABC có cùng chiều cao là AH ;\n\nhai đáy tương ứng là BM và BC. Do đó đáy và diện tích là hai đại lượng tỉ lệ thuận với\n\nnhau.\n\n\n\n\n\nở đây tỉ số về hai đáy là : BM/BC = 2/3. Vậy tỉ số về diện tích của hai tam giácABM\n\nvà ABC là 2/3. Vì diện tích tam giác ABC bằng 75 cm2, nên diện tích tam giác ABM\n\n\n                                                                                               90\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\nlà :\n\n75 : 3 x 2 = 50 (cm2).\nĐáp số : 50 cm2",
+  "solution": ""
+ },
+ {
+  "id": 160,
+  "page": 93,
+  "question": "Cô giáo xếp chỗ ngồi cho học sinh lớp 4A. Nếu xếp mỗi bàn 4 bạn\n\nthì thiếu một bàn. Nếu xếp mỗi bàn 5 bạn thì thừa một bàn. Hỏi lớp đó có bao\n\nnhiêu bàn, bao nhiêu học sinh ?\n\n    Nhận xét : Số học sinh không đổi nên số bàn và số học sinh xếp ở mỗi bàn là\n\nhai đại lượng tỉ lệ nghịch với nhau. Số bàn cần có để xếp 4 bạn 1 bàn nhiều hơn số bàn\n\ncần có để xếp 5 bạn 1 bàn là : 1 + 1 = 2 (bàn)\n\n    Ở đây tỉ số giữa số bạn xếp ở một bàn 4 bạn và một bàn 5 bạn là. Do đó tỉ số\n\ngiữa  số  bàn   khi  xếp  một  bàn  4  bạn  và  một  bàn  5  bạn   là    .\n\nVậy ta có sơ đồ :\n\n\n\n     Số bàn cần đủ để xếp 4 bạn một bàn là : 2 : (5 - 4) x 5 = 10 (bàn)\n\n     Số bàn lớp 4A là : 10 - 1 = 9 (bàn)\n\n     Số học sinh lớp 4A là : 4 x 9 + 4 = 40 (học sinh) Đáp số : 9 bàn ; 40 học sinh.",
+  "solution": ""
+ },
+ {
+  "id": 161,
+  "page": 93,
+  "question": "“Bạn Yến có một bó hoa hồng đem tặng các bạn cùng lớp. Lần\n\nđầu Yến tặng một nửa số bông hồng và thêm 1 bông. Lần thứ hai Yến tặng một\n\nnửa số bông hồng còn lại và thêm 2 bông. Lần thứ ba Yến tặng một nửa số bông\n\nhồng còn lại và thêm 3 bông. Cuối cùng Yến còn lại 1 bông hồng dành cho mình.\n\nHỏi Yến đã tặng bao nhiêu bông hồng ?”",
+  "solution": "*Cách 1 : Ta có sơ đồ về số các bông hồng :\n\n\n\n\n\n     Số bông hồng còn lại sau khi Yến tặng lần thứ hai là : (1 + 3) x 2 = 8 (bông)\n\n     Số bông hồng còn lại sau khi Yến tặng lần thứ nhất là : ( 8 + 2) x 2 = 20 (bông)\n\n     Số bông hồng lúc đầu Yến có là : (20 + 1) x 2 = 42 (bông)\n\n\n                                                                                               91\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n     Số bông hồng Yến đã tặng các bạn là : 42 - 1 = 41 (bông)\n\n     Đáp số : 41 bông hồng.\n\n     *Cách 2 :\n\n     Gọi số bông hồng lúc đầu Yến có là a.\n\n     Số bông hồng còn lại sau khi Yến cho bạn lần thứ nhất là : a : 2 - 1 (bông hồng)\n\n     Số bông hồng còn lại sau Yến cho bạn lần thứ hai là : (a : 2 - 1) : 2 - 2 (bông\n\nhồng)\n\n     Số bông hồng còn lại sau khi Yến cho bạn lần thứ ba là : ((a : 2 - 1) : 2 - 2) : 2 -\n\n3 (bông hồng)\n\n     Theo đề bài ta có :\n\n       ((a : 2 - 1) : 2 - 2) : 2 - 3 = 1 (bông hồng)\n\n       ((a : 2 - 1) : 2 - 2) : 2 = 1 + 3 (bông hồng)\n\n       ((a : 2 - 1) : 2 - 2) : 2 = 4 (bông hồng)\n\n       (a : 2 - 1) : 2 - 2 = 4 x 2 (bông hồng)\n\n       (a : 2 - 1) : 2 - 2 = 8 (bông hồng)\n\n       (a : 2 - 1) : 2 = 8 + 2 (bông hồng)\n\n       (a : 2 - 1) : 2 = 10 (bông hồng)\n\n      a : 2 - 1 = 10 x 2 (bông hồng)\n\n      a : 2 - 1 = 20 (bông hồng)\n\n      a : 2 = 20 + 1 (bông hồng)\n\n      a : 2 = 21 (bông hồng)\n\n      a = 21 x 2 (bông hồng)\n\n      a = 42 (bông hồng)\n\n     Số bông hồng mà Yến đã tặng các bạn là : 42 - 1 = 41 (bông hồng)\n\n     Đáp số : 41 bông hồng.\n\n     *Cách 3 :\n\n     Biểu thị : A là số bông hồng lúc đầu Yến có.\n\n    B là số bông hồng còn lại sau khi cho lần thứ nhất.\n\n    C là số bông hồng còn lại sau khi cho lần thứ hai.\n\n     Ta có lưu đồ sau :\n\n\n\n\n                                                                                               92\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải\n\n\n\n\n\n     Số bông hồng còn lại sau khi Yến cho lần thứ 2 là : (1 + 3) x 2 = 8 (bông hồng)\n\n     Số bông hồng còn lại sau khi Yến cho lần thứ nhất là :\n\n                               (8 + 2) x 2 = 20 (bông hồng)\n\n     Số bông hồng lúc đầu Yến có là : (20 + 1) x 2 = 42 (bông hồng)\n\n     Số bông hồng Yến tặng các bạn là : 42 - 1 = 41 (bông hồng)\n\n     Đáp số : 41 bông hồng.\n\n    Nhận xét : Cách giải 1 là cách giải thông thường mà học sinh tiểu học lựa chọn\n\nđể giải. Mục đích của việc vẽ sơ đồ nhằm giúp học sinh dễ dàng nhìn thấy các mối liên\n\nhệ trong bài toán. Tuy nhiên, đối với các em học sinh khá giỏi thì việc vẽ sơ đồ là\n\nkhông cần thiết khi các em đã thành thạo.\n\n     Đối với cách giải 2, nhiều người cho rằng, khi giải bằng cách này là không vừa\n\nsức đối với học sinh tiểu học. Điều đó không đúng, vì thực ra học sinh chỉ cần vận\n\ndụng các kiến thức cơ bản đã học trong chương trình tiểu học là tìm thành phần chưa\n\nbiết của phép tính và căn cứ vào dữ kiện đã cho để đưa ra lời giải. Ví dụ ở bước 1, học\n\nsinh thực hiện tìm số bị trừ khi biết số trừ và hiệu, bước 2 học sinh thực hiện tìm số bị\n\nchia khi biết thương và số chia v.v...\n\n    Ở cách giải 3, chúng ta thấy khi cho đi một nửa số bông hồng Yến có thì còn lại\n\nmột nửa số bông hồng. Sau đó lại cho thêm 1 bông hồng nữa, nghĩa là số bông hồng\n\ncòn lại sau khi cho lần thứ nhất là một nửa số bông hồng lúc đầu bớt đi 1 bông. Tương\n\ntự như vậy số bông hồng còn lại sau khi cho lần thứ hai chính là một nửa số bông hồng\n\nsau khi cho lần thứ nhất rồi bớt đi 2 bông. 1 bông hồng dành cho Yến chính là 1 nửa\n\nsố bông hồng còn lại sau khi cho lần thứ hai bớt đi 3 bông. Tới đây, muốn tìm C ta lấy\n\n(1 + 3) x 2. Tương tự, ta tìm được số bông hồng lúc đầu Yến có (A)."
+ },
+ {
+  "id": 162,
+  "page": 95,
+  "question": "Hãy cho biết 2/7 của 75 là bao nhiêu?",
+  "solution": "Ta có sơ đồ:\n\n\n\n      2/5 của 75 là : 75 : 5 x 2 = 30 hay 75 x 2/5 = 30.\n\n\n\n                                                                                               93\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 163,
+  "page": 96,
+  "question": "Tìm 3/4 của 5/6",
+  "solution": "Ta có sơ đồ :\n\n\n\n\n       3/4 của 5/6 là : 5/6 : 4 x 3 = 5/8 hay 5/6 x 3/4 = 5/8."
+ },
+ {
+  "id": 164,
+  "page": 96,
+  "question": "Biết 2/3 của một số là 20. Hãy tìm số đó.",
+  "solution": "Ta có sơ đồ :\n\n\n     Số cần tìm là : 20 : 2 x 3 = 30 hay 20 : 2/3 = 30."
+ },
+ {
+  "id": 165,
+  "page": 96,
+  "question": "Biết 8/9 của một số là 2/3. Tìm số đó.",
+  "solution": "Ta có sơ đồ :\n\n\n\n\n     Số cần tìm là : 2/3 : 8 x 9 = 3/4 hay 2/3 : 8/9 = 3/4."
+ },
+ {
+  "id": 166,
+  "page": 96,
+  "question": "Có tất cả 720 kg gạo gồm 3 loại : 1/6 số gạo là gạo thơm, 3/8 số gạo\n\n                là gạo nếp, còn lại là gạo tẻ. Tính số kg gạo mỗi loại.",
+  "solution": "1/6 số gạo là gạo thơm, nên khối lượng gạo thơm là :720 x 1/6 = 120 (kg)\n\n      3/8 số gạo là gạo nếp, nên khối lượng gạo nếp là : 720 x 3/8 = 270 (kg)\n\n     Khối lượng gạo tẻ là : 720 - (120 + 270) = 330 (kg).\n\n     Đáp số : 120 kg, 270 kg, 330 kg"
+ },
+ {
+  "id": 167,
+  "page": 96,
+  "question": "Một người bán cam,buổi sáng bán được 3/5 số cam mang đi, buổi\n\nchiều bán thêm được 52 quả và số cam còn lại đúng bằng 1/8 số cam đã bán. Tính\n\nsố quả cam mà người đó đã mang đi bán.",
+  "solution": "Số cam còn lại bằng 1/8 số cam đã bán, hay đúng bằng 1/9 số cam mà người đó\n\nmang đi bán. Số cam buổi chiều người đó bán chính là 1 - (3/5 + 1/9) = 13/45 số cam\n\nmang đi.\n\n     Số cam buổi chiều người đó bán là 52 quả nên số cam người đó mang đi chợ là :\n\n                            52 : 13/45 = 180 (quả).\n\n\n                                                                                               94\n                                    500 BÀI TOÁN CHỌN LỌC LỚP 5 và lời giải"
+ },
+ {
+  "id": 168,
+  "page": 97,
+  "question": "Ba người chia nhau một số tiền. Người thứ nhất (NT1) lấy 1/4 số\n\ntiền rồi bớt lại 50000 đồng, người thứ hai (NT2) lấy 3/5 số tiền còn lại rồi bớt lại\n\n40000 đồng. Người thứ ba lấy 240000 đồng thì vừa hết. Số tiền được đem chia là\n\nbao nhiêu ?",
+  "solution": "Ta có sơ đồ sau :\n\n\n\n\n2/5 số tiền còn lại sau khi người thứ nhất lấy là :\n\n240000 - 40000 = 200000 (đồng)\n\nSố tiền còn lại sau khi người thứ nhất lấy là : 200000 : 2/5 = 500000 (đồng).\n\n3/4 tổng số tiền là : 500000 - 50000 = 450000 (đồng)\n\nTổng số tiền là :\n\n450000 : 3/4 = 600000(đồng)\n\nĐáp số : 600000 đồng\n\n\n\n\n\n                                                                                               95"
+ }
+]

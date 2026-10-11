@@ -62,7 +62,7 @@ const translations = {
             "Luyện phát âm, giao tiếp và xây dựng sự tự tin khi nói tiếng Anh.",
 
         mathText:
-            "Toán Cambridge Primary được giải thích rõ ràng và từng bước.",
+            "Khám phá toán lớp 5 qua các thử thách tương tác và thí nghiệm sáng tạo.",
 
 
         /* SCHEDULE */
@@ -239,7 +239,7 @@ const translations = {
             "练习英语发音、口语交流，并提升开口说英语的自信。",
 
         mathText:
-            "通过清晰、循序渐进的方式学习剑桥小学数学。",
+            "通过互动挑战与趣味实验探索五年级数学。",
 
 
         /* SCHEDULE */
@@ -416,7 +416,7 @@ navPayment:"Payment",
             "Build pronunciation, conversation skills and confidence in spoken English.",
 
         mathText:
-            "Cambridge Primary Mathematics explained clearly and step by step.",
+            "Explore Grade 5 math through interactive puzzles and creative experiments.",
 
 
         /* SCHEDULE */

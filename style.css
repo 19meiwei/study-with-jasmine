@@ -3310,3 +3310,8 @@ small {
     font-size: 24px !important;
     line-height: 1.8 !important;
 }
+/* Vietnamese course card */
+.vietnamese-link{display:flex;cursor:pointer;text-decoration:none;color:inherit;position:relative}
+.vietnamese-link:focus-visible{outline:3px solid #d85f7e;outline-offset:4px}
+.vietnamese-link::after{content:"Explore →";position:absolute;right:19px;bottom:16px;font-size:10px;font-weight:700;color:#b94b69}
+.vietnamese-link .tags{padding-right:75px}

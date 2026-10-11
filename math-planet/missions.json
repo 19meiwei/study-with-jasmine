@@ -1,0 +1,426 @@
+[
+  {
+    "id": "averages",
+    "name": "Crystal Observatory",
+    "tag": "AVERAGES",
+    "emoji": "🔭",
+    "color": "#8f82ff",
+    "desc": "Balance the crystal energy using averages.",
+    "missions": [
+      {
+        "n": 27,
+        "q": "An has taken some tests. If he adds three scores of 10 and three scores of 9, his average becomes 8. If instead he adds one 9 and two 10s, his average becomes 7.5. How many tests did he take originally?",
+        "a": 5,
+        "unit": "tests",
+        "hint": "Let n be the original number of tests. Compare the two possible total scores.",
+        "steps": [
+          "Three 10s and three 9s add 57 points; one 9 and two 10s add 29.",
+          "If the original total is S: S + 57 = 8(n + 6), and S + 29 = 7.5(n + 3).",
+          "Subtract the equations: 28 = 0.5n + 25.5, so n = 5."
+        ]
+      },
+      {
+        "n": 62,
+        "q": "Five numbers have an average of 138. The first three (in increasing order) average 127; the last three average 148. What is the middle number?",
+        "a": 135,
+        "unit": "",
+        "hint": "The first three and last three together count the middle number twice.",
+        "steps": [
+          "All five total 138 × 5 = 690.",
+          "First three total 127 × 3 = 381; last three total 148 × 3 = 444.",
+          "The middle number is 381 + 444 − 690 = 135."
+        ]
+      },
+      {
+        "n": 157,
+        "q": "Classes 4A, 4B and 4C planted 21, 22 and 29 trees. Class 4D planted 3 more trees than the average of all four classes. How many trees did 4D plant?",
+        "a": 28,
+        "unit": "trees",
+        "hint": "If the average is x, class 4D planted x + 3 trees.",
+        "steps": [
+          "The first three classes planted 21 + 22 + 29 = 72 trees.",
+          "The total is 4x, so 72 + (x + 3) = 4x.",
+          "75 = 3x, so x = 25 and class 4D planted 28."
+        ]
+      },
+      {
+        "n": 19,
+        "q": "Toán, Tuổi and Thơ have notebooks. If Toán gives away 40% of his notebooks equally to the other two, all three have the same number. Initially, Toán has 5 more notebooks than the other two combined. How many notebooks did Toán have?",
+        "a": 25,
+        "unit": "notebooks",
+        "hint": "After giving away 40%, Toán keeps 60%. Each other child originally had 40% of Toán’s original number.",
+        "steps": [
+          "Let Toán start with x. After giving away 40%, each child has 0.6x.",
+          "Each other child started with 0.6x − 0.2x = 0.4x.",
+          "x − 2(0.4x) = 5, so 0.2x = 5 and x = 25."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ages",
+    "name": "Chrono Forest",
+    "tag": "AGE PUZZLES",
+    "emoji": "⏳",
+    "color": "#35c6a5",
+    "desc": "Repair timelines by reasoning about ages.",
+    "missions": [
+      {
+        "n": 5,
+        "q": "Grandfather is 66 years older than his grandchild. His age in years equals the grandchild’s age in months. How old is the grandchild?",
+        "a": 6,
+        "unit": "years",
+        "hint": "If the grandchild is x years old, the grandfather is 12x years old.",
+        "steps": [
+          "The age difference is 12x − x = 11x.",
+          "11x = 66, so x = 6.",
+          "Grandfather is 72 years old, and the grandchild is 6."
+        ]
+      },
+      {
+        "n": 13,
+        "q": "A child’s age now equals half the father–child age difference. Four years ago it equaled one third of that difference. At what age was the child one quarter of the difference?",
+        "a": 6,
+        "unit": "years",
+        "hint": "The age difference between a father and child never changes.",
+        "steps": [
+          "Four years is (1/2 − 1/3) = 1/6 of the age difference.",
+          "The age difference is 4 ÷ (1/6) = 24 years.",
+          "One quarter of 24 is 6 years."
+        ]
+      },
+      {
+        "n": 35,
+        "q": "The younger sibling is now 4 times as old as when the older sibling was the younger sibling’s current age. When the younger sibling reaches the older sibling’s current age, their ages will total 51. How old is the younger sibling now?",
+        "a": 12,
+        "unit": "years",
+        "hint": "Make a timeline with past, present and future. The age gap stays the same.",
+        "steps": [
+          "The source’s equal-part timeline represents the younger sibling’s current age as 4 parts.",
+          "At the future moment, the two ages total 17 parts = 51 years.",
+          "One part is 3 years, so the younger sibling is 4 × 3 = 12."
+        ]
+      },
+      {
+        "n": 38,
+        "q": "Dương is no older than 30. Multiplying his age by 6 gives a three-digit number whose last two digits are his age. How old is he?",
+        "a": 20,
+        "unit": "years",
+        "hint": "The product must be exactly 100 more than his age.",
+        "steps": [
+          "6 × age − age = 100.",
+          "5 × age = 100.",
+          "Age = 20; check: 20 × 6 = 120."
+        ]
+      },
+      {
+        "n": 49,
+        "q": "A man spent 1/5 of his life in childhood, then 1/8 of the remainder as a student, then 1/7 of the next remainder in military school. He trained for 7 years and spent half his life fighting. How old is he?",
+        "a": 70,
+        "unit": "years",
+        "hint": "Convert each stage into a fraction of his entire life.",
+        "steps": [
+          "Childhood = 1/5; student years = 1/10; military school = 1/10.",
+          "Fighting = 1/2. These add to 9/10 of his life.",
+          "The 7 training years equal the remaining 1/10; total = 70 years."
+        ]
+      },
+      {
+        "n": 122,
+        "q": "A father is 43 now. Next year he will be four times the child’s CURRENT age. How old was the child when the father was five times the child’s age?",
+        "a": 8,
+        "unit": "years",
+        "hint": "First find the child’s age now and the constant age difference.",
+        "steps": [
+          "The father will be 44 next year, so the child is 44 ÷ 4 = 11 now.",
+          "Their age difference is 43 − 11 = 32.",
+          "When father is 5 times child, the difference is 4 child-ages: 32 ÷ 4 = 8."
+        ]
+      },
+      {
+        "n": 6,
+        "q": "A class has n students. Add another n students, half of n, a quarter of n, and one more student: the total is 100. What is n?",
+        "a": 36,
+        "unit": "students",
+        "hint": "Combine 1 + 1 + 1/2 + 1/4 = 2.75 groups of n.",
+        "steps": [
+          "Subtract the extra student: 100 − 1 = 99.",
+          "2.75 × n = 99.",
+          "n = 99 ÷ 2.75 = 36."
+        ]
+      },
+      {
+        "n": 38,
+        "q": "A man is at most 30 years old. Six times his age is a three-digit number whose last two digits equal his age. How old is he?",
+        "a": 20,
+        "unit": "years",
+        "hint": "Six times his age minus his age is 100.",
+        "steps": [
+          "Let the age be x. The three-digit number is 100 + x.",
+          "6x = 100 + x, so 5x = 100.",
+          "x = 20 years."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digits",
+    "name": "Neon Number Core",
+    "tag": "NUMBER PATTERNS",
+    "emoji": "⚡",
+    "color": "#ffbd59",
+    "desc": "Decode enormous numbers using tiny repeating patterns.",
+    "missions": [
+      {
+        "n": 1,
+        "q": "A number contains 1,995 sevens in a row: 777...777. What is the FIRST digit after the decimal point when this number is divided by 15?",
+        "a": 8,
+        "unit": "digit",
+        "hint": "The huge number is divisible by 3. Then dividing by 15 is the same as dividing by 3, then by 5.",
+        "steps": [
+          "The sum of digits is 1995 × 7, divisible by 3.",
+          "The quotient after dividing by 3 ends in 9.",
+          "Dividing an integer ending in 9 by 5 gives a fractional part of .8."
+        ]
+      },
+      {
+        "n": 3,
+        "q": "A number contains 2,007 ones in a row. When it is divided by 36, what TWO-digit number appears immediately after the decimal point?",
+        "a": 75,
+        "unit": "two digits",
+        "hint": "Divide by 9 first, then by 4. The quotient after dividing by 9 ends in 79.",
+        "steps": [
+          "The digit sum is 2007, which is divisible by 9.",
+          "After dividing by 9, the integer quotient ends in 79.",
+          "79 ÷ 4 has fractional part .75, so the decimal digits are 75."
+        ]
+      },
+      {
+        "n": 10,
+        "q": "What is the last digit of 2 multiplied by itself 2,003 times (2²⁰⁰³)?",
+        "a": 8,
+        "unit": "digit",
+        "hint": "The last digits of powers of 2 repeat: 2, 4, 8, 6.",
+        "steps": [
+          "Powers of 2 repeat every four steps: 2, 4, 8, 6.",
+          "2003 divided by 4 leaves remainder 3.",
+          "The third digit in the cycle is 8."
+        ]
+      },
+      {
+        "n": 30,
+        "q": "A = 2004 multiplied by itself 2003 times. B = 2003 multiplied by itself 2004 times. What is the LAST digit of A + B?",
+        "a": 5,
+        "unit": "digit",
+        "hint": "Only the last digits 4 and 3 matter. Look for repeating cycles.",
+        "steps": [
+          "4 raised to an odd power ends in 4, so A ends in 4.",
+          "3 raised to a multiple of 4 ends in 1, so B ends in 1.",
+          "A + B ends in 4 + 1 = 5."
+        ]
+      },
+      {
+        "n": 10,
+        "q": "What is the last digit of 2 multiplied by itself 2,003 times?",
+        "a": 8,
+        "unit": "",
+        "hint": "The last digits of powers of 2 repeat: 2, 4, 8, 6.",
+        "steps": [
+          "The cycle of last digits has length 4.",
+          "2,003 divided by 4 leaves remainder 3.",
+          "The third last digit in the cycle is 8."
+        ]
+      },
+      {
+        "n": 23,
+        "q": "A positive 2,004-digit integer is divisible by 9. Repeatedly sum its digits until only one digit remains. What is that digit?",
+        "a": 9,
+        "unit": "",
+        "hint": "A positive multiple of 9 always has digit sum divisible by 9.",
+        "steps": [
+          "Digit sums preserve divisibility by 9.",
+          "Repeatedly summing digits produces a single digit from 1 to 9.",
+          "Since the number is a positive multiple of 9, that digit is 9."
+        ]
+      },
+      {
+        "n": 31,
+        "q": "A number is made entirely of digit 9. What is the smallest positive integer you can add to make the result divisible by 45?",
+        "a": 36,
+        "unit": "",
+        "hint": "A multiple of 45 must be divisible by both 5 and 9.",
+        "steps": [
+          "The original number is divisible by 9, so the amount added must also be divisible by 9.",
+          "The last digit of the added amount must be 1 or 6 to make the sum end in 0 or 5.",
+          "The smallest positive multiple of 9 ending in 1 or 6 is 36."
+        ]
+      },
+      {
+        "n": 33,
+        "q": "A square has side length 10 cm. A staircase-shaped corner is cut away using only horizontal and vertical cuts. The remaining staircase shape includes the left and bottom sides of the original square and runs from its top-left corner to its bottom-right corner. What is its perimeter?",
+        "a": 40,
+        "unit": "cm",
+        "hint": "The total horizontal steps equal 10 cm and the total vertical steps equal 10 cm.",
+        "steps": [
+          "The staircase horizontal lengths sum to 10 cm.",
+          "The staircase vertical lengths sum to 10 cm.",
+          "The two untouched outer sides add 20 cm, so perimeter = 40 cm."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motion",
+    "name": "Velocity Harbor",
+    "tag": "MOTION",
+    "emoji": "🚀",
+    "color": "#ff7e97",
+    "desc": "Navigate rivers, roads, trains and moving clocks.",
+    "missions": [
+      {
+        "n": 9,
+        "q": "A car drives from A to B at 30 km/h and returns at 45 km/h. The return trip takes 40 minutes less. How far apart are A and B?",
+        "a": 60,
+        "unit": "km",
+        "hint": "For the same distance, travel times are inversely proportional to speeds.",
+        "steps": [
+          "Speed ratio 30:45 = 2:3, so time ratio is 3:2.",
+          "The difference of one part is 40 minutes; outward time is 120 minutes = 2 hours.",
+          "Distance = 30 × 2 = 60 km."
+        ]
+      },
+      {
+        "n": 16,
+        "q": "Walking from school to home at 5 km/h, then biking from home to the post office at 15 km/h, takes 1 hour 32 minutes total. The biking distance is 3 km longer. How far is school from home?",
+        "a": 5,
+        "unit": "km",
+        "hint": "The extra 3 km by bike takes 12 minutes. Remove that from the total time.",
+        "steps": [
+          "Biking the extra 3 km takes 3 ÷ 15 hours = 12 minutes.",
+          "For equal remaining distances, walking takes 3 times as long as biking; 80 minutes total splits into 60 and 20.",
+          "Walking distance = 5 km/h × 1 hour = 5 km."
+        ]
+      },
+      {
+        "n": 22,
+        "q": "Xuân and Hạ walk toward each other and meet 50 m from Xuân’s home. Xuân takes 12 minutes to walk the entire route; Hạ takes 10 minutes. What is the distance between their homes?",
+        "a": 110,
+        "unit": "m",
+        "hint": "Their speeds have ratio 5:6 because their full-route times have ratio 6:5.",
+        "steps": [
+          "Xuân:Hạ speeds = 5:6.",
+          "By the meeting time they have walked 50 m and 60 m.",
+          "Total distance = 50 + 60 = 110 m."
+        ]
+      },
+      {
+        "n": 25,
+        "q": "A boat takes 8 hours upstream and 4 hours downstream over the same river distance. How many hours would a leaf drifting with the current take to cover the distance?",
+        "a": 16,
+        "unit": "hours",
+        "hint": "Downstream speed minus upstream speed is twice the current speed.",
+        "steps": [
+          "Upstream speed is 1/8 river-length per hour; downstream speed is 1/4.",
+          "Current speed = (1/4 − 1/8) ÷ 2 = 1/16 river-length per hour.",
+          "A drifting leaf takes 16 hours."
+        ]
+      },
+      {
+        "n": 90,
+        "q": "Over exactly 24 hours, how many times do the minute and hour hands of a normally running clock overlap? Assume they are not overlapping at the start.",
+        "a": 22,
+        "unit": "times",
+        "hint": "The minute hand gains 11/12 of a full turn on the hour hand each hour.",
+        "steps": [
+          "The relative rotation speed is 1 − 1/12 = 11/12 turn/hour.",
+          "Over 24 hours it gains 24 × 11/12 = 22 turns.",
+          "Each full turn of relative motion means one overlap: 22."
+        ]
+      },
+      {
+        "n": 125,
+        "q": "A train 200 m long passes a cyclist going in the opposite direction in 12 seconds. The cyclist travels at 18 km/h. What is the train’s speed in km/h?",
+        "a": 42,
+        "unit": "km/h",
+        "hint": "Opposite-direction speeds add. Convert 200 m / 12 seconds to km/h.",
+        "steps": [
+          "Relative speed = 200 ÷ 12 m/s = 60 km/h.",
+          "The cyclist travels at 18 km/h.",
+          "Train speed = 60 − 18 = 42 km/h."
+        ]
+      },
+      {
+        "n": 151,
+        "q": "A car planned a trip in 3 hours. Bad weather lowered its speed by 14 km/h, so the trip took 4 hours. What was the distance?",
+        "a": 168,
+        "unit": "km",
+        "hint": "Same distance means the speed ratio is 4:3 (planned:actual).",
+        "steps": [
+          "The planned and actual speeds are in ratio 4:3.",
+          "Their difference of one part is 14 km/h, so planned speed is 56 km/h.",
+          "Distance = 56 × 3 = 168 km."
+        ]
+      },
+      {
+        "n": 152,
+        "q": "A boat travels downstream in 5 hours and upstream in 6 hours over the same route. The current speed is 3 km/h. How far is the route?",
+        "a": 180,
+        "unit": "km",
+        "hint": "Downstream speed minus upstream speed = 2 × current speed = 6 km/h.",
+        "steps": [
+          "Speed ratio downstream:upstream = 6:5.",
+          "One part is 6 km/h, so downstream speed is 36 km/h.",
+          "Distance = 36 × 5 = 180 km."
+        ]
+      },
+      {
+        "n": 158,
+        "q": "Hưng bikes to town at 12 km/h and returns at 10 km/h. The return takes 10 minutes longer. How far is the town from home?",
+        "a": 10,
+        "unit": "km",
+        "hint": "Travel time ratio outward:return is 5:6.",
+        "steps": [
+          "Speed ratio is 6:5, so time ratio is 5:6.",
+          "The extra one part is 10 minutes; return time is 60 minutes.",
+          "Distance = 10 km/h × 1 hour = 10 km."
+        ]
+      },
+      {
+        "n": 9,
+        "q": "A car drives from A to B at 30 km/h and returns at 45 km/h. The return trip takes 40 minutes less. How far apart are A and B?",
+        "a": 60,
+        "unit": "km",
+        "hint": "Travel times are inversely proportional to speeds.",
+        "steps": [
+          "The speed ratio is 30:45 = 2:3, so time ratio is 3:2.",
+          "One time part is 40 minutes; outward time is 120 minutes = 2 hours.",
+          "Distance = 30 × 2 = 60 km."
+        ]
+      },
+      {
+        "n": 22,
+        "q": "Two friends walk toward each other from their homes. One would need 12 minutes to cover the full route; the other needs 10 minutes. They meet 50 m from the slower walker’s home. How far apart are the homes?",
+        "a": 110,
+        "unit": "m",
+        "hint": "Their speed ratio is 10:12 = 5:6.",
+        "steps": [
+          "The slower friend walks 50 m while the faster friend walks 50 × 6/5 = 60 m.",
+          "Total distance = 50 + 60.",
+          "The homes are 110 m apart."
+        ]
+      },
+      {
+        "n": 25,
+        "q": "A boat takes 8 hours upstream and 4 hours downstream over the same stretch of river. How many hours would a leaf floating with the current take to cover that stretch?",
+        "a": 16,
+        "unit": "hours",
+        "hint": "Current speed is half the difference between downstream and upstream speeds.",
+        "steps": [
+          "Upstream speed is 1/8 stretch per hour; downstream speed is 1/4.",
+          "Current speed = (1/4 − 1/8) ÷ 2 = 1/16 stretch per hour.",
+          "The leaf takes 16 hours."
+        ]
+      }
+    ]
+  }
+]
