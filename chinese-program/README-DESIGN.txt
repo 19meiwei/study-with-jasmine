@@ -1,0 +1,1 @@
+Study with Jasmine — Kids Studio. Polished kid-friendly design, no AI-generated images. All existing learning and game logic preserved. YCT 2 and YCT 3 are supplementary teacher-created practice banks, not verified complete textbook transcriptions. Mandarin voice depends on available recording or installed device voice. ZIP is not deployed automatically.
