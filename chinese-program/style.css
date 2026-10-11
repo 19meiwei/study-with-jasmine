@@ -21,3 +21,12 @@
 @media(max-width:720px){.writer-layout{grid-template-columns:1fr}.writing-board{width:300px;height:300px}.writing-word{font-size:42px}}
 
 .audio-status{position:fixed;z-index:9999;bottom:16px;left:50%;transform:translateX(-50%);background:#342447;color:white;border-radius:14px;padding:12px 18px;max-width:min(92vw,600px);box-shadow:0 8px 30px #0002;text-align:center;font-size:14px}
+
+/* YCT 2 & 3 book explorer */
+.yct-toolbar{display:flex;gap:16px;flex-wrap:wrap;background:#fff4f7;border:1px solid #f2dbe3;border-radius:16px;padding:16px;margin:20px 0}.yct-toolbar label{display:flex;flex-direction:column;gap:7px;font-weight:700;flex:1;min-width:200px}.yct-toolbar select{width:100%;padding:12px;border:1px solid #e7c6d1;border-radius:11px;background:white;font:inherit}.yct-pages{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0}.yct-pages button{background:#d34e7c;border:0;color:white;border-radius:10px;padding:11px 14px;font:inherit;cursor:pointer}.yct-pages button:disabled{opacity:.35;cursor:not-allowed}.yct-reader{background:#f7f3f6;border:1px solid #efdce2;border-radius:18px;padding:10px;display:flex;justify-content:center}.yct-reader img{display:block;width:100%;max-width:650px;height:auto;object-fit:contain;box-shadow:0 5px 25px #4422331c}.yct-unit-note{background:#f9f4ff;border-radius:13px;padding:15px;line-height:1.7}.yct-unit-note h3{margin:0 0 8px}.yct-unit-note p{margin:5px 0}.yct-unit-note strong{color:#9c3f73}
+
+/* 2026 clean refresh: CSS-only backgrounds, no generated artwork */
+body{background:radial-gradient(circle at 10% 10%,#f7f4dc 0 11%,transparent 12%),radial-gradient(circle at 93% 15%,#e7f6ec 0 12%,transparent 13%),#f9fbf7!important}
+.hero{background:linear-gradient(120deg,#e7f5e9,#e8f3fa 55%,#fff0e3)!important;border-radius:25px!important}
+.heroart{background:#fff9e8!important;box-shadow:inset 0 0 0 2px #f4e5cb!important}
+.newgame-banner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin:20px 0;padding:17px 22px;border:2px solid #b6e0c5;border-radius:19px;background:#e8f7ed;color:#285a43}.newgame-banner a{background:#2b8c64;color:white;text-decoration:none;border-radius:30px;padding:11px 18px;font-weight:800}
