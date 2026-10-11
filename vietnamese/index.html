@@ -1,7 +1,91 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Learn Vietnamese through real photographs, travel, food, and culture."><title>Vietnamese Culture Lab | Study with Jasmine</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./vietnamese.css"><script src="./vietnamese.js" defer></script></head><body>
-<header class="top"><a class="brand" href="../index.html"><span class="mark">学</span><span><strong>Study with Jasmine</strong><small>Vietnamese Culture Lab</small></span></a><nav><a href="../index.html" id="back">← Back to home</a><div class="languages" role="group" aria-label="Learning language"><button data-lang="en" class="active">EN</button><button data-lang="zh-Hans">简体</button><button data-lang="zh-Hant">繁體</button></div></nav></header>
-<main><section class="hero"><div class="hero-copy"><span class="eyebrow" id="eyebrow">LANGUAGE · CULTURE · DISCOVERY</span><h1>Vietnamese <em>Culture Lab.</em></h1><p id="intro">Learn real Vietnamese through the places, food, people and traditions that make Vietnam unique.</p><div class="hero-actions"><a href="#topics" class="primary" id="explore">Explore lessons →</a><span class="pill" id="count">8 cultural journeys</span></div></div><div class="hero-image photo" data-photo="Hoi An ancient town Vietnam photograph"></div></section>
-<section class="metrics"><span id="metric1">8 learning journeys</span><span id="metric2">Real-world Vietnamese</span><span id="metric3">English · 简体中文 · 繁體中文</span></section>
-<section class="section" id="topics"><div class="section-top"><div><span class="eyebrow" id="topicsLabel">YOUR CULTURAL JOURNEYS</span><h2 id="topicsTitle">Explore Vietnam, one lesson at a time.</h2></div><p id="topicsDesc">Choose a destination or theme. Learn useful Vietnamese and test what you know.</p></div><div id="topicGrid" class="topic-grid"></div></section>
-<section class="section practice" id="lesson" hidden><div class="lesson-top"><button id="allTopics" class="text-button">← All journeys</button><span id="lessonProgress">Lesson</span></div><div class="lesson-head"><div><span class="eyebrow" id="lessonCategory"></span><h2 id="lessonTitle"></h2><p id="lessonDescription"></p></div><div class="lesson-image photo" id="lessonImage"></div></div><div class="practice-grid"><div class="vocab-panel"><h3 id="wordsTitle">Words to know</h3><p class="muted" id="wordsHint">Tap the speaker to hear Vietnamese.</p><div id="vocab"></div></div><div class="quiz-panel"><div class="quiz-header"><span id="quizLabel">CULTURE CHALLENGE</span><strong id="questionNumber">01 / 03</strong></div><div class="quiz-bar"><span id="quizFill"></span></div><h3 id="questionText"></h3><div id="answers" class="answers"></div><p id="feedback" class="feedback" aria-live="polite"></p><button class="primary" id="nextQuestion" disabled>Check answer</button><div class="score" id="score" hidden></div></div></div></section>
-<section class="section footer-note"><h2 id="footerTitle">A language you can actually use.</h2><p id="footerDesc">Learn to order food, explore cities, understand customs and connect with Vietnamese people.</p><details class="photo-credits"><summary>Image credits & licenses</summary><div id="photoCreditsList">Photo details load with the lessons.</div></details></section></main><footer><span>© Study with Jasmine · Vietnamese Culture Lab</span><a href="../index.html" id="footerBack">Home ↗</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiếng Việt | Study with Jasmine</title>
+  <meta name="description" content="Learn Vietnamese with authentic photography, interactive lessons and Vietnamese proverbs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vietnamese.css">
+  <link rel="stylesheet" href="./heritage.css">
+  <link rel="stylesheet" href="./vietnamese-polished.css">
+  <style>
+    /* Final adjustments: three matching learning cards and a real Da Nang photo. */
+    .path-grid { align-items: stretch; }
+    .path-card { height: 100%; display: flex; flex-direction: column; min-width: 0; }
+    .path-card .path-media { height: 170px; min-height: 170px; overflow: hidden; position: relative; }
+    .path-card .path-content { flex: 1; }
+    .path-media.photo-culture {
+      background-image: url('https://danangfantasticity.com/wp-content/uploads/2026/02/0-2.jpg') !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .new-hero-copy { display: flex; flex-direction: column; justify-content: center; }
+    .new-hero .hero-buttons { display: none !important; }
+  </style>
+  <script src="./audio.js?v=online-vi-20261011" defer></script><script src="./vietnamese.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../index.html"><span class="mark">V</span><span><strong>Study with Jasmine</strong><small>Vietnamese Culture Lab</small></span></a>
+  <nav class="main-nav" aria-label="Primary navigation">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="./course/index.html" data-nav="course">Tiếng Việt</a>
+    <a href="./proverbs/index.html" data-nav="proverbs">Thành ngữ &amp; Tục ngữ</a>
+    <a href="#topics" data-nav="culture">Culture Journeys</a>
+  </nav>
+  <div class="top-actions"><a class="home-link" href="../index.html" id="back">← Back to home</a><div class="languages" role="group" aria-label="Interface language"><button data-lang="en" class="active">EN</button><button data-lang="zh-Hans">简体</button><button data-lang="zh-Hant">繁體</button></div></div>
+</header>
+<main id="home">
+  <section class="new-hero" aria-labelledby="hero-title">
+    <div class="hero-leaf" aria-hidden="true">❦</div>
+    <div class="new-hero-copy">
+      <span class="eyebrow" id="eyebrow">LANGUAGE · CULTURE · REAL VIETNAM</span>
+      <h1 id="hero-title">Tiếng <em>Việt</em></h1>
+      <div class="brush" aria-hidden="true"></div>
+      <p id="intro">Học ngôn ngữ. Khám phá văn hóa.<br>Trải nghiệm Việt Nam thật gần.</p>
+      <!-- Explore lessons and Explore culture buttons removed intentionally. -->
+    </div>
+    <div class="new-hero-visual">
+      <div class="hero-photo" role="img" aria-label="Real photograph of a Vietnamese destination"></div>
+      <blockquote class="hero-quote" id="heroQuote">“Một ngôn ngữ,<br>muôn câu chuyện,<br>một Việt Nam thật gần.”</blockquote>
+    </div>
+    <div class="flower flower-one" aria-hidden="true">✿</div>
+  </section>
+  <section class="new-path" id="path" aria-label="Learning pathways">
+    <div class="path-grid">
+      <a class="path-card" href="./course/index.html">
+        <div class="path-media photo-course" role="img" aria-label="Vietnamese national flag">
+          <span class="path-index">01 / LANGUAGE</span>
+          <img class="vn-flag-photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXniltxDVxHdHzGoCi79DJIcvQxGow-R2CvSN9u_jQopy_dBNwposepleq&amp;s=10" alt="Photograph of the Vietnamese national flag" loading="lazy">
+        </div>
+        <div class="path-content"><div><h2 id="courseTitle">Tiếng Việt</h2><p id="courseDesc">16 bài học từ cơ bản, luyện từ vựng, ngữ pháp và giao tiếp.</p></div><span class="path-link" id="courseAction">Xem tất cả bài học <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <a class="path-card" href="./proverbs/index.html">
+        <div class="path-media photo-proverbs" role="img" aria-label="Vietnamese cultural photograph"><span class="path-index">02 / WISDOM</span><span class="proverb-overlay">Có công mài sắt,<br>có ngày nên kim.</span></div>
+        <div class="path-content"><div><h2 id="proverbTitle">Thành ngữ &amp; Tục ngữ</h2><p id="proverbDesc">24 câu với giải thích bằng tiếng Anh, Trung giản thể và phồn thể.</p></div><span class="path-link" id="proverbAction">Khám phá ngay <span aria-hidden="true">↗</span></span></div>
+      </a>
+      <a class="path-card" href="#topics">
+        <div class="path-media photo-culture" role="img" aria-label="Photograph of Da Nang, Vietnam"><span class="path-index">03 / CULTURE</span></div>
+        <div class="path-content"><div><h2 id="cultureTitle">Khám phá văn hóa</h2><p id="cultureDesc">8 hành trình về ẩm thực, lễ hội, địa danh và đời sống.</p></div><span class="path-link" id="cultureAction">Bắt đầu khám phá <span aria-hidden="true">↗</span></span></div>
+      </a>
+    </div>
+  </section>
+  <section class="journeys" id="topics">
+    <div class="journey-head"><div><span class="eyebrow" id="topicsLabel">8 HÀNH TRÌNH KHÁM PHÁ VIỆT NAM</span><h2 id="topicsTitle">Hành trình văn hóa Việt Nam</h2></div></div>
+    <div id="topicGrid" class="topic-grid compact"></div>
+  </section>
+  <section class="section practice" id="lesson" hidden>
+    <div class="lesson-top"><button id="allTopics" class="text-button">← All journeys</button><span id="lessonProgress">Lesson</span></div>
+    <div class="lesson-head"><div><span class="eyebrow" id="lessonCategory"></span><h2 id="lessonTitle"></h2><p id="lessonDescription"></p></div><div class="lesson-image photo" id="lessonImage"></div></div>
+    <div class="practice-grid"><div class="vocab-panel"><h3 id="wordsTitle">Words to know</h3><p class="muted" id="wordsHint">Tap the speaker to hear Vietnamese.</p><div id="vocab"></div></div><div class="quiz-panel"><div class="quiz-header"><span id="quizLabel">CULTURE CHALLENGE</span><strong id="questionNumber">01 / 03</strong></div><div class="quiz-bar"><span id="quizFill"></span></div><h3 id="questionText"></h3><div id="answers" class="answers"></div><p id="feedback" class="feedback" aria-live="polite"></p><button class="primary" id="nextQuestion" disabled>Check answer</button><div class="score" id="score" hidden></div></div></div>
+  </section>
+  <section class="section footer-note"><h2 id="footerTitle">A language you can actually use.</h2><p id="footerDesc">Learn to order food, explore cities, understand customs and connect with Vietnamese people.</p>
+    <details class="photo-credits"><summary id="photoCreditsLabel">Photograph sources &amp; licenses</summary><div id="photoCreditsList"><p>Vietnamese flag: xiquinhosilva, CC BY 2.0 (Hanoi, 2016); Unsplash photographers (original photo URLs in <code>vietnamese.js</code>); Huế: shankar s., CC BY 2.0; Tết: public-domain photograph from Ho Chi Minh City. Please also credit the Da Nang image provider according to its usage terms.</p><a href="https://commons.wikimedia.org/wiki/File:National_flag_of_Vietnam_in_Hanoi_24-12-2016.jpg" target="_blank" rel="noopener">Vietnamese flag — xiquinhosilva, CC BY 2.0</a><a href="https://commons.wikimedia.org/wiki/File:Ngo_Mon_Gate_for_entry_to_the_Imperial_Citadel,_Hue_(31654316702).jpg" target="_blank" rel="noopener">Huế — shankar s., CC BY 2.0</a><a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">Huế license — CC BY 2.0</a><a href="https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Tet_Decorations.jpg" target="_blank" rel="noopener">Tết — DHN, public domain</a><a href="https://danangfantasticity.com/wp-content/uploads/2026/02/0-2.jpg" target="_blank" rel="noopener">Da Nang — Danang Fantasticity</a></div></details>
+  </section>
+</main>
+<footer><span>© Study with Jasmine · Vietnamese Culture Lab</span><a href="../index.html" id="footerBack">Home ↗</a></footer>
+</body>
+</html>

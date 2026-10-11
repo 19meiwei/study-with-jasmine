@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 
+
+
 <html lang="en">
+
+
+
+
 
 
 
 <head>
 
+
+
     <meta charset="UTF-8">
 
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
 
 
 
@@ -16,47 +30,97 @@
 
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https\://fonts.googleapis.com">
+
+
+
+    <link rel="preconnect" href="https\://fonts.gstatic.com" crossorigin>
+
+
+
+    <link rel="preconnect" href="https\://fonts.googleapis.com">
+
+
+
+<link rel="preconnect" href="https\://fonts.gstatic.com" crossorigin>
+
+
+
+<link href="https\://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
 
 
 
     <link
 
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+
+
+        href="https\://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+
+
 
         rel="stylesheet"
+
+
 
     >
 
 
 
+
+
+
+
     <link rel="stylesheet" href="style.css">
+
+
 
     <link rel="stylesheet" href="materials.css">
 
 
 
+
+
+
+
 <style>
-/* Four equally sized, fully clickable class cards */
+
+/\* Four equally sized, fully clickable class cards \*/
+
 .class-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; align-items:stretch; }
+
 .class-grid > .class-card { display:flex; flex-direction:column; min-width:0; height:100%; box-sizing:border-box; text-decoration:none; color:inherit; cursor:pointer; transition:transform .2s ease,box-shadow .2s ease; }
+
 .class-grid > .class-card:hover { transform:translateY(-4px); box-shadow:0 12px 28px rgba(70,40,55,.09); }
-.class-grid > .class-card .tags { margin-top:auto; }
+
+.class-grid > .class-card .tags { margin-top:auto; display:flex; flex-wrap:wrap; gap:6px; }
+
 .class-grid > .class-card .explore-link { display:block; margin-top:14px; font-size:13px; font-weight:700; color:#cc4d75; }
+
 .class-grid > .green-card .explore-link { color:#397c5b; }
+
 .class-grid > .blue-card .explore-link { color:#427d9c; }
+
 @media(max-width:900px){.class-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+
 @media(max-width:560px){.class-grid{grid-template-columns:1fr;}}
+
 </style>
+
 </head>
+
+
+
+
+
+
 
 
 
@@ -66,11 +130,23 @@
 
 
 
+
+
+
+
 <!-- =========================================
+
+
 
      NAVBAR
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
@@ -78,25 +154,51 @@
 
 
 
+
+
+
+
     <a href="#home" class="brand">
+
+
+
+
 
 
 
         <div class="brand-mark">
 
+
+
             学
 
+
+
         </div>
+
+
+
+
 
 
 
         <div class="brand-copy">
 
+
+
             <strong>Study with Jasmine</strong>
+
+
 
             <span>和 Jasmine 一起学习吧！</span>
 
+
+
         </div>
+
+
+
+
 
 
 
@@ -106,41 +208,85 @@
 
 
 
+
+
+
+
+
+
     <nav class="nav-links">
+
+
+
+
 
 
 
         <a href="#home" data-i18n="navHome">
 
+
+
             Home
 
+
+
         </a>
+
+
+
+
 
 
 
         <a href="#classes" data-i18n="navClasses">
 
+
+
             Classes
 
+
+
         </a>
+
+
+
+
 
 
 
         <a href="#schedule" data-i18n="navSchedule">
 
+
+
             Schedule
 
+
+
         </a>
+
+
+
+
 
 
 
         <a href="materials/index.html" data-i18n="navResources">
 
+
+
             Materials
+
+
 
         </a>
 
+
+
         <a href="hsk-practice/index.html">HSK Practice</a>
+
+
+
+
 
 
 
@@ -150,7 +296,17 @@
 
 
 
+
+
+
+
+
+
     <div class="nav-actions">
+
+
+
+
 
 
 
@@ -158,51 +314,103 @@
 
 
 
+
+
+
+
             <button
 
+
+
                 class="language-btn"
+
+
 
                 data-language="vi"
 
+
+
                 type="button"
 
+
+
             >
+
+
 
                 VI
 
+
+
             </button>
 
 
 
+
+
+
+
             <button
+
+
 
                 class="language-btn"
 
+
+
                 data-language="zh"
+
+
 
                 type="button"
 
+
+
             >
+
+
 
                 中文
 
+
+
             </button>
+
+
+
+
 
 
 
             <button
 
+
+
                 class="language-btn active"
+
+
 
                 data-language="en"
 
+
+
                 type="button"
+
+
 
             >
 
+
+
                 EN
 
+
+
             </button>
+
+
+
+
 
 
 
@@ -212,19 +420,41 @@
 
 
 
+
+
+
+
+
+
         <a
+
+
 
             href="#contact"
 
+
+
             class="book-btn"
+
+
 
             data-i18n="navBook"
 
+
+
         >
+
+
 
             Book a Lesson
 
+
+
         </a>
+
+
+
+
 
 
 
@@ -232,7 +462,19 @@
 
 
 
+
+
+
+
 </header>
+
+
+
+
+
+
+
+
 
 
 
@@ -246,11 +488,25 @@
 
 
 
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      HERO
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
@@ -258,23 +514,49 @@
 
 
 
+
+
+
+
     <div class="hero-content">
+
+
+
+
 
 
 
         <span class="eyebrow">
 
+
+
             ONLINE LESSONS
+
+
 
         </span>
 
 
 
+
+
+
+
         <p class="hero-chinese">
+
+
 
             和 Jasmine 一起学习吧！
 
+
+
         </p>
+
+
+
+
+
+
 
 
 
@@ -282,9 +564,15 @@
 
         <h1 data-i18n="heroTitle">
 
+
+
             Learn a little,<br>
 
+
+
             <span>grow every day.</span>
+
+
 
         </h1>
 
@@ -292,19 +580,43 @@
 
 
 
+
+
+
+
+
+
         <p
+
+
 
             class="hero-description"
 
+
+
             data-i18n="heroDescription"
+
+
 
         >
 
+
+
             Friendly and easy-to-follow online lessons personalized
+
+
 
             around each student's goals and learning pace.
 
+
+
         </p>
+
+
+
+
+
+
 
 
 
@@ -314,17 +626,37 @@
 
 
 
+
+
+
+
             <span>Chinese</span>
+
+
 
             <span>Vietnamese</span>
 
+
+
             <span>English Speaking</span>
+
+
 
             <span>Math</span>
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
 
 
 
@@ -334,35 +666,71 @@
 
 
 
+
+
+
+
             <a
+
+
 
                 href="#classes"
 
+
+
                 class="primary-btn"
+
+
 
                 data-i18n="exploreClasses"
 
+
+
             >
+
+
 
                 Explore Classes
 
+
+
             </a>
+
+
+
+
 
 
 
             <a
 
+
+
                 href="#schedule"
+
+
 
                 class="secondary-btn"
 
+
+
                 data-i18n="viewSchedule"
+
+
 
             >
 
+
+
                 View Schedule
 
+
+
             </a>
+
+
+
+
 
 
 
@@ -370,7 +738,19 @@
 
 
 
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -382,7 +762,17 @@
 
 
 
+
+
+
+
         <div class="image-decoration"></div>
+
+
+
+
+
+
 
 
 
@@ -392,23 +782,49 @@
 
 
 
+
+
+
+
             <div class="hero-photo-window">
+
+
+
+
 
 
 
                 <img
 
+
+
                     src="images/jasmine.jpg"
+
+
 
                     alt="Jasmine"
 
+
+
                     class="hero-photo"
+
+
 
                 >
 
 
 
+
+
+
+
             </div>
+
+
+
+
+
+
 
 
 
@@ -418,21 +834,43 @@
 
 
 
+
+
+
+
                 <div>
+
+
 
                     <strong>Jasmine</strong>
 
+
+
                     <span>Online Tutor</span>
+
+
 
                 </div>
 
 
 
+
+
+
+
                 <span class="caption-cn">
+
+
 
                     老师
 
+
+
                 </span>
+
+
+
+
 
 
 
@@ -440,7 +878,17 @@
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
 
 
 
@@ -448,15 +896,29 @@
 
         <div class="floating-note">
 
+
+
             <strong>你好!</strong>
 
+
+
             <span>Hello!</span>
+
+
 
         </div>
 
 
 
+
+
+
+
     </div>
+
+
+
+
 
 
 
@@ -468,11 +930,27 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      INTRO STRIP
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
@@ -480,11 +958,23 @@
 
 
 
+
+
+
+
     <span>Learn languages</span>
 
 
 
+
+
+
+
     <i>·</i>
+
+
+
+
 
 
 
@@ -492,7 +982,15 @@
 
 
 
+
+
+
+
     <i>·</i>
+
+
+
+
 
 
 
@@ -500,11 +998,23 @@
 
 
 
+
+
+
+
     <i>·</i>
 
 
 
+
+
+
+
     <span>Learn together</span>
+
+
+
+
 
 
 
@@ -516,21 +1026,47 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      CLASSES
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
 <section
 
+
+
     class="section classes-section"
+
+
 
     id="classes"
 
+
+
 >
+
+
+
+
 
 
 
@@ -538,23 +1074,47 @@
 
 
 
+
+
+
+
         <div>
+
+
+
+
 
 
 
             <span class="section-label">
 
+
+
                 CLASSES · 课程
+
+
 
             </span>
 
 
 
+
+
+
+
             <h2 data-i18n="classesTitle">
+
+
 
                 Classes with Jasmine
 
+
+
             </h2>
+
+
+
+
 
 
 
@@ -564,15 +1124,37 @@
 
 
 
+
+
+
+
+
+
         <p data-i18n="classesIntro">
 
+
+
             Choose a class that fits your learning goals.
+
+
 
         </p>
 
 
 
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -581,36 +1163,44 @@
 
 
     <div class="class-grid">
-  <a class="class-card pink-card" href="chinese-program/index.html" aria-label="Explore Chinese">
-    <div class="card-top"><span class="card-number">01</span><span class="card-symbol">中</span></div>
-    <h3 data-i18n="chineseTitle">Chinese</h3>
-    <p data-i18n="chineseText">Practical Chinese for everyday communication, study and professional environments.</p>
-    <div class="tags"><span>Pinyin</span><span>Speaking</span><span>Practical</span></div>
-    <span class="explore-link">Explore →</span>
-  </a>
-  <a class="class-card yellow-card vietnamese-link" href="vietnamese/index.html" aria-label="Explore Vietnamese Culture Lab">
-    <div class="card-top"><span class="card-number">02</span><span class="card-symbol">越</span></div>
-    <h3 data-i18n="vietnameseTitle">Vietnamese for Foreigners</h3>
-    <p data-i18n="vietnameseText">Practical Vietnamese conversation designed for international learners.</p>
-    <div class="tags"><span>Conversation</span><span>Daily Life</span></div>
-    <span class="explore-link">Explore →</span>
-  </a>
-  <a class="class-card green-card" href="english-speaking/index.html" aria-label="Explore English Speaking">
-    <div class="card-top"><span class="card-number">03</span><span class="card-symbol">A</span></div>
-    <h3 data-i18n="englishTitle">English Speaking</h3>
-    <p data-i18n="englishText">Build pronunciation, conversation skills and confidence in spoken English.</p>
-    <div class="tags"><span>Speaking</span><span>Pronunciation</span></div>
-    <span class="explore-link">Explore →</span>
-  </a>
-  <a class="class-card blue-card" href="math-planet/index.html" aria-label="Explore Math">
-    <div class="card-top"><span class="card-number">04</span><span class="card-symbol">∑</span></div>
-    <h3 data-i18n="mathTitle">Math</h3>
-    <p data-i18n="mathText">Mathematics explained clearly and step by step.</p>
-    <div class="tags"><span>Primary</span><span>Puzzles</span><span>Math</span></div>
-    <span class="explore-link">Explore →</span>
-  </a>
-</div>
-</section>
+      <a class="class-card pink-card" href="chinese-program/index.html" aria-label="Explore Chinese">
+         <div class="card-top"><span class="card-number">01</span><span class="card-symbol">中</span></div>
+         <h3 data-i18n="chineseTitle">Chinese</h3>
+         <p data-i18n="chineseText">Practical Chinese for everyday communication, study and professional environments.</p>
+         <div class="tags"><span>Pinyin</span><span>Speaking</span><span>Practical</span></div>
+         <span class="explore-link">Explore →</span>
+      </a>
+      <a class="class-card yellow-card vietnamese-link" href="vietnamese/index.html" aria-label="Explore Vietnamese Culture Lab">
+         <div class="card-top"><span class="card-number">02</span><span class="card-symbol">越</span></div>
+         <h3 data-i18n="vietnameseTitle">Vietnamese for Foreigners</h3>
+         <p data-i18n="vietnameseText">Practical Vietnamese conversation designed for international learners.</p>
+         <div class="tags"><span>Conversation</span><span>Daily Life</span></div>
+         <span class="explore-link">Explore →</span>
+      </a>
+      <a class="class-card green-card" href="english-speaking/index.html" aria-label="Explore English Speaking">
+         <div class="card-top"><span class="card-number">03</span><span class="card-symbol">A</span></div>
+         <h3 data-i18n="englishTitle">English Speaking</h3>
+         <p data-i18n="englishText">Build pronunciation, conversation skills and confidence in spoken English.</p>
+         <div class="tags"><span>Speaking</span><span>Pronunciation</span></div>
+         <span class="explore-link">Explore →</span>
+      </a>
+      <a class="class-card blue-card" href="math-planet/index.html" aria-label="Explore Math">
+         <div class="card-top"><span class="card-number">04</span><span class="card-symbol">∑</span></div>
+         <h3 data-i18n="mathTitle">Math</h3>
+         <p data-i18n="mathText">Mathematics explained clearly and step by step.</p>
+         <div class="tags"><span>Primary</span><span>Puzzles</span><span>Math</span></div>
+         <span class="explore-link">Explore →</span>
+      </a>
+   </div>
+   </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -620,19 +1210,37 @@
 
 <!-- =========================================
 
+
+
      SCHEDULE
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
 <section
 
+
+
     class="schedule-section"
+
+
 
     id="schedule"
 
+
+
 >
+
+
+
+
 
 
 
@@ -640,9 +1248,17 @@
 
 
 
+
+
+
+
         <span class="section-label">
 
+
+
             SCHEDULE · 上课时间
+
+
 
         </span>
 
@@ -650,9 +1266,19 @@
 
 
 
+
+
+
+
+
+
         <h2 data-i18n="scheduleTitle">
 
+
+
             Lesson Schedule
+
+
 
         </h2>
 
@@ -660,11 +1286,27 @@
 
 
 
+
+
+
+
+
+
         <p data-i18n="scheduleSubtitle">
+
+
 
             All available lesson times are shown in Vietnam time.
 
+
+
         </p>
+
+
+
+
+
+
 
 
 
@@ -674,15 +1316,31 @@
 
 
 
+
+
+
+
             🇻🇳
+
+
+
+
 
 
 
             <span data-i18n="vietnamTime">
 
+
+
                 Vietnam Time · GMT+7
 
+
+
             </span>
+
+
+
+
 
 
 
@@ -690,7 +1348,19 @@
 
 
 
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -706,7 +1376,19 @@
 
 
 
+
+
+
+
+
+
+
+
         <!-- SATURDAY -->
+
+
+
+
 
 
 
@@ -714,39 +1396,83 @@
 
 
 
+
+
+
+
             <div class="schedule-day">
+
+
+
+
 
 
 
                 <span class="day-short">
 
+
+
                     SAT
+
+
 
                 </span>
 
 
 
+
+
+
+
                 <strong data-i18n="saturday">
 
+
+
                     Saturday
+
+
 
                 </strong>
 
 
 
+
+
+
+
             </div>
+
+
+
+
 
 
 
             <div class="schedule-time">
 
+
+
                 20:00 – 21:30
+
+
 
             </div>
 
 
 
+
+
+
+
         </article>
+
+
+
+
+
+
+
+
 
 
 
@@ -758,7 +1484,15 @@
 
 
 
+
+
+
+
         <article class="schedule-item weekend">
+
+
+
+
 
 
 
@@ -766,31 +1500,63 @@
 
 
 
+
+
+
+
                 <span class="day-short">
 
+
+
                     SUN
+
+
 
                 </span>
 
 
 
+
+
+
+
                 <strong data-i18n="sunday">
 
+
+
                     Sunday
+
+
 
                 </strong>
 
 
 
+
+
+
+
             </div>
+
+
+
+
 
 
 
             <div class="schedule-time">
 
+
+
                 20:00 – 21:30
 
+
+
             </div>
+
+
+
+
 
 
 
@@ -798,7 +1564,15 @@
 
 
 
+
+
+
+
     </div>
+
+
+
+
 
 
 
@@ -810,21 +1584,47 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      ABOUT
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
 <section
 
+
+
     class="about-section"
+
+
 
     id="about"
 
+
+
 >
+
+
+
+
 
 
 
@@ -832,43 +1632,91 @@
 
 
 
+
+
+
+
         <div class="about-shape"></div>
+
+
+
+
 
 
 
         <video
 
+
+
     class="about-photo about-video"
+
+
 
     autoplay
 
+
+
     muted
+
+
 
     loop
 
+
+
     playsinline
+
+
 
     preload="auto"
 
+
+
 >
+
+
 
     <source
 
+
+
         src="images/jasmine-about.mp4"
 
+
+
         type="video/mp4"
+
+
 
     >
 
 
 
+
+
+
+
     Your browser does not support video.
+
+
 
 </video>
 
 
 
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -880,9 +1728,17 @@
 
 
 
+
+
+
+
         <span class="section-label">
 
+
+
             ABOUT · 关于我
+
+
 
         </span>
 
@@ -890,9 +1746,19 @@
 
 
 
+
+
+
+
+
+
         <h2 data-i18n="aboutTitle">
 
+
+
             Hi, I'm Jasmine.
+
+
 
         </h2>
 
@@ -900,25 +1766,57 @@
 
 
 
+
+
+
+
+
+
         <p data-i18n="aboutOne">
+
+
 
     I believe the best lessons are the ones that make you feel comfortable,
 
+
+
     confident and excited to keep learning. That's why I keep my classes
+
+
 
     practical, easy to follow and personalized to you.
 
+
+
 </p>
+
+
+
+
 
 
 
 <p data-i18n="aboutTwo">
 
+
+
     From everyday conversations to Chinese for work, travel and study,
+
+
 
     we'll focus on language you can actually use — one step at a time.
 
+
+
 </p>
+
+
+
+
+
+
+
+
 
 
 
@@ -928,9 +1826,17 @@
 
         <!-- =================================
 
+
+
              SPECIALIZED CHINESE PROGRAMS
 
-        \================================== -->
+
+
+        \\================================== -->
+
+
+
+
 
 
 
@@ -938,17 +1844,37 @@
 
 
 
+
+
+
+
             <p
+
+
 
                 class="programs-title"
 
+
+
                 data-i18n="programsTitle"
+
+
 
             >
 
+
+
                 Specialized Chinese Programs
 
+
+
             </p>
+
+
+
+
+
+
 
 
 
@@ -960,7 +1886,17 @@
 
 
 
+
+
+
+
+
+
                 <!-- BUSINESS CHINESE -->
+
+
+
+
 
 
 
@@ -968,11 +1904,23 @@
 
 
 
+
+
+
+
                     <span class="program-icon">
+
+
 
                         商
 
+
+
                     </span>
+
+
+
+
 
 
 
@@ -980,19 +1928,39 @@
 
 
 
+
+
+
+
                         <strong data-i18n="businessChinese">
 
+
+
                             Business Chinese
+
+
 
                         </strong>
 
 
 
+
+
+
+
                         <small>
+
+
 
                             商务中文
 
+
+
                         </small>
+
+
+
+
 
 
 
@@ -1000,7 +1968,19 @@
 
 
 
+
+
+
+
                 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1012,15 +1992,31 @@
 
 
 
+
+
+
+
                 <div class="program-item">
+
+
+
+
 
 
 
                     <span class="program-icon">
 
+
+
                         工
 
+
+
                     </span>
+
+
+
+
 
 
 
@@ -1028,19 +2024,39 @@
 
 
 
+
+
+
+
                         <strong data-i18n="factoryChinese">
 
+
+
                             Factory & Workplace Chinese
+
+
 
                         </strong>
 
 
 
+
+
+
+
                         <small>
+
+
 
                             工厂与职场中文
 
+
+
                         </small>
+
+
+
+
 
 
 
@@ -1048,7 +2064,19 @@
 
 
 
+
+
+
+
                 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1060,15 +2088,31 @@
 
 
 
+
+
+
+
                 <div class="program-item">
+
+
+
+
 
 
 
                     <span class="program-icon">
 
+
+
                         旅
 
+
+
                     </span>
+
+
+
+
 
 
 
@@ -1076,19 +2120,39 @@
 
 
 
+
+
+
+
                         <strong data-i18n="travelChinese">
 
+
+
                             Travel & Hospitality Chinese
+
+
 
                         </strong>
 
 
 
+
+
+
+
                         <small>
+
+
 
                             旅游与酒店中文
 
+
+
                         </small>
+
+
+
+
 
 
 
@@ -1096,7 +2160,19 @@
 
 
 
+
+
+
+
                 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1108,15 +2184,31 @@
 
 
 
+
+
+
+
                 <div class="program-item">
+
+
+
+
 
 
 
                     <span class="program-icon">
 
+
+
                         童
 
+
+
                     </span>
+
+
+
+
 
 
 
@@ -1124,19 +2216,39 @@
 
 
 
+
+
+
+
                         <strong data-i18n="yctChinese">
 
+
+
                             YCT Chinese for Kids
+
+
 
                         </strong>
 
 
 
+
+
+
+
                         <small>
+
+
 
                             少儿 YCT 中文
 
+
+
                         </small>
+
+
+
+
 
 
 
@@ -1144,7 +2256,19 @@
 
 
 
+
+
+
+
                 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1156,15 +2280,31 @@
 
 
 
+
+
+
+
                 <div class="program-item">
+
+
+
+
 
 
 
                     <span class="program-icon">
 
+
+
                         汉语
 
+
+
                     </span>
+
+
+
+
 
 
 
@@ -1172,19 +2312,39 @@
 
 
 
+
+
+
+
                         <strong data-i18n="HSK 3.0">
 
+
+
                             Chinese Proficiency Test
+
+
 
                         </strong>
 
 
 
+
+
+
+
                         <small>
+
+
 
                             汉语水平考试
 
+
+
                         </small>
+
+
+
+
 
 
 
@@ -1192,7 +2352,15 @@
 
 
 
+
+
+
+
                 </div>
+
+
+
+
 
 
 
@@ -1200,7 +2368,19 @@
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1212,7 +2392,15 @@
 
 
 
+
+
+
+
         <div class="about-points">
+
+
+
+
 
 
 
@@ -1220,19 +2408,39 @@
 
 
 
+
+
+
+
                 <span>
+
+
 
                     01
 
+
+
                 </span>
+
+
+
+
 
 
 
                 <strong data-i18n="easy">
 
+
+
                     Easy to Follow
 
+
+
                 </strong>
+
+
+
+
 
 
 
@@ -1242,27 +2450,59 @@
 
 
 
+
+
+
+
+
+
             <div>
+
+
+
+
 
 
 
                 <span>
 
+
+
                     02
 
+
+
                 </span>
+
+
+
+
 
 
 
                 <strong data-i18n="practical">
 
+
+
                     Practical
+
+
 
                 </strong>
 
 
 
+
+
+
+
             </div>
+
+
+
+
+
+
 
 
 
@@ -1272,23 +2512,47 @@
 
 
 
+
+
+
+
                 <span>
 
+
+
                     03
+
+
 
                 </span>
 
 
 
+
+
+
+
                 <strong data-i18n="personalized">
 
+
+
                     Personalized
+
+
 
                 </strong>
 
 
 
+
+
+
+
             </div>
+
+
+
+
 
 
 
@@ -1296,7 +2560,15 @@
 
 
 
+
+
+
+
     </div>
+
+
+
+
 
 
 
@@ -1308,21 +2580,47 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      CONTACT
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
 <section
 
+
+
     class="contact-section"
+
+
 
     id="contact"
 
+
+
 >
+
+
+
+
 
 
 
@@ -1330,9 +2628,17 @@
 
 
 
+
+
+
+
         <span class="section-label light-label">
 
+
+
             LET'S STUDY TOGETHER
+
+
 
         </span>
 
@@ -1340,9 +2646,19 @@
 
 
 
+
+
+
+
+
+
         <h2 data-i18n="contactTitle">
 
+
+
             Book a Lesson with Jasmine
+
+
 
         </h2>
 
@@ -1350,13 +2666,29 @@
 
 
 
+
+
+
+
+
+
         <p data-i18n="contactIntro">
+
+
 
             Choose what you would like to study
 
+
+
             and a time that works for you.
 
+
+
         </p>
+
+
+
+
 
 
 
@@ -1368,13 +2700,33 @@
 
 
 
+
+
+
+
+
+
+
+
     <form
+
+
 
         class="contact-form"
 
+
+
         id="lessonForm"
 
+
+
     >
+
+
+
+
+
+
 
 
 
@@ -1384,31 +2736,67 @@
 
 
 
+
+
+
+
         <label>
+
+
+
+
 
 
 
             <span data-i18n="yourName">
 
+
+
                 Your Name
+
+
 
             </span>
 
 
 
+
+
+
+
             <input
+
+
 
                 id="studentName"
 
+
+
                 type="text"
 
+
+
                 required
+
+
 
             >
 
 
 
+
+
+
+
         </label>
+
+
+
+
+
+
+
+
 
 
 
@@ -1420,13 +2808,25 @@
 
 
 
+
+
+
+
         <label>
+
+
+
+
 
 
 
             <span data-i18n="subject">
 
+
+
                 Subject
+
+
 
             </span>
 
@@ -1434,59 +2834,121 @@
 
 
 
+
+
+
+
+
+
             <select
+
+
 
                 id="studentSubject"
 
+
+
                 required
+
+
 
             >
 
 
 
+
+
+
+
                 <option
+
+
 
                     value=""
 
+
+
                     data-i18n="chooseSubject"
+
+
 
                 >
 
+
+
                     Choose a subject
 
+
+
                 </option>
+
+
+
+
 
 
 
                 <option value="Chinese">
 
+
+
                     Chinese
 
+
+
                 </option>
+
+
+
+
 
 
 
                 <option value="Vietnamese">
 
+
+
                     Vietnamese
 
+
+
                 </option>
+
+
+
+
 
 
 
                 <option value="English Speaking">
 
+
+
                     English Speaking
 
+
+
                 </option>
+
+
+
+
 
 
 
                 <option value="Math">
 
+
+
                     Math
 
+
+
                 </option>
+
+
+
+
 
 
 
@@ -1494,7 +2956,19 @@
 
 
 
+
+
+
+
         </label>
+
+
+
+
+
+
+
+
 
 
 
@@ -1506,13 +2980,25 @@
 
 
 
+
+
+
+
         <label>
+
+
+
+
 
 
 
             <span data-i18n="level">
 
+
+
                 Current Level
+
+
 
             </span>
 
@@ -1520,69 +3006,141 @@
 
 
 
+
+
+
+
+
+
             <select
+
+
 
                 id="studentLevel"
 
+
+
                 required
+
+
 
             >
 
 
 
+
+
+
+
                 <option
+
+
 
                     value=""
 
+
+
                     data-i18n="chooseLevel"
 
+
+
                 >
+
+
 
                     Choose your level
 
+
+
                 </option>
 
 
 
+
+
+
+
                 <option
+
+
 
                     value="Beginner"
 
+
+
                     data-i18n="beginner"
 
+
+
                 >
+
+
 
                     Beginner
 
+
+
                 </option>
 
 
 
+
+
+
+
                 <option
+
+
 
                     value="Basic"
 
+
+
                     data-i18n="basic"
+
+
 
                 >
 
+
+
                     Basic
 
+
+
                 </option>
+
+
+
+
 
 
 
                 <option
 
+
+
                     value="Intermediate"
+
+
 
                     data-i18n="intermediate"
 
+
+
                 >
+
+
 
                     Intermediate
 
+
+
                 </option>
+
+
+
+
 
 
 
@@ -1590,7 +3148,19 @@
 
 
 
+
+
+
+
         </label>
+
+
+
+
+
+
+
+
 
 
 
@@ -1602,27 +3172,55 @@
 
 
 
+
+
+
+
         <label>
+
+
+
+
 
 
 
             <span data-i18n="preferredTime">
 
+
+
                 Preferred Time
+
+
 
             </span>
 
 
 
+
+
+
+
             <input
+
+
 
                 id="studentTime"
 
+
+
                 type="text"
+
+
 
                 placeholder="Example: Saturday, 08:00"
 
+
+
             >
+
+
+
+
 
 
 
@@ -1634,17 +3232,37 @@
 
 
 
+
+
+
+
+
+
+
+
         <button
+
+
 
             type="submit"
 
+
+
             class="form-submit"
+
+
 
             data-i18n="prepareMessage"
 
+
+
         >
 
+
+
             Prepare Registration Message
+
+
 
         </button>
 
@@ -1654,15 +3272,35 @@
 
 
 
+
+
+
+
+
+
+
+
         <div
+
+
 
             class="message-result"
 
+
+
             id="messageResult"
+
+
 
             hidden
 
+
+
         >
+
+
+
+
 
 
 
@@ -1670,19 +3308,39 @@
 
 
 
+
+
+
+
             <button
+
+
 
                 type="button"
 
+
+
                 id="copyMessage"
+
+
 
                 data-i18n="copy"
 
+
+
             >
+
+
 
                 Copy
 
+
+
             </button>
+
+
+
+
 
 
 
@@ -1690,17 +3348,35 @@
 
 
 
+
+
+
+
     </form>
+
+
+
+
 
 
 
 </section>
 
+
+
 <!-- =========================================
+
+
 
      CONTACT INFORMATION
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
@@ -1708,37 +3384,77 @@
 
 
 
+
+
+
+
     <div class="contact-info-heading">
+
+
+
+
 
 
 
         <span class="section-label">
 
+
+
             CONTACT · 联系我
+
+
 
         </span>
 
 
 
+
+
+
+
         <h2>
 
+
+
             Get in touch with Jasmine
+
+
 
         </h2>
 
 
 
+
+
+
+
         <p>
+
+
 
             Have a question about lessons or learning materials?
 
+
+
             Feel free to contact me anytime.
+
+
 
         </p>
 
 
 
+
+
+
+
     </div>
+
+
+
+
+
+
 
 
 
@@ -1748,25 +3464,51 @@
 
 
 
+
+
+
+
         <!-- EMAIL -->
+
+
+
+
 
 
 
         <a
 
+
+
             href="mailto:weideng2002@gmail.com"
 
+
+
             class="contact-info-card"
+
+
 
         >
 
 
 
+
+
+
+
             <div class="contact-info-icon">
+
+
 
                 ✉
 
+
+
             </div>
+
+
+
+
 
 
 
@@ -1774,27 +3516,55 @@
 
 
 
+
+
+
+
                 <span>
 
+
+
                     EMAIL
+
+
 
                 </span>
 
 
 
+
+
+
+
                 <strong>
 
+
+
                     weideng2002@gmail.com
+
+
 
                 </strong>
 
 
 
+
+
+
+
                 <small>
+
+
 
                     Send an email →
 
+
+
                 </small>
+
+
+
+
 
 
 
@@ -1802,7 +3572,17 @@
 
 
 
+
+
+
+
         </a>
+
+
+
+
+
+
 
 
 
@@ -1812,25 +3592,51 @@
 
 
 
+
+
+
+
         <a
 
-            href="https://zalo.me/0932431629"
+
+
+            href="https\://zalo.me/0932431629"
+
+
 
             target="_blank"
 
+
+
             rel="noopener noreferrer"
 
+
+
             class="contact-info-card"
+
+
 
         >
 
 
 
+
+
+
+
             <div class="contact-info-icon">
+
+
 
                 Z
 
+
+
             </div>
+
+
+
+
 
 
 
@@ -1838,27 +3644,55 @@
 
 
 
+
+
+
+
                 <span>
 
+
+
                     ZALO
+
+
 
                 </span>
 
 
 
+
+
+
+
                 <strong>
 
+
+
                     0932431629
+
+
 
                 </strong>
 
 
 
+
+
+
+
                 <small>
+
+
 
                     Chat on Zalo →
 
+
+
                 </small>
+
+
+
+
 
 
 
@@ -1866,7 +3700,15 @@
 
 
 
+
+
+
+
         </a>
+
+
+
+
 
 
 
@@ -1874,7 +3716,15 @@
 
 
 
+
+
+
+
 </section>
+
+
+
+
 
 
 
@@ -1882,15 +3732,31 @@
 
 
 
+
+
+
+
     <h2>Payment Information</h2>
+
+
+
+
 
 
 
     <p>
 
+
+
         Lesson payment details:
 
+
+
     </p>
+
+
+
+
 
 
 
@@ -1898,7 +3764,15 @@
 
 
 
+
+
+
+
         <p><strong>Bank:</strong> Bao Viet Bank</p>
+
+
+
+
 
 
 
@@ -1906,7 +3780,15 @@
 
 
 
+
+
+
+
         <p><strong>Account Number:</strong> 0431005811009</p>
+
+
+
+
 
 
 
@@ -1914,7 +3796,15 @@
 
 
 
+
+
+
+
 </section>
+
+
+
+
 
 
 
@@ -1926,11 +3816,27 @@
 
 
 
+
+
+
+
+
+
+
+
 <!-- =========================================
+
+
 
      FOOTER
 
-\========================================= -->
+
+
+\\========================================= -->
+
+
+
+
 
 
 
@@ -1938,23 +3844,47 @@
 
 
 
+
+
+
+
     <div class="footer-brand">
+
+
+
+
 
 
 
         <strong>
 
+
+
             Study with Jasmine
+
+
 
         </strong>
 
 
 
+
+
+
+
         <span>
+
+
 
             和 Jasmine 一起学习吧！
 
+
+
         </span>
+
+
+
+
 
 
 
@@ -1964,11 +3894,25 @@
 
 
 
+
+
+
+
+
+
     <p>
+
+
 
         Learn a little every day.
 
+
+
     </p>
+
+
+
+
 
 
 
@@ -1980,11 +3924,27 @@
 
 
 
+
+
+
+
+
+
+
+
 <script src="script.js"></script>
 
 
 
+
+
+
+
 </body>
+
+
+
+
 
 
 

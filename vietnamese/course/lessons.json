@@ -1,0 +1,466 @@
+[
+  {
+    "number": 1,
+    "title": "Tên tôi là Peter",
+    "english": "Introductions & nationalities",
+    "focus": "Chào hỏi · đại từ nhân xưng · hỏi tên, quốc tịch",
+    "page": 18,
+    "example": "Xin chào! Tôi tên là Mai.",
+    "translation": "Hello! My name is Mai.",
+    "question": "Bạn tên là gì?",
+    "questionEn": "What is your name?",
+    "vocab": [
+      [
+        "tên",
+        "name"
+      ],
+      [
+        "người",
+        "person"
+      ],
+      [
+        "quốc tịch",
+        "nationality"
+      ],
+      [
+        "chào",
+        "hello"
+      ]
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Tôi là giáo viên",
+    "english": "Jobs & identity",
+    "focus": "Hỏi nghề nghiệp · là · phải không · đại từ số nhiều",
+    "page": 25,
+    "example": "Tôi là giáo viên.",
+    "translation": "I am a teacher.",
+    "question": "Bạn làm nghề gì?",
+    "questionEn": "What do you do?",
+    "vocab": [
+      [
+        "giáo viên",
+        "teacher"
+      ],
+      [
+        "bác sĩ",
+        "doctor"
+      ],
+      [
+        "nghề",
+        "profession"
+      ],
+      [
+        "làm việc",
+        "work"
+      ]
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Anh bao nhiêu tuổi?",
+    "english": "Age & everyday activities",
+    "focus": "Hỏi tuổi · có...không · còn/và",
+    "page": 37,
+    "example": "Em mười hai tuổi.",
+    "translation": "I am twelve years old.",
+    "question": "Bạn bao nhiêu tuổi?",
+    "questionEn": "How old are you?",
+    "vocab": [
+      [
+        "tuổi",
+        "age"
+      ],
+      [
+        "bao nhiêu",
+        "how many"
+      ],
+      [
+        "đi",
+        "go"
+      ],
+      [
+        "học",
+        "study"
+      ]
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Nhà của anh rất đẹp!",
+    "english": "Homes & descriptions",
+    "focus": "Đại từ chỉ định · loại từ · của · trật tự tính từ",
+    "page": 43,
+    "example": "Nhà này rất đẹp.",
+    "translation": "This house is very beautiful.",
+    "question": "Đây là nhà của ai?",
+    "questionEn": "Whose house is this?",
+    "vocab": [
+      [
+        "nhà",
+        "house"
+      ],
+      [
+        "đẹp",
+        "beautiful"
+      ],
+      [
+        "rộng",
+        "spacious"
+      ],
+      [
+        "của",
+        "of / belonging to"
+      ]
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Cái này bao nhiêu tiền?",
+    "english": "Shopping & prices",
+    "focus": "Bao nhiêu tiền · cho tôi · thử · màu sắc",
+    "page": 52,
+    "example": "Cái áo này bao nhiêu tiền?",
+    "translation": "How much is this shirt?",
+    "question": "Cho tôi xem cái này.",
+    "questionEn": "Please show me this one.",
+    "vocab": [
+      [
+        "tiền",
+        "money"
+      ],
+      [
+        "áo",
+        "shirt"
+      ],
+      [
+        "mua",
+        "buy"
+      ],
+      [
+        "đắt",
+        "expensive"
+      ]
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Bây giờ là mấy giờ?",
+    "english": "Time & frequency",
+    "focus": "Hỏi giờ · thời gian xảy ra hành động · hay/hoặc",
+    "page": 71,
+    "example": "Bây giờ là tám giờ.",
+    "translation": "It is eight o’clock now.",
+    "question": "Bây giờ là mấy giờ?",
+    "questionEn": "What time is it?",
+    "vocab": [
+      [
+        "giờ",
+        "hour"
+      ],
+      [
+        "phút",
+        "minute"
+      ],
+      [
+        "hôm nay",
+        "today"
+      ],
+      [
+        "thường",
+        "usually"
+      ]
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Hôm nay là ngày bao nhiêu?",
+    "english": "Dates & calendars",
+    "focus": "Ngày tháng năm · sắp/sẽ · bao giờ/khi nào",
+    "page": 79,
+    "example": "Hôm nay là thứ hai.",
+    "translation": "Today is Monday.",
+    "question": "Hôm nay là ngày bao nhiêu?",
+    "questionEn": "What is today’s date?",
+    "vocab": [
+      [
+        "ngày",
+        "day"
+      ],
+      [
+        "tháng",
+        "month"
+      ],
+      [
+        "năm",
+        "year"
+      ],
+      [
+        "mai",
+        "tomorrow"
+      ]
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Anh đã có nhà riêng chưa?",
+    "english": "Experiences & possession",
+    "focus": "Đã...chưa · vẫn/cũng/đều · đâu/ở đâu",
+    "page": 87,
+    "example": "Tôi chưa có nhà riêng.",
+    "translation": "I do not have my own house yet.",
+    "question": "Bạn đã ăn cơm chưa?",
+    "questionEn": "Have you eaten yet?",
+    "vocab": [
+      [
+        "đã",
+        "already"
+      ],
+      [
+        "chưa",
+        "not yet"
+      ],
+      [
+        "riêng",
+        "own"
+      ],
+      [
+        "ở đâu",
+        "where"
+      ]
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Khi rỗi chị thường làm gì?",
+    "english": "Free time & habits",
+    "focus": "Nhưng/nên/cho nên · đã...bao giờ chưa · rất/quá/lắm",
+    "page": 94,
+    "example": "Khi rỗi tôi thường đọc sách.",
+    "translation": "In my free time, I usually read books.",
+    "question": "Bạn thường làm gì khi rỗi?",
+    "questionEn": "What do you usually do in your free time?",
+    "vocab": [
+      [
+        "rỗi",
+        "free"
+      ],
+      [
+        "thường",
+        "usually"
+      ],
+      [
+        "đọc",
+        "read"
+      ],
+      [
+        "thích",
+        "like"
+      ]
+    ]
+  },
+  {
+    "number": 10,
+    "title": "Anh đi thẳng đường này",
+    "english": "Directions & distance",
+    "focus": "Từ...đến · A cách B bao xa · bằng gì · mất bao lâu",
+    "page": 103,
+    "example": "Bạn đi thẳng rồi rẽ phải.",
+    "translation": "Go straight and then turn right.",
+    "question": "Từ đây đến chợ bao xa?",
+    "questionEn": "How far is the market from here?",
+    "vocab": [
+      [
+        "đường",
+        "road"
+      ],
+      [
+        "thẳng",
+        "straight"
+      ],
+      [
+        "rẽ",
+        "turn"
+      ],
+      [
+        "xa",
+        "far"
+      ]
+    ]
+  },
+  {
+    "number": 11,
+    "title": "Anh có thể nói tiếng Việt được không?",
+    "english": "Ability & requests",
+    "focus": "Có thể/được · từ + động từ · để làm gì · vừa A vừa B",
+    "page": 119,
+    "example": "Tôi có thể nói một ít tiếng Việt.",
+    "translation": "I can speak a little Vietnamese.",
+    "question": "Bạn có thể nói chậm hơn không?",
+    "questionEn": "Could you speak more slowly?",
+    "vocab": [
+      [
+        "có thể",
+        "can"
+      ],
+      [
+        "được",
+        "able to"
+      ],
+      [
+        "nói",
+        "speak"
+      ],
+      [
+        "chậm",
+        "slowly"
+      ]
+    ]
+  },
+  {
+    "number": 12,
+    "title": "Quyển sách ở trên bàn",
+    "english": "Objects & locations",
+    "focus": "Giới từ chỉ vị trí · có...nào không · không được/đừng/cấm",
+    "page": 126,
+    "example": "Quyển sách ở trên bàn.",
+    "translation": "The book is on the table.",
+    "question": "Quyển sách ở đâu?",
+    "questionEn": "Where is the book?",
+    "vocab": [
+      [
+        "sách",
+        "book"
+      ],
+      [
+        "bàn",
+        "table"
+      ],
+      [
+        "trên",
+        "on / above"
+      ],
+      [
+        "dưới",
+        "under"
+      ]
+    ]
+  },
+  {
+    "number": 13,
+    "title": "Cho chúng tôi xem thực đơn",
+    "english": "Food & ordering",
+    "focus": "Gọi món · thêm/nữa · nào cũng/ai cũng/gì cũng",
+    "page": 134,
+    "example": "Cho tôi xem thực đơn, được không?",
+    "translation": "Could I see the menu, please?",
+    "question": "Bạn muốn ăn gì?",
+    "questionEn": "What would you like to eat?",
+    "vocab": [
+      [
+        "thực đơn",
+        "menu"
+      ],
+      [
+        "món ăn",
+        "dish"
+      ],
+      [
+        "nước",
+        "water"
+      ],
+      [
+        "thêm",
+        "more"
+      ]
+    ]
+  },
+  {
+    "number": 14,
+    "title": "Hôm nay trời nắng và nóng",
+    "english": "Weather & comparison",
+    "focus": "Thời tiết · cả A lẫn/và B · cấp độ so sánh",
+    "page": 143,
+    "example": "Hôm nay trời nắng và nóng.",
+    "translation": "Today it is sunny and hot.",
+    "question": "Hôm nay thời tiết thế nào?",
+    "questionEn": "How is the weather today?",
+    "vocab": [
+      [
+        "trời",
+        "sky / weather"
+      ],
+      [
+        "nắng",
+        "sunny"
+      ],
+      [
+        "nóng",
+        "hot"
+      ],
+      [
+        "lạnh",
+        "cold"
+      ]
+    ]
+  },
+  {
+    "number": 15,
+    "title": "Cho tôi một phòng đơn",
+    "english": "Hotels & accommodation",
+    "focus": "Thế nào...cũng · dù/tuy/mặc dù...nhưng · ngày càng",
+    "page": 154,
+    "example": "Tôi muốn đặt một phòng đơn.",
+    "translation": "I would like to book a single room.",
+    "question": "Khách sạn còn phòng không?",
+    "questionEn": "Does the hotel have rooms available?",
+    "vocab": [
+      [
+        "phòng",
+        "room"
+      ],
+      [
+        "đơn",
+        "single"
+      ],
+      [
+        "đặt",
+        "reserve"
+      ],
+      [
+        "khách sạn",
+        "hotel"
+      ]
+    ]
+  },
+  {
+    "number": 16,
+    "title": "Hôm nay trông anh có vẻ mệt",
+    "english": "Health & feelings",
+    "focus": "Bị/được · hỏi bệnh · hình như/có lẽ · sau/trước khi",
+    "page": 159,
+    "example": "Hôm nay tôi hơi mệt.",
+    "translation": "I feel a little tired today.",
+    "question": "Bạn bị làm sao?",
+    "questionEn": "What is wrong?",
+    "vocab": [
+      [
+        "mệt",
+        "tired"
+      ],
+      [
+        "đau",
+        "hurt"
+      ],
+      [
+        "bệnh",
+        "illness"
+      ],
+      [
+        "nghỉ",
+        "rest"
+      ]
+    ]
+  }
+]

@@ -3334,3 +3334,47 @@ small {
 .green-card .explore-link:hover {
   text-decoration: underline;
 }
+/* Align Explore buttons across all class cards */
+.class-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.class-card .class-link,
+.class-card .explore-link {
+  margin-top: auto;
+  margin-left: 0;
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+/* Keep tags and Explore link on separate rows */
+.class-card .class-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+/* Align tags across all four class cards */
+.class-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.class-card .class-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Keep Explore below the tags */
+.class-card .class-link {
+  margin-top: 14px;
+  align-self: flex-start;
+}
+.class-card.vietnamese-link::after,
+.class-card.vietnamese-link .explore-link::after {
+  content: none !important;
+}
