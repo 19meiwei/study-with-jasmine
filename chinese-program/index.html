@@ -1,32 +1,479 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fdf5f6"><title>Chinese Program · YCT 1–3 | Study with Jasmine</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="top"><a class="logo" href="../index.html"><span class="logoicon">学</span><span><b>Study with Jasmine</b><small>Chinese Program · YCT 1–3 Learning Studio</small></span></a><a class="home" href="../index.html">← Back to home</a></header>
-<main class="shell"><section class="hero"><div><div class="eyebrow">WELCOME TO JASMINE’S CHINESE CLUB</div><h1>Little words.<br><em>Big adventures.</em></h1><p>Learn new words, write Chinese characters and play little games. Pick your level, collect new skills and have fun along the way!</p><div class="chips"><span>Vietnamese</span><span>English</span><span>拼音 Pinyin</span><span>Mandarin audio</span></div></div><div class="heroart" aria-hidden="true"><img src="assets/panda-chinese-hero.webp" alt="" loading="eager" decoding="async"></div></section>
-<section class="control"><label for="courseLevel">PICK YOUR LEVEL</label><select id="courseLevel"><option value="1">YCT 1</option><option value="2">YCT 2</option><option value="3">YCT 3</option></select><p id="courseNotice" class="muted">YCT 1 · Existing course vocabulary.</p><label for="lesson">CHOOSE YOUR LESSON</label><select id="lesson"><option value="all">All lessons · Full YCT 1 review</option></select><div class="counts"><span id="count"></span><span id="mastered"></span></div></section>
-<nav class="tabs" aria-label="Learning modes"><button data-tab="learn" class="selected">Learn</button><button data-tab="writing">Writing</button><button data-tab="town">Little Market</button><button data-tab="practice">Practice</button><button data-tab="duel">Play together</button><button data-tab="library">Word collection</button></nav>
-<section id="learn" class="panel active"><div class="sectionheading"><div><span class="eyebrow">STUDY STUDIO</span><h2>Discover new words</h2></div><span id="cardProgress" class="muted"></span></div><div id="overview" class="overview"></div><div class="flash" id="flash" role="button" tabindex="0" aria-label="Flip vocabulary flashcard"><div class="tiny">TAP CARD TO FLIP</div><div id="hanzi" class="hanzi">你好</div><div id="pinyin" class="py">nǐ hǎo</div><div id="meaning" class="meaning">Tap to reveal meaning</div></div><div class="actions"><button id="prev" class="light">← Previous</button><button id="speak" class="light">🔊 Listen</button><button id="mark" class="light">☆ Learned</button><button id="next" class="primary">Next →</button></div><div class="note">Listen uses available recordings or your device Mandarin voice. Some words may not have playable audio on every device.</div></section>
-<section id="writing" class="panel">
-<div class="sectionheading"><div><span class="eyebrow">HANZI WRITING STUDIO</span><h2>Let’s write Chinese!</h2></div></div>
-<p class="muted">Select a YCT word to animate its characters, practice handwriting and hear examples. Inspired by dictionary-style study tools, not affiliated with Hanzii.</p>
-<div class="writer-layout">
-<div class="writer-controls"><label for="writeSelect">Choose a word</label><select id="writeSelect"></select>
-<div class="writing-word" id="writeWord">你好</div><div id="writePinyin" class="py">nǐ hǎo</div><div id="writeMeaning" class="meaning"></div>
-<div class="stroke-controls"><button id="prevChar" class="light">← Character</button><span id="charCounter"></span><button id="nextChar" class="light">Character →</button></div>
-<div class="actions"><button id="animateChar" class="primary">▶ Show stroke order</button><button id="quizChar" class="light">✍ Practice strokes</button><button id="resetChar" class="light">↻ Reset</button><button id="hearWrite" class="light">🔊 Listen</button></div>
-<p id="strokeStatus" class="note" role="status">Stroke order loads when you select a word.</p></div>
-<div class="writing-board"><div id="characterTarget" aria-label="Chinese character stroke animation"></div><div class="grid-guides" aria-hidden="true"></div></div></div>
-<div class="example-box"><h3>Example sentences / 例句</h3><div id="exampleList"></div><p class="muted">Example sentences are original teaching examples; not copied from Hanzii or presented as textbook quotations.</p></div>
-</section>
-<section id="town" class="panel">
-<div class="sectionheading"><div><span class="eyebrow">PLAY & LEARN · CHINESE LITTLE TOWN</span><h2>Market Day! 小小商店</h2></div><span class="muted">Learn through real-life requests</span></div>
-<p class="muted">Customers ask for items in Chinese. Choose the item and quantity before time runs out. The shop uses familiar product words from your selected level where available, plus introductory shopping vocabulary.</p>
-<div class="town-wrap">
- <div class="town-head"><div><span class="town-badge">ROUND <b id="townRound">1</b>/8</span><span class="town-badge">⭐ <b id="townScore">0</b></span><span class="town-badge">❤️ <b id="townLives">3</b></span></div><div class="town-sound"><button id="townMusic" class="light">♫ Music ON</button><button id="townSfx" class="light">♪ SFX ON</button></div></div>
- <div class="town-stage" id="townStage"><div class="town-decor"><div class="sun"></div><div class="awning"></div><div class="shelf-line"></div></div><div class="customer"><div class="customer-face">☺</div><div class="bubble" id="townBubble">欢迎！Welcome to Little Town.</div></div><div id="townProducts" class="town-products"></div><div class="town-foot"><div id="townClock">⏱ 20s</div><div id="townFeedback" role="status">Press Start to open your shop.</div></div></div>
- <div class="town-actions"><button class="primary" id="townStart">▶ Start shopping game</button><button class="light" id="townHear">🔊 Hear request</button><button class="light" id="townNext" hidden>Next customer →</button></div>
- <div class="town-note">Music and sound effects can be switched off. Mandarin audio availability depends on the selected word and device.</div>
-</div></section>
-<section id="practice" class="panel"><div class="sectionheading"><div><span class="eyebrow">PRACTICE ARENA</span><h2>Four ways to master YCT 1</h2></div></div><div class="modes"><button data-mode="meaning"><span>字</span><b>Hanzi Hunt</b><small>Read characters and find their English meaning</small></button><button data-mode="listen"><span>♫</span><b>Sound Detective</b><small>Listen and choose the Chinese word</small></button><button data-mode="pinyin"><span>拼</span><b>Pinyin Power</b><small>Find the correct pronunciation</small></button><button data-mode="reverse"><span>↔</span><b>Translation Match</b><small>English + Vietnamese to Hanzi</small></button></div><div class="setup"><label>Questions per round <select id="amount"><option>10</option><option>20</option><option>30</option><option>50</option></select></label><span>Correct answer +100 points · Learn from every answer</span></div><div id="solo" class="game hidden" aria-live="polite"></div></section>
-<section id="duel" class="panel"><div class="sectionheading"><div><span class="eyebrow">2-PLAYER CHALLENGE</span><h2>Two-player</h2></div></div><p class="muted">Two players take turns on one device. The game mixes listening, Chinese characters, pinyin and bilingual translations.</p><div class="duelsetup"><label>Player 1<input id="p1" value="Team Peach" maxlength="24"></label><label>Player 2<input id="p2" value="Team Mint" maxlength="24"></label><label>Number of turns<select id="rounds"><option>10</option><option>20</option><option>30</option><option>40</option></select></label><button id="startBattle" class="primary">Start game</button></div><div id="battleGame" class="game hidden" aria-live="polite"></div></section>
-<section id="library" class="panel"><div class="sectionheading"><div><span class="eyebrow">VOCABULARY LIBRARY</span><h2>Every word, one place</h2></div></div><input id="search" type="search" placeholder="Search 汉字, pinyin, English or Vietnamese…" aria-label="Search vocabulary"><div id="libraryList" class="words"></div><button id="reset" class="light reset">Reset learned progress</button></section>
-<footer>Made for <strong>Study with Jasmine</strong> · YCT 1 study content · YCT 2–3 supplementary practice vocabulary · Not an official YCT testing product</footer></main><script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7/dist/hanzi-writer.min.js"></script><script src="yct-banks.js"></script><script src="data.js"></script><script src="human-audio.js"></script><script src="script.js"></script><script src="writing.js"></script><script src="town.js"></script><div id="humanAudioStatus" class="audio-status" role="status" aria-live="polite" hidden></div>
-</body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdf5f6">
+  <title>Chinese Program · YCT 1–3 | Study with Jasmine</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  /* Gold Miner – same style as other navigation tabs */
+  .tabs .gold-miner-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 14px 12px;
+    border: 1px solid #e9e5e3;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #526b68;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+    transition: background .2s, transform .2s;
+  }
+
+  .tabs .gold-miner-tab:hover {
+    background: #f8f4f5;
+    transform: translateY(-2px);
+  }
+
+  .tabs .gold-miner-tab:focus-visible {
+    outline: 3px solid #d85b7c;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <a class="logo" href="../index.html">
+    <span class="logoicon">学</span>
+    <span>
+      <b>Study with Jasmine</b>
+      <small>Chinese Program · YCT 1–3 Learning Studio</small>
+    </span>
+  </a>
+  <a class="home" href="../index.html">← Back to home</a>
+</header>
+
+<main class="shell">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="eyebrow">WELCOME TO JASMINE’S CHINESE CLUB</div>
+      <h1>Little words.<br><em>Big adventures.</em></h1>
+      <p>
+        Learn new words, write Chinese characters and play little games.
+        Pick your level, collect new skills and have fun along the way!
+      </p>
+      <div class="chips">
+        <span>Vietnamese</span>
+        <span>English</span>
+        <span>拼音 Pinyin</span>
+        <span>Mandarin audio</span>
+      </div>
+    </div>
+    <div class="heroart" aria-hidden="true">
+      <img
+        src="assets/panda-chinese-hero.webp"
+        alt=""
+        loading="eager"
+        decoding="async"
+      >
+    </div>
+  </section>
+
+  <!-- LEVEL AND LESSON -->
+  <section class="control">
+    <label for="courseLevel">PICK YOUR LEVEL</label>
+    <select id="courseLevel">
+      <option value="1">YCT 1</option>
+      <option value="2">YCT 2</option>
+      <option value="3">YCT 3</option>
+    </select>
+
+    <p id="courseNotice" class="muted">
+      YCT 1 · Existing course vocabulary.
+    </p>
+
+    <label for="lesson">CHOOSE YOUR LESSON</label>
+    <select id="lesson">
+      <option value="all">All lessons · Full YCT 1 review</option>
+    </select>
+
+    <div class="counts">
+      <span id="count"></span>
+      <span id="mastered"></span>
+    </div>
+  </section>
+
+  <!-- NAVIGATION -->
+  <nav class="tabs" aria-label="Learning modes">
+    <button data-tab="learn" class="selected">Learn</button>
+    <button data-tab="writing">Writing</button>
+    <button data-tab="town">Little Market</button>
+    <button data-tab="practice">Practice</button>
+
+    <a href="gold-miner/index.html" class="gold-miner-tab">
+       Gold Miner
+    </a>
+
+    <button data-tab="duel">Play together</button>
+    <button data-tab="library">Word collection</button>
+  </nav>
+
+  <!-- LEARN -->
+  <section id="learn" class="panel active">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">STUDY STUDIO</span>
+        <h2>Discover new words</h2>
+      </div>
+      <span id="cardProgress" class="muted"></span>
+    </div>
+
+    <div id="overview" class="overview"></div>
+
+    <div
+      class="flash"
+      id="flash"
+      role="button"
+      tabindex="0"
+      aria-label="Flip vocabulary flashcard"
+    >
+      <div class="tiny">TAP CARD TO FLIP</div>
+      <div id="hanzi" class="hanzi">你好</div>
+      <div id="pinyin" class="py">nǐ hǎo</div>
+      <div id="meaning" class="meaning">Tap to reveal meaning</div>
+    </div>
+
+    <div class="actions">
+      <button id="prev" class="light">← Previous</button>
+      <button id="speak" class="light">🔊 Listen</button>
+      <button id="mark" class="light">☆ Learned</button>
+      <button id="next" class="primary">Next →</button>
+    </div>
+
+    <div class="note">
+      Listen uses available recordings or your device Mandarin voice.
+      Some words may not have playable audio on every device.
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section id="writing" class="panel">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">HANZI WRITING STUDIO</span>
+        <h2>Let’s write Chinese!</h2>
+      </div>
+    </div>
+
+    <p class="muted">
+      Select a YCT word to animate its characters, practice handwriting
+      and hear examples. Inspired by dictionary-style study tools,
+      not affiliated with Hanzii.
+    </p>
+
+    <div class="writer-layout">
+      <div class="writer-controls">
+        <label for="writeSelect">Choose a word</label>
+        <select id="writeSelect"></select>
+
+        <div class="writing-word" id="writeWord">你好</div>
+        <div id="writePinyin" class="py">nǐ hǎo</div>
+        <div id="writeMeaning" class="meaning"></div>
+
+        <div class="stroke-controls">
+          <button id="prevChar" class="light">← Character</button>
+          <span id="charCounter"></span>
+          <button id="nextChar" class="light">Character →</button>
+        </div>
+
+        <div class="actions">
+          <button id="animateChar" class="primary">
+            ▶ Show stroke order
+          </button>
+          <button id="quizChar" class="light">
+            ✍ Practice strokes
+          </button>
+          <button id="resetChar" class="light">
+            ↻ Reset
+          </button>
+          <button id="hearWrite" class="light">
+            🔊 Listen
+          </button>
+        </div>
+
+        <p id="strokeStatus" class="note" role="status">
+          Stroke order loads when you select a word.
+        </p>
+      </div>
+
+      <div class="writing-board">
+        <div
+          id="characterTarget"
+          aria-label="Chinese character stroke animation"
+        ></div>
+        <div class="grid-guides" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="example-box">
+      <h3>Example sentences / 例句</h3>
+      <div id="exampleList"></div>
+      <p class="muted">
+        Example sentences are original teaching examples;
+        not copied from Hanzii or presented as textbook quotations.
+      </p>
+    </div>
+  </section>
+
+  <!-- LITTLE MARKET -->
+  <section id="town" class="panel">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">
+          PLAY & LEARN · CHINESE LITTLE TOWN
+        </span>
+        <h2>Market Day! 小小商店</h2>
+      </div>
+      <span class="muted">
+        Learn through real-life requests
+      </span>
+    </div>
+
+    <p class="muted">
+      Customers ask for items in Chinese. Choose the item and quantity
+      before time runs out. The shop uses familiar product words from
+      your selected level where available, plus introductory shopping
+      vocabulary.
+    </p>
+
+    <div class="town-wrap">
+      <div class="town-head">
+        <div>
+          <span class="town-badge">
+            ROUND <b id="townRound">1</b>/8
+          </span>
+          <span class="town-badge">
+            ⭐ <b id="townScore">0</b>
+          </span>
+          <span class="town-badge">
+            ❤️ <b id="townLives">3</b>
+          </span>
+        </div>
+
+        <div class="town-sound">
+          <button id="townMusic" class="light">♫ Music ON</button>
+          <button id="townSfx" class="light">♪ SFX ON</button>
+        </div>
+      </div>
+
+      <div class="town-stage" id="townStage">
+        <div class="town-decor">
+          <div class="sun"></div>
+          <div class="awning"></div>
+          <div class="shelf-line"></div>
+        </div>
+
+        <div class="customer">
+          <div class="customer-face">☺</div>
+          <div class="bubble" id="townBubble">
+            欢迎！Welcome to Little Town.
+          </div>
+        </div>
+
+        <div id="townProducts" class="town-products"></div>
+
+        <div class="town-foot">
+          <div id="townClock">⏱ 20s</div>
+          <div id="townFeedback" role="status">
+            Press Start to open your shop.
+          </div>
+        </div>
+      </div>
+
+      <div class="town-actions">
+        <button class="primary" id="townStart">
+          ▶ Start shopping game
+        </button>
+        <button class="light" id="townHear">
+          🔊 Hear request
+        </button>
+        <button class="light" id="townNext" hidden>
+          Next customer →
+        </button>
+      </div>
+
+      <div class="town-note">
+        Music and sound effects can be switched off.
+        Mandarin audio availability depends on the selected word
+        and device.
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section id="practice" class="panel">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">PRACTICE ARENA</span>
+        <h2>Four ways to master YCT 1</h2>
+      </div>
+    </div>
+
+    <div class="modes">
+      <button data-mode="meaning">
+        <span>字</span>
+        <b>Hanzi Hunt</b>
+        <small>
+          Read characters and find their English meaning
+        </small>
+      </button>
+
+      <button data-mode="listen">
+        <span>♫</span>
+        <b>Sound Detective</b>
+        <small>
+          Listen and choose the Chinese word
+        </small>
+      </button>
+
+      <button data-mode="pinyin">
+        <span>拼</span>
+        <b>Pinyin Power</b>
+        <small>
+          Find the correct pronunciation
+        </small>
+      </button>
+
+      <button data-mode="reverse">
+        <span>↔</span>
+        <b>Translation Match</b>
+        <small>
+          English + Vietnamese to Hanzi
+        </small>
+      </button>
+    </div>
+
+    <div class="setup">
+      <label>
+        Questions per round
+        <select id="amount">
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>50</option>
+        </select>
+      </label>
+      <span>
+        Correct answer +100 points · Learn from every answer
+      </span>
+    </div>
+
+    <div
+      id="solo"
+      class="game hidden"
+      aria-live="polite"
+    ></div>
+  </section>
+
+  <!-- TWO PLAYER -->
+  <section id="duel" class="panel">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">2-PLAYER CHALLENGE</span>
+        <h2>Two-player</h2>
+      </div>
+    </div>
+
+    <p class="muted">
+      Two players take turns on one device.
+      The game mixes listening, Chinese characters,
+      pinyin and bilingual translations.
+    </p>
+
+    <div class="duelsetup">
+      <label>
+        Player 1
+        <input id="p1" value="Team Peach" maxlength="24">
+      </label>
+
+      <label>
+        Player 2
+        <input id="p2" value="Team Mint" maxlength="24">
+      </label>
+
+      <label>
+        Number of turns
+        <select id="rounds">
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+        </select>
+      </label>
+
+      <button id="startBattle" class="primary">
+        Start game
+      </button>
+    </div>
+
+    <div
+      id="battleGame"
+      class="game hidden"
+      aria-live="polite"
+    ></div>
+  </section>
+
+  <!-- WORD COLLECTION -->
+  <section id="library" class="panel">
+    <div class="sectionheading">
+      <div>
+        <span class="eyebrow">VOCABULARY LIBRARY</span>
+        <h2>Every word, one place</h2>
+      </div>
+    </div>
+
+    <input
+      id="search"
+      type="search"
+      placeholder="Search 汉字, pinyin, English or Vietnamese…"
+      aria-label="Search vocabulary"
+    >
+
+    <div id="libraryList" class="words"></div>
+
+    <button id="reset" class="light reset">
+      Reset learned progress
+    </button>
+  </section>
+
+  <footer>
+    Made for <strong>Study with Jasmine</strong>
+    · YCT 1 study content
+    · YCT 2–3 supplementary practice vocabulary
+    · Not an official YCT testing product
+  </footer>
+
+</main>
+
+<!-- EXISTING WEBSITE SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7/dist/hanzi-writer.min.js"></script>
+<script src="yct-banks.js"></script>
+<script src="data.js"></script>
+<script src="human-audio.js"></script>
+<script src="script.js"></script>
+<script src="writing.js"></script>
+<script src="town.js"></script>
+
+<div
+  id="humanAudioStatus"
+  class="audio-status"
+  role="status"
+  aria-live="polite"
+  hidden
+></div>
+
+</body>
+</html>
